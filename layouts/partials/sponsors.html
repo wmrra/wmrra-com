@@ -24,7 +24,9 @@
                         <div class="col-12 col-md-3 col-sm-6">
                             <div class="sponsor text-center">
                                 <div class="sponsor-image">
+                                    {{ if .image }}
                                     <img class="img-fluid" src="{{.image | absURL }}" alt="sponsor-image">
+                                    {{ end }}
                                 </div>
                                 {{ "<!-- sponsor information -->" | safeHTML }}
                                 <div class="sponsor-content">

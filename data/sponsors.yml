@@ -6,63 +6,194 @@ subtitle: Thanks to all of our sponsors for their generous suppport of WMRRA
 allSponsors:
   - title: Title Sponsor
     sponsors:
-      - image         : images/sponsors/sponsor-1.jpg
-        name          : Sponsor Name
+      - name          : Flying Bulldog Racing
+        # image         : images/sponsors/sponsor-placeholder.jpg
         description   : >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-          necessitatibus ullam, culpa odio.
+          Flying Bulldog Racing
+        # facebookURL   : https://www.facebook.com/
+        # twitterURL    : https://twitter.com/
+        # websiteURL    : https://website.com/
+
+  - title: Formula Ultra Sponsor
+    sponsors:
+      - name          : Flying Bulldog Racing
+        # image         : images/sponsors/sponsor-placeholder.jpg
+        description   : >
+          Flying Bulldog Racing
+        # facebookURL   : https://www.facebook.com/
+        # twitterURL    : https://twitter.com/
+        # websiteURL    : https://website.com/
+
+      - name          : 2Fast Track Days
+        # image         : images/sponsors/sponsor-placeholder.jpg
+        description   : >
+          2Fast Track Days
         facebookURL   : https://www.facebook.com/
         twitterURL    : https://twitter.com/
         websiteURL    : https://website.com/
 
-  - title: Purse Race Sponsors
-    sponsors:
-      - image         : images/sponsors/tiger-tail.jpg
-        name          : Tiger Tail
-        description   : >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-          necessitatibus ullam, culpa odio.
-        facebookURL   : https://www.facebook.com/
-        twitterURL    : https://twitter.com/
-        websiteURL    : https://website.com/
+  # - title: Formula 2 Sponsor
+
+  # - title: Race Event Sponsors
 
   - title: Race Class Sponsors
     sponsors:
-      - image         : images/sponsors/sponsor-1.jpg
-        name          : Sponsor Name
+      - name          : Tiger Tail
+        image         : images/sponsors/tiger-tail.jpg
         description   : >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-          necessitatibus ullam, culpa odio.
-        facebookURL   : https://www.facebook.com/
-        twitterURL    : https://twitter.com/
-        websiteURL    : https://website.com/
+          Ninja Cup & Lightweight Supersport Sponsor
+        #facebookURL   : https://www.facebook.com/
+        #twitterURL    : https://twitter.com/
+        #websiteURL    : https://website.com/
 
-      - image         : images/sponsors/sponsor-1.jpg
-        name          : Sponsor Name
-        description   : >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-          necessitatibus ullam, culpa odio.
-        facebookURL   : https://www.facebook.com/
-        twitterURL    : https://twitter.com/
-        websiteURL    : https://website.com/
-  
-  
-  - title: General Club Sponsors
-    sponsors:
-      - image         : images/sponsors/sponsor-1.jpg
-        name          : Sponsor Name
-        description   : >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-          necessitatibus ullam, culpa odio.
-        facebookURL   : https://www.facebook.com/
-        twitterURL    : https://twitter.com/
-        websiteURL    : https://website.com/
+      - name          : Who is Dane
 
-      - image         : images/sponsors/sponsor-1.jpg
-        name          : Sponsor Name
         description   : >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-          necessitatibus ullam, culpa odio.
-        facebookURL   : https://www.facebook.com/
-        twitterURL    : https://twitter.com/
-        websiteURL    : https://website.com/
+          250GP Sponsor
+        #facebookURL   : https://www.facebook.com/
+        #twitterURL    : https://twitter.com/
+        #websiteURL    : https://website.com/
+
+      - name          : Bellevue 
+        # image         : images/sponsors/sponsor-placeholder.jpg
+        description   : >
+          Ultra Lightweight Supersport Sponsor
+        # facebookURL   : https://www.facebook.com/
+        # twitterURL    : https://twitter.com/
+        # websiteURL    : https://website.com/
+
+      - name          : Dainese
+        # image         : images/sponsors/sponsor-placeholder.jpg
+        description   : >
+          Lightweight Superbike Sponsor
+        # facebookURL   : https://www.facebook.com/
+        # twitterURL    : https://twitter.com/
+        # websiteURL    : https://website.com/
+  
+      - name          : Michelin
+        # image         : images/sponsors/sponsor-placeholder.jpg
+        description   : >
+          Middle Weight Grand Prix Twins Sponsor
+        # facebookURL   : https://www.facebook.com/
+        # twitterURL    : https://twitter.com/
+        # websiteURL    : https://website.com/
+
+      - name          : Jimmy Boyle Insurance
+        # image         : images/sponsors/sponsor-placeholder.jpg
+        description   : >
+          650 Supersport Twins & Open Grand Prix Twins Sponsor
+        # facebookURL   : https://www.facebook.com/
+        # twitterURL    : https://twitter.com/
+        # websiteURL    : https://website.com/
+
+      - name          : KFG Motorsports
+        # image         : images/sponsors/sponsor-placeholder.jpg
+        description   : >
+          600 Supersport & 600 Superbike Sponsor
+        # facebookURL   : https://www.facebook.com/
+        # twitterURL    : https://twitter.com/
+        # websiteURL    : https://website.com/
+
+      - name          : MotoShippers
+        # image         : images/sponsors/sponsor-placeholder.jpg
+        description   : >
+          Middleweight Early GP Sponsor
+        # facebookURL   : https://www.facebook.com/
+        # twitterURL    : https://twitter.com/
+        # websiteURL    : https://website.com/
+
+      - name          : 2Fast Track Days
+        # image         : images/sponsors/sponsor-placeholder.jpg
+        description   : >
+          Novice Class Sponsor
+        # facebookURL   : https://www.facebook.com/
+        # twitterURL    : https://twitter.com/
+        # websiteURL    : https://website.com/
+      
+      - name          : CMS Logistics
+        # image         : images/sponsors/sponsor-placeholder.jpg
+        description   : >
+          Formula Forty Sponsor
+        # facebookURL   : https://www.facebook.com/
+        # twitterURL    : https://twitter.com/
+        # websiteURL    : https://website.com/
+      
+      - name          : Superbike Underground
+        # image         : images/sponsors/sponsor-placeholder.jpg
+        description   : >
+          450 Superbike Sponsor
+        # facebookURL   : https://www.facebook.com/
+        # twitterURL    : https://twitter.com/
+        # websiteURL    : https://website.com/
+      
+      - name          : Pirelli
+        # image         : images/sponsors/sponsor-placeholder.jpg
+        description   : >
+          Open Supersport & Open Superbike Sponsor
+        # facebookURL   : https://www.facebook.com/
+        # twitterURL    : https://twitter.com/
+        # websiteURL    : https://website.com/
+      
+      - name          : Elvis Motorsports
+        # image         : images/sponsors/sponsor-placeholder.jpg
+        description   : >
+          Formula Female Sponsor
+        # facebookURL   : https://www.facebook.com/
+        # twitterURL    : https://twitter.com/
+        # websiteURL    : https://website.com/
+      
+      - name          : Triumph of Seattle
+      # image         : images/sponsors/sponsor-placeholder.jpg
+        description   : >
+          Open Sportsman Sponsor
+        # facebookURL   : https://www.facebook.com/
+        # twitterURL    : https://twitter.com/
+        # websiteURL    : https://website.com/
+      
+      - name          : Track side support services
+        # image         : images/sponsors/sponsor-placeholder.jpg
+        description   : >
+          600 Sportsman Sponsor
+        # facebookURL   : https://www.facebook.com/
+        # twitterURL    : https://twitter.com/
+        # websiteURL    : https://website.com/
+      
+      - name          : Howling Hands 
+        # image         : images/sponsors/sponsor-placeholder.jpg
+        description   : >
+          Open Classic Superbike Sponsor
+        # facebookURL   : https://www.facebook.com/
+        # twitterURL    : https://twitter.com/
+        # websiteURL    : https://website.com/
+      
+      - name          : Larry B's
+        # image         : images/sponsors/sponsor-placeholder.jpg
+        description   : >
+          Honda 160 Vintage Sponsor
+        # facebookURL   : https://www.facebook.com/
+        # twitterURL    : https://twitter.com/
+        # websiteURL    : https://website.com/
+      
+      - name          : Lubricants Solutions LLC
+        # image         : images/sponsors/sponsor-placeholder.jpg
+        description   : >
+          250, 500, 750, Lightweight Superbike Vintage Sponsor
+        # facebookURL   : https://www.facebook.com/
+        # twitterURL    : https://twitter.com/
+        # websiteURL    : https://website.com/
+
+      # Available to Sponsor?: 600 Classic Superbike
+    
+  # - title: General Club Sponsors
+    
+
+  # - title: TEMPLATE
+  #   sponsors:
+  #     - image         : images/sponsors/sponsor-placeholder.jpg
+  #       name          : Sponsor Name
+  #       description   : >
+  #         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+  #         necessitatibus ullam, culpa odio.
+  #       facebookURL   : https://www.facebook.com/
+  #       twitterURL    : https://twitter.com/
+  #       websiteURL    : https://website.com/
