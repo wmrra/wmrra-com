@@ -87,7 +87,7 @@ allSponsors:
         # websiteURL    : https://website.com/
 
       - name          : KFG Motorsports
-        # image         : images/sponsors/sponsor-placeholder.jpg
+        image         : https://kfgmotorsports.com/portals/kfgmotorsports/skins/kfgmotorsports-fury//images/kfg-logo.png
         description   : >
           600 Supersport & 600 Superbike Sponsor
         # facebookURL   : https://www.facebook.com/
@@ -103,7 +103,7 @@ allSponsors:
         # websiteURL    : https://website.com/
 
       - name          : 2Fast Track Days
-        # image         : images/sponsors/sponsor-placeholder.jpg
+        image         : http://www.2-fast.org/wp-content/themes/2fast/images/blank.gif
         description   : >
           Novice Class Sponsor
         # facebookURL   : https://www.facebook.com/

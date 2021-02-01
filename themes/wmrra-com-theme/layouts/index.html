@@ -1,3 +1,12 @@
 {{ define "main" }}
 
+
+{{ range ( where site.RegularPages "Section" "news" | first 3 ) }}
+<ul>
+    <li>
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+    <div class="meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+    </li>
+</ul>
+{{ end }}
 {{ end }}
