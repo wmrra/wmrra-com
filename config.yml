@@ -1,8 +1,8 @@
-baseURL: wmrra.com
+baseURL: https://wmrra.com
 languageCode: en-us
 title: Washington Motorcycle Road Racing Association
 theme: wmrra-com-theme
-disablePathToLower: true
+#disablePathToLower: true
 
 params:
   dateFormat: "January 1, 2021"
