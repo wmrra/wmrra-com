@@ -1,0 +1,18 @@
+@import "partials/material-icons";
+
+body {
+  font-family: "Fjalla One", sans-serif;
+}
+
+.cta-button {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  background-color: #8f0c00; // dark red
+  color: #fff;
+  cursor: pointer;
+  &:hover {
+    filter: brightness(120%);
+  }
+}
+
+@import "partials/header";
