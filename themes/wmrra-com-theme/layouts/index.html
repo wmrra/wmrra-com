@@ -1,12 +1,25 @@
 {{ define "main" }}
 
+  {{/* lol change this to JS dummy */}}
+  {{ $announcement := (where site.RegularPages.ByDate "Section" "news" | last 1) }}
+  {{ $dayDiff := -1 }}
+  {{ range $announcement }}
+    {{ $dayDiff = div (sub now.Unix .Date.Unix) 86400 }}
+  {{ end }}
 
-{{ range ( where site.RegularPages "Section" "news" | first 3 ) }}
-<ul>
-    <li>
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
-    <div class="meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
-    </li>
-</ul>
-{{ end }}
+  <div class="hero">
+    <div class="hero-content">
+      <div class="announcement-box">
+        {{ if and (ge $dayDiff 0) (le $dayDiff 7) }}
+          {{ range $announcement }}
+            <h2>{{ .Title }}</h2>
+            <div>{{ .Description }}</div>
+          {{ end }}
+        {{ else }}
+          <div>Nothin' to see here fatty</div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+
 {{ end }}
