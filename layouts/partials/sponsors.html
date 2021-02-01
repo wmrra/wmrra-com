@@ -1,0 +1,71 @@
+{{ $data := index .Site.Data }}
+
+{{ with $data.sponsors }}
+    {{ if .enable }}
+    {{ range .allSponsors }}
+        {{ "<!-- sponsor level -->" | safeHTML }}
+        <section class="sponsor-level section bg-gray" id="sponsor-level">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="title text-center">
+                            {{ with $data.sponsors }}<h4>{{ .topTitle }}</h4>{{ end }}
+                            {{ with .title }}
+                                <h2>{{ . }}</h2>
+                                <span class="border"></span>
+                            {{ end }}
+                            {{ with .subtitle }}<p>{{ . }}</p>{{ end }}
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    {{ range .sponsors }}
+                        {{ "<!-- sponsor -->" | safeHTML }}
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="sponsor text-center">
+                                <div class="sponsor-image">
+                                    <img class="img-fluid" src="{{.image | absURL }}" alt="sponsor-image">
+                                </div>
+                                {{ "<!-- sponsor information -->" | safeHTML }}
+                                <div class="sponsor-content">
+                                    <h3>{{ .name }}</h3>
+                                    <p>{{ .description }}</p>
+                                    {{ "<!-- sponsor links -->" | safeHTML }}
+                                    <ul class="list-inline">
+                                        {{ with .facebookURL }}
+                                        <li class="list-inline-item">
+                                            <a href="{{.}}">
+                                                <i class="tf-ion-social-facebook"></i>
+                                            </a>
+                                        </li>
+                                        {{ end }}
+                                        {{ with .twitterURL }}
+                                        <li class="list-inline-item">
+                                            <a href="{{.}}">
+                                                <i class="tf-ion-social-twitter"></i>
+                                            </a>
+                                        </li>
+                                        {{ end }}
+                                        {{ with .websiteURL }}
+                                        <li class="list-inline-item">
+                                            <a href="{{.}}">
+                                                <i class="tf-ion-android-globe"></i>
+                                            </a>
+                                        </li>
+                                        {{ end }}
+                                    </ul>
+                                    {{ "<!-- end sponsor links -->" | safeHTML }}
+                                </div>
+                                {{ "<!-- end sponsor information -->" | safeHTML }}
+                            </div>
+                        </div>
+                    {{ "<!-- end sponsor -->" | safeHTML }}
+                    {{ end }}
+                </div>
+            </div>
+        </section>
+        {{ "<!-- end sponsor level -->" | safeHTML }}
+        {{ end }}
+    {{ "<!-- end section -->" | safeHTML }}
+    {{end}}
+{{ end }}

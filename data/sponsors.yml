@@ -1,0 +1,68 @@
+enable  : true
+topTitle: Sponsors
+title   : Our Sponsors.
+subtitle: Thanks to all of our sponsors for their generous suppport of WMRRA
+
+allSponsors:
+  - title: Title Sponsor
+    sponsors:
+      - image         : images/sponsors/sponsor-1.jpg
+        name          : Sponsor Name
+        description   : >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+          necessitatibus ullam, culpa odio.
+        facebookURL   : https://www.facebook.com/
+        twitterURL    : https://twitter.com/
+        websiteURL    : https://website.com/
+
+  - title: Purse Race Sponsors
+    sponsors:
+      - image         : images/sponsors/tiger-tail.jpg
+        name          : Tiger Tail
+        description   : >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+          necessitatibus ullam, culpa odio.
+        facebookURL   : https://www.facebook.com/
+        twitterURL    : https://twitter.com/
+        websiteURL    : https://website.com/
+
+  - title: Race Class Sponsors
+    sponsors:
+      - image         : images/sponsors/sponsor-1.jpg
+        name          : Sponsor Name
+        description   : >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+          necessitatibus ullam, culpa odio.
+        facebookURL   : https://www.facebook.com/
+        twitterURL    : https://twitter.com/
+        websiteURL    : https://website.com/
+
+      - image         : images/sponsors/sponsor-1.jpg
+        name          : Sponsor Name
+        description   : >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+          necessitatibus ullam, culpa odio.
+        facebookURL   : https://www.facebook.com/
+        twitterURL    : https://twitter.com/
+        websiteURL    : https://website.com/
+  
+  
+  - title: General Club Sponsors
+    sponsors:
+      - image         : images/sponsors/sponsor-1.jpg
+        name          : Sponsor Name
+        description   : >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+          necessitatibus ullam, culpa odio.
+        facebookURL   : https://www.facebook.com/
+        twitterURL    : https://twitter.com/
+        websiteURL    : https://website.com/
+
+      - image         : images/sponsors/sponsor-1.jpg
+        name          : Sponsor Name
+        description   : >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+          necessitatibus ullam, culpa odio.
+        facebookURL   : https://www.facebook.com/
+        twitterURL    : https://twitter.com/
+        websiteURL    : https://website.com/
