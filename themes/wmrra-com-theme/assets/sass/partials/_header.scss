@@ -11,6 +11,10 @@ $mobile-breakpoint: 768px;
   box-shadow: 0 8px 8px -5px rgba(0, 0, 0, 0.3);
 }
 
+.header-logo {
+  width: 150px;
+}
+
 .header-menu-mobile {
   // will display <= mobile-breakpoint
   display: none;
@@ -35,8 +39,8 @@ $mobile-breakpoint: 768px;
   width: 95px;
   cursor: pointer;
 
-  .header-menu-item-label {
-    &:hover {
+  &:hover {
+    .header-menu-item-label {
       margin-bottom: -4px;
       padding-bottom: 2px;
       border-bottom: 2px solid #8f0c00;

@@ -1,6 +1,7 @@
+{{ $logo := "images/WMRRA-logo.png" }}
 <div class="header">
   <div class="header-logo">
-    logo
+    <a href="{{ .Site.BaseURL }}"><img class="header-logo" src="{{ $logo | absURL }}"/></a>
   </div>
   <div class="header-menu">
     {{ partial "header-menu/header-menu-links.html" . }}
