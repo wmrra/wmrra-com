@@ -1,25 +1,13 @@
 {{ define "main" }}
-
-  {{/* lol change this to JS dummy */}}
-  {{ $announcement := (where site.RegularPages.ByDate "Section" "news" | last 1) }}
-  {{ $dayDiff := -1 }}
-  {{ range $announcement }}
-    {{ $dayDiff = div (sub now.Unix .Date.Unix) 86400 }}
-  {{ end }}
-
   <div class="hero">
     <div class="hero-content">
-      <div class="announcement-box">
-        {{ if and (ge $dayDiff 0) (le $dayDiff 7) }}
-          {{ range $announcement }}
-            <h2>{{ .Title }}</h2>
-            <div>{{ .Description }}</div>
-          {{ end }}
-        {{ else }}
-          <div>Nothin' to see here fatty</div>
+      {{ if templates.Exists "partials/hero-announcement-content.html" }}
+        {{ with partial "hero-announcement-content" }}
+        <div class="hero-announcement-box">
+          {{ partial "hero-announcement-content" . }}
+        </div>
         {{ end }}
-      </div>
+      {{ end }}  
     </div>
   </div>
-
 {{ end }}

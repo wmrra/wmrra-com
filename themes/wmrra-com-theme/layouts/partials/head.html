@@ -24,6 +24,10 @@
   {{ $sass := resources.Get "sass/main.scss" }}
   {{ $styles := $sass | resources.ToCSS }}
   <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+
+  {{ if templates.Exists "partials/custom-head-content.html" }}
+    {{ partial "custom-head-content" .}}
+  {{ end }}
   
-  </head>
+</head>
   

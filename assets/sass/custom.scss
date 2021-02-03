@@ -1,0 +1,27 @@
+
+// all hero announcement content will start hidden
+// hero.js will decide what to display
+// and these fancy styles will make it fade in
+.hero-announcement-content-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  opacity: 0;
+
+  &.the-chosen-one {
+    animation: fadeIn 1.2s ease-in forwards, slideIn 1s ease-out forwards;
+
+    @keyframes slideIn {
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+}

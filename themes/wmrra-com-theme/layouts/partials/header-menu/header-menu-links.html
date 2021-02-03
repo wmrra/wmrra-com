@@ -14,12 +14,11 @@
 <div class="header-menu-item">
   <div class="header-menu-item-label">{{.name}}</div>
   <div class="header-menu-item-submenu">
-    <a href="{{.link}}">{{ .subMenuText }}</a>
+    {{ range .children }}
+      <div><a href="{{.link}}">{{.name}}</a></div>
+    {{end}}
   </div>
  
-  {{ range .children }}
-  <div class="header-menu-item-submenu"><a href="{{.link}}">{{.name}}</a></div>
-  {{end}}
 
 </div>
 
