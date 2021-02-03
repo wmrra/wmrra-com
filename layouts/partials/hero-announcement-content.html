@@ -1,0 +1,22 @@
+
+{{ $latestNews := (where site.RegularPages.ByDate "Section" "news" | last 1) }}
+{{/* Add: last race results, countdown to next race */}}
+
+<div class="hero-announcement-content">
+  {{/* Only ONE of these will render, and the fancy javascript will decide which one */}}
+  {{ range $latestNews }}
+    <div id="latest-announcement" class="hero-announcement-content-block" data-date="{{ .Date }}">
+      <div class="hero-announcement-text">
+        <h1>{{ .Title }}</h1>
+        <h3>{{ .Description }}</h3>
+      </div>
+      <a class="hero-announcement-button" href="{{ .Permalink }}">Yeah I said it</a>
+    </div>
+  {{ end }}
+
+  <div id="default" class="hero-announcement-content-block" >
+    <div class="hero-announcement-text"><h1>Welcome to WMRRA!</h1></div>
+    <a class="hero-announcement-button" href="">Learn More</a>
+  </div>
+</div>
+

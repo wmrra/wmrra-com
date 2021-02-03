@@ -5,3 +5,7 @@
 {{ "<!-- Good stuff -->" | safeHTML }}
 {{ $script := resources.Get "js/main.js" | minify}}
 <script src="{{ $script.Permalink }}"></script>
+{{ if templates.Exists "partials/custom-scripts.html" }}
+  {{ "<!-- Gooder stuff -->" | safeHTML }}
+  {{ partial "custom-scripts" . }}
+{{ end }}
