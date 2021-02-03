@@ -29,7 +29,6 @@ body {
     right: 0;
     z-index: -1; 
     height: 400px;
-    background: url("../images/finger_guns.jpeg");
     background-size: cover;
     opacity: 0.5;
   }
@@ -68,7 +67,7 @@ body {
   box-shadow: 0 8px 8px -5px rgba(0, 0, 0, 0.3);
 
   &:hover {
-    margin-top: -1px;
+    margin-top: -2px;
     border-width: 3px;
     color: #fff;
     text-decoration: none;
