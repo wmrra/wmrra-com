@@ -1,0 +1,17 @@
+
+menu:
+  - name: Race
+    link: /race
+    subMenuText: Race with WMRRA
+
+  
+  - name: Support
+    link:
+    subMenuText:
+    children: 
+      - name: Volunteer
+        link: 
+      - name: Spectate
+        link:
+      - name: Sponsor
+        link:
