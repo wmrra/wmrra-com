@@ -10,11 +10,12 @@
   opacity: 0;
 
   &.the-chosen-one {
+    transform: translateX(200%);
     animation: fadeIn 1.2s ease-in forwards, slideIn 1s ease-out forwards;
 
     @keyframes slideIn {
       100% {
-        transform: translateY(0);
+        transform: translateX(0);
       }
     }
 
