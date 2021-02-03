@@ -1,13 +1,19 @@
 {{ define "main" }}
-  <div class="hero">
-    <div class="hero-content">
-      {{ if templates.Exists "partials/hero-announcement-content.html" }}
-        {{ with partial "hero-announcement-content" }}
-        <div class="hero-announcement-box">
-          {{ partial "hero-announcement-content" . }}
-        </div>
-        {{ end }}
-      {{ end }}  
+  <div>
+    <div class="hero">
+      <div class="hero-content">
+        {{ if templates.Exists "partials/hero-announcement-content.html" }}
+          {{ with partial "hero-announcement-content" }}
+          <div class="hero-announcement-box">
+            {{ partial "hero-announcement-content" . }}
+          </div>
+          {{ end }}
+        {{ end }}  
+      </div>
     </div>
+
+    {{ if templates.Exists "partials/home-content.html" }}
+      {{ partial "home-content" . }}
+  {{ end }}  
   </div>
 {{ end }}
