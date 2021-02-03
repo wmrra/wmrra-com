@@ -10,8 +10,8 @@ menu:
     subMenuText:
     children: 
       - name: Volunteer
-        link: 
+        link: /volunteer
       - name: Spectate
-        link:
+        link: /spectate
       - name: Sponsor
-        link:
+        link: /sponsor

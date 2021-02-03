@@ -25,7 +25,7 @@
                             <div class="sponsor text-center">
                                 <div class="sponsor-image">
                                     {{ if .image }}
-                                    <img class="img-fluid" src="{{.image | absURL }}" alt="sponsor-image">
+                                    <img class="w-50 img-responsive center-block" src="{{.image | absURL }}" alt="sponsor-image">
                                     {{ end }}
                                 </div>
                                 {{ "<!-- sponsor information -->" | safeHTML }}

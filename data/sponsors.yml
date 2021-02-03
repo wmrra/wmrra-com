@@ -92,15 +92,15 @@ allSponsors:
           600 Supersport & 600 Superbike Sponsor
         # facebookURL   : https://www.facebook.com/
         # twitterURL    : https://twitter.com/
-        # websiteURL    : https://website.com/
+        websiteURL    :  https://kfgmotorsports.com/
 
       - name          : MotoShippers
-        # image         : images/sponsors/sponsor-placeholder.jpg
+        image         : https://www.motoshippers.com/wp-content/uploads/2020/03/MotoShippers_Logo.png
         description   : >
           Middleweight Early GP Sponsor
         # facebookURL   : https://www.facebook.com/
         # twitterURL    : https://twitter.com/
-        # websiteURL    : https://website.com/
+        websiteURL    : https://www.motoshippers.com/
 
       - name          : 2Fast Track Days
         image         : http://www.2-fast.org/wp-content/themes/2fast/images/blank.gif
@@ -108,31 +108,31 @@ allSponsors:
           Novice Class Sponsor
         # facebookURL   : https://www.facebook.com/
         # twitterURL    : https://twitter.com/
-        # websiteURL    : https://website.com/
+        websiteURL    : http://www.2-fast.org/
       
       - name          : CMS Logistics
-        # image         : images/sponsors/sponsor-placeholder.jpg
+        image         : http://cmslogisticsinc.com/wp-content/uploads/2020/01/cms-logo.png
         description   : >
           Formula Forty Sponsor
         # facebookURL   : https://www.facebook.com/
         # twitterURL    : https://twitter.com/
-        # websiteURL    : https://website.com/
-      
+        websiteURL    : http://cmslogisticsinc.com/
+
       - name          : Superbike Underground
-        # image         : images/sponsors/sponsor-placeholder.jpg
+        image         : http://superbikeunderground.com/images/logotype-u146.png?crc=4132025614
         description   : >
           450 Superbike Sponsor
         # facebookURL   : https://www.facebook.com/
         # twitterURL    : https://twitter.com/
-        # websiteURL    : https://website.com/
+        websiteURL    : http://superbikeunderground.com/
       
       - name          : Pirelli
-        # image         : images/sponsors/sponsor-placeholder.jpg
+        image         : https://d2snyq93qb0udd.cloudfront.net/prod/logo-pirelli2x.jpg
         description   : >
           Open Supersport & Open Superbike Sponsor
         # facebookURL   : https://www.facebook.com/
         # twitterURL    : https://twitter.com/
-        # websiteURL    : https://website.com/
+        websiteURL    : https://www.pirelli.com/
       
       - name          : Elvis Motorsports
         # image         : images/sponsors/sponsor-placeholder.jpg
