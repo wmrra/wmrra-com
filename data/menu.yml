@@ -3,8 +3,11 @@ menu:
   - name: Race
     link: /race
     subMenuText: Race with WMRRA
-
-  
+    children:
+      - name: Race Results and Live Timing
+        link: https://racehero.io/orgs/wmrra-official
+      - name: Rulebook
+        link: /race/rulebook
   - name: Support
     link:
     subMenuText:
