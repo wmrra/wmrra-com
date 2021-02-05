@@ -2,7 +2,6 @@
 menu:
   - name: Race
     link: /race
-    subMenuText: Race with WMRRA
     children:
       - name: Race Results and Live Timing
         link: https://racehero.io/orgs/wmrra-official
@@ -10,7 +9,6 @@ menu:
         link: /race/rulebook
   - name: Support
     link:
-    subMenuText:
     children: 
       - name: Volunteer
         link: /volunteer
@@ -18,3 +16,8 @@ menu:
         link: /spectate
       - name: Sponsor
         link: /sponsor
+  - name: Contact
+    link: /contact
+    children: 
+      - name: Contact
+        link: /contact
