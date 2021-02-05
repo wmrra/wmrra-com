@@ -73,36 +73,80 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 3rem;
-  align-items: center;
   width: 100%;
 
   .content-block {
     display: grid;
-    grid-template-rows: 1fr;
-    grid-gap: 2rem;
+    grid-template-rows: 300px 1fr;
+    grid-gap: 3rem;
     justify-items: center;
   }
 
   .content-block-image {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 250px;
-    width: 250px;
-    background-color: #8f0c00; //dark red
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 3rem;
+    height: 300px;
+    width: 300px;
+    background-size: auto 300px;
+    background-position: center;
+    transition: background-size 3s;
+    cursor: pointer;
+
+    &.race {
+      background-image: url("../images/Race-with-WMRRA.jpg");
+    }
+
+    &.volunteer {
+      background-image: url("../images/Volunteers.jpg");
+    }
+
+    &.support {
+      background-image: url("../images/Taste-of-Racing.jpg");
+    }
+
+    .overlay-text {
+      z-index: 2;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 4.5rem;
+      font-weight: bold;
+      letter-spacing: 0.4rem;
+      text-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+    }
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 300px;
+      width: 300px;
+      background-color: rgba(129, 127, 130, 0.6);
+      transition: background-color 1s linear;
+    }
+
+    &:hover {  
+      background-size: auto 400px;
+
+      &::after {
+        background-color: rgba(129, 127, 130, 0.2);
+      }
+    }
   }
 
   .content-block-text {
     width: 300px;
+    text-align: center;
+    font-size: 1.75rem;
+    line-height: 3rem;
   }
   
 }
 
+// contacts
 .contact-table {
-  table{
+  table {
     display: table;
     border-collapse: separate;
     border-spacing: 20px;
