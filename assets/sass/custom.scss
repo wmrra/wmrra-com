@@ -1,7 +1,14 @@
+// TODO: split this into partials
+// homepage
+.hero {
+  &::after {
+    background-image: url("../images/finger_guns.jpeg");
+  }
+}
 
 // all hero announcement content will start hidden
 // hero.js will decide what to display
-// and these fancy styles will make it fade in
+// and these fancy styles will make it slide/fade in
 .hero-announcement-content-block {
   display: flex;
   flex-direction: column;
@@ -25,4 +32,71 @@
       }
     }
   }
+}
+
+.home-content {
+  padding: 0 2rem;
+}
+
+.home-content-section {
+  display: flex;
+  justify-content: center;
+  padding: 6rem 0;
+}
+
+.we-are-wmrra-content-wrapper {
+  display: grid;
+  grid-template-rows: 10rem 1fr;
+  grid-gap: 8rem;
+  justify-items: center;
+  width: 100%;
+}
+
+.we-are-wmrra-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  .header-text {
+    font-size: 7rem;
+    text-transform: uppercase;
+  }
+
+  .logo {
+    height: 10rem;
+    margin-top: -1rem;
+  }
+}
+
+.we-are-wmrra-content-blocks {
+  // need to explicitly cancel out columns and shift to rows for responsivity
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  align-items: center;
+  width: 100%;
+
+  .content-block {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-gap: 2rem;
+    justify-items: center;
+  }
+
+  .content-block-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+    background-color: #8f0c00; //dark red
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+
+  .content-block-text {
+    width: 300px;
+  }
+  
 }

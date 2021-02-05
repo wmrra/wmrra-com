@@ -3,7 +3,7 @@
 {{/* Add: last race results, countdown to next race */}}
 
 <div class="hero-announcement-content">
-  {{/* Only ONE of these will render, and the fancy javascript will decide which one */}}
+  {{/* Only ONE of these will remain, and the fancy javascript will decide which one */}}
   {{ range $latestNews }}
     <div id="latest-announcement" class="hero-announcement-content-block" data-date="{{ .Date }}">
       <div class="hero-announcement-text">
