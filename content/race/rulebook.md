@@ -6,11 +6,11 @@ description: "Rulebook"
 ---
 # Rulebook
 
-![](http://www.wmrra.com/wp-content/themes/wmrra-template/img/1000x213/Racer-Responsibility.jpg)
+![](/images/Racer-Responsibility.jpg)
 
 As a racer, it’s your responsibility to know the rules, read the rule book!
 
-[2020 WMRRA Rulebook](http://www.wmrra.com/pdfs/rulebook/2020WMRRARuleBook.pdf)
+[2020 WMRRA Rulebook](/pdfs/rulebook/2020WMRRARuleBook.pdf)
 
 # Referee Rulings
 
