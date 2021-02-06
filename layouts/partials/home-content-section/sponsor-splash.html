@@ -1,0 +1,47 @@
+{{ $sponsorData := index .Site.Data.sponsors }}
+{{ $uniqueSponsors := slice }}
+
+
+<div class="home-content-section-wrapper">
+  <div class="home-content-section-header">
+    <h1>Thank you to our sponsors!</h1>
+  </div>
+
+  <div class="supporter-splash">
+    {{ with $sponsorData }}
+      <div>
+        <h2>Title Sponsor</h2>
+        {{ range .titleSponsor }}
+          <div>
+            {{ range .sponsors }}
+              {{ $uniqueSponsors = $uniqueSponsors | append .name }}
+              <div class="supporter-block-wrapper">
+                <a class="supporter-block title-supporter" href="{{ .websiteUrl }}">
+                  <img src="{{.image | absURL }}"  alt="{{ .name}}" />
+                </a>
+              </div>  
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+
+      <div>
+        {{ range $sponsorData.allSponsors }}
+          {{ range where .sponsors ".name" "not in" $uniqueSponsors }}
+            {{ $uniqueSponsors = $uniqueSponsors | append .name }}
+            <div class="supporter-block">
+              <a class="supporter-block" href="{{ .websiteUrl }}">
+                {{ if .image }}
+                  <img src="{{.image | absURL }}"  alt="{{ .name}}" />
+                {{ else }}
+                  <i class="material-icons">two_wheeler</i>
+                  <div>{{ .name }}</div>
+                {{ end }}
+              </a>
+            </div>   
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</div>

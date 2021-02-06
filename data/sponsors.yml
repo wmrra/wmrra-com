@@ -1,23 +1,24 @@
 enable  : true
 topTitle: Sponsors
 title   : Our Sponsors.
-subtitle: Thanks to all of our sponsors for their generous suppport of WMRRA
+subtitle: Thanks to all of our sponsors for their generous support of WMRRA
 
-allSponsors:
+titleSponsor:
   - title: Title Sponsor
     sponsors:
       - name          : Flying Bulldog Racing
-        # image         : images/sponsors/sponsor-placeholder.jpg
+        image         : images/sponsors/flying-bulldog.jpg
         description   : >
           Flying Bulldog Racing
         # facebookURL   : https://www.facebook.com/
         # twitterURL    : https://twitter.com/
         # websiteURL    : https://website.com/
 
+allSponsors:
   - title: Formula Ultra Sponsor
     sponsors:
       - name          : Flying Bulldog Racing
-        # image         : images/sponsors/sponsor-placeholder.jpg
+        image         : images/sponsors/flying-bulldog.jpg
         description   : >
           Flying Bulldog Racing
         # facebookURL   : https://www.facebook.com/
@@ -31,7 +32,7 @@ allSponsors:
         facebookURL   : https://www.facebook.com/
         twitterURL    : https://twitter.com/
         websiteURL    : https://website.com/
-
+  
   # - title: Formula 2 Sponsor
 
   # - title: Race Event Sponsors
