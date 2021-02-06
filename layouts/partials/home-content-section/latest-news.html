@@ -1,0 +1,25 @@
+{{ $latestNews := ((where site.RegularPages.ByDate "Section" "news").Reverse | last 3) }}
+<div class="home-content-section-wrapper">
+  <div class="home-content-section-header">
+    <h1>Latest News</h1>
+  </div>
+
+   <div class="home-content-section-blocks">
+    {{ range $latestNews }}
+      <a href="{{ .Permalink }}" class="latest-news-block">
+        <div class="date">{{ dateFormat "Jan 01, 2006" .Date }}</div>
+        <div class="title">{{ .Title }}</div>
+        <div class="description">{{ .Description }}</div>
+        <div class="read-more">
+          <span>Read more</span>
+          <i class="material-icons">double_arrow</i>
+        </div>
+      </a>
+    {{ end }}
+  </div> 
+
+  <a href="" class="all-news-link">
+    <span>All news</span>
+    <i class="material-icons md-36">double_arrow</i>
+  </a>
+</div>

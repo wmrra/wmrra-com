@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <div>
+  <div class="content-wrapper">
     <div class="hero">
       <div class="hero-content">
         {{ if templates.Exists "partials/hero-announcement-content.html" }}
@@ -14,6 +14,6 @@
 
     {{ if templates.Exists "partials/home-content.html" }}
       {{ partial "home-content" . }}
-  {{ end }}  
+    {{ end }}  
   </div>
 {{ end }}

@@ -1,5 +1,7 @@
 @import "partials/material-icons";
 
+$wmmra-dark-red: #b1041d;
+
 
 body {
   font-family: "Fjalla One", sans-serif;
@@ -8,7 +10,7 @@ body {
 .cta-button {
   padding: 0.5rem 1rem;
   border-radius: 10px;
-  background-color: #8f0c00; // dark red
+  background-color: $wmmra-dark-red;
   color: #fff;
   cursor: pointer;
   &:hover {
@@ -44,7 +46,7 @@ body {
 .hero-announcement-box {
   width: 50%;
   padding: 1.5rem;
-  background-color:rgba(143, 12, 0, 0.8); // dark red
+  background-color:rgba($wmmra-dark-red, 0.8);
   color: #fff;
 }
 
