@@ -1,0 +1,20 @@
+{{ define "main" }}
+<!-- Used for News Landing Page -->
+<div class="w-100 ">
+  <article class="">
+    <h1>
+      {{ .Title }}
+    </h1>
+    <div class="">
+      {{ .Content }}
+    </div>
+
+    <ul class="all-posts">
+        {{ range where .Site.RegularPages "File.Dir" "in" "/news/" }}
+        <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+        {{end}}
+    </ul>
+  </article>
+</div>
+
+{{ end }}
