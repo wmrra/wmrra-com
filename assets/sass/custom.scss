@@ -198,9 +198,10 @@ $wmmra-dark-red: #b1041d;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
   background-color: #fff;
   color: #333;
+  text-align: center;
 
   .title {
     font-size: 3rem;
