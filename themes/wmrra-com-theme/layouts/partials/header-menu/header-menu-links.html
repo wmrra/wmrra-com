@@ -2,7 +2,6 @@
 <!--
 - name: top-level name
   link:
-  subMenuText: some text
   children: 
     - name: link-1
       link: 
@@ -12,7 +11,7 @@
 {{ range $.Site.Data.menu.menu }}
 
 <div class="header-menu-item">
-  <div class="header-menu-item-label">{{.name}}</div>
+  <div class="header-menu-item-label"><a href="{{.link}}">{{.name}}</a></div>
   <div class="header-menu-item-submenu">
     {{ range .children }}
       <div><a href="{{.link}}">{{.name}}</a></div>

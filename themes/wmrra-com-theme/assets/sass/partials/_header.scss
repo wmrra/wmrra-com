@@ -39,6 +39,13 @@ $mobile-breakpoint: 768px;
   width: 95px;
   cursor: pointer;
 
+  .header-menu-item-label {
+    a, a:visited, a:hover, a:active, a:focus {
+        color: #333;
+        text-decoration: none;
+    }
+  }
+
   &:hover {
     .header-menu-item-label {
       margin-bottom: -4px;
