@@ -8,7 +8,7 @@ menu:
       - name: Rulebook
         link: /race/rulebook
   - name: Support
-    link:
+    link: /support
     children: 
       - name: Volunteer
         link: /volunteer
