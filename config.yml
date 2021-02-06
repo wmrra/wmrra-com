@@ -1,4 +1,5 @@
-baseURL: https://wmrra.com
+#baseURL: https://wmrra.com
+baseURL: http://wmrra.storage.googleapis.com/
 languageCode: en-us
 title: Washington Motorcycle Road Racing Association
 theme: wmrra-com-theme
@@ -6,3 +7,9 @@ theme: wmrra-com-theme
 
 params:
   dateFormat: "January 1, 2021"
+
+
+deployment:
+  targets:
+    name: gcs
+    url: gs://wmrra

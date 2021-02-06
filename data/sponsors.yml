@@ -26,12 +26,13 @@ allSponsors:
         # websiteURL    : https://website.com/
 
       - name          : 2Fast Track Days
-        # image         : images/sponsors/sponsor-placeholder.jpg
+        image         : images/sponsors/2fast.jpg
         description   : >
           2Fast Track Days
-        facebookURL   : https://www.facebook.com/
-        twitterURL    : https://twitter.com/
-        websiteURL    : https://website.com/
+        facebookURL   : https://www.facebook.com/2FastLLC
+        # twitterURL    : https://twitter.com/
+        websiteURL    : http://www.2-fast.org/
+      
   
   # - title: Formula 2 Sponsor
 
@@ -43,55 +44,55 @@ allSponsors:
         image         : images/sponsors/tiger-tail.jpg
         description   : >
           Ninja Cup & Lightweight Supersport Sponsor
-        #facebookURL   : https://www.facebook.com/
-        #twitterURL    : https://twitter.com/
-        #websiteURL    : https://website.com/
+        facebookURL   : https://www.facebook.com/tigertailusa
+        twitterURL    : https://twitter.com/tigertailusa
+        websiteURL    : https://tigertailusa.com/
 
       - name          : Who is Dane
-
+        image         : images/sponsors/who-is-dane.jpg
         description   : >
           250GP Sponsor
-        #facebookURL   : https://www.facebook.com/
+        facebookURL   : https://www.facebook.com/whoisdane/
         #twitterURL    : https://twitter.com/
-        #websiteURL    : https://website.com/
+        websiteURL    : https://www.whoisdane.photography/
 
-      - name          : Bellevue 
-        # image         : images/sponsors/sponsor-placeholder.jpg
+      - name          : Bellevue Motorsports
+        image         : images/sponsors/bellevue-motorsports.png
         description   : >
           Ultra Lightweight Supersport Sponsor
-        # facebookURL   : https://www.facebook.com/
+        facebookURL   : https://www.facebook.com/bellevuemotosports
         # twitterURL    : https://twitter.com/
-        # websiteURL    : https://website.com/
+        websiteURL    : https://bellevuemotosports.com/
 
       - name          : Dainese
-        # image         : images/sponsors/sponsor-placeholder.jpg
+        image         : images/sponsors/dainese.png
         description   : >
           Lightweight Superbike Sponsor
         # facebookURL   : https://www.facebook.com/
         # twitterURL    : https://twitter.com/
-        # websiteURL    : https://website.com/
+        websiteURL    : https://www.dainese.com/us/en/store/dainese-store-seattle.html
   
       - name          : Michelin
-        # image         : images/sponsors/sponsor-placeholder.jpg
+        image         : images/sponsors/michelin.png
         description   : >
           Middle Weight Grand Prix Twins Sponsor
-        # facebookURL   : https://www.facebook.com/
+        facebookURL   : https://www.facebook.com/MichelinMotorcycle.US/
         # twitterURL    : https://twitter.com/
-        # websiteURL    : https://website.com/
+        websiteURL    : https://motorcycle.michelinman.com/motorbike/motorbikes-scooters-tyres
 
       - name          : Jimmy Boyle Insurance
-        # image         : images/sponsors/sponsor-placeholder.jpg
+        image         : images/sponsors/state-farm.jpg
         description   : >
           650 Supersport Twins & Open Grand Prix Twins Sponsor
         # facebookURL   : https://www.facebook.com/
         # twitterURL    : https://twitter.com/
-        # websiteURL    : https://website.com/
+        websiteURL    : https://www.statefarm.com/agent/us/wa/bellevue/jimmy-boyle-d8nnb1ys000
 
       - name          : KFG Motorsports
         image         : https://kfgmotorsports.com/portals/kfgmotorsports/skins/kfgmotorsports-fury//images/kfg-logo.png
         description   : >
           600 Supersport & 600 Superbike Sponsor
-        # facebookURL   : https://www.facebook.com/
+        facebookURL   : https://www.facebook.com/kfgmotorsports
         # twitterURL    : https://twitter.com/
         websiteURL    :  https://kfgmotorsports.com/
 
@@ -99,20 +100,20 @@ allSponsors:
         image         : https://www.motoshippers.com/wp-content/uploads/2020/03/MotoShippers_Logo.png
         description   : >
           Middleweight Early GP Sponsor
-        # facebookURL   : https://www.facebook.com/
+        facebookURL   : https://www.facebook.com/motoshippers
         # twitterURL    : https://twitter.com/
         websiteURL    : https://www.motoshippers.com/
 
       - name          : 2Fast Track Days
-        image         : http://www.2-fast.org/wp-content/themes/2fast/images/blank.gif
+        image         : images/sponsors/2fast.jpg
         description   : >
           Novice Class Sponsor
-        # facebookURL   : https://www.facebook.com/
+        facebookURL   : https://www.facebook.com/2FastLLC
         # twitterURL    : https://twitter.com/
         websiteURL    : http://www.2-fast.org/
       
       - name          : CMS Logistics
-        image         : http://cmslogisticsinc.com/wp-content/uploads/2020/01/cms-logo.png
+        image         : images/sponsors/cms-logo.png
         description   : >
           Formula Forty Sponsor
         # facebookURL   : https://www.facebook.com/
@@ -120,15 +121,15 @@ allSponsors:
         websiteURL    : http://cmslogisticsinc.com/
 
       - name          : Superbike Underground
-        image         : http://superbikeunderground.com/images/logotype-u146.png?crc=4132025614
+        image         : images/sponsors/superbike-underground.png
         description   : >
           450 Superbike Sponsor
-        # facebookURL   : https://www.facebook.com/
+        facebookURL   : https://www.facebook.com/SBKUNDGRacing
         # twitterURL    : https://twitter.com/
         websiteURL    : http://superbikeunderground.com/
       
       - name          : Pirelli
-        image         : https://d2snyq93qb0udd.cloudfront.net/prod/logo-pirelli2x.jpg
+        image         : images/sponsors/pirelli.png
         description   : >
           Open Supersport & Open Superbike Sponsor
         # facebookURL   : https://www.facebook.com/
@@ -144,14 +145,14 @@ allSponsors:
         # websiteURL    : https://website.com/
       
       - name          : Triumph of Seattle
-      # image         : images/sponsors/sponsor-placeholder.jpg
+        image         : images/sponsors/triumph-of-seattle.png
         description   : >
           Open Sportsman Sponsor
-        # facebookURL   : https://www.facebook.com/
+        facebookURL   : https://www.facebook.com/triumphofseattle
         # twitterURL    : https://twitter.com/
-        # websiteURL    : https://website.com/
+        websiteURL    : https://www.triumphofseattle.com/
       
-      - name          : Track side support services
+      - name          : Trackside Support Services
         # image         : images/sponsors/sponsor-placeholder.jpg
         description   : >
           600 Sportsman Sponsor
@@ -168,20 +169,20 @@ allSponsors:
         # websiteURL    : https://website.com/
       
       - name          : Larry B's
-        # image         : images/sponsors/sponsor-placeholder.jpg
+        image         : images/sponsors/larryb.png
         description   : >
           Honda 160 Vintage Sponsor
         # facebookURL   : https://www.facebook.com/
         # twitterURL    : https://twitter.com/
-        # websiteURL    : https://website.com/
+        websiteURL    : https://fostertruck.com/
       
-      - name          : Lubricants Solutions LLC
-        # image         : images/sponsors/sponsor-placeholder.jpg
+      - name          : Lubricant Solutions LLC
+        image         : images/sponsors/lubricant-solutions.jpg
         description   : >
           250, 500, 750, Lightweight Superbike Vintage Sponsor
-        # facebookURL   : https://www.facebook.com/
+        facebookURL   : https://www.facebook.com/lubricantsolutionsllc/
         # twitterURL    : https://twitter.com/
-        # websiteURL    : https://website.com/
+        websiteURL    : https://lubricantsolutionsllc.com/
 
       # Available to Sponsor?: 600 Classic Superbike
     
