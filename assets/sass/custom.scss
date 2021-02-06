@@ -263,13 +263,16 @@ $wmmra-dark-red: #b1041d;
 }
 
 .supporter-splash {
+  width: 100%;
+
   .supporter-block {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
     width: 150px;
     height: 150px;
+    margin: 1.5rem;
 
     img {
       max-width: 150px;
@@ -287,6 +290,17 @@ $wmmra-dark-red: #b1041d;
     }
   }
 }
+
+.all-supporters-wrapper {
+  // display: grid;
+  // grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  // grid-gap: 1.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
 
 // contacts
 .contact-table {

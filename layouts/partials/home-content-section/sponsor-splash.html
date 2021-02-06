@@ -9,7 +9,7 @@
 
   <div class="supporter-splash">
     {{ with $sponsorData }}
-      <div>
+      <div class="title-supporters-wrapper">
         <h2>Title Sponsor</h2>
         {{ range .titleSponsor }}
           <div>
@@ -25,7 +25,7 @@
         {{ end }}
       </div>
 
-      <div>
+      <div class="all-supporters-wrapper">
         {{ range $sponsorData.allSponsors }}
           {{ range where .sponsors ".name" "not in" $uniqueSponsors }}
             {{ $uniqueSponsors = $uniqueSponsors | append .name }}
