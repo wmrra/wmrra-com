@@ -66,6 +66,15 @@ $mobile-breakpoint: 768px;
   background-color: #8f0c00; // dark red
   color: #fff;
   box-shadow: 0 8px 8px -5px rgba(0, 0, 0, 0.3);
+
+  a, a:visited, a:active, a:focus {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #CCC;
+    text-decoration: none;
+  }
 }
 
 @media screen and (max-width: $mobile-breakpoint) {
