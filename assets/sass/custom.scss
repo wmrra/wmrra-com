@@ -262,6 +262,32 @@ $wmmra-dark-red: #b1041d;
   }
 }
 
+.supporter-splash {
+  .supporter-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 150px;
+    height: 150px;
+
+    img {
+      max-width: 150px;
+      max-height: 150px;
+    }
+
+    &.title-supporter {
+      width: 250px;
+      height: 250px;
+  
+      img {
+        max-width: 250px;
+        max-height: 250px;
+      }
+    }
+  }
+}
+
 // contacts
 .contact-table {
   table {
