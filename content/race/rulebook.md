@@ -10,7 +10,7 @@ description: "Rulebook"
 
 As a racer, it’s your responsibility to know the rules, read the rule book!
 
-[2020 WMRRA Rulebook](/pdfs/rulebook/2020WMRRARuleBook.pdf)
+[2021 WMRRA Rulebook](/pdfs/rulebook/2021WMRRARuleBook.pdf)
 
 # Referee Rulings
 
