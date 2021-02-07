@@ -6,13 +6,16 @@ subtitle: Thanks to all of our sponsors for their generous support of WMRRA
 titleSponsor:
   - title: Title Sponsor
     sponsors:
-      - name          : Flying Bulldog Racing
-        image         : images/sponsors/flying-bulldog.jpg
+      - name          : Triumph of Seattle
+        image         : images/sponsors/triumph-of-seattle.png
         description   : >
-          Flying Bulldog Racing
-        # facebookURL   : https://www.facebook.com/
+          Triumph of Seattle is the premier destination for Triumph Motorcycles
+          in the PNW. We are Washington's largest Triumph motorcycle dealer.
+          You will also find a nice selection of Vespa, Piaggio and Royal
+          Enfield as well as electric motorcycles from ZERO.
+        facebookURL   : https://www.facebook.com/triumphofseattle
         # twitterURL    : https://twitter.com/
-        # websiteURL    : https://website.com/
+        websiteURL    : https://www.triumphofseattle.com/
 
 allSponsors:
   - title: Formula Ultra Sponsor
