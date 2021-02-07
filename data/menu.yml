@@ -7,6 +7,8 @@ menu:
         link: https://racehero.io/orgs/wmrra-official
       - name: Rulebook
         link: /race/rulebook
+      - name: Schedule
+        link: /race/schedule
   - name: Support
     link: /support
     children: 
