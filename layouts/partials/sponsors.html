@@ -2,7 +2,8 @@
 
 {{ with $data.sponsors }}
     {{ if .enable }}
-    {{ range .allSponsors }}
+    {{ $sponsors := .titleSponsor | append .allSponsors }}
+    {{ range $sponsors }}
         {{ "<!-- sponsor level -->" | safeHTML }}
         <section class="sponsor-level section bg-gray" id="sponsor-level">
             <div class="container">
