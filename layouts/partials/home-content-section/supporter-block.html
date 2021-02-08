@@ -1,0 +1,33 @@
+{{/* partial args: */}}
+{{/* context: the sponsor being rendered */}}
+{{/* isTitleSponsor: whether or not the sponsor is a title sponsor */}}
+
+{{ $url := "" }}
+{{ $supporterClass := "" }}
+
+{{ if .context.websiteURL }}
+  {{ $url = .context.websiteURL }}
+{{ else if .context.facebookURL }}
+  {{ $url = .context.facebookURL }}
+{{ else if .context.twitterURL }}
+  {{ $url = .context.twitterURL}}
+{{ end }}
+
+{{ if .isTitleSponsor }}
+  {{ $supporterClass = "supporter-block title-supporter" }}
+{{ else }}
+  {{ $supporterClass = "supporter-block" }}
+{{ end }}
+
+<div data-ctxt="{{.context}}" class="supporter-block-wrapper">
+  {{ if $url }}
+    <a class="{{ $supporterClass }}" href="{{ $url | absURL }}">
+      {{ partial "home-content-section/supporter-block-image" (dict "context" .context) }}
+    </a>
+  {{ else }}
+    <div class="{{ $supporterClass }}">
+      {{ partial "home-content-section/supporter-block-image" (dict "context" .context) }}
+    </div>
+  {{ end }}
+</a>
+</div>  

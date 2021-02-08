@@ -1,0 +1,10 @@
+{{/* partial args: */}}
+{{/* context: the sponsor being rendered */}}
+
+{{ if .context.image }}
+  <img src="{{ .context.image | absURL }}"  alt="{{ .context.name }}" />
+{{ else }}
+  <div class="supporter-placeholder">
+    <div>{{ .context.name }}</div>
+  </div>
+{{ end }}
