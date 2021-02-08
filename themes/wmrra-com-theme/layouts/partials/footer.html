@@ -1,3 +1,17 @@
+{{ $whatYearIsIt := time.Now.Year }}
+{{ $omrraLogo:= "images/OMRRA-logo.png" }}
+<div class="footer">
+  <div class="footer-links">
+    <a href="https://www.facebook.com/WMRRA">
+      <i class="material-icons md-36">facebook</i>
+    </a>
+    <a href="https://www.omrra.com">
+      <img class="omrra-logo" src="{{ $omrraLogo | absURL }}" alt="OMRRA - Oregon Motorcycle Road Racing Association" />
+    </a>
+  </div>
+  <div class="copyright">©{{ $whatYearIsIt }} WMRRA</div>
+</div>
+
 {{ "<!-- Essential Scripts -->" | safeHTML }}
 
 {{ "<!-- jQuery -->" | safeHTML }}
