@@ -5,6 +5,8 @@ menu:
     children:
       - name: Race Results and Live Timing
         link: https://racehero.io/orgs/wmrra-official
+      - name: Register to Race
+        link: /race/rulebook
       - name: Rulebook
         link: /race/rulebook
       - name: Schedule
@@ -21,9 +23,14 @@ menu:
   - name: Resources
     link: /resources
     children: 
+      - name: Schedule
+        link: /race/schedule
+      - name: Rulebook
+        link: /race/rulebook
       - name: Race Circuits
         link: /resources/tracks
-
+      - name: Register to Race
+        link: /race/register
   - name: Contact
     link: /contact
     children: 
