@@ -2,7 +2,7 @@
 {{ $uniqueSponsors := slice }}
 
 
-<div class="home-content-section-wrapper">
+<div class="home-content-section-wrapper supporters">
   <div class="home-content-section-header">
     <h1>Thank you to our sponsors!</h1>
   </div>
@@ -15,11 +15,7 @@
           <div>
             {{ range .sponsors }}
               {{ $uniqueSponsors = $uniqueSponsors | append .name }}
-              <div class="supporter-block-wrapper">
-                <a class="supporter-block title-supporter" href="{{ .websiteUrl }}">
-                  <img src="{{.image | absURL }}"  alt="{{ .name}}" />
-                </a>
-              </div>  
+              {{ partial "home-content-section/supporter-block" (dict "context" . "isTitleSponsor" true) }}  
             {{ end }}
           </div>
         {{ end }}
@@ -29,16 +25,7 @@
         {{ range $sponsorData.allSponsors }}
           {{ range where .sponsors ".name" "not in" $uniqueSponsors }}
             {{ $uniqueSponsors = $uniqueSponsors | append .name }}
-            <div class="supporter-block">
-              <a class="supporter-block" href="{{ .websiteUrl }}">
-                {{ if .image }}
-                  <img src="{{.image | absURL }}"  alt="{{ .name}}" />
-                {{ else }}
-                  <i class="material-icons">two_wheeler</i>
-                  <div>{{ .name }}</div>
-                {{ end }}
-              </a>
-            </div>   
+            {{ partial "home-content-section/supporter-block" (dict "context" .) }}   
           {{ end }}
         {{ end }}
       {{ end }}

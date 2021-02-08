@@ -100,12 +100,17 @@ $wmmra-dark-red: #b1041d;
   grid-gap: 8rem;
   justify-items: center;
   width: 100%;
+
+  &.supporters {
+    grid-gap: 4rem;
+  }
 }
 
 .home-content-section-header {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 
   .logo {
     height: 10rem;
@@ -263,7 +268,7 @@ $wmmra-dark-red: #b1041d;
 }
 
 .supporter-splash {
-  width: 100%;
+  display: grid;
 
   .supporter-block {
     display: flex;
@@ -272,7 +277,49 @@ $wmmra-dark-red: #b1041d;
     align-items: center;
     width: 150px;
     height: 150px;
-    margin: 1.5rem;
+    margin: 2rem;
+
+    .supporter-placeholder {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 2rem;
+
+      &::after {
+        content: "two_wheeler";
+        position: absolute;
+        font-family: 'Material Icons';
+        font-size: 180px;
+        color: $wmmra-dark-red;
+        opacity: 20%;
+        -webkit-font-feature-settings: 'liga' 1;
+        -moz-font-feature-settings: 'liga' 1;
+        font-feature-settings: 'liga' 1;
+      }
+    }
+
+    &:hover {
+      
+      .supporter-placeholder {
+        font-size: 2.1rem;
+        //white-space: nowrap;
+      }
+
+
+      img {
+        max-width: 160px;
+        max-height: 160px;
+      }
+
+      &.title-supporter {
+        img {
+          max-width: 260px;
+          max-height: 260px;
+        }
+      }
+    }
 
     img {
       max-width: 150px;
@@ -291,16 +338,29 @@ $wmmra-dark-red: #b1041d;
   }
 }
 
+.title-supporters-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid $wmmra-dark-red;
+
+  h2 {
+    margin: 0;
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
 .all-supporters-wrapper {
-  // display: grid;
-  // grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  // grid-gap: 1.5rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
+  padding-top: 4rem;
 }
-
 
 // contacts
 .contact-table {
