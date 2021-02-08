@@ -19,7 +19,6 @@ $wmmra-dark-red: #b1041d; // TODO: make a vars file
 .header-menu-mobile {
   // will display <= mobile-breakpoint
   display: none;
-  cursor: pointer;
 }
 
 .header-menu-mobile-content {
@@ -40,13 +39,6 @@ $wmmra-dark-red: #b1041d; // TODO: make a vars file
   width: 95px;
   cursor: pointer;
 
-  .header-menu-item-label {
-    a, a:visited, a:hover, a:active, a:focus {
-        color: #333;
-        text-decoration: none;
-    }
-  }
-
   &:hover {
     .header-menu-item-label {
       margin-bottom: -4px;
@@ -56,25 +48,52 @@ $wmmra-dark-red: #b1041d; // TODO: make a vars file
   }
 }
 
+.header-menu-item-label {
+  position: relative;
+
+  a,
+  a:visited, 
+  a:hover, 
+  a:active, 
+  a:focus {
+    color: #333;
+    text-decoration: none;
+  }
+}
+
 .header-menu-item-submenu {
   display: none;
   position: absolute;
-  left: 0;
-  top: 65px;
+  left: -10px;
+  top: 45px;
   z-index: 100;
-  width: 100%;
+  width: 250px;
   padding: 15px;
   background-color: $wmmra-dark-red;
   color: #fff;
   box-shadow: 0 8px 8px -5px rgba(0, 0, 0, 0.3);
 
-  a, a:visited, a:active, a:focus {
-    color: white;
-    text-decoration: none;
-  }
-  a:hover {
-    color: #CCC;
-    text-decoration: none;
+  .submenu-item-wrapper {
+    margin-bottom: 1rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+
+      &:visited {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      &:hover {
+        color: #ccc;
+        text-decoration: none;
+      }
+    }
   }
 }
 

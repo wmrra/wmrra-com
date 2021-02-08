@@ -11,14 +11,16 @@
 {{ range $.Site.Data.menu.menu }}
 
 <div class="header-menu-item">
-  <div class="header-menu-item-label"><a href="{{.link}}">{{.name}}</a></div>
-  <div class="header-menu-item-submenu">
-    {{ range .children }}
-      <div><a href="{{.link}}">{{.name}}</a></div>
-    {{end}}
+  <div class="header-menu-item-label">
+    <a href="{{.link}}">{{.name}}</a>
+    <div class="header-menu-item-submenu">
+      {{ range .children }}
+        <div class="submenu-item-wrapper">
+          <a href="{{.link}}">{{.name}}</a>
+        </div>
+      {{end}}
+    </div>  
   </div>
- 
-
 </div>
 
 {{ end }}
