@@ -86,3 +86,33 @@ body {
   margin: 10px;
   border: 1px solid #333;
 }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: $wmmra-dark-red;
+  color: #fff;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
+
+  .omrra-logo {
+    height: 40px;
+  }
+
+  a {
+    color: #fff;
+    
+    &:hover, &:visited {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
