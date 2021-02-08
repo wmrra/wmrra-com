@@ -7,9 +7,3 @@ theme: wmrra-com-theme
 
 params:
   dateFormat: "January 1, 2021"
-
-
-deployment:
-  targets:
-    name: gcs
-    url: gs://wmrra
