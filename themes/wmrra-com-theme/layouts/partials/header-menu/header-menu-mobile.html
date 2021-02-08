@@ -1,6 +1,16 @@
+<div class="header-menu-mobile-overlay hidden"></div>
 <div class="header-menu-mobile">
-  <i class="material-icons md-36">menu</i>
-  <div class="header-menu-mobile-content">
-    {{ partial "header-menu/header-menu-links.html" . }}
-  </div>
+  <i class="menu-icon material-icons md-36">menu</i>
+  <i class="menu-close-icon material-icons md-36">close</i>
+    <div class="header-menu-mobile-content main">
+      {{ range $.Site.Data.menu.menu }}
+        <div class="mobile-main-menu-link">
+          {{.name}}
+        </div>
+      {{ end }}
+    </div>
+
+    {{ range $.Site.Data.menu.menu }}
+      {{ partial "header-menu/header-menu-mobile-submenu" . }}
+    {{ end }}
 </div>

@@ -53,6 +53,25 @@ function showSubmenu(submenu) {
   menu.show();
 }
 
+function activateMobileMenu() {
+  $(".header-menu-mobile").children(".menu-icon").click(function() {
+    $(this).hide();
+    $(this).siblings(".menu-close-icon").show();
+    $(".header-menu-mobile-overlay").removeClass("hidden");
+    $("html, body").addClass("menu-open");
+    $(this).siblings(".header-menu-mobile-content.main").show();
+  })
+
+  $(".header-menu-mobile").children(".menu-close-icon").click(function() {
+    $(this).hide();
+    $(this).siblings(".menu-icon").show();
+    $(this).siblings(".header-menu-mobile-content").hide();
+    $("html, body").removeClass("menu-open");
+    $(".header-menu-mobile-overlay").addClass("hidden");
+  })
+}
+
 $(document).ready(function() {
   activateHeaderMenu();
+  activateMobileMenu();
 });
