@@ -181,6 +181,14 @@ $wmmra-dark-red: #b1041d;
       transition: background-color 1s linear;
     }
 
+    &:hover,
+    &:visited {
+      .overlay-text  {
+        color: #fff;
+      }
+      text-decoration: none;
+    }
+
     &:hover {  
       background-size: auto 400px;
 
