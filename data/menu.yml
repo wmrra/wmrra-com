@@ -18,6 +18,12 @@ menu:
         link: /spectate
       - name: Sponsor
         link: /sponsor
+  - name: Resources
+    link: /resources
+    children: 
+      - name: Race Circuits
+        link: /resources/tracks
+
   - name: Contact
     link: /contact
     children: 
