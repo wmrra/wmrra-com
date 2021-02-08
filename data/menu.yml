@@ -11,6 +11,7 @@ menu:
         link: /race/rulebook
       - name: Schedule
         link: /race/schedule
+
   - name: Support
     link: /support
     children: 
@@ -20,6 +21,7 @@ menu:
         link: /spectate
       - name: Sponsor
         link: /sponsor
+
   - name: Resources
     link: /resources
     children: 
@@ -28,9 +30,8 @@ menu:
       - name: Rulebook
         link: /race/rulebook
       - name: Race Circuits
-        link: /resources/tracks
-      - name: Register to Race
-        link: /race/register
+        link: /resources/circuits
+    
   - name: Contact
     link: /contact
     children: 
