@@ -1,0 +1,9 @@
+{{/* partial args: */}}
+{{/* .: Site.Data.menu.menu */}}
+
+<div class="header-menu-mobile-content submenu {{ lower .name }}">
+  <a href="{{ .link }}">{{ .name }}</a>
+  {{ range .children }}
+    <a href="{{ .link }}">{{ .name }}</a>
+  {{ end }}
+</div>

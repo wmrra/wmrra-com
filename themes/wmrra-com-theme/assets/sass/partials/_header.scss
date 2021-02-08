@@ -16,13 +16,53 @@ $wmmra-dark-red: #b1041d; // TODO: make a vars file
   width: 150px;
 }
 
+.header-menu-mobile-overlay {
+  position: fixed;
+  top: 65px;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.6);
+  overflow: hidden;
+
+  .hidden {
+    display: none;
+  }
+}
+
 .header-menu-mobile {
   // will display <= mobile-breakpoint
   display: none;
+  position: relative;
+
+  i {
+    cursor: pointer;
+  }
+
+  .menu-close-icon {
+    display: none;
+  }
 }
 
 .header-menu-mobile-content {
   display: none;
+  position: absolute;
+  top: 50px;
+  z-index: 100;
+
+  &.main {
+    background-color: $wmmra-dark-red;
+    color: #fff;
+  }
+
+  &.submenu {
+    color: #ccc;
+
+    a {
+      color: #ccc;
+    }
+  }
 }
 
 .header-menu {

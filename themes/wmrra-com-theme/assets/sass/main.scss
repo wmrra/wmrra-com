@@ -2,6 +2,12 @@
 
 $wmmra-dark-red: #b1041d;
 
+html,
+body {
+  &.menu-open {
+    overflow: hidden;
+  }
+}
 
 body {
   font-family: "Fjalla One", sans-serif;
@@ -17,6 +23,7 @@ body {
   background-color: $wmmra-dark-red;
   color: #fff;
   cursor: pointer;
+
   &:hover {
     filter: brightness(120%);
   }
