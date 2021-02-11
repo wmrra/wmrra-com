@@ -2,9 +2,9 @@
 <div class="header-menu-mobile">
   <i class="menu-icon material-icons md-36">menu</i>
   <i class="menu-close-icon material-icons md-36">close</i>
-    <div class="header-menu-mobile-content main">
+    <div class="header-menu-mobile-content main hidden">
       {{ range $.Site.Data.menu.menu }}
-        <div class="mobile-main-menu-link">
+        <div class="mobile-menu-link main">
           {{.name}}
         </div>
       {{ end }}

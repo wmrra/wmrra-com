@@ -1,7 +1,6 @@
 function displayHeroContent() {
   var blockToShow;
   var heroBlocks = $(".hero-announcement-content-block");
-  console.log(heroBlocks)
 
   for (var block of heroBlocks) {
     if (shouldShowBlock(block)) {
