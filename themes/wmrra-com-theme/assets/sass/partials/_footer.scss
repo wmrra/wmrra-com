@@ -1,0 +1,29 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: $wmmra-dark-red;
+  color: $white;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
+
+  .omrra-logo {
+    height: 4rem;
+  }
+
+  a {
+    color: $white;
+    
+    &:hover, &:visited {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}

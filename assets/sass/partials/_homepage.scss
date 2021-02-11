@@ -1,0 +1,298 @@
+.hero {
+  &::after {
+    background-image: url("../images/finger_guns.jpeg");
+  }
+}
+
+// all hero announcement content will start hidden
+// hero.js will decide what to display
+// and these fancy styles will make it slide/fade in
+.hero-announcement-content-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  opacity: 0;
+
+  &.the-chosen-one {
+    transform: translateX(200%);
+    animation: fadeIn 1.2s ease-in forwards, slideIn 1s ease-out forwards;
+
+    @keyframes slideIn {
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.home-content-section {
+  display: flex;
+  justify-content: center;
+  padding: 6rem 2rem;
+
+  &:nth-child(even) {
+    background-color: $wmmra-dark-red; // dark red
+    color: $white;
+  }
+}
+
+.home-content-section-wrapper {
+  display: grid;
+  grid-template-rows: 10rem 1fr;
+  grid-gap: 8rem;
+  justify-items: center;
+  width: 100%;
+
+  &.supporters {
+    grid-gap: 4rem;
+  }
+}
+
+.home-content-section-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .logo {
+    height: 10rem;
+    margin-top: -1rem;
+  }
+    
+  h1 {
+    font-size: 7rem;
+    text-transform: uppercase;
+  }
+}
+
+.home-content-section-blocks {
+  // need to explicitly cancel out columns and shift to rows for responsivity
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  width: 100%;
+}
+
+.we-are-wmrra-block {
+    display: grid;
+    grid-template-rows: 300px 1fr;
+    grid-gap: 3rem;
+    justify-items: center;
+
+  .block-image {
+    @include flex-column-centered;
+    @include link-overrides($white);
+
+    position: relative;
+    height: 30rem;
+    width: 30rem;
+    background-size: auto 30rem;
+    background-position: center;
+    transition: background-size 3s;
+    cursor: pointer;
+
+    &.race {
+      background-image: url("../images/Race-with-WMRRA.jpg");
+    }
+
+    &.volunteer {
+      background-image: url("../images/Volunteers.jpg");
+    }
+
+    &.support {
+      background-image: url("../images/Taste-of-Racing.jpg");
+    }
+
+    .overlay-text {
+      z-index: 2;
+      color: $white;
+      text-transform: uppercase;
+      font-size: 4.5rem;
+      font-weight: bold;
+      letter-spacing: 0.4rem;
+      text-shadow: $text-shadow;
+    }
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 30rem;
+      width: 30rem;
+      background-color: rgba($medium-gray, 0.6);
+      transition: background-color 1s linear;
+    }
+
+    &:hover {  
+      background-size: auto 40rem;
+
+      &::after {
+        background-color: rgba($medium-gray, 0.2);
+      }
+    }
+  }
+
+  .block-text {
+    width: 30rem;
+    text-align: center;
+    font-size: 1.65rem;
+    line-height: 3rem;
+    color: $default-text-color;
+  }
+  
+}
+
+.latest-news-block {
+  @include flex-column-centered;
+  @include link-overrides($default-text-color);
+
+  padding: 2rem 1rem;
+  background-color: $white;
+  text-align: center;
+
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .date, 
+  .description {
+    font-size: 1.75rem;
+  }
+
+  .description {
+    display: flex;
+    align-items: center;
+    height: 7.5rem;
+  }
+
+  .read-more {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 1.75rem;
+  }
+
+  &:hover {
+    .read-more {
+      color: $wmmra-dark-red;
+
+      i {
+       @include bouncy-animation();
+      }
+    }
+  }
+}
+
+.all-news-link {
+  @include link-overrides($white);
+
+  display: flex;
+  align-items: center;
+  font-size: 2.75rem;
+  color: $white;
+  text-transform: uppercase;
+
+  i {
+    margin-top: -0.3rem;
+    margin-left: 0.5rem;
+  }
+
+  &:hover, 
+  &:visited {
+    i {
+      @include bouncy-animation();
+     }
+  }
+}
+
+.supporter-splash {
+  display: grid;
+
+  .supporter-block {
+    @include flex-column-centered;
+
+    width: 15rem;
+    height: 15rem;
+    margin: 2rem;
+
+    .supporter-placeholder {
+      @include flex-column-centered;
+
+      position: relative;
+      font-size: 2rem;
+
+      &::after {
+        @include pseudo-icon("two_wheeler");
+
+        position: absolute;
+        font-size: 18rem;
+        color: $wmmra-dark-red;
+        opacity: 20%;
+      }
+    }
+
+    &:hover {
+      .supporter-placeholder {
+        font-size: 2.1rem;
+      }
+
+
+      img {
+        max-width: 16rem;
+        max-height: 16rem;
+      }
+
+      &.title-supporter {
+        img {
+          max-width: 26rem;
+          max-height: 26rem;
+        }
+      }
+    }
+
+    img {
+      max-width: 15rem;
+      max-height: 15rem;
+    }
+
+    &.title-supporter {
+      width: 25rem;
+      height: 25rem;
+  
+      img {
+        max-width: 25rem;
+        max-height: 25rem;
+      }
+    }
+  }
+}
+
+.title-supporters-wrapper {
+  @include flex-column-centered;
+
+  padding-bottom: 2rem;
+  border-bottom: 0.2rem solid $wmmra-dark-red;
+
+  h2 {
+    margin: 0;
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+.all-supporters-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 4rem;
+}

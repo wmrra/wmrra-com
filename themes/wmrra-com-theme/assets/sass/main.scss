@@ -1,7 +1,12 @@
-@import "partials/material-icons";
-
+// global vars live out here (partials caused problems)
 $wmmra-dark-red: #b1041d;
+$white: #fff;
+$default-text-color: #333;
+$black: #000;
+$light-gray: #ccc;
+$default-box-shadow: 0 0.8rem 0.8rem -0.5rem rgba(0, 0, 0, 0.3);
 
+// base styles (body, content)
 // default font size to 10px so calculating rems is easier
 :root {
   font-size: 62.5%; // 0.625px == 1 rem
@@ -26,109 +31,15 @@ body {
   padding-top: 1.5rem;
 }
 
-.cta-button {
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  background-color: $wmmra-dark-red;
-  color: #fff;
-  cursor: pointer;
-
-  &:hover {
-    filter: brightness(120%);
-  }
-}
-
+@import "partials/media";
 @import "partials/header";
+@import "partials/hero";
+@import "partials/footer";
+@import "partials/material-icons";
 
-.hero {
-  height: 40rem;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 6.5rem;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1; 
-    height: 40rem;
-    background-size: cover;
-    opacity: 0.5;
-  }
-}
-
-.hero-content {
-  display: flex;
-  justify-content: flex-end;
-  height: 100%;
-}
-
-.hero-announcement-box {
-  width: 50%;
-  padding: 1.5rem;
-  background-color:rgba($wmmra-dark-red, 0.8);
-  color: #fff;
-}
-
-.hero-announcement-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  text-align: center;
-}
-
-.hero-announcement-text {
-  margin-bottom: 2rem;
-}
-
-.hero-announcement-button {
-  padding: 1rem;
-  border: 0.2rem solid #fff;
-  color: #fff;
-  font-size: 2rem;
-  box-shadow: 0 0.8rem 0.8rem -0.5rem rgba(0, 0, 0, 0.3);
-
-  &:hover {
-    margin-top: -0.2rem;
-    border-width: 0.3rem;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-}
-
+// TODO: make a partial for this
 .news-summary {
   margin: 1rem;
   border: 0.1rem solid #333;
 }
 
-.footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  background-color: $wmmra-dark-red;
-  color: #fff;
-}
-
-.footer-links {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
-  margin-bottom: 1rem;
-
-  .omrra-logo {
-    height: 4rem;
-  }
-
-  a {
-    color: #fff;
-    
-    &:hover, &:visited {
-      color: #fff;
-      text-decoration: none;
-    }
-  }
-}
