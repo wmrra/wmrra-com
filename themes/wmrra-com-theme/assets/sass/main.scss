@@ -3,8 +3,14 @@ $wmmra-dark-red: #b1041d;
 $white: #fff;
 $default-text-color: #333;
 $black: #000;
+$medium-gray: #817f82;
 $light-gray: #ccc;
+$extra-light-gray: #fcfcfc;
 $default-box-shadow: 0 0.8rem 0.8rem -0.5rem rgba(0, 0, 0, 0.3);
+
+// VIP partials
+@import "partials/media";
+@import "partials/mixins";
 
 // base styles (body, content)
 // default font size to 10px so calculating rems is easier
@@ -20,6 +26,10 @@ html,
 body {
   &.menu-open {
     overflow: hidden;
+
+    @include media-min($mobile-breakpoint) {
+      overflow: auto;
+    }
   }
 }
 
@@ -31,7 +41,6 @@ body {
   padding-top: 1.5rem;
 }
 
-@import "partials/media";
 @import "partials/header";
 @import "partials/hero";
 @import "partials/footer";

@@ -1,8 +1,8 @@
 {{/* partial args: */}}
 {{/* .: Site.Data.menu.menu */}}
 
-<div class="header-menu-mobile-content submenu {{ lower .name }}">
-  <a href="{{ .link }}">{{ .name }}</a>
+<div class="header-menu-mobile-content submenu hidden {{ lower .name }}">
+  <div class="go_back">Back</div>
   {{ range .children }}
     <a href="{{ .link }}">{{ .name }}</a>
   {{ end }}

@@ -1,0 +1,29 @@
+@mixin pseudo-icon($icon-name) {
+  content: $icon-name;
+  font-family: 'Material Icons';
+  -webkit-font-feature-settings: 'liga' 1;
+  -moz-font-feature-settings: 'liga' 1;
+  font-feature-settings: 'liga' 1;
+}
+
+@mixin link-overrides($color, $hover: "") {
+  $hover-color: $hover;
+
+  @if str-length($hover) == 0 {
+    $hover-color: $color;
+  }
+
+  color: $color;
+  text-decoration: none;
+
+  &:active,
+  &:focus {
+    color: $color;
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: $hover-color;
+    text-decoration: none;
+  }
+}
