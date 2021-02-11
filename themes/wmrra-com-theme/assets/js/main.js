@@ -24,7 +24,7 @@ function hideSubmenuIfInactive(submenu) {
   submenuTimeout = setTimeout(function() {
     if(!submenuActive) {
       $(submenu).hide();
-      $(submenu).css("left", "-10px");
+      $(submenu).css("left", "-0.5rem");
     }
   }, 500);
 }
@@ -46,8 +46,8 @@ function showSubmenu(submenu) {
   var menuRight = menuLeft + menuWidth;
 
   if (menuRight > windowWidth) {
-    var newLeft = ((menuRight - windowWidth)  * -1) - 15;
-    menu.css("left", `${newLeft}px`);
+    var newLeft = (((menuRight - windowWidth)  * -1) - 15) / 10;
+    menu.css("left", `${newLeft}rem`);
   }
 
   menu.show();

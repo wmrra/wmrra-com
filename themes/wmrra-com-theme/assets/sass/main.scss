@@ -2,6 +2,15 @@
 
 $wmmra-dark-red: #b1041d;
 
+// default font size to 10px so calculating rems is easier
+:root {
+  font-size: 62.5%; // 0.625px == 1 rem
+}
+
+body {
+  font-size: 1rem; // 10px
+}
+
 html,
 body {
   &.menu-open {
@@ -32,17 +41,17 @@ body {
 @import "partials/header";
 
 .hero {
-  height: 400px;
+  height: 40rem;
 
   &::after {
     content: "";
     position: absolute;
-    top: 65px;
+    top: 6.5rem;
     left: 0;
     bottom: 0;
     right: 0;
     z-index: -1; 
-    height: 400px;
+    height: 40rem;
     background-size: cover;
     opacity: 0.5;
   }
@@ -75,14 +84,14 @@ body {
 
 .hero-announcement-button {
   padding: 1rem;
-  border: 2px solid #fff;
+  border: 0.2rem solid #fff;
   color: #fff;
-  font-size: 18px;
-  box-shadow: 0 8px 8px -5px rgba(0, 0, 0, 0.3);
+  font-size: 2rem;
+  box-shadow: 0 0.8rem 0.8rem -0.5rem rgba(0, 0, 0, 0.3);
 
   &:hover {
-    margin-top: -2px;
-    border-width: 3px;
+    margin-top: -0.2rem;
+    border-width: 0.3rem;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -90,8 +99,8 @@ body {
 }
 
 .news-summary {
-  margin: 10px;
-  border: 1px solid #333;
+  margin: 1rem;
+  border: 0.1rem solid #333;
 }
 
 .footer {
@@ -111,7 +120,7 @@ body {
   margin-bottom: 1rem;
 
   .omrra-logo {
-    height: 40px;
+    height: 4rem;
   }
 
   a {
