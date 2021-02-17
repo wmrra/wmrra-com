@@ -7,7 +7,7 @@
    <div class="home-content-section-blocks">
     {{ range $latestNews }}
       <a href="{{ .Permalink }}" class="latest-news-block">
-        <div class="date">{{ dateFormat "Jan 01, 2006" .Date }}</div>
+        <div class="date">{{ .Date | dateFormat "Jan 02, 2006" }}</div>
         <div class="title">{{ .Title }}</div>
         <div class="description">{{ .Description }}</div>
         <div class="read-more">
