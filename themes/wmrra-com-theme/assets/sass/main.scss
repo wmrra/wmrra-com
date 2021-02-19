@@ -8,6 +8,11 @@ $light-gray: #ccc;
 $extra-light-gray: #fcfcfc;
 $default-box-shadow: 0 0.8rem 0.8rem -0.5rem rgba(0, 0, 0, 0.3);
 
+// approx px as em values - https://stackoverflow.com/a/43131958
+$small-screen-breakpoint: 23rem; // 360px
+$medium-screen-breakpoint: 30em; // 480px
+$mobile-breakpoint: 48em; // 768px
+
 // VIP partials
 @import "partials/media";
 @import "partials/mixins";

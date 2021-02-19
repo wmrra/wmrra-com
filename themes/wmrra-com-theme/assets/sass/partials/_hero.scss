@@ -22,10 +22,14 @@
 }
 
 .hero-announcement-box {
-  width: 50%;
+  width: 100%;
   padding: 1.5rem;
   background-color:rgba($wmmra-dark-red, 0.8);
   color: $white;
+
+  @include media-min($medium-screen-breakpoint) {
+    width: 50%;
+  }
 }
 
 .hero-announcement-content {
