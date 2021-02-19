@@ -1,0 +1,100 @@
+
+contacts:
+  raceDay:
+    - position: 1st VP- Race Director *
+      name: 
+      phone: 
+      email: 
+    - position: 2nd VP- All Admin & Promotions *
+      name: 
+      phone: 
+      email: 
+    - position: Registrar
+      name: 
+      phone: 
+      email: 
+    - position: Rider's Rep *
+      name: 
+      phone: 
+      email: 
+    - position: Novice Rep *
+      name: 
+      phone: 
+      email: 
+    - position: Vintage SME
+      name: 
+      phone: 
+      email: 
+    - position: Referee *
+      name: 
+      phone: 
+      email: 
+    - position: Corner Captain
+      name: 
+      phone: 
+      email: 
+    - position: Chief Tech Inspector
+      name: 
+      phone: 
+      email: 
+    - position: Contingency Coordinator
+      name: 
+      phone: 
+      email: 
+    - position: Endurance Racing
+      name: 
+      phone: 
+      email: 
+    - position: Crash Truck & First Responder
+      name: 
+      phone: 
+      email: 
+
+  administration:
+    - position: President *
+      name: 
+      phone: 
+      email: 
+    - position: Past President
+      name: 
+      phone: 
+      email: 
+    - position: Secretary *
+      name: 
+      phone: 
+      email: 
+    - position: Charity Coordinator
+      name: 
+      phone: 
+      email: 
+    - position: Website Adminstration
+      name: Chris Wilcox
+      phone: 
+      email: wmrra-webmaster@crwilcox.com
+    - position: Website Adminstration
+      name: Anna Piechowski
+      phone: 
+      email: wmrra-webmaster@apiechowski.com
+    - position: Technology Consultant
+      name: 
+      phone: 
+      email: 
+  
+  board:
+    - position: Position 1
+      name: 
+      phone: 
+      email: 
+    - position: Position 2
+      name: 
+      phone: 
+      email: 
+    - position: Position 3
+      name: 
+      phone: 
+      email: 
+    - position: Position 4
+      name: 
+      phone: 
+      email: 
+    
