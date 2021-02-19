@@ -1,0 +1,72 @@
+{{ $data := index .Site.Data }}
+
+
+<div class="row">
+    <div class="contact-table">
+
+{{ with $data.contacts }}
+        <h4>Race Day Staff</h4>
+        <table>
+        <thead>
+        <tr>
+        <th>Position/Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{ range .contacts.raceDay }}
+            <tr>
+                <td>{{ .position }}<br /><span>{{.name }}</span></td>
+                <td><a href="tel:{{.phone}}">{{.phone}}</a></td>
+                <td><a href="mailto:{{.email}}">{{.email}}</a></td>
+            </tr>
+        {{ end }}
+        {{ "<!-- end contacts.raceDay  -->" | safeHTML }}
+        </tbody></table>
+
+
+        <h4>WMRRA Administration</h4>
+        <table>
+        <thead>
+        <tr>
+        <th>Position/Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{ range .contacts.administration }}
+            <tr>
+                <td>{{ .position }}<br /><span>{{.name }}</span></td>
+                <td><a href="tel:{{.phone}}">{{.phone}}</a></td>
+                <td><a href="mailto:{{.email}}">{{.email}}</a></td>
+            </tr>
+        {{ end }}
+        {{ "<!-- end contacts.administration  -->" | safeHTML }}
+        </tbody></table>
+
+        
+        <h4>WMRRA Board of Directors</h4>
+        <table>
+        <thead>
+        <tr>
+        <th>Position/Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{ range .contacts.board }}
+            <tr>
+                <td>{{ .position }}<br /><span>{{.name }}</span></td>
+                <td><a href="tel:{{.phone}}">{{.phone}}</a></td>
+                <td><a href="mailto:{{.email}}">{{.email}}</a></td>
+            </tr>
+        {{ end }}
+        {{ "<!-- end contacts.board  -->" | safeHTML }}
+        </tbody></table>
+{{ end }}
+
+    </div>
+</div>
