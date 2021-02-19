@@ -10,6 +10,10 @@ menu:
         link: /race/rulebook
       - name: Schedule
         link: /race/schedule
+      - name: New Racers
+        link: /race/new-racer-information
+      - name: Documents and Forms
+        link: /resources/documents-and-forms
 
   - name: Support
     children: 
@@ -34,6 +38,8 @@ menu:
         link: /resources/taste-of-racing
       - name: WMRRA Official Photographer
         link: http://www.whoisdane.photography/WMRRA
+      - name: Documents and Forms
+        link: /resources/documents-and-forms
     
   - name: Contact
     children: 
