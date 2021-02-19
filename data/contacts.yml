@@ -1,11 +1,23 @@
 
 contacts:
   raceDay:
-    - position: 1st VP- Race Director *
+    - position: 1st VP - Race Director ☑
       name: 
       phone: 
       email: 
-    - position: 2nd VP- All Admin & Promotions *
+    - position: 2nd VP - Admin & Promotions ☑
+      name: 
+      phone: 
+      email: 
+    - position: Referee ☑
+      name: 
+      phone: 
+      email:
+    - position: Novice Rep ☑
+      name: 
+      phone: 
+      email: 
+    - position: Rider's Rep ☑
       name: 
       phone: 
       email: 
@@ -13,23 +25,11 @@ contacts:
       name: 
       phone: 
       email: 
-    - position: Rider's Rep *
-      name: 
-      phone: 
-      email: 
-    - position: Novice Rep *
-      name: 
-      phone: 
-      email: 
-    - position: Vintage SME
-      name: 
-      phone: 
-      email: 
-    - position: Referee *
-      name: 
-      phone: 
-      email: 
     - position: Corner Captain
+      name: 
+      phone: 
+      email: 
+    - position: Crash Truck & First Responder
       name: 
       phone: 
       email: 
@@ -45,13 +45,13 @@ contacts:
       name: 
       phone: 
       email: 
-    - position: Crash Truck & First Responder
+    - position: Vintage SME
       name: 
       phone: 
       email: 
 
   administration:
-    - position: President *
+    - position: President ☑
       name: 
       phone: 
       email: 
@@ -59,7 +59,7 @@ contacts:
       name: 
       phone: 
       email: 
-    - position: Secretary *
+    - position: Club Secretary ☑
       name: 
       phone: 
       email: 
@@ -75,25 +75,25 @@ contacts:
       name: Anna Piechowski
       phone: 
       email: wmrra-webmaster@apiechowski.com
-    - position: Technology Consultant
+    - position: Technical SME
       name: 
       phone: 
       email: 
   
   board:
-    - position: Position 1
+    - position: Position 1 ☑
       name: 
       phone: 
       email: 
-    - position: Position 2
+    - position: Position 2 ☑
       name: 
       phone: 
       email: 
-    - position: Position 3
+    - position: Position 3 ☑
       name: 
       phone: 
       email: 
-    - position: Position 4
+    - position: Position 4 ☑
       name: 
       phone: 
       email: 
