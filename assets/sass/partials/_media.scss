@@ -1,5 +1,3 @@
-$mobile-breakpoint: 48em; // 768px but in em - https://stackoverflow.com/a/43131958
-
 @mixin media-min($min-width) {
   @media screen and (min-width: $min-width) {
       @content;
