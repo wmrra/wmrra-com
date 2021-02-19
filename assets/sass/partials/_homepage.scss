@@ -246,7 +246,7 @@
   }
 
   @include media-min($large-screen-breakpoint) {
-    &:last-child {
+    &:nth-child(4) {
       display: none;
     }
   }
