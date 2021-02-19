@@ -1,7 +1,6 @@
 
 menu:
   - name: Race
-    link: /race
     children:
       - name: Race Results and Live Timing
         link: https://racehero.io/orgs/wmrra-official
@@ -13,7 +12,6 @@ menu:
         link: /race/schedule
 
   - name: Support
-    link: /support
     children: 
       - name: Volunteer
         link: /volunteer
@@ -25,7 +23,6 @@ menu:
         link: https://www.paypal.com/donate?token=Xe0xUCm7SA8GXVsn0Cf0YDQSFJbnaN_2mU6_fRFyYf5RHm8k6F5W2beysTUQoJQkSj17osR13DSp4u1X
 
   - name: Resources
-    link: /resources
     children: 
       - name: Schedule
         link: /race/schedule
@@ -39,7 +36,6 @@ menu:
         link: http://www.whoisdane.photography/WMRRA
     
   - name: Contact
-    link: /contact
     children: 
       - name: Contact
         link: /contact
