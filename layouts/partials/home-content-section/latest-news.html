@@ -1,10 +1,10 @@
-{{ $latestNews := ((where site.RegularPages.ByDate "Section" "news").Reverse | last 3) }}
+{{ $latestNews := ((where site.RegularPages.ByDate "Section" "news").Reverse | last 4) }}
 <div class="home-content-section-wrapper">
   <div class="home-content-section-header">
     <h1>Latest News</h1>
   </div>
 
-   <div class="home-content-section-blocks">
+   <div class="latest-news-blocks-wrapper">
     {{ range $latestNews }}
       <a href="{{ .Permalink }}" class="latest-news-block">
         <div class="date">{{ .Date | dateFormat "Jan 02, 2006" }}</div>
