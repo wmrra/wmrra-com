@@ -7,8 +7,9 @@ $text-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.5);
 
 // approx px as em values - https://stackoverflow.com/a/43131958
 $small-screen-breakpoint: 23rem; // 360px
-$medium-screen-breakpoint: 30rem; // 480px
+$medium-screen-breakpoint: 30em; // 480px
 $mobile-breakpoint: 48em; // 768px
+$large-screen-breakpoint: 81em; // 1300px
 
 @import "partials/mixins";
 @import "partials/media";
