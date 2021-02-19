@@ -37,8 +37,16 @@ body {
   font-family: "Fjalla One", sans-serif;
 }
 
-.page-content-wrapper {
-  padding-top: 1.5rem;
+p {
+  margin: 0 0 1.5rem;
+  line-height: 2.5rem;
+}
+
+.content-wrapper {
+  max-width: 103rem;
+  margin: auto;
+  padding: 2rem 1.5rem;
+  font-size: 1.6rem;
 }
 
 @import "partials/header";
