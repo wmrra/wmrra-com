@@ -61,6 +61,10 @@
   align-items: center;
   text-align: center;
 
+  @include media-max($mobile-breakpoint) {
+    flex-direction: column;
+  }
+
   .logo {
     height: 10rem;
     margin-top: -1rem;
@@ -72,12 +76,15 @@
   }
 }
 
-.home-content-section-blocks {
-  // need to explicitly cancel out columns and shift to rows for responsivity
+.we-are-wmrra-blocks-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 3rem;
   width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 0.5rem;
+
+  @include media-max(60rem) {
+    grid-gap: 4rem;
+  }
 }
 
 .we-are-wmrra-block {
@@ -85,6 +92,18 @@
     grid-template-rows: 30rem 1fr;
     grid-gap: 3rem;
     justify-items: center;
+
+  &.support {
+    grid-column: span 1;
+
+    @include media-min(42rem) {
+      grid-column: span 2;
+    }
+
+    @include media-min(60rem) {
+      grid-column: span 1;
+    }
+  }
 
   .block-image {
     @include flex-column-centered;
