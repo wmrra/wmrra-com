@@ -42,6 +42,8 @@ menu:
         link: /resources/documents-and-forms
       - name: Airfence
         link: /resources/airfence
+      - name: Purchase an Airlift Membership
+        link: https://www.uwmedicine.org/airliftnw/membership
     
   - name: Contact
     children: 
