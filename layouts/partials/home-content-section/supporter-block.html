@@ -21,7 +21,7 @@
 
 <div class="supporter-block-wrapper">
   {{ if $url }}
-    <a class="{{ $supporterClass }}" href="{{ $url | absURL }}">
+    <a class="{{ $supporterClass }}" href="{{ $url | absURL }}" target="_blank">
       {{ partial "home-content-section/supporter-block-image" (dict "context" .context) }}
     </a>
   {{ else }}
