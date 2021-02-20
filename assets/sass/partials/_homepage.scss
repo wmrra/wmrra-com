@@ -49,6 +49,11 @@
   grid-gap: 4rem;
   justify-items: center;
   width: 100%;
+  max-width: 160rem;
+
+  &.supporters {
+    width: auto;
+  }
 }
 
 .home-content-section-header {
@@ -69,8 +74,12 @@
   }
     
   h1 {
-    font-size: 7rem;
+    font-size: 6rem;
     text-transform: uppercase;
+
+    @include media-min($small-screen-breakpoint) {
+      font-size: 7rem;;
+    }
   }
 }
 
@@ -192,11 +201,11 @@
 .latest-news-blocks-wrapper {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
   grid-gap: 3rem;
 
   @include media-min($medium-screen-breakpoint) {
-    grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   }
 }
 
@@ -277,26 +286,43 @@
 .supporter-splash {
   display: grid;
 
+  .supporter-block-wrapper {
+    margin: 1rem;
+
+    @include media-min($medium-screen-breakpoint) {
+      margin: 2rem;
+    }
+  }
+
   .supporter-block {
     @include flex-column-centered;
 
-    width: 15rem;
-    height: 15rem;
-    margin: 2rem;
+    width: 12rem;
+    height: 12rem;
+
+    @include media-min($medium-screen-breakpoint) {
+      width: 15rem;
+      height: 15rem;
+    }
 
     .supporter-placeholder {
       @include flex-column-centered;
 
       position: relative;
       font-size: 2rem;
+      text-align: center;
 
       &::after {
         @include pseudo-icon("two_wheeler");
 
         position: absolute;
-        font-size: 18rem;
+        font-size: 14rem;
         color: $wmmra-dark-red;
         opacity: 20%;
+
+        @include media-min($medium-screen-breakpoint) {
+          font-size: 18rem;
+        }
       }
     }
 
@@ -307,8 +333,13 @@
 
 
       img {
-        max-width: 16rem;
-        max-height: 16rem;
+        max-width: 13rem;
+        max-height: 13rem;
+    
+        @include media-min($medium-screen-breakpoint) {
+          max-width: 16rem;
+          max-height: 16rem;
+        }
       }
 
       &.title-supporter {
@@ -320,8 +351,13 @@
     }
 
     img {
-      max-width: 15rem;
-      max-height: 15rem;
+      max-width: 12rem;
+      max-height: 12rem;
+  
+      @include media-min($medium-screen-breakpoint) {
+        max-width: 15rem;
+        max-height: 15rem;
+      }
     }
 
     &.title-supporter {
@@ -339,6 +375,7 @@
 .title-supporters-wrapper {
   @include flex-column-centered;
 
+  margin: 0 -2rem;
   padding-bottom: 2rem;
   border-bottom: 0.2rem solid $wmmra-dark-red;
 
@@ -355,5 +392,5 @@
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
