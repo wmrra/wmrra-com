@@ -12,6 +12,8 @@ $default-box-shadow: 0 0.8rem 0.8rem -0.5rem rgba(0, 0, 0, 0.3);
 $small-screen-breakpoint: 23rem; // 360px
 $medium-screen-breakpoint: 30em; // 480px
 $mobile-breakpoint: 48em; // 768px
+$large-screen-breakpoint: 81em; // 1300px
+$x-large-screen-breakpoint: 100em; // 1600px
 
 // VIP partials
 @import "partials/media";

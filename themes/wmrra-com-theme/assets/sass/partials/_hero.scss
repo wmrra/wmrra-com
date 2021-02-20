@@ -12,6 +12,14 @@
     height: 40rem;
     background-size: cover;
     opacity: 0.5;
+
+    @include media-min($x-large-screen-breakpoint) {
+      height: 60rem;
+    }
+  }
+
+  @include media-min($x-large-screen-breakpoint) {
+    height: 60rem;
   }
 }
 
