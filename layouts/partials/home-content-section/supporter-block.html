@@ -19,7 +19,7 @@
   {{ $supporterClass = "supporter-block" }}
 {{ end }}
 
-<div data-ctxt="{{.context}}" class="supporter-block-wrapper">
+<div class="supporter-block-wrapper">
   {{ if $url }}
     <a class="{{ $supporterClass }}" href="{{ $url | absURL }}">
       {{ partial "home-content-section/supporter-block-image" (dict "context" .context) }}
