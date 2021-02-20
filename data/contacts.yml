@@ -1,100 +1,221 @@
 
 contacts:
-  raceDay:
+  electedOfficials:
+    - position: President ☑
+      name: Cliff Griffin
+      phone: 206.450.2453
+      email: President@wmrra.com 
+
     - position: 1st VP - Race Director ☑
-      name: 
-      phone: 
-      email: 
-    - position: 2nd VP - Admin & Promotions ☑
-      name: 
-      phone: 
-      email: 
+      name: Colt Bristow
+      phone: 206.595.0635
+      email: 1stvp@wmrra.com
+
+    - position: 2nd VP - Marketing ☑
+      name: Zak Krenzer
+      phone: 931.241.9065 
+      email: 2ndvp@wmrra.com
+
+    - position: 3rd VP - Admin ☑
+      name: Danielle Campbell
+      phone: 253.592.8762
+      email: registration@wmrra.com
+
     - position: Referee ☑
-      name: 
+      name: CJ Hobbs
       phone: 
-      email:
+      email: Referee@wmrra.com
+
+    - position: Club Secretary ☑
+      name: Mallory Dobbs
+      phone: 360.280.4664
+      email: Secretary@wmrra.com
+
     - position: Novice Rep ☑
-      name: 
-      phone: 
-      email: 
+      name: Jason Pierce
+      phone: 425.315.5436
+      email: Novice.Rep@wmrra.com
+
     - position: Rider's Rep ☑
-      name: 
-      phone: 
-      email: 
-    - position: Registrar
-      name: 
-      phone: 
-      email: 
+      name: Derick Clary
+      phone: 253.230.7079
+      email: Riders.Rep@wmrra.com
+  
+  raceDay:
+    - position: Raceday Assistant
+      name: Joanne Maurin
+      phone:
+      email:
+
+    - position: Race Control
+      name: Russ Wieand
+      phone:
+      email: Race.control@wmrra.com
+
     - position: Corner Captain
-      name: 
-      phone: 
-      email: 
+      name: Craig Johnson
+      phone: 253.988.3508
+      email: Corner.captain@wmrra.
+
+    - position: Course Marshal
+      name: Chris Lafayette
+      phone:
+      email: Course.marshall@wmrra.com
+
     - position: Crash Truck & First Responder
-      name: 
+      name: Ric Clements
       phone: 
-      email: 
+      email: Crash@wmrra.com
+
     - position: Chief Tech Inspector
-      name: 
+      name: Jeremy Goddard
       phone: 
-      email: 
-    - position: Contingency Coordinator
-      name: 
-      phone: 
-      email: 
-    - position: Endurance Racing
-      name: 
-      phone: 
-      email: 
+      email: Tech.Inspector@wmrra.com
+
+    - position: Contingency/Sponsor Manager
+      name: Mallory Dobbs
+      phone: 360.280.4664
+      email: Contingency@wmrra.com
+
+    # - position: Announcer
+    #   name:
+    #   phone:
+    #   email:
+
+    - position: Head Scorer
+      name: Brandi Wieand
+      phone:
+      email: Scoring@wmrra.com
+
+    - position: Timing
+      name: Cherie River
+      phone:
+      email: Scoring@wmrra.com
+
+    # - position: Chaplain
+    #   name: 
+    #   phone: 
+    #   email: 
+
+    # - position: Track Cashier
+    #   name:
+    #   phone:
+    #   email: Cashier@wmrra.com
+
+    # - position: Air Fence Coordinator
+    #   name:
+    #   phone:
+    #   email: Airfence@wmrra.com
+
+    - position: Pit Gate
+      name: Katie Morris
+      phone:
+      email: Pit.gate@wmrra.com
+
+    - position: Starter
+      name: Elijah Knoll
+      phone:
+      email: Starters@wmrra.com
+
+    # - position: Pit Steward
+    #   name:
+    #   phone:
+    #   email:
+
+    - position: Emergency Assist Team
+      name: Tim O'Mahony
+      phone:
+      email:
+
+    # - position: Radios
+    #   name:
+    #   phone:
+    #   email:
+
+    # - position: Endurance Racing
+    #   name: 
+    #   phone: 
+    #   email: 
+
+    - position: Supersport SME
+      name: Phillip Melnyk
+      phone: 425.698.3548
+      email: Supersport.sme@wmrra.com
+
+    - position: Superbike SME
+      name: Phillip Melnyk
+      phone: 425.698.3548
+      email: Superbike.sme@wmrra.com
+
     - position: Vintage SME
-      name: 
-      phone: 
-      email: 
+      name: Stephen Phillips
+      phone: 603.203.5344
+      email: Vintage.sme@wmrra.com
 
   administration:
-    - position: President ☑
-      name: 
-      phone: 
-      email: 
     - position: Past President
-      name: 
+      name: Barry Wressel
       phone: 
-      email: 
-    - position: Club Secretary ☑
-      name: 
+      email: Past.President@wmrra.com
+
+    - position: Treasurer
+      name: Neil Heineman
       phone: 
-      email: 
-    - position: Charity Coordinator
-      name: 
-      phone: 
-      email: 
+      email: Treasurer@wmrra.com
+
+    - position: Marketing Manager
+      name: Zak Krenzer
+      phone: 931.241.9065
+      email: Promotions@wmrra.com
+
+    # - position: Marketing Specialist
+    #   name:
+    #   phone:
+    #   email:
+
+    # - position: Registrar
+    #   name: 
+    #   phone: 
+    #   email: 
+
+    - position: Rulebook Editor
+      name: Mallory Dobbs
+      phone: 360.280.4664
+      email: secretary@wmrra.com
+
+    # - position: Charity Coordinator
+    #   name: 
+    #   phone: 
+    #   email: 
+
     - position: Website Adminstration
       name: Chris Wilcox
       phone: 
       email: wmrra-webmaster@crwilcox.com
+
     - position: Website Adminstration
       name: Anna Piechowski
       phone: 
       email: wmrra-webmaster@apiechowski.com
-    - position: Technical SME
-      name: 
-      phone: 
-      email: 
   
   board:
     - position: Position 1 ☑
-      name: 
-      phone: 
+      name: Damon Wells
+      phone: 206.718.0450
       email: 
+
     - position: Position 2 ☑
-      name: 
-      phone: 
+      name: Mark DeGross
+      phone: 425.877.8776
       email: 
+
     - position: Position 3 ☑
-      name: 
-      phone: 
+      name: Donny Schultz
+      phone: 206.683.1307
       email: 
+
     - position: Position 4 ☑
-      name: 
-      phone: 
+      name: Colt Bristow
+      phone: 206.595.0635
       email: 
     

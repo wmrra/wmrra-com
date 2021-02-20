@@ -5,6 +5,26 @@
     <div class="contact-table">
 
 {{ with $data.contacts }}
+        <h4>Elected Officials</h4>
+        <table>
+        <thead>
+        <tr>
+        <th>Position/Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{ range .contacts.electedOfficials }}
+            <tr>
+                <td>{{ .position }}<br /><span>{{.name }}</span></td>
+                <td><a href="tel:{{.phone}}">{{.phone}}</a></td>
+                <td><a href="mailto:{{.email}}">{{.email}}</a></td>
+            </tr>
+        {{ end }}
+        {{ "<!-- end contacts.electedOfficals  -->" | safeHTML }}
+        </tbody></table>
+
         <h4>Race Day Staff</h4>
         <table>
         <thead>
@@ -26,7 +46,7 @@
         </tbody></table>
 
 
-        <h4>WMRRA Administration</h4>
+        <h4>Administration</h4>
         <table>
         <thead>
         <tr>
