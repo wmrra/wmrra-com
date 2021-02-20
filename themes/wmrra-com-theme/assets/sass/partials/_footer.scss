@@ -1,29 +1,35 @@
 .footer {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: column-reverse;
+  justify-content: space-between;
   align-items: center;
   padding: 2rem;
   background-color: $wmmra-dark-red;
   color: $white;
+  font-size: 1.2rem;
+
+  @include media-min($small-screen-breakpoint) {
+    flex-direction: row;
+  }
+
 }
 
 .footer-links {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
-  margin-bottom: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 4rem;
+  margin-bottom: 2rem;
+  font-size: 3rem;
 
-  .omrra-logo {
-    height: 4rem;
+  @include media-min($small-screen-breakpoint) {
+    margin-bottom: 0;
   }
 
   a {
-    color: $white;
-    
-    &:hover, &:visited {
-      color: $white;
-      text-decoration: none;
+    @include link-overrides($white);
+
+    &:hover {
+      transform: scale(1.1);
     }
   }
 }

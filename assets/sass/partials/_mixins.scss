@@ -45,14 +45,6 @@
   }
 }
 
-@mixin pseudo-icon($icon-name) {
-  content: $icon-name;
-  font-family: 'Material Icons';
-  -webkit-font-feature-settings: 'liga' 1;
-  -moz-font-feature-settings: 'liga' 1;
-  font-feature-settings: 'liga' 1;
-}
-
 @mixin flex-column-centered {
   display: flex;
   flex-direction: column;
@@ -80,4 +72,15 @@
     color: $hover-color;
     text-decoration: none;
   }
+}
+
+@mixin pseudo-icon($icon-unicode) {
+  content: $icon-unicode;
+  font-family: "Font Awesome 5 Free"; 
+  display: inline-block;
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
 }
