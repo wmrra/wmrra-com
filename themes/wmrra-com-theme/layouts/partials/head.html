@@ -18,8 +18,8 @@
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fjalla+One">
   {{ "<!-- bootstrap.min css -->" | safeHTML }}
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-  {{ "<!-- Material Icons -->" | safeHTML }}
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  {{ "<!-- FontAwesome -->" | safeHTML }}
+  <script src="https://kit.fontawesome.com/6b9daf9439.js" crossorigin="anonymous"></script>
   {{ "<!-- Main Stylesheet -->" | safeHTML }}
   {{ $sass := resources.Get "sass/main.scss" }}
   {{ $styles := $sass | resources.ToCSS }}

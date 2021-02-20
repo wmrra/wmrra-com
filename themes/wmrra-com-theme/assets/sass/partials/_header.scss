@@ -39,6 +39,7 @@
 
   i {
     cursor: pointer;
+    font-size: 3rem;
   }
 
   .menu-close-icon {
@@ -48,7 +49,7 @@
 
 .header-menu-mobile-content {
   position: absolute;
-  top: 5rem;
+  top: 4.7rem;
   right: -1.5rem;
   z-index: 100;
   display: flex;
@@ -78,10 +79,9 @@
       border-bottom: 0.1rem solid $light-gray;
 
       &::before {
-        @include pseudo-icon("double_arrow");
+        @include pseudo-icon("\f100");
         display: inline-block;
         margin-right: 1rem;
-        transform: rotate(180deg);
       }
     }
 
@@ -101,7 +101,7 @@
 
     &.main {
       &::after {
-        @include pseudo-icon("double_arrow");
+        @include pseudo-icon("\f101");
         margin-left: 1rem;
       }
     }

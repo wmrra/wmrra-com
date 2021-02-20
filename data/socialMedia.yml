@@ -1,0 +1,16 @@
+socialLinks:
+  - name: Facebook
+    link: https://www.facebook.com/WMRRA
+    icon: fab fa-facebook
+
+  - name: Twitter
+    link: https://twitter.com/wmrra
+    icon: fab fa-twitter
+  
+  - name: Twitch
+    link: https://www.twitch.tv/wmrra/
+    icon: fab fa-twitch
+  
+  - name: YouTube
+    link: https://www.youtube.com/channel/UCnG1-KQgvUo-o2uO9SA1rtQ
+    icon: fab fa-youtube

@@ -56,10 +56,13 @@ p {
   font-size: 1.6rem;
 }
 
+.sr-only {
+  visibility: hidden;
+}
+
 @import "partials/header";
 @import "partials/hero";
 @import "partials/footer";
-@import "partials/material-icons";
 
 // TODO: make a partial for this
 .news-summary {
