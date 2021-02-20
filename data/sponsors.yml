@@ -1,9 +1,4 @@
-enable  : true
-topTitle: Sponsors
-title   : Our Sponsors.
-subtitle: Thanks to all of our sponsors for their generous support of WMRRA
-
-titleSponsor:
+sponsorData:
   - title: Title Sponsor
     sponsors:
       - name          : Triumph of Seattle
@@ -17,7 +12,6 @@ titleSponsor:
         # twitterURL    : https://twitter.com/
         websiteURL    : https://www.triumphofseattle.com/
 
-allSponsors:
   - title: Formula Ultra Sponsor
     sponsors:
       - name          : Flying Bulldog Racing

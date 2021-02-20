@@ -1,36 +1,49 @@
-{{ $sponsorData := index .Site.Data.sponsors }}
+{{ $sponsorData := index .Site.Data.sponsors.sponsorData }}
+{{ $titleSponsors := slice }}
 {{ $uniqueSponsors := slice }}
+{{ $titleSponsorCount := 0 }}
 
+{{ with $sponsorData }}
+  {{/* Separate title sponsors from the rest */}}
+  {{ range . }}
+    {{ if eq .title "Title Sponsor" }}
+      {{ $titleSponsors = $titleSponsors | append .sponsors }}
+      {{ $titleSponsorCount = (len .sponsors) }}
+    {{ end }}
+  {{ end }}
 
-<div class="home-content-section-wrapper supporters">
-  <div class="home-content-section-header">
-    <h1>Thank you to our sponsors!</h1>
-  </div>
+  <div class="home-content-section-wrapper supporters">
+    <div class="home-content-section-header">
+      <h1>Thank you to our sponsors!</h1>
+    </div>
 
-  <div class="supporter-splash">
-    {{ with $sponsorData }}
-      <div class="title-supporters-wrapper">
-        <div class="title-supporter-ribbon">
-          <div class="ribbon-content">Title Sponsor</div>
-        </div>
-        {{ range .titleSponsor }}
-          <div>
-            {{ range .sponsors }}
-              {{ $uniqueSponsors = $uniqueSponsors | append .name }}
-              {{ partial "home-content-section/supporter-block" (dict "context" . "isTitleSponsor" true) }}  
-            {{ end }}
+    <div class="supporter-splash">
+      {{ if gt $titleSponsorCount 0 }}
+        {{ $ribbonText := "Title Sponsor" }}
+        {{ if gt $titleSponsorCount 1 }}
+          {{ $ribbonText = "Title Sponsors"}}
+        {{ end }}
+        <div class="title-supporters-wrapper">
+          <div class="title-supporter-ribbon">
+            <div class="ribbon-content">{{ $ribbonText }}</div>
           </div>
-        {{ end }}
-      </div>
-
-      <div class="all-supporters-wrapper">
-        {{ range $sponsorData.allSponsors }}
-          {{ range where .sponsors ".name" "not in" $uniqueSponsors }}
+          {{ range $titleSponsors }}
             {{ $uniqueSponsors = $uniqueSponsors | append .name }}
-            {{ partial "home-content-section/supporter-block" (dict "context" .) }}   
+            <div>
+              {{ partial "home-content-section/supporter-block" (dict "context" . "isTitleSponsor" true) }}  
+            </div>
           {{ end }}
-        {{ end }}
+        </div>
       {{ end }}
+
+        <div class="all-supporters-wrapper">
+          {{ range $sponsorData }}
+            {{ range where .sponsors ".name" "not in" $uniqueSponsors }}
+              {{ $uniqueSponsors = $uniqueSponsors | append .name }}
+              {{ partial "home-content-section/supporter-block" (dict "context" .) }}
+            {{ end }}
+          {{ end }}
+      </div>
     </div>
   </div>
-</div>
+{{ end }}
