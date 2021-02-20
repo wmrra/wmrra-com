@@ -176,6 +176,8 @@
 }
 
 .header-cta-button {
+  @include link-overrides($white);
+
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   background-color: $wmmra-dark-red;

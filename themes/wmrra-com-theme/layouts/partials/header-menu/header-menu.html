@@ -12,18 +12,20 @@
 
 <div class="header-menu-item">
   <div class="header-menu-item-label">
-    {{.name}}
+    {{ .name }}
     <div class="header-menu-item-submenu">
       {{ range .children }}
         <div class="submenu-item-wrapper">
-          <a href="{{.link}}">{{.name}}</a>
+          <a href="{{.link}}">{{ .name }}</a>
         </div>
-      {{end}}
+      {{ end }}
     </div>  
   </div>
 </div>
 
 {{ end }}
 
-<div class="header-cta-button">Join the Club</div>
+{{ with $.Site.Data.menu.ctaButton }}
+  <a href="{{ .link }}" class="header-cta-button">{{ .text }}</a>
+{{ end }}
 
