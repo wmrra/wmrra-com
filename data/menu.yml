@@ -1,3 +1,6 @@
+ctaButton:
+  text: Join the Club
+  link: /race/new-racer-information
 
 menu:
   - name: Race
