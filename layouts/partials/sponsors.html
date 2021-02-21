@@ -35,21 +35,21 @@
                                     <p>{{ .description }}</p>
                                     {{ "<!-- sponsor links -->" | safeHTML }}
                                     <ul class="list-inline">
-                                        {{ with .facebookURL }}
+                                        {{ with .social.facebook }}
                                         <li class="list-inline-item">
                                             <a href="{{.}}">
                                                 <i class="tf-ion-social-facebook"></i>
                                             </a>
                                         </li>
                                         {{ end }}
-                                        {{ with .twitterURL }}
+                                        {{ with .social.twitter }}
                                         <li class="list-inline-item">
                                             <a href="{{.}}">
                                                 <i class="tf-ion-social-twitter"></i>
                                             </a>
                                         </li>
                                         {{ end }}
-                                        {{ with .websiteURL }}
+                                        {{ with .social.website }}
                                         <li class="list-inline-item">
                                             <a href="{{.}}">
                                                 <i class="tf-ion-android-globe"></i>

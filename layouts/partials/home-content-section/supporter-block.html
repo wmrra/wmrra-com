@@ -5,12 +5,12 @@
 {{ $url := "" }}
 {{ $supporterClass := "" }}
 
-{{ if .context.websiteURL }}
-  {{ $url = .context.websiteURL }}
-{{ else if .context.facebookURL }}
-  {{ $url = .context.facebookURL }}
-{{ else if .context.twitterURL }}
-  {{ $url = .context.twitterURL}}
+{{ if .context.social.website }}
+  {{ $url = .context.social.website }}
+{{ else if .context.social.facebook }}
+  {{ $url = .context.social.facebook }}
+{{ else if .context.social.twitter }}
+  {{ $url = .context.social.twitter}}
 {{ end }}
 
 {{ if .isTitleSponsor }}

@@ -9,27 +9,33 @@ sponsorData:
           in the PNW. We are Washington's largest Triumph motorcycle dealer.
           You will also find a nice selection of Vespa, Piaggio and Royal
           Enfield as well as electric motorcycles from ZERO.
-        facebookURL   : https://www.facebook.com/triumphofseattle
-        # twitterURL    : https://twitter.com/
-        websiteURL    : https://www.triumphofseattle.com/
+        social:
+          facebook  : https://www.facebook.com/triumphofseattle
+          # twitter : https://twitter.com/
+          website   : https://www.triumphofseattle.com/
 
+  # TBD for 2021
   - title: Formula Ultra Sponsors
     sponsors:
-      - name          : TBD
+      - name          : "Formula Ultra Sponsor: Available"
         # image         : images/sponsors/flying-bulldog.jpg
         description   : >
-          Formula Ultra Sponsor
-        # facebookURL   : https://www.facebook.com/
-        # twitterURL    : https://twitter.com/
-        # websiteURL    : https://website.com/
+          Formula Ultra 
+        social:
+          none: ""
+          # facebook : https://www.facebook.com/
+          # twitter  : https://twitter.com/
+          website  : /sponsor
 
       - name          : 2Fast Track Days
         image         : images/sponsors/2fast.jpg
         description   : >
           2Fast Track Days
-        facebookURL   : https://www.facebook.com/2FastLLC
-        # twitterURL    : https://twitter.com/
-        websiteURL    : http://www.2-fast.org/
+        social:
+          facebook : https://www.facebook.com/2FastLLC
+          # twitter  : https://twitter.com/
+          website  : http://www.2-fast.org/
+        
       
   
   # - title: Formula 2 Sponsors
@@ -43,62 +49,70 @@ sponsorData:
         image         : images/sponsors/law_tigers.jpg
         description   : >
           Ninja Cup Sponsor
-        facebookURL   : https://www.facebook.com/lawtigers
-        twitterURL    : https://twitter.com/LawTigers
-        websiteURL    : https://lawtigers.com/
+        social:
+          facebook : https://www.facebook.com/lawtigers
+          twitter  : https://twitter.com/LawTigers
+          website  : https://lawtigers.com/
       
       - name          : Who is Dane
         image         : images/sponsors/who-is-dane.jpg
         description   : >
           250GP Sponsor
-        facebookURL   : https://www.facebook.com/whoisdane/
-        #twitterURL    : https://twitter.com/
-        websiteURL    : https://www.whoisdane.photography/
+        social:
+          facebook : https://www.facebook.com/whoisdane/
+          # twitter  : https://twitter.com/
+          website  : https://www.whoisdane.photography/
 
       # 2021 Confirmed
       - name          : Tiger Tail
         image         : images/sponsors/tiger-tail.jpg
         description   : >
           Lightweight Supersport Sponsor
-        facebookURL   : https://www.facebook.com/tigertailusa
-        twitterURL    : https://twitter.com/tigertailusa
-        websiteURL    : https://tigertailusa.com/
+        social:
+          facebook : https://www.facebook.com/tigertailusa
+          twitter  : https://twitter.com/tigertailusa
+          website  : https://tigertailusa.com/
 
       # 2021 Confirmed
       - name          : Bellevue Motorsports
         image         : images/sponsors/bellevue-motorsports.png
         description   : >
           Ultra Lightweight Supersport Sponsor
-        facebookURL   : https://www.facebook.com/bellevuemotosports
-        # twitterURL    : https://twitter.com/
-        websiteURL    : https://bellevuemotosports.com/
+        social:
+          facebook : https://www.facebook.com/bellevuemotosports
+          # twitter  : https://twitter.com/
+          website  : https://bellevuemotosports.com/
+
 
       # To confirm for 2021
       # - name          : Dainese
       #   image         : images/sponsors/dainese.png
       #   description   : >
       #     Lightweight Superbike Sponsor
-      #   # facebookURL   : https://www.facebook.com/
-      #   # twitterURL    : https://twitter.com/
-      #   websiteURL    : https://www.dainese.com/us/en/store/dainese-store-seattle.html
-  
+      #   social:
+      #     # facebook : https://www.facebook.com/
+      #     # twitter  : https://twitter.com/
+      #     # website  : https://website.com/
+      
       # 2021 Confirmed for 2021
       - name          : Optimum Performance Motorsports
         image         : images/sponsors/optimum-performance-motorsports.png
         description   : >
           Middle Weight Superbike Sponsor
-        facebookURL   : https://www.facebook.com/OptimumPerformanceMotorsports
-        # twitterURL    : https://twitter.com/
-        websiteURL    : https://opmotorsports.com/
+        social:
+          facebook : https://www.facebook.com/OptimumPerformanceMotorsports
+          # twitter  : https://twitter.com/
+          website  : https://opmotorsports.com/
 
       # To confirm for 2021
       # - name          : Jimmy Boyle Insurance
       #   image         : images/sponsors/state-farm.jpg
       #   description   : >
       #     650 Supersport Twins & Open Grand Prix Twins Sponsor
-      #   # facebookURL   : https://www.facebook.com/
-      #   # twitterURL    : https://twitter.com/
-      #   websiteURL    : https://www.statefarm.com/agent/us/wa/bellevue/jimmy-boyle-d8nnb1ys000
+      #   social:
+      #     facebook : https://www.facebook.com/
+      #     twitter  : https://twitter.com/
+      #     website  : https://www.statefarm.com/agent/us/wa/bellevue/jimmy-boyle-d8nnb1ys000
 
       
       # TBD for 2021
@@ -106,108 +120,124 @@ sponsorData:
       #   image         : https://kfgmotorsports.com/portals/kfgmotorsports/skins/kfgmotorsports-fury//images/kfg-logo.png
       #   description   : >
       #     600 Supersport & 600 Superbike Sponsor
-      #   facebookURL   : https://www.facebook.com/kfgmotorsports
-      #   # twitterURL    : https://twitter.com/
-      #   websiteURL    :  https://kfgmotorsports.com/
+      # social:
+      #   facebook : https://www.facebook.com/kfgmotorsports
+      #   # twitter  : https://twitter.com/
+      #   website  : https://kfgmotorsports.com/
+  
 
       # 2021 Confirmed
       - name          : MotoShippers
         image         : https://www.motoshippers.com/wp-content/uploads/2020/03/MotoShippers_Logo.png
         description   : >
           Middleweight Early GP Sponsor
-        facebookURL   : https://www.facebook.com/motoshippers
-        # twitterURL    : https://twitter.com/
-        websiteURL    : https://www.motoshippers.com/
+        social:
+          facebook : https://www.facebook.com/motoshippers
+          # twitter  : https://twitter.com/
+          website  : https://www.motoshippers.com/
 
       # 2021 Confirmed
       - name          : 2Fast Track Days
         image         : images/sponsors/2fast.jpg
         description   : >
           Novice Class Sponsor
-        facebookURL   : https://www.facebook.com/2FastLLC
-        # twitterURL    : https://twitter.com/
-        websiteURL    : http://www.2-fast.org/
+        social:
+          facebook : https://www.facebook.com/2FastLLC
+          # twitter  : https://twitter.com/
+          website  : http://www.2-fast.org/
       
       # TBD for 2021
       # - name          : CMS Logistics
       #   image         : images/sponsors/cms-logo.png
       #   description   : >
       #     Formula Forty Sponsor
-      #   # facebookURL   : https://www.facebook.com/
-      #   # twitterURL    : https://twitter.com/
-      #   websiteURL    : http://cmslogisticsinc.com/
+      # social:
+      #   # facebook : https://www.facebook.com/
+      #   # twitter  : https://twitter.com/
+      #   website  : http://cmslogisticsinc.com/
 
       # 2021 Confirmed
       - name          : Superbike Underground
         image         : images/sponsors/superbike-underground.png
         description   : >
           450 Superbike Sponsor
-        facebookURL   : https://www.facebook.com/SBKUNDGRacing
-        # twitterURL    : https://twitter.com/
-        websiteURL    : http://superbikeunderground.com/
+        social:
+          facebook : https://www.facebook.com/SBKUNDGRacing
+          # twitter  : https://twitter.com/
+          website  : http://superbikeunderground.com/
+        
       
       # TBD for 2021
       # - name          : Pirelli
       #   image         : images/sponsors/pirelli.png
       #   description   : >
       #     Open Supersport & Open Superbike Sponsor
-      #   # facebookURL   : https://www.facebook.com/
-      #   # twitterURL    : https://twitter.com/
-      #   websiteURL    : https://www.pirelli.com/
+      # social:
+      #   # facebook : https://www.facebook.com/
+      #   # twitter  : https://twitter.com/
+      #   website  : https://www.pirelli.com/
+    
       
       # 2021 Verified
       - name          : Triumph of Seattle
         image         : images/sponsors/triumph-of-seattle.png
         description   : >
           Formula Female Sponsor
-        facebookURL   : https://www.facebook.com/triumphofseattle
-        # twitterURL    : https://twitter.com/
-        websiteURL    : https://www.triumphofseattle.com/
+        social:
+          # facebook : https://www.facebook.com/triumphofseattle
+          # twitter  : https://twitter.com/
+          # website  : https://triumphofseattle.com/
   
       # 2021 Verified
       - name          : Kump Racing Services (KRS)
         image         : images/sponsors/krs.png
         description   : >
           Open Sportsman Sponsor
-        facebookURL   : https://www.facebook.com/Kump-Racing-Service-2127318940819769/
-        # twitterURL    : https://twitter.com/
-        websiteURL    : https://www.kumpracingservice.com
+        social:
+          facebook : https://www.facebook.com/Kump-Racing-Service-2127318940819769/
+          # twitter  : https://twitter.com/
+          website  : https://www.kumpracingservice.com/
       
       # TBD for 2021
       # - name          : Trackside Support Services
       #   # image         : images/sponsors/sponsor-placeholder.jpg
       #   description   : >
       #     600 Sportsman Sponsor
-      #   # facebookURL   : https://www.facebook.com/
-      #   # twitterURL    : https://twitter.com/
-      #   # websiteURL    : https://website.com/
+      # social:
+      #   # facebook : https://www.facebook.com/
+      #   # twitter  : https://twitter.com/
+      #   # website  : https://website.com/
+
       
       # To confirm for 2021
       # - name          : I90 Motorsports or Howling Hands? 
       #   # image         : images/sponsors/sponsor-placeholder.jpg
       #   description   : >
       #     Open Classic Superbike Sponsor
-      #   # facebookURL   : https://www.facebook.com/
-      #   # twitterURL    : https://twitter.com/
-      #   # websiteURL    : https://website.com/
-      
+      # social:
+      #   # facebook : https://www.facebook.com/
+      #   # twitter  : https://twitter.com/
+      #   # website  : https://website.com/
+    
       # To confirm for 2021
       # - name          : Larry B's
       #   image         : images/sponsors/larryb.png
       #   description   : >
       #     Honda 160 Vintage Sponsor
-      #   # facebookURL   : https://www.facebook.com/
-      #   # twitterURL    : https://twitter.com/
-      #   websiteURL    : https://fostertruck.com/
+      # social:
+      #   # facebook : https://www.facebook.com/
+      #   # twitter  : https://twitter.com/
+      #   website  : https://fostertruck.com/
       
       # TBD for 2021
       # - name          : Lubricant Solutions LLC
       #   image         : images/sponsors/lubricant-solutions.jpg
       #   description   : >
       #     250, 500, 750, Lightweight Superbike Vintage Sponsor
-      #   facebookURL   : https://www.facebook.com/lubricantsolutionsllc/
-      #   # twitterURL    : https://twitter.com/
-      #   websiteURL    : https://lubricantsolutionsllc.com/
+      # social:
+      #   facebook : https://www.facebook.com/lubricantsolutionsllc/
+      #   # twitter  : https://twitter.com/
+      #   website  : https://lubricantsolutionsllc.com/
 
       # Available to Sponsor?: 600 Classic Superbike
     
@@ -221,6 +251,7 @@ sponsorData:
   #       description   : >
   #         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
   #         necessitatibus ullam, culpa odio.
-  #       facebookURL   : https://www.facebook.com/
-  #       twitterURL    : https://twitter.com/
-  #       websiteURL    : https://website.com/
+  #       social:
+  #         facebook : https://www.facebook.com/
+  #       "?$E3es"  twitter  : https://twitter.com/
+  #         website  : https://website.com/
