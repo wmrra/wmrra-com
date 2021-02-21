@@ -15,10 +15,10 @@
   {{ with $sponsorData }}
     <div class="supporters-page-supporters-wrapper"> 
       {{ range . }}
-        {{ $supporterClass := lower (delimit (split .title " ") "-") }}
+        {{ $supporterClass := lower (delimit (split (replaceRE " Sponsors" "" .title) " ") "-") }}
         {{ $vip := (in $vipSponsors .title) }}
         {{ $sponsorLevel := (.title | singularize) }}
-        <div data-debug-level="{{ (.title | singularize) }}" class="supporter-section {{ $supporterClass }}">
+        <div class="supporters-page-supporters-section {{ $supporterClass }}">
           {{ range .sponsors }}
             {{ partial "sponsor-page/sponsor-page-block" (dict "context" . "sponsorLevel" $sponsorLevel "isVipSponsor" $vip) }}  
           {{ end }}
