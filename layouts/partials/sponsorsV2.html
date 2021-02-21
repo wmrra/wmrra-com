@@ -8,8 +8,9 @@
   </div>
 
   <div class="supporters-page-cta">
-    <div>Want to see your name here? Become a WMRRA sponsor!</div>
-    <a href="">Learn more</a>
+    <div>Want to see your name here?
+    </br>
+    <a href="become-a-sponsor" class="header-cta-button">Become a WMRRA Sponsor</a>
   </div>
 
 
@@ -33,7 +34,7 @@
               {{end}}
           {{ end }}
           {{ $sortedSponsors := $filled | append $available }}
-          
+
           {{ range $sortedSponsors }}
             {{ partial "sponsor-page/sponsor-page-block" (dict "context" . "sponsorLevel" $sponsorLevel "isVipSponsor" $vip) }}  
           {{ end }}
