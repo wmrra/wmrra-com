@@ -17,7 +17,7 @@ sponsorData:
   - title: Formula Ultra Sponsors
     sponsors:
       - name          : "Formula Ultra Sponsorship Available"
-        image         : 
+        image         : /images/sponsors/your-logo.png
         description   : >
           Formula Ultra 
         social:
@@ -38,7 +38,7 @@ sponsorData:
           website  : https://lawtigers.com/
       
       - name          : 250GP Sponsor Sponsorship Available
-        image         : 
+        image         : /images/sponsors/your-logo.png
         description   : >
           250GP Sponsor Sponsor
         social:
@@ -67,7 +67,7 @@ sponsorData:
           website  : https://bellevuemotosports.com/
 
       - name          : Lightweight Superbike Sponsorship Available
-        image         : 
+        image         : /images/sponsors/your-logo.png
         description   : >
           Lightweight Superbike Sponsor
         social:
@@ -86,7 +86,7 @@ sponsorData:
           website  : https://opmotorsports.com/
 
       - name          : 600 Supersport Sponsorship Available
-        image         : 
+        image         : /images/sponsors/your-logo.png
         description   : >
           600 Supersport Sponsor
         social:
@@ -95,7 +95,7 @@ sponsorData:
           website  : /sponsor
      
       - name          : 600 Superbike Sponsorship Available
-        image         : 
+        image         : /images/sponsors/your-logo.png
         description   : >
           600 Superbike Sponsor
         social:
@@ -114,7 +114,7 @@ sponsorData:
       #     website  : https://www.statefarm.com/agent/us/wa/bellevue/jimmy-boyle-d8nnb1ys000
 
       - name          : 650 Supersport Twins Sponsorship Available
-        image         : 
+        image         : /images/sponsors/your-logo.png
         description   : >
           650 Supersport Twins Sponsor
         social:
@@ -123,7 +123,7 @@ sponsorData:
           website  : /sponsor
 
       - name          : Open Grand Prix Twins Sponsorship Available
-        image         : 
+        image         : /images/sponsors/your-logo.png
         description   : >
           Open Grand Prix Twins Sponsor
         social:
@@ -152,7 +152,7 @@ sponsorData:
           website  : http://www.2-fast.org/
       
       - name          : Formula Forty Sponsorship Available
-        image         : 
+        image         : /images/sponsors/your-logo.png
         description   : >
           Formula Forty Sponsor
         social:
@@ -171,7 +171,7 @@ sponsorData:
           website  : http://superbikeunderground.com/
         
       - name          : Open Supersport Sponsorship Available
-        image         : 
+        image         : /images/sponsors/your-logo.png
         description   : >
           Open Supersport Sponsor
         social:
@@ -180,7 +180,7 @@ sponsorData:
           website  : /sponsor
 
       - name          : Open Superbike Sponsorship Available
-        image         : 
+        image         : /images/sponsors/your-logo.png
         description   : >
           Open Superbike Sponsor
         social:
@@ -194,10 +194,9 @@ sponsorData:
         description   : >
           Formula Female Sponsor
         social:
-          none: ""
-          # facebook : https://www.facebook.com/triumphofseattle
+          facebook : https://www.facebook.com/triumphofseattle
           # twitter  : https://twitter.com/
-          # website  : https://triumphofseattle.com/
+          website  : https://triumphofseattle.com/
   
       # 2021 Verified
       - name          : Kump Racing Services (KRS)
@@ -210,7 +209,7 @@ sponsorData:
           website  : https://www.kumpracingservice.com/
       
       - name          : 600 Sportsman Sponsorship Available
-        image         : 
+        image         : /images/sponsors/your-logo.png
         description   : >
           600 Sportsman Sponsor
         social:
@@ -219,19 +218,18 @@ sponsorData:
           website  : /sponsor
 
       - name          : Classic Superbike Sponsorship Available
-        image         : 
+        image         : /images/sponsors/your-logo.png
         description   : >
           Classic Superbike Sponsor
         social:
-          none: ""
           # facebook : https://www.facebook.com/
           # twitter  : https://twitter.com/
-          # website  : https://website.com/
+          website  : /sponsor
       
 
       # VINTAGE CLASSES
       - name          : Honda 160 Vintage Sponsorship Available
-        image         : 
+        image         : /images/sponsors/your-logo.png
         description   : >
           Honda 160 Vintage Sponsor
         social:
@@ -240,7 +238,7 @@ sponsorData:
           website  : /sponsor
       
       - name          :  250 Vintage Sponsorship Available
-        image         : 
+        image         : /images/sponsors/your-logo.png
         description   : >
            250 Vintage Sponsor
         social:
@@ -249,7 +247,7 @@ sponsorData:
           website  : /sponsor
 
       - name          :  500 Vintage Sponsorship Available
-        image         : 
+        image         : /images/sponsors/your-logo.png
         description   : >
            500 Vintage Sponsor
         social:
@@ -258,7 +256,7 @@ sponsorData:
           website  : /sponsor
 
       - name          :  750 Vintage Sponsorship Available
-        image         : 
+        image         : /images/sponsors/your-logo.png
         description   : >
            750 Vintage Sponsor
         social:
@@ -267,7 +265,7 @@ sponsorData:
           website  : /sponsor
 
       - name          :  Lightweight Superbike Vintage Sponsorship Available
-        image         : 
+        image         : /images/sponsors/your-logo.png
         description   : >
            Lightweight Superbike Vintage Sponsor
         social:
