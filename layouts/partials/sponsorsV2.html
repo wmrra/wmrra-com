@@ -12,6 +12,8 @@
     <a href="">Learn more</a>
   </div>
 
+
+
   {{ with $sponsorData }}
     <div class="supporters-page-supporters-wrapper"> 
       {{ range . }}
@@ -19,7 +21,20 @@
         {{ $vip := (in $vipSponsors .title) }}
         {{ $sponsorLevel := (.title | singularize) }}
         <div class="supporters-page-supporters-section {{ $supporterClass }}">
+
+          {{/* Sorts the sponsors to be filled first, then available following */}}
+          {{ $filled := slice }}
+          {{ $available := slice}}
           {{ range .sponsors }}
+              {{ if in .name "Sponsorship Available" }}
+                {{  $available = $available | append .}}
+              {{ else }}
+                {{ $filled = $filled | append .}}
+              {{end}}
+          {{ end }}
+          {{ $sortedSponsors := $filled | append $available }}
+          
+          {{ range $sortedSponsors }}
             {{ partial "sponsor-page/sponsor-page-block" (dict "context" . "sponsorLevel" $sponsorLevel "isVipSponsor" $vip) }}  
           {{ end }}
         </div>
