@@ -6,7 +6,7 @@
 {{ with $sponsorData }}
   {{/* Separate title sponsors from the rest */}}
   {{ range . }}
-    {{ if eq .title "Title Sponsor" }}
+    {{ if eq .title "Title Sponsors" }}
       {{ $titleSponsors = $titleSponsors | append .sponsors }}
       {{ $titleSponsorCount = (len .sponsors) }}
     {{ end }}

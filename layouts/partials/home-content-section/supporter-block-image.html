@@ -1,5 +1,7 @@
-{{/* partial args: */}}
-{{/* context: the sponsor being rendered */}}
+{{/*}}
+  {{ partial args }}
+  {{ context: the sponsor being rendered}}
+{{*/}}
 
 {{ if .context.image }}
   <img src="{{ .context.image | absURL }}"  alt="{{ .context.name }}" />

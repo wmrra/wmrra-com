@@ -1,0 +1,51 @@
+{{/*}}
+  {{ partial args: }}
+  {{ context: the sponsor being rendered }}
+  {{ sponsorLevel: e.g. "Title Sponsor", "Race Class Sponsor", etc }}
+  {{ isVipSponsor: did they give us big money? }}
+{{*/}}
+
+{{ $sponsorClass := (lower (delimit (split .sponsorLevel " ") "-")) }}
+{{ $urls := (slice .context.websiteURL .context.facebookURL .context.twitterURL )}}
+
+<div class="supporter-page-block {{ $sponsorClass }}">
+  {{ if or (eq .sponsorLevel "Title Sponsor") (eq .sponsorLevel "Formula Ultra Sponsor") }}
+    <div class="supporter-ribbon big">{{ .sponsorLevel }}</div>
+  {{ else if eq .sponsorLevel "Formula 2 Sponsor" }}
+    <div class="supporter-ribbon little">{{ .sponsorLevel }}</div>
+  {{ else }}
+    <div>{{ .context.description }}</div>
+  {{ end }}
+
+  {{ if .context.image }}
+    <img src="{{ .context.image | absURL }}"  alt="{{ .context.name }}" />
+  {{ end }}
+
+  <div>{{ .context.name }}</div>
+
+  {{ if .isVipSponsor }}
+    <div>{{ .context.description }}</div>
+  {{ end }}
+
+  {{ if gt (len $urls) 0 }}
+    <div>
+      {{ if .context.websiteURL }}
+        <a aria-label="Website" href="{{ .context.websiteURL }}" target="_blank">
+          <i aria-hidden="true" class="fas fa-laptop" title="Visit the {{ .context.name }} website"></i>
+        </a>
+      {{ end }}
+
+      {{ if .context.facebookURL }}
+        <a aria-label="Facebook" href="{{ .context.facebookURL }}" target="_blank">
+          <i aria-hidden="true" class="fab fa-facebook" title="Visit {{ .context.name }} on Facebook"></i>
+        </a>
+      {{ end }}
+
+      {{ if .context.twitterURL }}
+        <a aria-label="Twitter" href="{{ .context.twitterURL }}" target="_blank">
+          <i aria-hidden="true" class="{{ .icon }}" title="Visit {{ .context.name }} on Twitter"></i>
+        </a>
+      {{ end }}
+    </div>
+  {{ end }}
+</div>
