@@ -28,24 +28,17 @@
   {{ end }}
 
   {{ if gt (len $urls) 0 }}
-    <div>
-      {{ if .context.social.website }}
-        <a aria-label="Website" href="{{ .context.social.website }}" target="_blank">
-          <i aria-hidden="true" class="fas fa-laptop" title="Visit the {{ .context.name }} website"></i>
-        </a>
-      {{ end }}
 
-      {{ if .context.social.facebook }}
-        <a aria-label="Facebook" href="{{ .context.social.facebook }}" target="_blank">
-          <i aria-hidden="true" class="fab fa-facebook" title="Visit {{ .context.name }} on Facebook"></i>
-        </a>
-      {{ end }}
 
-      {{ if .context.social.twitter }}
-        <a aria-label="Twitter" href="{{ .context.social.twitter }}" target="_blank">
-          <i aria-hidden="true" class="{{ .icon }}" title="Visit {{ .context.name }} on Twitter"></i>
-        </a>
-      {{ end }}
-    </div>
+  {{ $socialStyle := dict "website" "fas fa-laptop" "facebook" "fab fa-facebook" "twitter" "fab fa-twitter" }}
+  <div>
+    {{ $context := .context }}
+    {{ range $key, $value := .context.social }}
+      <a aria-label="{{ $key }}" href="{{ $value }}" target="_blank">
+        <i aria-hidden="true" class="{{ index $socialStyle $key }}" title="Visit the {{ $context.name }} {{ $key }}"></i>
+      </a>
+    {{ end }}
+  </div>
+
   {{ end }}
 </div>
