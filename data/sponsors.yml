@@ -1,6 +1,6 @@
 sponsorData:
   # 2021 Confirmed
-  - title: Title Sponsor
+  - title: Title Sponsors
     sponsors:
       - name          : Triumph of Seattle
         image         : images/sponsors/triumph-of-seattle.png
@@ -13,7 +13,7 @@ sponsorData:
         # twitterURL    : https://twitter.com/
         websiteURL    : https://www.triumphofseattle.com/
 
-  - title: Formula Ultra Sponsor
+  - title: Formula Ultra Sponsors
     sponsors:
       - name          : TBD
         # image         : images/sponsors/flying-bulldog.jpg
@@ -32,7 +32,7 @@ sponsorData:
         websiteURL    : http://www.2-fast.org/
       
   
-  # - title: Formula 2 Sponsor
+  # - title: Formula 2 Sponsors
 
   # - title: Race Event Sponsors
 
