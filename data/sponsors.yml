@@ -183,6 +183,7 @@ sponsorData:
         description   : >
           Formula Female Sponsor
         social:
+          none: ""
           # facebook : https://www.facebook.com/triumphofseattle
           # twitter  : https://twitter.com/
           # website  : https://triumphofseattle.com/
