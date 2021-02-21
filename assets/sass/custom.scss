@@ -5,6 +5,8 @@ $wmrra-dark-red-30: #7c0314; // 30% darker than base
 $white: #fff;
 $default-text-color: #333;
 $medium-gray: #817f82;
+$light-gray: #dedadb;
+$light-gray-180: #fcfbfb; // 80% lighter than base
 $text-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.5);
 
 // approx px as em values - https://stackoverflow.com/a/43131958
@@ -25,5 +27,127 @@ $large-screen-breakpoint: 81em; // 1300px
     display: table;
     border-collapse: separate;
     border-spacing: 2rem;
+  }
+}
+
+// sponsors
+.supporters-page-supporters-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.supporters-page-block {
+  @include flex-column-centered;
+
+  padding: 2rem;
+  background-color: $light-gray;
+
+  &.title,
+  &.formula-ultra {
+    width: 30rem;
+    height: 60rem;
+    margin: 1rem 4rem;
+
+    .supporter-image-wrapper {      
+      width: 24.5rem;
+      height: 24.5rem;
+      margin-top: 0.5rem;
+
+      img {
+        max-width: 24rem;
+        max-height: 24rem;
+      }
+    }
+
+    .supporter-name {
+      font-size: 3rem;
+    }
+  }
+
+  &.formula-2,
+  &.race-event {
+    width: 28rem;
+    height: 45rem;
+
+    .supporter-image-wrapper {
+      width: 22.5rem;
+      height: 22.5rem;
+
+      img {
+        max-width: 22rem;
+        max-height: 22rem;
+      }
+    }
+
+    .supporter-name {
+      font-size: 2.8rem;
+    }
+  }
+
+  &.race-class {
+    width: 24rem;
+    height: 35rem;
+    margin: 1.5rem;
+
+    .supporter-image-wrapper {
+      width: 18.5rem;
+      height: 18.5rem;
+
+      img {
+        max-width: 18rem;
+        max-height: 18rem;
+      }
+    }
+  }
+
+  .supporter-ribbon {
+    @include ribbon(2rem, 1.5rem, -2rem);
+
+    top: -0.5rem;
+
+    &.big {
+      width: 32rem;
+    }
+  }
+
+  .supporter-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .supporter-image-wrapper {
+    @include flex-column-centered;
+
+    background-color: $light-gray-180;
+  }
+
+  .supporter-title {
+    height: 4.5rem;
+    text-align: center;
+  }
+
+  .supporter-name  {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .supporter-links-wrapper {
+    margin-top: 1rem;
+    font-size: 2.4rem;
+  }
+
+  .supporter-link {
+    margin-right: 1.5rem;
+    
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }

@@ -84,3 +84,58 @@
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
 }
+
+// based on: https://css-tricks.com/snippets/css/ribbon/
+@mixin ribbon($font-size, $border-size, $ribbon-position) {
+  position: relative;
+  padding: 1rem 2rem;
+  background: $wmmra-dark-red;
+  color: $white;
+  font-size: $font-size;
+  text-align: center;
+  text-transform: uppercase;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -1rem;
+    border: $border-size solid $wmrra-dark-red-10;
+    z-index: -1;
+  }
+
+ &::before {
+    left: $ribbon-position;
+    border-right-width: $border-size;
+    border-left-color: transparent;
+ }
+ 
+ &::after {
+    right: $ribbon-position;
+    border-left-width: $border-size;
+    border-right-color: transparent;
+ }
+
+ .ribbon-content {
+    &::before,
+    &::after  {
+      content: "";
+      position: absolute;
+      bottom: -1rem;
+      display: block;
+      border-style: solid;
+      border-color: $wmrra-dark-red-30 transparent transparent transparent;
+    }
+
+    &::before {
+      left: 0;
+      border-width: 1rem 0 0 1rem;
+    }
+
+    &::after {
+      right: 0;
+      border-width: 1rem 1rem 0 0;
+    }
+  } 
+}

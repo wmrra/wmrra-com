@@ -1,5 +1,7 @@
 ![YOU CAN DO IT](https://media.giphy.com/media/yoJC2K6rCzwNY2EngA/giphy.gif)
 
+<a href="/downloads/2021 WMRRA Sponsorship Opportunities.pdf">in a downloadable PDF</a>.
+
 # Sponsorship Opportunities
 ## Title Sponsor - $10,000
 - Exclusive naming rights to the Overall WMRRA Championship.

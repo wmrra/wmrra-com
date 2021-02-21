@@ -5,40 +5,40 @@
   {{ isVipSponsor: did they give us big money? }}
 {{*/}}
 
-{{ $sponsorClass := (lower (delimit (split .sponsorLevel " ") "-")) }}
-{{ $urls := (slice .context.social.website .context.social.facebook .context.social.twitter )}}
+{{ $sponsorClass := (lower (delimit (split (replaceRE " Sponsor" "" .sponsorLevel) " ") "-")) }}
 
-<div class="supporter-page-block {{ $sponsorClass }}">
+<div class="supporters-page-block {{ $sponsorClass }}">
   {{ if or (eq .sponsorLevel "Title Sponsor") (eq .sponsorLevel "Formula Ultra Sponsor") }}
-    <div class="supporter-ribbon big">{{ .sponsorLevel }}</div>
+    <div class="supporter-ribbon big">
+      <div class="ribbon-content">{{ .sponsorLevel }}</div>
+    </div>
   {{ else if eq .sponsorLevel "Formula 2 Sponsor" }}
     <div class="supporter-ribbon little">{{ .sponsorLevel }}</div>
   {{ else }}
-    <div>{{ .context.description }}</div>
+    <div class="supporter-title">{{ .context.description }}</div>
   {{ end }}
 
-  {{ if .context.image }}
-    <img src="{{ .context.image | absURL }}"  alt="{{ .context.name }}" />
-  {{ end }}
-
-  <div>{{ .context.name }}</div>
-
-  {{ if .isVipSponsor }}
-    <div>{{ .context.description }}</div>
-  {{ end }}
-
-  {{ if gt (len $urls) 0 }}
-
-
-  {{ $socialStyle := dict "website" "fas fa-laptop" "facebook" "fab fa-facebook" "twitter" "fab fa-twitter" }}
-  <div>
-    {{ $context := .context }}
-    {{ range $key, $value := .context.social }}
-      <a aria-label="{{ $key }}" href="{{ $value }}" target="_blank">
-        <i aria-hidden="true" class="{{ index $socialStyle $key }}" title="Visit the {{ $context.name }} {{ $key }}"></i>
-      </a>
+  <div class="supporter-content-wrapper">
+    {{ if .context.image }}
+      <div class="supporter-image-wrapper">
+        <img src="{{ .context.image | absURL }}"  alt="{{ .context.name }}" />
+      </div>
     {{ end }}
-  </div>
 
-  {{ end }}
+    <div class='supporter-name'>{{ .context.name }}</div>
+
+    {{ if .isVipSponsor }}
+      <div>{{ .context.description }}</div>
+    {{ end }}
+
+    {{ $socialStyle := dict "website" "fas fa-laptop" "facebook" "fab fa-facebook" "twitter" "fab fa-twitter" }}
+    <div class="supporter-links-wrapper">
+      {{ $context := .context }}
+      {{ range $key, $value := .context.social }}
+        <a aria-label="{{ $key }}" href="{{ $value }}" target="_blank">
+          <i aria-hidden="true" class="supporter-link {{ index $socialStyle $key }}" title="Visit the {{ $context.name }} {{ $key }}"></i>
+        </a>
+      {{ end }}
+    </div>
+  </div>
 </div>

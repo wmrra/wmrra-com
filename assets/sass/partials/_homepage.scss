@@ -377,62 +377,12 @@
   }
 }
 
-// based on: https://css-tricks.com/snippets/css/ribbon/
 .title-supporter-ribbon { 
-  position: relative;
+  @include ribbon(3rem, 2.5rem, -4rem);
+
   width: 70%;
   max-width: 40rem;
   margin: 0 auto 1rem;
-  padding: 1rem 2rem;
-  font-size: 3rem;
-  background: $wmmra-dark-red;
-  color: $white;
-  text-align: center;
-  text-transform: uppercase;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    display: block;
-    bottom: -1rem;
-    border: 2.5rem solid $wmrra-dark-red-10;
-    z-index: -1;
-  }
-
- &::before {
-    left: -4rem;
-    border-right-width: 2.5rem;
-    border-left-color: transparent;
- }
- 
- &::after {
-    right: -4rem;
-    border-left-width: 2.5rem;
-    border-right-color: transparent;
- }
-
- .ribbon-content {
-    &::before,
-    &::after  {
-      content: "";
-      position: absolute;
-      bottom: -1rem;
-      display: block;
-      border-style: solid;
-      border-color: $wmrra-dark-red-30 transparent transparent transparent;
-    }
-
-    &::before {
-      left: 0;
-      border-width: 1rem 0 0 1rem;
-    }
-
-    &::after {
-      right: 0;
-      border-width: 1rem 1rem 0 0;
-    }
-  } 
 }
 
 .all-supporters-wrapper {
