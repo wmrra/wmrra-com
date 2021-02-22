@@ -26,8 +26,9 @@ menu:
         link: /spectate
       - name: Sponsor
         link: /sponsor
-      - name: Make a Donation
-        link: https://www.paypal.com/donate?token=Xe0xUCm7SA8GXVsn0Cf0YDQSFJbnaN_2mU6_fRFyYf5RHm8k6F5W2beysTUQoJQkSj17osR13DSp4u1X
+      # https://github.com/crwilcox/wmrra-com/issues/4
+      #- name: Make a Donation
+      #  link: https://www.paypal.com/paypalme/wmrra
 
   - name: Resources
     children: 
