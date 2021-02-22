@@ -2,7 +2,7 @@
 name: Issue Report
 about: Report an issue to help us improve
 title: ''
-labels: ''
+labels: bug
 assignees: ''
 
 ---
