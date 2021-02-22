@@ -9,4 +9,4 @@ description: "Sponsor WMRRA"
     https://docs.google.com/spreadsheets/d/12Uvy3xDG8NFL7e1YvvxbVPi7NGewEBMN/edit#gid=1668914281
 -->
 
-{{< incpartial "sponsorsV2.html" >}}
+{{< incpartial "sponsors.html" >}}
