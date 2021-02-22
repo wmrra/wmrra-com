@@ -60,6 +60,21 @@ p {
   visibility: hidden;
 }
 
+.site-button {
+  @include link-overrides($white);
+
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  background-color: $wmmra-dark-red;
+  color: $white;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(120%);
+  }
+}
+
 @import "partials/header";
 @import "partials/hero";
 @import "partials/footer";

@@ -5,7 +5,9 @@
   {{ isVipSponsor: did they give us big money? }}
 {{*/}}
 
+{{ $socialStyle := dict "website" "fas fa-laptop" "facebook" "fab fa-facebook" "twitter" "fab fa-twitter" }}
 {{ $sponsorClass := (lower (delimit (split (replaceRE " Sponsor" "" .sponsorLevel) " ") "-")) }}
+{{ $available := (in .context.name "Sponsorship Available") }}
 
 <div class="supporters-page-block {{ $sponsorClass }}">
   {{ if or (eq .sponsorLevel "Title Sponsor") (eq .sponsorLevel "Formula Ultra Sponsor") }}
@@ -18,27 +20,35 @@
     <div class="supporter-title">{{ .context.description }}</div>
   {{ end }}
 
-  <div class="supporter-content-wrapper">
+
     {{ if .context.image }}
       <div class="supporter-image-wrapper">
         <img src="{{ .context.image | absURL }}"  alt="{{ .context.name }}" />
       </div>
     {{ end }}
 
-    <div class='supporter-name'>{{ .context.name }}</div>
-
-    {{ if .isVipSponsor }}
-      <div>{{ .context.description }}</div>
-    {{ end }}
-
-    {{ $socialStyle := dict "website" "fas fa-laptop" "facebook" "fab fa-facebook" "twitter" "fab fa-twitter" }}
-    <div class="supporter-links-wrapper">
-      {{ $context := .context }}
-      {{ range $key, $value := .context.social }}
-        <a aria-label="{{ $key }}" href="{{ $value }}" target="_blank">
-          <i aria-hidden="true" class="supporter-link {{ index $socialStyle $key }}" title="Visit the {{ $context.name }} {{ $key }}"></i>
-        </a>
+    <div class="supporter-name">
+      {{ if $available }}
+        <span>Sponsorship Available</span>
+      {{ else }}
+        {{ .context.name }}
       {{ end }}
     </div>
-  </div>
+
+    {{ if .isVipSponsor }}
+      <div class="supporter-description">{{ .context.description }}</div>
+    {{ end }}
+
+    <div class="supporter-links-wrapper">
+      {{ if $available }}
+        <a href="/sponsor/become-a-sponsor" class="site-button">Become a sponsor</a>
+      {{ else }}
+        {{ $context := .context }}
+        {{ range $key, $value := .context.social }}
+          <a aria-label="{{ $key }}" href="{{ $value }}" class="supporter-link" target="_blank">
+            <i aria-hidden="true" class="{{ index $socialStyle $key }}" title="Visit the {{ $context.name }} {{ $key }}"></i>
+          </a>
+        {{ end }}
+      {{ end }}
+    </div>
 </div>
