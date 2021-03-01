@@ -1,14 +1,16 @@
 ---
-title   : "Announcing the 2021 Title Sponsor"
-date    : "2021-02-07"
+title   : "Announcing the 2021 Novice School"
+date    : "2021-03-01"
 draft   : false
-description: "Welcome Triumph of Seattle as this season's Title Sponsor"
+description: "Register for 2021 Novice School, March 27, 2021"
 ---
 
-WMRRA would like to proudly announce our title sponsor for 2021. Please welcome
-back a long time supporter and all round great company. Triumph of Seattle has
-once again decided to align with our organization for the season!
+[Register for 2021 Novice School on MSR](https://www.motorsportreg.com/events/wmrra-2021-novice-classroom-ridge-motorsports-park-road-course-753535?fbclid=IwAR1l3vz_r_CGJsOxO3JxMj-IitInrnv1cy6rQ04dVyqXl3ke3bbu8FfCb68)
 
-Plan on seeing a rise in viewership and track side attendance this year.
+Registration ends in a month at March 27, 2021 11:59 PM PDT
 
-![](/images/sponsors/triumph-of-seattle.png)
+The 2021 Novice School class portion will be held at the Ridge Motorsports Park
+March 27th 9am-3pm. The class will be limited in size due to Covid mandates so
+only the first twenty registrants who wish to attend will be afforded the
+opportunity to attend in person. The class will be offered via Zoom for the
+remainder of interested participants. See link to registration below.
