@@ -138,3 +138,22 @@
     }
   } 
 }
+
+@mixin sponsor-level-badge($icon-unicode, $level-color) {
+  @include pseudo-icon($icon-unicode);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+  width: 7rem;
+  border-width: 0.8rem;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: $level-color;
+  background-color: $white;
+  font-size: 3rem;
+  color: $level-color;
+}

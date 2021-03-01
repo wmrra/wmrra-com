@@ -34,10 +34,6 @@ html,
 body {
   &.modal-open {
     overflow: hidden;
-
-    @include media-min($mobile-breakpoint) {
-      overflow: auto;
-    }
   }
 }
 
@@ -59,6 +55,13 @@ p {
 
 .sr-only {
   visibility: hidden;
+}
+
+.modal-overlay {
+  @include full-container-overlay;
+
+  top: 0;
+  left: 0;
 }
 
 .site-button {

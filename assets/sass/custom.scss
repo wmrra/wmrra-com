@@ -280,6 +280,10 @@ $xlarge-screen-breakpoint: 81em; // 1300px
 }
 
 // TODO: another partial
+.become-a-supporter-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
 
 .become-a-supporter-blocks-wrapper {
   margin: 7rem auto 0;
@@ -287,25 +291,11 @@ $xlarge-screen-breakpoint: 81em; // 1300px
   @include media-max($large-screen-breakpoint) {
     max-width: 75rem;
   }
-
-  ul {
-    padding-inline-start: 3rem;
-    margin-bottom: 0;
-
-    li {
-      margin-bottom: 1.5rem;
-
-      &:last-child {
-        margin-bottom: 1rem;
-      }
-    }
-  }
 }
 
 .become-a-supporter-blocks-row {
   display: grid;
   justify-items: center;
-  grid-template-rows: max-content;
   grid-column-gap: 3rem;
   grid-row-gap: 6rem;
   margin-bottom: 6rem;
@@ -323,30 +313,12 @@ $xlarge-screen-breakpoint: 81em; // 1300px
   border-style: solid;
   border-radius: 1rem;
 
-  &::before {
-    position: absolute;
-    top: -4.5rem;
-    left: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 7rem;
-    width: 7rem;
-    border-width: 0.8rem;
-    border-style: solid;
-    border-radius: 50%;
-    background-color: $white;
-    transform: translateX(-50%);
-    font-size: 3rem;
-  }
-
   &.level-10000 {
     border-color: $sponsor-gold;
 
     &::before {
-      @include pseudo-icon("\f091");
-      border-color: $sponsor-gold;
-      color: $sponsor-gold;
+      @include sponsor-level-badge("\f091", $sponsor-gold);
+      top: -4.5rem;
     }
 
     .supporter-level-content {
@@ -373,9 +345,8 @@ $xlarge-screen-breakpoint: 81em; // 1300px
     border-color: $sponsor-silver;
 
     &::before {
-      @include pseudo-icon("\f5a2");
-      border-color: $sponsor-silver;
-      color: $sponsor-silver;
+      @include sponsor-level-badge("\f5a2", $sponsor-silver);
+      top: -4.5rem;
     }
 
     .supporter-level-content {
@@ -401,14 +372,13 @@ $xlarge-screen-breakpoint: 81em; // 1300px
     border-color: $sponsor-bronze;
 
     &::before {
-      @include pseudo-icon("\f559");
-      border-color: $sponsor-bronze;
-      color: $sponsor-bronze;
+      @include sponsor-level-badge("\f559", $sponsor-bronze);
+      top: -4.5rem;
     }
 
     .supporter-level-content {
       @include media-min($large-screen-breakpoint) {
-        grid-template-rows: 8rem 28rem 1fr;
+        grid-template-rows: 8rem 29rem 1fr;
       }
 
       .supporter-level {
@@ -434,7 +404,7 @@ $xlarge-screen-breakpoint: 81em; // 1300px
 
   .supporter-level-content {
     display: grid;
-    grid-template-rows: minmax(8rem, max-content) minmax(22rem, max-content) 1fr;
+    grid-template-rows: minmax(8rem, max-content) minmax(23rem, max-content) 1fr;
     grid-gap: 1.2rem;
     justify-items: center;
     align-items: center;
@@ -447,8 +417,17 @@ $xlarge-screen-breakpoint: 81em; // 1300px
 
     .benefits {
       padding: 0 1rem;
-    }
 
+      ul {
+        margin-bottom: 0;
+        padding-inline-start: 3rem;
+
+        li {
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+    
     .see-all-benefits-link {
       @include link-overrides($default-link-color);
       display: flex;
@@ -483,4 +462,65 @@ $xlarge-screen-breakpoint: 81em; // 1300px
 
 .supporter-level-benefits-modal {
   display: none;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 101;
+  padding: 1rem 2rem 2rem;
+  width: 80%;
+  max-width: 50rem;
+  background-color: $white;
+
+  .modal-close-icon {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2.4rem;
+    color: $medium-gray;
+    cursor: pointer;
+  }
+
+  .benefits-modal-content {
+    @include flex-column-centered;
+    padding-top: 4.5rem;
+
+    &.level-10000 {  
+      &::before {
+        @include sponsor-level-badge("\f091", $sponsor-gold);
+        top: 1rem;
+      }
+    }
+
+    &.level-5000,
+    &.level-1000 {  
+      &::before {
+        @include sponsor-level-badge("\f5a2", $sponsor-silver);
+        top: 1rem;
+      }
+    }
+
+    &.level-500 {  
+      &::before {
+        @include sponsor-level-badge("\f559", $sponsor-bronze);
+        top: 1rem;
+      }
+    }
+
+    &.hidden {
+      display: none;
+    }
+
+    .level {
+      margin: 1rem 0;
+      font-size: 2.4rem;
+      text-align: center;
+    }
+
+    ul {
+      max-height: 40rem;
+      margin-bottom: 0;
+      padding-inline-start: 3rem;
+      overflow: scroll;
+    }
+  }
 }

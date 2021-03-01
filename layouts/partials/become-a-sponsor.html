@@ -17,7 +17,7 @@
 {{ end }}
 
 <div>
-  <div>
+  <div class="become-a-supporter-header">
     <h1>Become a WMRRA sponsor</h1>
     <div>
       WMRRA couldn't operate without the generous financial support that organizations
@@ -33,10 +33,11 @@
     {{ range $sponsorshipRows }}
       <div class="become-a-supporter-blocks-row">
         {{ range . }}
+          {{ $levelId := (lower (delimit (split (replaceRE `\sSponsor\s?-?\s?` "" .level) " ") "-")) }}
           {{ $blockClass := (print "level-" .costInDollars) }}
           {{ $formattedCost := (print "$" (lang.NumFmt 0 .costInDollars)) }}
           {{ $mailSubject := (print "Becoming a WMRRA " .level) }}
-          {{ $useBenefitsModal := (gt (len .benefits) 4) }}
+          {{ $showModalLink := (gt (len .benefits) 4) }}
           <div class="become-a-supporter-level-block {{ $blockClass }}">
             <div class="supporter-level-content">
               <div class="level-and-cost">
@@ -44,13 +45,13 @@
                 <div class="cost">{{ $formattedCost }}</div>
               </div>
               <div class="benefits">
-                <ul class="featured-benefits">
+                <ul>
                   {{ range (first 4 .benefits) }}
                     <li>{{ . }}</li>
                   {{ end }}
                 </ul>
-                {{ if $useBenefitsModal }}
-                  <a href="#" class="see-all-benefits-link">See all</a>
+                {{ if $showModalLink }}
+                  <a href="#" class="see-all-benefits-link" data-level-id="{{ $levelId }}">See all</a>
                 {{ end }}
               </div>
               <a class="inquiry-button" href="mailto:2ndvp@wmrra.com?subject={{ $mailSubject }}" target="_blank">
@@ -58,21 +59,24 @@
               </a>
             </div>
           </div>
-          {{ if $useBenefitsModal }}
-            <div class="supporter-level-benefits-modal">
-              <i aria-hidden="true" class="modal-close-icon fas fa-times" title="Close modal"></i>
-              <div class="benefits-modal-conent {{ $blockClass }}">
-                <div>Complete {{ .level }} Benefits</div>
-                <ul>
-                  {{ range .benefits }}
-                    <li>{{ . }}</li>
-                  {{ end }}
-                </ul>
-              </div>
-            </div>
-          {{ end }}
         {{ end }}
       </div>
     {{ end }}
   </div>
+</div>
+
+<div class="supporter-level-benefits-modal">
+  <i aria-hidden="true" class="modal-close-icon fas fa-times" title="Close modal"></i>
+  {{ range $sponsorshipLevelData }}
+    {{ $levelClass := (print "level-" .costInDollars) }}
+    {{ $levelId := (lower (delimit (split (replaceRE `\sSponsor\s?-?\s?` "" .level) " ") "-")) }}
+    <div id="{{ $levelId }}" class="benefits-modal-content {{ $levelClass }} hidden">
+      <div class="level">Complete {{.level }} Benefits</div>
+      <ul>
+        {{ range .benefits }}
+          <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    </div>
+  {{ end }}
 </div>
