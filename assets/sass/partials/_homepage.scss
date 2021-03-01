@@ -258,7 +258,7 @@
     }
   }
 
-  @include media-min($large-screen-breakpoint) {
+  @include media-min($xlarge-screen-breakpoint) {
     &:nth-child(4) {
       display: none;
     }

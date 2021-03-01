@@ -1,0 +1,97 @@
+sponsorshipLevelData:
+  - level: Title Sponsor
+    costInDollars: 10_000
+    benefits:
+      - Exclusive naming rights to the overall WMRRA Championship.
+      - Sponsor name on the top 5 overall championship trophies.
+      - Regular announcements over the PA during race weekends.
+      - Prominent logo placement on WMRRA Race Program covers.
+      - Large advertisement in Race Program each race weekend.
+      - Four season gate passes good for 2021 races.
+      - Four passes to the 2021 WMRRA Annual Awards Banquet.
+      - Paddock booth area available for use each race weekend.
+      - Prominent display of sponsor-supplied banners each race weekend.
+      - Prominent logo and business link placement on the WMRRA.com homepage.
+      - Business description on WMRRA.com sponsors page.
+      - Promotional mentions on WMRRA social media, highlighting special promotions as requested.
+  
+  - level: Purse Race Sponsor - Formula Ultra
+    costInDollars: 10_000
+    benefits:
+      - Exclusive naming rights to the Formula Ultra Championship.
+      - Road Racing magazine article each round highlighting results and sponsorship.
+      - Premier awards ceremony directly after each race.
+      - Sponsor name on the top 3 class trophies.
+      - Giant check presented with sponsor's name at each awards ceremony.
+      - Special announcements over the PA throughout race weekends.
+      - Large advertisement in race program each round.
+      - Four season gate passes good for 2021 races.
+      - Four passes to the 2021 WMRRA Annual Awards Banquet.
+      - Paddock booth area available for use each race weekend.
+      - Display of sponsor-supplied banners each race weekend.
+      - Business description on WMRRA.com sponsors page.
+      - Logo and business link on WMRRA.com homepage.
+      - Promotional mentions on WMRRA social media, highlighting special promotions as requested.
+  
+  - level: Purse Race Sponsor - Formula Two
+    costInDollars: 5_000
+    benefits:
+      - Exclusive naming rights to the Formula Two Championship.
+      - Road Racing magazine article each round highlighting results and sponsorship.
+      - Premier awards ceremony directly after each race.
+      - Sponsor name on the top 3 class trophies.
+      - Giant check presented with sponsor's name at each awards ceremony.
+      - Special announcements over the PA throughout race weekends.
+      - Large advertisement in race program each round.
+      - Four season gate passes good for 2021 races.
+      - Four passes to the 2021 WMRRA Annual Awards Banquet.
+      - Paddock booth area available for use each race weekend.
+      - Display of sponsor-supplied banners each race weekend.
+      - Business description on WMRRA.com sponsors page.
+      - Logo and business link on WMRRA.com homepage.
+      - Promotional mentions on WMRRA social media, highlighting special promotions as requested.
+
+  - level: Race Event Sponsor
+    costInDollars: 1_000
+    benefits:
+      - Exclusive naming rights to a WMRRA race event (ex. WMRRA Vintage Day sponsored by YOU)
+      - Paddock booth area available for use the weekend of the event.
+      - Regular PA announcements during the race weekend.
+      - Medium advertisement in Race Program during the sponsored race event.
+      - Six gate passes good for the day of the event.
+      - Display of sponsor-supplied banners the day of the event.
+      - Logo and business link on WMRRA.com homepage.
+      - Promotional mentions on WMRRA social media.
+  
+  - level: Race Class Sponsor
+    costInDollars: 500
+    benefits:
+      - Exclusive naming rights to a WMRRA race event (ex. Open Supersport sponsored by YOU)
+      - Sponsor name on daily and year-end class championship trophies.
+      - PA announcements during the race weekend.
+      - Small advertisement in Race Program.
+      - Two season gate passes good for 2021 races.
+      - Two passes to the 2021 WMRRA Annual Awards Banquet.
+      - Paddock booth area available for use each race weekend.
+      - Logo and business link on WMRRA.com homepage.
+      - Promotional mention on WMRRA social media.
+  
+  - level: General Club Sponsorship
+    costInDollars: 500
+    benefits:
+      - Small advertisement in Race Program.
+      - Two season gate passes good for 2021 races.
+      - Two passes to the 2021 WMRRA Annual Awards Banquet.
+      - Paddock booth area available for use each race weekend.
+      - Logo and business link on WMRRA.com homepage.
+      - Promotional mention on WMRRA social media.
+  
+  - level: Taste of Racing (TOR) Rental
+    costInDollars: 500
+    benefits:
+      - Twenty minutes of exclusive track access for clubs or private parties.
+      - Four expert level WMRRA riders provided for escort on track.
+      - Detailed explanation of flags, rider etiquette and safety.
+      - $25 credit towards a 2Fast track day entry for each participant.
+    disclaimer: Available Saturday each race weekend during lunch break.
+  

@@ -1,7 +1,6 @@
 @mixin pseudo-icon($icon-unicode) {
   content: $icon-unicode;
   font-family: "Font Awesome 5 Free"; 
-  display: inline-block;
   font-weight: 900;
   font-style: normal;
   font-variant: normal;
@@ -28,5 +27,19 @@
   &:hover {
     color: $hover-color;
     text-decoration: none;
+  }
+}
+
+@mixin full-container-overlay {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($black, 0.6);
+  overflow: hidden;
+  color: red;
+
+  .hidden {
+    display: none;
   }
 }

@@ -12,12 +12,13 @@ $default-box-shadow: 0 0.8rem 0.8rem -0.5rem rgba(0, 0, 0, 0.3);
 $small-screen-breakpoint: 23rem; // 360px
 $medium-screen-breakpoint: 30em; // 480px
 $mobile-breakpoint: 48em; // 768px
-$large-screen-breakpoint: 81em; // 1300px
-$x-large-screen-breakpoint: 100em; // 1600px
+$large-screen-breakpoint: 64rem; // 1024px
+$xlarge-screen-breakpoint: 81em; // 1300px
+$xxlarge-screen-breakpoint: 100em; // 1600px
 
 // VIP partials
-@import "partials/media";
-@import "partials/mixins";
+@import "themes/wmrra-com-theme/assets/sass/partials/media";
+@import "themes/wmrra-com-theme/assets/sass/partials/mixins";
 
 // base styles (body, content)
 // default font size to 10px so calculating rems is easier
@@ -31,7 +32,7 @@ body {
 
 html,
 body {
-  &.menu-open {
+  &.modal-open {
     overflow: hidden;
 
     @include media-min($mobile-breakpoint) {
@@ -75,9 +76,9 @@ p {
   }
 }
 
-@import "partials/header";
-@import "partials/hero";
-@import "partials/footer";
+@import "themes/wmrra-com-theme/assets/sass/partials/header";
+@import "themes/wmrra-com-theme/assets/sass/partials/hero";
+@import "themes/wmrra-com-theme/assets/sass/partials/footer";
 
 // TODO: make a partial for this
 .news-summary {

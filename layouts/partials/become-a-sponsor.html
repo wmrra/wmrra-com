@@ -1,0 +1,74 @@
+{{ $sponsorshipLevelData := .Site.Data.sponsorshipLevels.sponsorshipLevelData }}
+{{ $sponsorshipRows := slice }}
+
+{{ with $sponsorshipLevelData }}
+  {{ $row := slice }}
+  {{ range . }}
+    {{ if or (lt (len $row) 2) (eq (index ($row) 0).costInDollars .costInDollars) }}
+      {{ $row = $row | append . }}
+    {{ else }}
+      {{ $sponsorshipRows = $sponsorshipRows | append (slice $row) }}
+      {{ $row = (slice . ) }}
+    {{ end }}
+  {{ end }}
+  {{ if gt (len $row) 0 }}
+    {{ $sponsorshipRows = $sponsorshipRows | append (slice $row) }}
+  {{ end }}
+{{ end }}
+
+<div>
+  <div>
+    <h1>Become a WMRRA sponsor</h1>
+    <div>
+      Put a nice blurb here about how there are lots of different levels of sponsorship available.
+      And how they all get you access to race events!
+    </div>
+  </div>
+
+  <div class="become-a-supporter-blocks-wrapper">
+    {{ range $sponsorshipRows }}
+      <div class="become-a-supporter-blocks-row">
+        {{ range . }}
+          {{ $blockClass := (print "level-" .costInDollars) }}
+          {{ $formattedCost := (print "$" (lang.NumFmt 0 .costInDollars)) }}
+          {{ $mailSubject := (print "Becoming a WMRRA " .level) }}
+          {{ $useBenefitsModal := (gt (len .benefits) 4) }}
+          <div class="become-a-supporter-level-block {{ $blockClass }}">
+            <div class="supporter-level-content">
+              <div class="level-and-cost">
+                <div class="supporter-level">{{ .level }}</div>
+                <div class="cost">{{ $formattedCost }}</div>
+              </div>
+              <div class="benefits">
+                <ul class="featured-benefits">
+                  {{ range (first 4 .benefits) }}
+                    <li>{{ . }}</li>
+                  {{ end }}
+                </ul>
+                {{ if $useBenefitsModal }}
+                  <a href="#" class="see-all-benefits-link">See all</a>
+                {{ end }}
+              </div>
+              <a class="inquiry-button" href="mailto:2ndvp@wmrra.com?subject={{ $mailSubject }}" target="_blank">
+                Sponsor at this level
+              </a>
+            </div>
+          </div>
+          {{ if $useBenefitsModal }}
+            <div class="supporter-level-benefits-modal">
+              <i aria-hidden="true" class="modal-close-icon fas fa-times" title="Close modal"></i>
+              <div class="benefits-modal-conent {{ $blockClass }}">
+                <div>Complete {{ .level }} Benefits</div>
+                <ul>
+                  {{ range .benefits }}
+                    <li>{{ . }}</li>
+                  {{ end }}
+                </ul>
+              </div>
+            </div>
+          {{ end }}
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+</div>

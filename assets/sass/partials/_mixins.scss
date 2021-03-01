@@ -77,7 +77,6 @@
 @mixin pseudo-icon($icon-unicode) {
   content: $icon-unicode;
   font-family: "Font Awesome 5 Free"; 
-  display: inline-block;
   font-weight: 900;
   font-style: normal;
   font-variant: normal;
