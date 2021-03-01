@@ -467,14 +467,16 @@ $xlarge-screen-breakpoint: 81em; // 1300px
   left: 50%;
   transform: translateX(-50%);
   z-index: 101;
-  padding: 1rem 2rem 2rem;
+  padding: 2rem;
   width: 80%;
   max-width: 50rem;
+  border-radius: 0.5rem;
   background-color: $white;
 
   .modal-close-icon {
     display: flex;
     justify-content: flex-end;
+    margin-top: -1rem;
     font-size: 2.4rem;
     color: $medium-gray;
     cursor: pointer;
@@ -482,12 +484,12 @@ $xlarge-screen-breakpoint: 81em; // 1300px
 
   .benefits-modal-content {
     @include flex-column-centered;
-    padding-top: 4.5rem;
+    padding-top: 5.5rem;
 
     &.level-10000 {  
       &::before {
         @include sponsor-level-badge("\f091", $sponsor-gold);
-        top: 1rem;
+        top: 2rem;
       }
     }
 
@@ -495,14 +497,14 @@ $xlarge-screen-breakpoint: 81em; // 1300px
     &.level-1000 {  
       &::before {
         @include sponsor-level-badge("\f5a2", $sponsor-silver);
-        top: 1rem;
+        top: 2rem;
       }
     }
 
     &.level-500 {  
       &::before {
         @include sponsor-level-badge("\f559", $sponsor-bronze);
-        top: 1rem;
+        top: 2rem;
       }
     }
 
@@ -517,10 +519,14 @@ $xlarge-screen-breakpoint: 81em; // 1300px
     }
 
     ul {
-      max-height: 40rem;
+      max-height: 38rem;
       margin-bottom: 0;
       padding-inline-start: 3rem;
       overflow: scroll;
+
+      li {
+        margin-bottom: 0.5rem;
+      }
     }
   }
 }
