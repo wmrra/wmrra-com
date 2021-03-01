@@ -13,4 +13,4 @@ The 2021 Novice School class portion will be held at the Ridge Motorsports Park
 March 27th 9am-3pm. The class will be limited in size due to Covid mandates so
 only the first twenty registrants who wish to attend will be afforded the
 opportunity to attend in person. The class will be offered via Zoom for the
-remainder of interested participants. See link to registration below.
+remainder of interested participants.
