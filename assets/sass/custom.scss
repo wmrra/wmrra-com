@@ -1,13 +1,28 @@
 // global vars live out here (partials caused problems)
+// reds
 $wmmra-dark-red: #b1041d;
 $wmrra-dark-red-10: #9f041a; // 10% darker than base
 $wmrra-dark-red-30: #7c0314; // 30% darker than base
+
+// basic colors
 $white: #fff;
 $default-text-color: #333;
+$default-link-color: #337ab7;
+
+// grays
 $dark-gray: #433f3f;
 $medium-gray: #817f82;
 $light-gray: #dedadb;
 $light-gray-180: #fcfbfb; // 80% lighter than base
+
+// sponsor colors
+$sponsor-gold: #f9Af10;
+$sponsor-silver: #ada296;
+$sponsor-silver-20: #8a8278;
+$sponsor-bronze: #cd7f32;
+$sponsor-blue: #749fbe;
+
+// shadow
 $text-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.5);
 $default-box-shadow: 0 0.8rem 0.8rem -0.5rem rgba(0, 0, 0, 0.3);
 
@@ -15,7 +30,8 @@ $default-box-shadow: 0 0.8rem 0.8rem -0.5rem rgba(0, 0, 0, 0.3);
 $small-screen-breakpoint: 23rem; // 360px
 $medium-screen-breakpoint: 30em; // 480px
 $mobile-breakpoint: 48em; // 768px
-$large-screen-breakpoint: 81em; // 1300px
+$large-screen-breakpoint: 64rem; // 1024px
+$xlarge-screen-breakpoint: 81em; // 1300px
 
 @import "partials/mixins";
 @import "partials/media";
@@ -261,4 +277,210 @@ $large-screen-breakpoint: 81em; // 1300px
       }
     }
   }
+}
+
+// TODO: another partial
+
+.become-a-supporter-blocks-wrapper {
+  margin: 7rem auto 0;
+
+  @include media-max($large-screen-breakpoint) {
+    max-width: 75rem;
+  }
+
+  ul {
+    padding-inline-start: 3rem;
+    margin-bottom: 0;
+
+    li {
+      margin-bottom: 1.5rem;
+
+      &:last-child {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+.become-a-supporter-blocks-row {
+  display: grid;
+  justify-items: center;
+  grid-template-rows: max-content;
+  grid-column-gap: 3rem;
+  grid-row-gap: 6rem;
+  margin-bottom: 6rem;
+
+  @include media-min($large-screen-breakpoint) {
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+}
+
+.become-a-supporter-level-block {
+  position: relative;
+  width: 100%;
+  padding: 3rem 1rem 2rem;
+  border-width: 0.8rem;
+  border-style: solid;
+  border-radius: 1rem;
+
+  &::before {
+    position: absolute;
+    top: -4.5rem;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+    width: 7rem;
+    border-width: 0.8rem;
+    border-style: solid;
+    border-radius: 50%;
+    background-color: $white;
+    transform: translateX(-50%);
+    font-size: 3rem;
+  }
+
+  &.level-10000 {
+    border-color: $sponsor-gold;
+
+    &::before {
+      @include pseudo-icon("\f091");
+      border-color: $sponsor-gold;
+      color: $sponsor-gold;
+    }
+
+    .supporter-level-content {
+      .supporter-level {
+        font-size: 3rem;
+      }
+      
+      .cost {
+        font-size: 2.6rem;
+      }
+  
+      .inquiry-button {
+        background-color: $sponsor-gold;
+
+        &:hover {
+          filter: brightness(120%);
+        }
+      }
+    }
+  }
+
+  &.level-5000,
+  &.level-1000 {
+    border-color: $sponsor-silver;
+
+    &::before {
+      @include pseudo-icon("\f5a2");
+      border-color: $sponsor-silver;
+      color: $sponsor-silver;
+    }
+
+    .supporter-level-content {
+      .supporter-level {
+        font-size: 2.8rem;
+      }
+      
+      .cost {
+        font-size: 2.4rem;
+      }
+  
+      .inquiry-button {
+        background-color: $sponsor-silver;
+
+        &:hover {
+          background-color: $sponsor-silver-20;
+        }
+      }
+    }
+  }
+
+  &.level-500 {
+    border-color: $sponsor-bronze;
+
+    &::before {
+      @include pseudo-icon("\f559");
+      border-color: $sponsor-bronze;
+      color: $sponsor-bronze;
+    }
+
+    .supporter-level-content {
+      @include media-min($large-screen-breakpoint) {
+        grid-template-rows: 8rem 28rem 1fr;
+      }
+
+      .supporter-level {
+        font-size: 2.4rem;
+      }
+      
+      .cost {
+        font-size: 2.4rem;
+      }
+  
+      .inquiry-button {
+        background-color: $sponsor-bronze;
+        padding: 0.75rem;
+        width: 17rem;
+        font-size: 1.6rem;
+
+        &:hover {
+          filter: brightness(120%);
+        }
+      }
+    }
+  }
+
+  .supporter-level-content {
+    display: grid;
+    grid-template-rows: minmax(8rem, max-content) minmax(22rem, max-content) 1fr;
+    grid-gap: 1.2rem;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+
+    .level-and-cost {
+      @include flex-column-centered;
+      text-align: center;
+    }
+
+    .benefits {
+      padding: 0 1rem;
+    }
+
+    .see-all-benefits-link {
+      @include link-overrides($default-link-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.8rem;
+
+      &:hover {
+        filter: brightness(60%);
+      }
+
+      &::after {
+        @include pseudo-icon("\f105");
+        margin-left: 1rem;
+      }
+    }
+  
+    .inquiry-button {
+      @include link-overrides($white);
+
+      align-self: end;
+      width: 22rem;
+      padding: 1rem;
+      border-radius: 1rem;
+      color: $white;
+      font-size: 2rem;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+}
+
+.supporter-level-benefits-modal {
+  display: none;
 }

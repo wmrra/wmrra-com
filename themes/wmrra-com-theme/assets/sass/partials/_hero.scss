@@ -13,12 +13,12 @@
     background-size: cover;
     opacity: 0.5;
 
-    @include media-min($x-large-screen-breakpoint) {
+    @include media-min($xxlarge-screen-breakpoint) {
       height: 60rem;
     }
   }
 
-  @include media-min($x-large-screen-breakpoint) {
+  @include media-min($xxlarge-screen-breakpoint) {
     height: 60rem;
   }
 }

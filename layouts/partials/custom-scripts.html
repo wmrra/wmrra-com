@@ -1,2 +1,5 @@
-{{ $script := resources.Get "js/hero.js" | minify}}
-<script src="{{ $script.Permalink }}"></script>
+{{ $heroScript := resources.Get "js/hero.js" | minify}}
+{{ $supporterScript := resources.Get "js/supporter-levels.js" | minify }}
+
+<script src="{{ $heroScript.Permalink }}"></script>
+<script src="{{ $supporterScript.Permalink }}"></script>

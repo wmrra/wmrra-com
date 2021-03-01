@@ -65,7 +65,7 @@ function activateMobileMenu() {
       var windowWidth = $(window).width();
       if (windowWidth >= MOBILE_BREAKPOINT) {
         $(".header-menu-mobile-overlay").addClass("hidden");
-        $("html, body").removeClass("menu-open");
+        $("html, body").removeClass("modal-open");
         $(".header-menu-mobile-content").addClass("hidden");
         $(".header-menu-mobile").children(".menu-icon").show();
         $(".header-menu-mobile").children(".menu-close-icon").hide();
@@ -78,7 +78,7 @@ function activateMobileMenu() {
     $(this).hide();
     $(this).siblings(".menu-close-icon").show();
     $(".header-menu-mobile-overlay").removeClass("hidden");
-    $("html, body").addClass("menu-open");
+    $("html, body").addClass("modal-open");
     $(this).siblings(".header-menu-mobile-content.main").removeClass("hidden");
   });
 
@@ -86,7 +86,7 @@ function activateMobileMenu() {
     $(this).hide();
     $(this).siblings(".menu-icon").show();
     $(this).siblings(".header-menu-mobile-content").addClass("hidden");
-    $("html, body").removeClass("menu-open");
+    $("html, body").removeClass("modal-open");
     $(".header-menu-mobile-overlay").addClass("hidden");
   });
 
