@@ -1,15 +1,14 @@
 name: Deploy to Staging
 
 on:
-  label:
-    types: [created, deleted]
-
-# If label 'stage' is on the PR in question, Deploy to staging, and remove
-# the label
-if: ${{ !contains(github.event.pull_request.labels.*.name, 'stage') }}
+  pull_request:
+    types: [labeled]
 
 jobs:
+  # deploy to staging
   deploy:
+    name: "Deploy PR to Staging"
+    if: ${{ contains(github.event.pull_request.labels.*.name, 'stage') }}
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
@@ -34,11 +33,8 @@ jobs:
               hugo
               npx firebase-tools deploy --token $FIREBASE_TOKEN  --project wmrra-staging
   
-  # comment now that the PR is staged
-  comment:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/github-script@v3
+      - name: "Comment that PR is staged"
+        uses: actions/github-script@v3
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
@@ -49,17 +45,14 @@ jobs:
               body: 'Staged at https://wmrra-staging.web.app'
             })
 
-  # Remove label added by user
-  remove-label:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/github-script@v3
+      - name: "Remove stage label"
+        uses: actions/github-script@v3
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            github.issues.removeLabels({
+            github.issues.removeLabel({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              labels: ['stage']
+              name: 'stage'
             })
