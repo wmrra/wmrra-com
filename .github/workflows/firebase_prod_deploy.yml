@@ -1,4 +1,4 @@
-name: Firebase Deploy
+name: Deploy to Prod
 
 on:
   push:
@@ -29,4 +29,4 @@ jobs:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
         run:  |
               hugo
-              npx firebase-tools deploy --token $FIREBASE_TOKEN  --project wmrra-staging
+              npx firebase-tools deploy --token $FIREBASE_TOKEN  --project wmrra-prod
