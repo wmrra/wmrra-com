@@ -2,14 +2,11 @@ name: Deploy to Staging
 
 on:
   label:
-    types: [created, deleted]
-
-# If label 'stage' is on the PR in question, Deploy to staging,
-# and remove the label
-if: ${{ !contains(github.event.pull_request.labels.*.name, 'stage') }}
+    types: [created]
 
 jobs:
   deploy:
+    if: ${{ contains(github.event.pull_request.labels.*.name, 'stage') }}
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
@@ -36,6 +33,7 @@ jobs:
   
   # comment now that the PR is staged
   comment:
+    if: ${{ contains(github.event.pull_request.labels.*.name, 'stage') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/github-script@v3
@@ -51,6 +49,7 @@ jobs:
 
   # Remove label added by user
   remove-label:
+    if: ${{ contains(github.event.pull_request.labels.*.name, 'stage') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/github-script@v3
