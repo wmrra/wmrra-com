@@ -4,8 +4,8 @@ on:
   label:
     types: [created, deleted]
 
-# If label 'stage' is on the PR in question, Deploy to staging, and remove
-# the label
+# If label 'stage' is on the PR in question, Deploy to staging,
+# and remove the label
 if: ${{ !contains(github.event.pull_request.labels.*.name, 'stage') }}
 
 jobs:
