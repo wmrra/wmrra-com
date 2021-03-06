@@ -1,0 +1,15 @@
+#baseURL: https://wmrra.com
+baseURL: https://wmrra-staging.web.app/
+languageCode: en-us
+title: Washington Motorcycle Road Racing Association
+theme: wmrra-com-theme
+#disablePathToLower: true
+
+params:
+  dateFormat: "January 1, 2021"
+
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    renderer:
+      unsafe: true
