@@ -10,6 +10,15 @@
 -->
 {{ range $.Site.Data.menu.menu }}
 
+<!--
+  Submenus are nested in the label so they can
+  all be absolutely positioned w/ respect to their
+  label. This allows the menu buttons to be positioned
+  via flex while keeping the submenus consistently
+  positioned under them using the same position values.
+  tl;dr - nesting the subemenus inside the labels is a
+  a little weird, but don't un-nest it, or the styling breaks.
+-->
 <div class="header-menu-item">
   <div class="header-menu-item-label">
     {{ .name }}
@@ -19,7 +28,7 @@
           <a href="{{.link}}">{{ .name }}</a>
         </div>
       {{ end }}
-    </div>  
+    </div>
   </div>
 </div>
 

@@ -1,3 +1,4 @@
+// HEADER MENUS
 var submenuActive = false;
 var submenuTimeout = null;
 
@@ -8,7 +9,7 @@ function activateHeaderMenu() {
     var submenu = $(this).children(".header-menu-item-label").children(".header-menu-item-submenu");
     showSubmenu(submenu);
   }, function() {
-    hideSubmenuIfInactive($(this).children(".header-menu-item-submenu").children(".header-menu-item-submenu"));
+    hideSubmenuIfInactive($(this).children(".header-menu-item-label").children(".header-menu-item-submenu"));
   });
 
   $(".header-menu-item-submenu").hover(function() {
@@ -54,6 +55,7 @@ function showSubmenu(submenu) {
 }
 
 // TODO: get some separate JS files
+// MOBILE MENU
 var resizeDebounce = null;
 const MOBILE_BREAKPOINT = 768;
 function activateMobileMenu() {
