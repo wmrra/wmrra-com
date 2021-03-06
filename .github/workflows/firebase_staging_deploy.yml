@@ -30,7 +30,7 @@ jobs:
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
         run:  |
-              hugo
+              hugo --config config.staging.yml
               npx firebase-tools deploy --token $FIREBASE_TOKEN  --project wmrra-staging
   
       - name: "Comment that PR is staged"
