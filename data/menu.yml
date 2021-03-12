@@ -48,6 +48,8 @@ menu:
         link: /resources/airfence
       - name: Purchase an Airlift Membership
         link: https://www.uwmedicine.org/airliftnw/membership
+      - name: Board Minutes
+        link: /board-minutes
       - name: Legacy WMRRA Site
         link: http://wmrra.com
     
