@@ -42,6 +42,18 @@
     jointRound: false
 
 "2020":
+  - date: May 2-3 (CANCELLED)
+    round: 1
+    location: The Ridge Motorsports Park
+    locationLink: https://www.ridgemotorsportspark.com/
+    jointRound: true
+  
+  - date: June 13-14 (CANCELLED)
+    round: 2
+    location: Portland International Raceway
+    locationLink: https://www.portlandraceway.com/
+    jointRound: true
+  
   - date: July 11-12
     round: 3
     location: Pacific Raceways
@@ -52,7 +64,7 @@
     round: 4
     location: The Ridge Motorsports Park
     locationLink: https://www.ridgemotorsportspark.com/
-    jointRound: false
+    jointRound: true
   
   - date: September 5-7
     round: 5
@@ -60,8 +72,88 @@
     locationLink: https://pacificraceways.com/
     jointRound: false
 
-  - date: September 26-27
+  - date: September 26-27 (CANCELLED)
     round: 6
     location: Portland International Raceway
     locationLink: https://www.portlandraceway.com/
+    jointRound: true
+
+"2019":
+  - date: April 20-21
+    round: 1
+    location: Pacific Raceways
+    locationLink: https://pacificraceways.com/
+    jointRound: false
+
+  - date: May 4-5
+    round: 2
+    location: The Ridge Motorsports Park
+    locationLink: https://www.ridgemotorsportspark.com/
+    jointRound: false
+
+  - date: June 8-9
+    round: 3
+    location: The Ridge Motorsports Park
+    locationLink: https://www.ridgemotorsportspark.com/
+    jointRound: true
+
+  - date: August 17-18
+    round: 4
+    location: The Ridge Motorsports Park
+    locationLink: https://www.ridgemotorsportspark.com/
+    jointRound: false
+
+  - date: September 7-8
+    round: 5
+    location: Pacific Raceways
+    locationLink: https://pacificraceways.com/
+    jointRound: false
+
+  - date: September 21-22
+    round: 6
+    location: Portland International Raceway
+    locationLink: https://www.portlandraceway.com/
+    jointRound: true
+
+"2018":
+  - date: April 14-15
+    round: 1
+    location: Pacific Raceways
+    locationLink: https://pacificraceways.com/
+    jointRound: false
+  
+  - date: May 5-6
+    round: 2
+    location: The Ridge Motorsports Park
+    locationLink: https://www.ridgemotorsportspark.com/
+    jointRound: false
+  
+  - date: June 9-10
+    round: 3
+    location: The Ridge Motorsports Park
+    locationLink: https://www.ridgemotorsportspark.com/
+    jointRound: true
+  
+  - date: June 23-24
+    round: 4
+    location: Pacific Raceways
+    locationLink: https://pacificraceways.com/
+    jointRound: false
+  
+  - date: July 21-22
+    round: 5
+    location: Portland International Raceway
+    locationLink: https://www.portlandraceway.com/
+    jointRound: true
+
+  - date: August 18-19
+    round: 6
+    location: The Ridge Motorsports Park
+    locationLink: https://www.ridgemotorsportspark.com/
+    jointRound: false
+
+  - date: September 8-9
+    round: 7
+    location: Pacific Raceways
+    locationLink: https://pacificraceways.com/
     jointRound: false
