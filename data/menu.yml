@@ -40,8 +40,8 @@ menu:
         link: /resources/circuits
       - name: Taste of Racing (TOR)
         link: /resources/taste-of-racing
-      - name: WMRRA Official Photographer
-        link: http://www.whoisdane.photography/WMRRA
+      # - name: WMRRA Official Photographer
+      #   link: http://www.whoisdane.photography/WMRRA
       - name: Documents and Forms
         link: /resources/documents-and-forms
       - name: Airfence
@@ -58,4 +58,4 @@ menu:
       - name: Contact
         link: /contact
       - name: Report a Website Issue
-        link: https://github.com/crwilcox/wmrra-com/issues/new/choose
+        link: https://github.com/wmrra/wmrra-com/issues/new/choose
