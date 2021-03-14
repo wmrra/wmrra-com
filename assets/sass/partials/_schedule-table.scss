@@ -1,0 +1,74 @@
+$alternate-row-gray: #f2f2f3;
+
+.schedule-table {
+  color: $default-text-color;
+  font-size: 1.6rem;
+
+  @include media-max($medium-screen-breakpoint) {
+    display: grid;
+    grid-gap: 2rem;
+  }
+}
+
+.schedule-table-row {
+  background-color: $white;
+
+  &:nth-child(odd) {
+    background-color: $alternate-row-gray;
+  }
+  
+  &.table-header {
+    background-color: $wmmra-dark-red;
+    color: $white;
+
+    @include media-max($medium-screen-breakpoint) {
+      display: none;
+    }
+  }
+
+  @include media-min($medium-screen-breakpoint) {
+    display: grid;
+    grid-template-columns: 8rem minmax(8rem, 1fr) minmax(15rem, 2fr) 7rem;
+  }
+}
+
+.schedule-table-cell {
+  padding: 1rem;
+
+  &.round {
+    background-color: $wmmra-dark-red;
+    color: $white;
+  }
+
+  &.round, 
+  &.joint-round {
+    text-align: center;
+  }
+
+  &.date,
+  &.location {
+    @include media-min($medium-screen-breakpoint) {
+      padding: 1rem 1.5rem;
+    }
+  }
+
+  .joint-round-icon {
+    color: $wmmra-dark-red;
+
+    @include media-max($medium-screen-breakpoint) {
+      display: none;
+    }
+  }
+
+  .joint-round-text {
+    font-style: italic;
+
+    @include media-min($medium-screen-breakpoint) {
+      display: none;
+    }
+  }
+
+  @include media-max($medium-screen-breakpoint) {
+    text-align: center;
+  }
+}
