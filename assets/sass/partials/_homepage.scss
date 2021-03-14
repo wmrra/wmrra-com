@@ -35,11 +35,16 @@
 .home-content-section {
   display: flex;
   justify-content: center;
-  padding: 4.5rem 2rem;
+  padding: 4.5rem 2rem 5.5rem;
 
-  &:nth-child(even) {
-    background-color: $wmmra-dark-red; // dark red
+  &.latest-news {
+    background-color: $wmmra-dark-red;
     color: $white;
+  }
+
+  &.homepage-schedule {
+    background-color: $light-gray;
+    color: $wmmra-dark-red;
   }
 }
 
@@ -285,6 +290,11 @@
       @include bouncy-animation();
      }
   }
+}
+
+.homepage-schedule-wrapper {
+  width: 100%;
+  max-width: 100rem;
 }
 
 .supporter-splash {

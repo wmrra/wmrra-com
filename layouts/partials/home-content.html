@@ -1,3 +1,6 @@
+{{ $whatYearIsIt := string time.Now.Year }}
+{{ $currentSchedule := index .Site.Data.schedule $whatYearIsIt }}
+
 <div class="home-content">
   <div class="home-content-section we-are-wmrra">
     {{ partial "home-content-section/we-are-wmrra" . }}
@@ -6,6 +9,12 @@
   <div class="home-content-section latest-news">
     {{ partial "home-content-section/latest-news" . }}
   </div>
+
+  {{ with $currentSchedule }}
+    <div class="home-content-section homepage-schedule">
+      {{ partial "home-content-section/homepage-schedule" (dict "scheduleData" $currentSchedule "year" $whatYearIsIt) }}
+    </div>
+  {{ end }}
 
   <div class="home-content-section supporters">
     {{ partial "home-content-section/supporter-splash" . }}

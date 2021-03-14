@@ -1,45 +1,67 @@
 "2021":
   - date: May 8-9
-    round: Round 1 (Joint OMRRA Round)
+    round: 1
     location: The Ridge Motorsports Park
+    locationLink: https://www.ridgemotorsportspark.com/
+    jointRound: true
 
   - date: June 11-13
-    round: Round 2 (Joint OMRRA Round)
-    location: PIR (Chicane)
+    round: 2
+    location: Portland International Raceway (Chicane)
+    locationLink: https://www.portlandraceway.com/
+    jointRound: true
 
   - date: June 19-20
-    round: Round 3
+    round: 3
     location: The Ridge Motorsports Park
+    locationLink: https://www.ridgemotorsportspark.com/
+    jointRound: false
 
   - date: July 10-11
-    round: Round 4
+    round: 4
     location: Pacific Raceways
+    locationLink: https://pacificraceways.com/
+    jointRound: false
 
   - date: July 16-18
-    round: Round 5 (Joint OMRRA Round)
-    location: PIR (Chicane)
+    round: 5
+    location: Portland International Raceway (Chicane)
+    locationLink: https://www.portlandraceway.com/
+    jointRound: true
   
   - date: August 14-15
-    round: Round 6 (Joint OMRRA Round)
-    location: PIR (Chicane)
+    round: 6
+    location: Portland International Raceway (Chicane)
+    locationLink: https://www.portlandraceway.com/
+    jointRound: true
 
   - date: September 11-12
-    round: Round 7
-    location: Pacific
+    round: 7
+    location: Pacific Raceways
+    locationLink: https://pacificraceways.com/
+    jointRound: false
 
 "2020":
   - date: July 11-12
-    round: Round 3
+    round: 3
     location: Pacific Raceways
+    locationLink: https://pacificraceways.com/
+    jointRound: false
 
   - date: August 15-16
-    round: Round 4
+    round: 4
     location: The Ridge Motorsports Park
+    locationLink: https://www.ridgemotorsportspark.com/
+    jointRound: false
   
   - date: September 5-7
-    round: Round 5
+    round: 5
     location: Pacific Raceways
+    locationLink: https://pacificraceways.com/
+    jointRound: false
 
   - date: September 26-27
-    round: Round 6
+    round: 6
     location: Portland International Raceway
+    locationLink: https://www.portlandraceway.com/
+    jointRound: false

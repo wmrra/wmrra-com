@@ -1,0 +1,15 @@
+{{ $scheduleData := .Site.Data.schedule }}
+{{ $years := slice }}
+
+{{ range $year, $_data := $scheduleData }}
+  {{ $years = $years | append $year }}
+{{ end }}
+
+<div data-debug="{{ $years }}">
+  {{ range sort $years "value" "desc" }}
+    <div>
+      <h1>{{ . }} Season</h1>
+    </div>
+    {{ partial "schedule-table" (dict "scheduleData" (index $scheduleData  .)) }} 
+  {{ end }}
+</div>

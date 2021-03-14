@@ -1,0 +1,10 @@
+
+<div class="home-content-section-wrapper homepage-schedule">
+  <div class="home-content-section-header">
+    <h1>{{.year }} Race Schedule</h1>
+  </div>
+
+  <div class="homepage-schedule-wrapper">
+    {{ partial "schedule-table" (dict "scheduleData" .scheduleData) }}  
+  </div>
+</div>
