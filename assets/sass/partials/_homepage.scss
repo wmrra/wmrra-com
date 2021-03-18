@@ -55,10 +55,6 @@
   justify-items: center;
   width: 100%;
   max-width: 160rem;
-
-  &.supporters {
-    width: auto;
-  }
 }
 
 .home-content-section-header {
@@ -299,6 +295,7 @@
 
 .supporter-splash {
   display: grid;
+  width: 100%;
 
   .supporter-block-wrapper {
     margin: 1rem;
@@ -396,9 +393,14 @@
 }
 
 .all-supporters-wrapper {
+  margin: 0 auto;
+}
+
+.all-supporters-inner {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
+  max-width: 120rem;
   padding-top: 2rem;
 }
