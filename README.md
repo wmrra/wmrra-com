@@ -34,10 +34,7 @@ description: "A brief description of the post that shows on the front page."
 ```
 
 ## Updating Schedules
-The menu is defined at [content/race/schedule.html](content/race/schedule.html)
-
-The schedule is currently formatted as html, but may be moved to a data file in
-the future.
+The schedule is defined at [data/schedule.yml](data/schedule.yml)
 
 ## Updating the Menu
 The menu is defined at [data/menu.yml](data/menu.yml)
