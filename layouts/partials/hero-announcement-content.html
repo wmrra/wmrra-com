@@ -1,11 +1,16 @@
-
+{{ $whatYearIsIt := string time.Now.Year }}
 {{ $latestNews := (where site.RegularPages.ByDate "Section" "news" | last 1) }}
-{{/* Add: last race results, countdown to next race */}}
+{{ $currentSchedule := jsonify (index site.Data.schedule $whatYearIsIt) }}
+{{/* Add: last race results */}}
 
 <div class="hero-announcement-content">
-  {{/* Only ONE of these will remain, and the fancy javascript will decide which one */}}
+  {{/* Only ONE of these will remain; the fancy javascript will decide which one */}} 
   {{ range $latestNews }}
-    <div id="latest-announcement" class="hero-announcement-content-block" data-date="{{ .Date }}">
+    <div
+      id="latest-announcement"
+      class="hero-announcement-content-block"
+      data-date="{{ .Date }}"
+    >
       <div class="hero-announcement-text">
         <h1>{{ .Title }}</h1>
         <h3>{{ .Description }}</h3>
@@ -14,9 +19,17 @@
     </div>
   {{ end }}
 
-  <div id="default" class="hero-announcement-content-block" >
+  <div
+    id="next-race-event"
+    class="hero-announcement-content-block"
+    data-schedule="{{ $currentSchedule }}"
+  >
+    {{/* Yes, it's an empty div! It'll be populated via Javascript */}}
+    <div class="hero-announcement-text"></div>
+  </div>
+
+  <div id="default" class="hero-announcement-content-block">
     <div class="hero-announcement-text"><h1>Welcome to WMRRA!</h1></div>
     <a class="hero-announcement-button" href="">Learn More</a>
   </div>
 </div>
-
