@@ -37,16 +37,18 @@
       {{ end }}
 
         <div class="all-supporters-wrapper">
-          {{ range $sponsorData }}
-            {{ range where .sponsors ".name" "not in" $uniqueSponsors }}
-              {{ if in .name "Sponsorship Available" }}
-                {{/* Do nothing */}}
-              {{ else }}
-                {{ $uniqueSponsors = $uniqueSponsors | append .name }}
-                {{ partial "home-content-section/supporter-block" (dict "context" .) }}
-              {{end}}
+          <div class="all-supporters-inner">
+            {{ range $sponsorData }}
+              {{ range where .sponsors ".name" "not in" $uniqueSponsors }}
+                {{ if in .name "Sponsorship Available" }}
+                  {{/* Do nothing */}}
+                {{ else }}
+                  {{ $uniqueSponsors = $uniqueSponsors | append .name }}
+                  {{ partial "home-content-section/supporter-block" (dict "context" .) }}
+                {{ end }}
+              {{ end }}
             {{ end }}
-          {{ end }}
+          </div>
       </div>
     </div>
   </div>
