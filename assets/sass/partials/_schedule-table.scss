@@ -13,10 +13,6 @@ $alternate-row-gray: #f2f2f3;
 .schedule-table-row {
   background-color: $white;
 
-  &:nth-child(odd) {
-    background-color: $alternate-row-gray;
-  }
-  
   &.table-header {
     background-color: $wmmra-dark-red;
     color: $white;
@@ -29,10 +25,18 @@ $alternate-row-gray: #f2f2f3;
   @include media-min($medium-screen-breakpoint) {
     display: grid;
     grid-template-columns: 8rem minmax(8rem, 1fr) minmax(15rem, 2fr) 7rem;
+
+    &:not(.table-header) {
+      &:nth-child(odd) {
+        background-color: $alternate-row-gray;
+      }
+    }
   }
 }
 
 .schedule-table-cell {
+  display: flex;
+  align-items: center;
   padding: 1rem;
 
   &.round {
@@ -42,7 +46,7 @@ $alternate-row-gray: #f2f2f3;
 
   &.round, 
   &.joint-round {
-    text-align: center;
+    justify-content: center;
   }
 
   &.date,
@@ -69,6 +73,6 @@ $alternate-row-gray: #f2f2f3;
   }
 
   @include media-max($medium-screen-breakpoint) {
-    text-align: center;
+    justify-content: center;
   }
 }
