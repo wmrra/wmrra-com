@@ -2,7 +2,7 @@
 
 [New Racer Information Packet](/downloads/2020-New-Racer-Info-Packet.pdf)
 
-[Medical Form](/downloads/2020-WMRRA-Medical-Info-Form-Blank.pdf)
+[Medical Form](/downloads/2021-WMRRA-Medical-Info-Form.pdf)
 
 [Novice Racer School (NRS) On-Track Form](/downloads/2020-WMRRA-NRS-On-Track-Form.pdf)
 
