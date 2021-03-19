@@ -92,7 +92,8 @@ function getNextRaceEvent(schedule) {
 function populateRaceEventContent(block) {
   var { month, day } = extractRaceEventMonthAndDay(nextRaceEvent);
   // BUT Javascript dates are NOT ZERO-INDEXED when you're trying to make a date (╯°□°)╯︵ ┻━┻
-  var nextRaceEventDate = new Date(`${month + 1} ${day} ${new Date().getFullYear()}`);
+  // also, if you don't put the slashes in the date, Safari cries about it
+  var nextRaceEventDate = new Date(`${month + 1}/${day}/${new Date().getFullYear()}`);
 
   var textContainer = $(block).children(".hero-announcement-text");
   if (new Date().getDate() === nextRaceEventDate.getDate()) {
@@ -103,10 +104,15 @@ function populateRaceEventContent(block) {
 
     textContainer.append($("<h1>").text("Next Race Round"));
     textContainer.append($("<h2>").text(`${nextRaceEvent.date} at ${nextRaceEvent.location}`));
-    textContainer.append(countdownContainer);
+
+    // if next race event Date object isn't valid, we can bail out before adding the countdown
+    if (!nextRaceEventDate instanceof Date || isNaN(nextRaceEventDate)) {
+      return;
+    }
 
     // populate the countdown clock immediately, 
     // then start updating every second (otherwise it is momentarily invisible)
+    textContainer.append(countdownContainer);
     calculateNextCountdownTime(eventTime, countdownContainer);
     setInterval(function() {
       calculateNextCountdownTime(eventTime, countdownContainer);
@@ -120,12 +126,19 @@ function calculateNextCountdownTime(eventTime, countdownContainer) {
   var distance = eventTime - nowTime;
 
   // time calculations for days, hours, minutes and seconds
-  var days = formatCountdownNumber(Math.floor(distance / (1000 * 60 * 60 * 24)));
-  var hours = formatCountdownNumber(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
-  var minutes = formatCountdownNumber(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
-  var seconds = formatCountdownNumber(Math.floor((distance % (1000 * 60)) / 1000));
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  var timeString = `${days}d ${hours}h ${minutes}m ${seconds}s`
+  // if any of these numbers is invalid, don't so anything
+  if (isNaN(days) || isNaN(hours) || isNaN(minutes) || isNaN(seconds)) {
+    return;
+  }
+
+  var timeString = `${formatCountdownNumber(days)}d ${formatCountdownNumber(hours)}h `+
+    `${formatCountdownNumber(minutes)}m ${formatCountdownNumber(seconds)}s`;
+  
   countdownContainer.text(timeString);
 }
 
