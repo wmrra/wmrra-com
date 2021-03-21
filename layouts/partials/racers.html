@@ -1,22 +1,29 @@
-<table>
-  <thead>
-    <tr>
-    <th>Number</th>
-    <th>Last Name</th>
-    <th>First Name</th>
-    </tr>
-  </thead>
-  <tbody>
-    {{ $url := "/csv/race-numbers.csv" }}
-    {{ $sep := "," }}
-  {{ range $i, $r := getCSV $sep $url }}
-    <tr>
-      {{ if ne $i 0 }}
-      <td>{{ index $r 0 }}</td>
-      <td>{{ index $r 1 }}</td>
-      <td>{{ index $r 2 }}</td>
-      {{ end }}
-    </tr>
+{{ $csv := getCSV "," "/csv/race-numbers.csv"  }}
+
+<div class="schedule-table">
+  <div class="schedule-table-row table-header">
+    <div class="schedule-table-cell">Number</div>
+    <div class="schedule-table-cell">Surname</div>
+    <div class="schedule-table-cell">First Name</div>
+  </div>
+
+  {{ range $i, $r := $csv  }}
+  {{ if ne $i 0 }} 
+    {{ $number := index $r 0 }}
+    {{ $lastName := index $r 1 }}
+    {{ $firstName := index $r 2 }}
+
+  <div class="schedule-table-row">
+    <div class="schedule-table-cell round">
+      {{ $number }}
+    </div>
+    <div class="schedule-table-cell">
+      {{ $lastName}}
+    </div>
+    <div class="schedule-table-cell">
+      {{ $firstName }}
+    </div>
+  </div>
   {{ end }}
-  </tbody>
-</table>
+  {{ end }}
+</div>
