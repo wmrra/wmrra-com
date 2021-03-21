@@ -13,6 +13,8 @@ menu:
         link: /race/rulebook
       - name: Schedule
         link: /race/schedule
+      - name: Current Racers
+        link: /race/racers
       - name: New Racers
         link: /race/new-racer-information
       - name: Documents and Forms

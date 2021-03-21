@@ -6,7 +6,7 @@
 
 [Novice Racer School (NRS) On-Track Form](/downloads/2020-WMRRA-NRS-On-Track-Form.pdf)
 
-[Novice Graduation Form](/downloads/2020-Novice-Graduation-Form.pdf)
+[Novice Graduation Form](/downloads/2021-Novice-Graduation-Form.pdf)
 
 [Race Refund Form](/downloads/refundform.pdf)
 
@@ -16,4 +16,5 @@ For those needing a refund on entry fees for missed races, hold on to your tech 
 
 [Expense Voucher (not for Travel Expenses)](/downloads/expensevoucher.pdf)
 
-[Travel Expense Info](/downloads/WMRRA-TRAVEL-EXPENSES-REIMBURSEMENT-POLICY.txt)
+<!-- [Travel Expense Info](/downloads/WMRRA-TRAVEL-EXPENSES-REIMBURSEMENT-POLICY.txt) -->
+[Travel Expense Info](/downloads/WMRRA-Expense-Voucher-Form.pdf)
