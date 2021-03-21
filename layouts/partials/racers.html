@@ -1,0 +1,22 @@
+<table>
+  <thead>
+    <tr>
+    <th>Number</th>
+    <th>Last Name</th>
+    <th>First Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ $url := "/csv/race-numbers.csv" }}
+    {{ $sep := "," }}
+  {{ range $i, $r := getCSV $sep $url }}
+    <tr>
+      {{ if ne $i 0 }}
+      <td>{{ index $r 0 }}</td>
+      <td>{{ index $r 1 }}</td>
+      <td>{{ index $r 2 }}</td>
+      {{ end }}
+    </tr>
+  {{ end }}
+  </tbody>
+</table>
