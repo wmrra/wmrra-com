@@ -30,7 +30,7 @@ $alternate-row-gray: #f2f2f3;
     color: $white;
   }
 
-  @include media-max($medium-screen-breakpoint) {
+  &.center {
     justify-content: center;
   }
 }
