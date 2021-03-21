@@ -1,10 +1,10 @@
 {{ $csv := getCSV "," "/csv/race-numbers.csv"  }}
 
-<div class="schedule-table">
-  <div class="schedule-table-row table-header">
-    <div class="schedule-table-cell">Number</div>
-    <div class="schedule-table-cell">Surname</div>
-    <div class="schedule-table-cell">First Name</div>
+<div class="racer-table">
+  <div class="racer-table-row table-header">
+    <div class="racer-table-cell">Number</div>
+    <div class="racer-table-cell">Surname</div>
+    <div class="racer-table-cell">First Name</div>
   </div>
 
   {{ range $i, $r := $csv  }}
@@ -13,14 +13,14 @@
     {{ $lastName := index $r 1 }}
     {{ $firstName := index $r 2 }}
 
-  <div class="schedule-table-row">
-    <div class="schedule-table-cell round">
+  <div class="racer-table-row">
+    <div class="racer-table-cell red">
       {{ $number }}
     </div>
-    <div class="schedule-table-cell">
+    <div class="racer-table-cell">
       {{ $lastName}}
     </div>
-    <div class="schedule-table-cell">
+    <div class="racer-table-cell">
       {{ $firstName }}
     </div>
   </div>
