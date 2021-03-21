@@ -3,14 +3,11 @@ $alternate-row-gray: #f2f2f3;
 .racer-table {
   color: $default-text-color;
   font-size: 1.6rem;
-
-  @include media-max($medium-screen-breakpoint) {
-    display: grid;
-    grid-gap: 2rem;
-  }
 }
 
 .racer-table-row {
+  display: grid;
+  grid-template-columns: 8rem minmax(8rem, 1fr) minmax(15rem, 2fr) 7rem;
   background-color: $white;
 
   &.table-header {
@@ -19,17 +16,6 @@ $alternate-row-gray: #f2f2f3;
 
     @include media-max($medium-screen-breakpoint) {
       display: none;
-    }
-  }
-
-  @include media-min($medium-screen-breakpoint) {
-    display: grid;
-    grid-template-columns: 8rem minmax(8rem, 1fr) minmax(15rem, 2fr) 7rem;
-
-    &:not(.table-header) {
-      &:nth-child(odd) {
-        background-color: $alternate-row-gray;
-      }
     }
   }
 }
