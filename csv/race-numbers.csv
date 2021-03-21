@@ -1,5 +1,7 @@
 Number,Last Name,First Name
 1,Robarts,Adam
+2,Sarbora,Chris
+3,Pinkstaff,Brian
 4,Campbell,Steven
 6,McComsey,Paul
 7,Darling,Matt
@@ -46,6 +48,7 @@ Number,Last Name,First Name
 62,Workman,Rob
 63,Kim,Rich
 64,Griffin,Cliff
+64X,Sarbora,Chris
 66,Hudak,Jonathan
 67,Alexander,Steven
 69,Lenz,Doug
@@ -62,6 +65,7 @@ Number,Last Name,First Name
 84,Kudo,Micah
 85,Parlin,Ryan
 86,Gauerke,Eric
+88,Smith,Cedric
 92,Ohman,Joel
 93,Rudy,Ron
 94,Coleman,Mitch
@@ -82,7 +86,6 @@ Number,Last Name,First Name
 152,Harris,Scott
 166,Taylor,Matt
 181,Wichgers,Matthew
-188,Smith,Cedric
 202,Knudsen,Dustin
 204,Faussett,Adam
 213,Sandoval,Tico

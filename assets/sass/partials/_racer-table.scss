@@ -1,0 +1,40 @@
+.racer-table {
+  color: $default-text-color;
+  font-size: 1.6rem;
+}
+
+.racer-table-row {
+  display: grid;
+  grid-template-columns: 8rem minmax(8rem, 1fr) minmax(15rem, 2fr) 7rem;
+  background-color: $white;
+
+  &.table-header {
+    background-color: $wmmra-dark-red;
+    color: $white;
+
+    @include media-max($medium-screen-breakpoint) {
+      display: none;
+    }
+  }
+
+  &:not(.table-header) {
+    &:nth-child(odd) {
+      background-color: $alternate-row-gray;
+    }
+  }
+}
+
+.racer-table-cell {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+
+  &.red {
+    background-color: $wmmra-dark-red;
+    color: $white;
+  }
+
+  &.center {
+    justify-content: center;
+  }
+}

@@ -36,6 +36,9 @@ description: "A brief description of the post that shows on the front page."
 ## Updating Schedules
 The schedule is defined at [data/schedule.yml](data/schedule.yml)
 
+## Updating Racer Numbers
+The racer numbers are defined at [csv/race-numbers.csv](csv/race-numbers.csv)
+
 ## Updating the Menu
 The menu is defined at [data/menu.yml](data/menu.yml)
 

@@ -7,15 +7,15 @@ menu:
     children:
       - name: Race Results and Live Timing
         link: https://racehero.io/orgs/wmrra-official
+      - name: Racer Numbers
+        link: /race/racers
       - name: Register to Race
         link: /race/register
       - name: Rulebook
         link: /race/rulebook
       - name: Schedule
         link: /race/schedule
-      - name: Current Racers
-        link: /race/racers
-      - name: New Racers
+      - name: New Racer Information
         link: /race/new-racer-information
       - name: Documents and Forms
         link: /resources/documents-and-forms
