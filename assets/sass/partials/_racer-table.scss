@@ -18,6 +18,12 @@ $alternate-row-gray: #f2f2f3;
       display: none;
     }
   }
+
+  &:not(.table-header) {
+    &:nth-child(odd) {
+      background-color: $alternate-row-gray;
+    }
+  }
 }
 
 .racer-table-cell {
