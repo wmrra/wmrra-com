@@ -100,7 +100,6 @@ function populateRaceEventContent(block) {
     textContainer.append($("<h1>").text("It's Race Day!"));
   } else {
     var eventTime = nextRaceEventDate.getTime();
-    var countdownContainer = $("<h1>").attr("id", "race-countdown-clock").text("");
 
     textContainer.append($("<h1>").text("Next Race Round"));
     textContainer.append($("<h2>").text(`${nextRaceEvent.date} at ${nextRaceEvent.location}`));
@@ -112,6 +111,7 @@ function populateRaceEventContent(block) {
 
     // populate the countdown clock immediately, 
     // then start updating every second (otherwise it is momentarily invisible)
+    var countdownContainer = buildCountdownContainerHtml();
     textContainer.append(countdownContainer);
     calculateNextCountdownTime(eventTime, countdownContainer);
     setInterval(function() {
@@ -136,10 +136,28 @@ function calculateNextCountdownTime(eventTime, countdownContainer) {
     return;
   }
 
-  var timeString = `${formatCountdownNumber(days)}d ${formatCountdownNumber(hours)}h `+
-    `${formatCountdownNumber(minutes)}m ${formatCountdownNumber(seconds)}s`;
-  
-  countdownContainer.text(timeString);
+  const timeContainers = countdownContainer.children()
+
+  timeContainers.filter("#days").children(".countdown-number").text(formatCountdownNumber(days));
+  timeContainers.filter("#hours").children(".countdown-number").text(formatCountdownNumber(hours));
+  timeContainers.filter("#minutes").children(".countdown-number").text(formatCountdownNumber(minutes));
+  timeContainers.filter("#seconds").children(".countdown-number").text(formatCountdownNumber(seconds));
+}
+
+function buildCountdownContainerHtml() {
+  var countdownContainer = $("<h1>").attr("id", "race-countdown-clock");
+
+  ["days", "hours", "minutes", "seconds"].forEach(function(divId) {
+    countdownContainer.append($("<div>").addClass("countdown-number-wrapper").attr("id", divId));
+  });
+
+  countdownContainer.children().each(function(_index, child) {
+    const container = $(child);
+    container.append($("<span>").addClass("countdown-number"));
+    container.append($("<span>").addClass("countdown-label").text(container.attr("id")));
+  });
+
+  return countdownContainer;
 }
 
 // event data format: "May 17-18"
