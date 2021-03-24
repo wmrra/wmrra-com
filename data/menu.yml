@@ -53,7 +53,7 @@ menu:
       - name: Board Minutes
         link: /board-minutes
       - name: Legacy WMRRA Site
-        link: http://wmrra.com
+        link: http://legacy.wmrra.com
     
   - name: Contact
     children: 
