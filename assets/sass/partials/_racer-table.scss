@@ -1,3 +1,14 @@
+.table-wrapper { // At wide widths, use two columns of tables
+  @include media-max($medium-screen-breakpoint) {
+    grid-template-columns: 1fr;
+    grid-gap: 0rem;
+
+  }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
 .racer-table {
   color: $default-text-color;
   font-size: 1.6rem;
@@ -12,8 +23,10 @@
     background-color: $wmmra-dark-red;
     color: $white;
 
-    @include media-max($medium-screen-breakpoint) {
-      display: none;
+    &.second-header {
+      @include media-max($medium-screen-breakpoint) {
+        display: none;
+      }
     }
   }
 
@@ -28,6 +41,7 @@
   display: flex;
   align-items: center;
   padding: 1rem;
+
 
   &.red {
     background-color: $wmmra-dark-red;
