@@ -32,6 +32,40 @@
   }
 }
 
+#race-countdown-clock {
+  display: grid;
+  grid-template-columns: repeat(4, 8rem);
+  justify-content: center;
+
+  .countdown-number-wrapper {
+    position: relative;
+    display: grid;
+    grid-template-rows: 4rem 2.5rem;
+    align-items: center;
+
+    &:before {
+      content: ":";
+      position: absolute;
+      top: 0;
+    }
+
+    &:first-child {
+      &:before {
+        content: "";
+      }
+    }
+  }
+
+  .countdown-number {
+    font-weight: 600;
+  }
+
+  .countdown-label {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+}
+
 .home-content-section {
   display: flex;
   justify-content: center;
