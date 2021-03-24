@@ -25,6 +25,16 @@
   {{ $styles := $sass | resources.ToCSS }}
   <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SJTTDTL8HL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-SJTTDTL8HL');
+  </script>
+
   {{ if templates.Exists "partials/custom-head-content.html" }}
     {{ partial "custom-head-content" .}}
   {{ end }}
