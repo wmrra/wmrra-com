@@ -6,7 +6,7 @@ Number,Last Name,First Name
 6,McComsey,Paul
 7,Darling,Matt
 8,Clary,Derick
-9,Retired,Wmrra
+9,Retired,(Marty Wilkison)
 10,Campbell,Steven
 11,Szilveszter,Mark
 12,Strobel,Morgan
@@ -35,6 +35,7 @@ Number,Last Name,First Name
 44,Lorentzen,Dan
 46,Kump,Kumpy
 47,Wilcox,Christopher
+48,Retired,(Marty Capadona)
 48,Burchill,Brian
 49,Stone,Keith
 50,Pearson,Doug
@@ -52,10 +53,11 @@ Number,Last Name,First Name
 66,Hudak,Jonathan
 67,Alexander,Steven
 69,Lenz,Doug
+70,Retired,(Jim Kuniyuki)
 71,Craick,Duncan
 72,Carpenter,Carol
 73,Melnyk,Philip
-74,Retired,Wmrra
+74,Retired,(Mike Sullivan)
 77,Walbon,Dustin
 78,Cresap,Sean
 79,Doody,Jason
@@ -81,7 +83,7 @@ Number,Last Name,First Name
 124,Soderholm,Gavin
 126,Dobbs,Mallory
 131,River,Emily
-134,Retired,Wmrra
+134,Retired,(Kurt Husted)
 149,Nusbaum,Howard
 152,Harris,Scott
 166,Taylor,Matt
@@ -94,26 +96,32 @@ Number,Last Name,First Name
 220,O'Mahony,Tim
 222,Mann,Chris
 230,Gienau,Paul
+236,Retired,(Jim Bailey)
 247,Gingerich,Sergio
 253,Goddard, Jeremy
+254,Retired,(Wiley Brandell)
 272,Williams,Donald
 283,Retired,Wmrra
 284,Visser,Garret
 289,Platt,Crystal
-303,Retired,Wmrra
+303,Retired,(Kelly Johnson)
 311,Cook,Troy
 313,Kitchell,Matthew
+314,Retired,(Claude Jinks)
 343,McElhany,Miles
+350,Retired,(John Lippis)
 351,White,Matthew
 393,Nadershahi M.D.,Arash
 412,Andrist,Stacey
 420,Andrist,Miles
+444,Retired,(John Doyle)
 479,Andrist,Brett
 494,Phillips,Stephen
 498,Moore,Eric
 676,Winter,Matthew
 703X,Ceccacci,Jeff
 717,Lange,Don
+726,Retired,(Alex Anderson)
 777,Wright,Joseph
 802,Van Patten,Joe
 803,O'Brien,Luke
@@ -147,3 +155,4 @@ Number,Last Name,First Name
 906,Schmal,Nick
 907,Radcliff,Keith
 911,Prindle,Robert
+928,Retired,(Khalil Mohmed)
