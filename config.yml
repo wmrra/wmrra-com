@@ -1,5 +1,4 @@
-#baseURL: https://wmrra.com
-baseURL: https://wmrra-prod.web.app/
+baseURL: https://wmrra.com
 languageCode: en-us
 title: Washington Motorcycle Road Racing Association
 theme: wmrra-com-theme
