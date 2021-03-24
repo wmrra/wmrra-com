@@ -16,6 +16,15 @@ This project uses a static site generator called [Hugo](gohugo.io).
 
 3) browse to http://localhost:1313
 
+# Contributing
+
+If you would like to suggest a feature or report a bug, you can
+[file an issue](https://github.com/wmrra/wmrra-com/issues/new/choose).
+
+We welcome contributions from the community. A good place to start is to create
+an [issue](https://github.com/wmrra/wmrra-com/issues/new/choose) and to discuss
+the change you would like to make before proceeding.
+
 # Common Tasks
 Here are a few common updates you may want to make to the site.
 
