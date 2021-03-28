@@ -2,18 +2,18 @@
   &::after {
     // Hero Images to use
     // 4000 x 2150
-    background-image: url("../images/hero/finger_guns.jpg");
-    // background-image: url("../images/hero/214-vintage.jpg");
+    // background-image: url("../images/hero/finger_guns.jpg");
+    background-image: url("../images/hero/214-vintage.jpg");
     // background-image: url("../images/hero/29-39-12-lwss.jpg");
-
     // Possibly usable with anchoring change:
-    // background-image: url("../images/hero/04-2.jpg");
+    // background-image: url("../images/hero/04.jpg");
     // background-image: url("../images/hero/12.jpg");
     // background-image: url("../images/hero/220-vintage.jpg");
     // background-image: url("../images/hero/49-2018.jpg"); // meh anchoring
     // background-image: url("../images/hero/05.jpg"); // meh
     // background-image: url("../images/hero/01-doublevision.jpg"); 
-
+    
+    background-position: top;
   }
 }
 
