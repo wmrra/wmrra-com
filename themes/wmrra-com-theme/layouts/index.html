@@ -1,5 +1,6 @@
 {{ define "main" }}
-  <div class="home-content-wrapper">
+  {{ $heroImages := jsonify .Site.Data.heroImages.images }}
+  <div class="home-content-wrapper" data-images="{{ $heroImages }}">
     <div class="hero">
       <div class="hero-content">
         {{ if templates.Exists "partials/hero-announcement-content.html" }}
