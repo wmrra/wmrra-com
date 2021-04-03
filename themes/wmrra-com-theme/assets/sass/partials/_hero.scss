@@ -16,10 +16,26 @@
     @include media-min($xxlarge-screen-breakpoint) {
       height: 60rem;
     }
+
+    @include media-min($xxxlarge-screen-breakpoint) {
+      height: 70rem;
+    }
   }
 
   @include media-min($xxlarge-screen-breakpoint) {
     height: 60rem;
+  }
+
+  @include media-min($xxxlarge-screen-breakpoint) {
+    height: 70rem;
+  }
+
+  // some images need to be bumped up a bit
+  // so they fit better in the header
+  &.shift-align {
+    &::after {
+      background-position-y: 20%;
+    }
   }
 }
 
