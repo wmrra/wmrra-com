@@ -12,13 +12,13 @@
     height: 40rem;
     background-size: cover;
     opacity: 0.5;
-    animation: customFade 2s ease forwards;
+    animation: customFade 3.5s ease forwards;
 
     @keyframes customFade {
       0% { 
         opacity: 0; 
       }
-      
+
       100% { 
         opacity: 0.5; 
       }
