@@ -1,6 +1,22 @@
 // cache the next race event so we only need to look it up once
 var nextRaceEvent = null;
 
+function selectHeroImage() {
+  var homeContent = $(".home-content-wrapper")
+  var images = homeContent.data("images");
+  var imageIndex =  Math.floor(Math.random() * images.length);
+  var heroImageData = images[imageIndex];
+
+  if (heroImageData.shift) {
+    homeContent.children(".hero").addClass("shift-align");
+  }
+
+  var heroImageStyle = $("<style>").html(`.hero::after{ background-image: url(${window.location.origin}/images/hero/${heroImageData.filename}) };`);
+  $("head").append(heroImageStyle);
+
+  homeContent.removeAttr("data-images");
+}
+
 function displayHeroContent() {
   var blockToShow;
   var heroBlocks = $(".hero-announcement-content-block");
@@ -198,5 +214,6 @@ function getMonthNumber(name) {
 }
 
 $(document).ready(function() {
+  selectHeroImage();
   displayHeroContent();
 });

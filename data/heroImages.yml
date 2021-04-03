@@ -1,0 +1,32 @@
+images:
+  - filename: 220-vintage.jpg
+    shift: true
+  
+  - filename: 05.jpg
+    shift: true
+
+  - filename: 29-39-12-lwss.jpg
+    shift: true
+  
+  - filename: 12.jpg
+    shift: true
+  
+  - filename: 01-doublevision.jpg
+    shift: true
+  
+  - filename: 49-2018.jpg
+    shift: false
+  
+  - filename: 230-vintage.jpg
+    shift: false
+  
+  - filename: 214-vintage.jpg
+    shift: false
+  
+  - filename: finger_guns.jpg
+    shift: false
+  
+  - filename: 04.jpg
+    shift: false
+  
+
