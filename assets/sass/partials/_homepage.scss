@@ -1,12 +1,3 @@
-// background image is randomly rotated via hero.js
-// but this will serve as a fallback
-.hero {
-  &::after {
-    background-image: url('../images/hero/finger_guns.jpg');
-  }
-}
-
-
 // all hero announcement content will start hidden
 // hero.js will decide what to display
 // and these fancy styles will make it slide/fade in
