@@ -84,7 +84,25 @@ p {
 @import "themes/wmrra-com-theme/assets/sass/partials/hero";
 @import "themes/wmrra-com-theme/assets/sass/partials/footer";
 
-// TODO: make a partial for this
+// TODO: make a partial for this content
+.header-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+
+  img {
+    height: 10rem;
+
+    @include media-min($medium-screen-breakpoint) {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
 .news-summary {
   margin: 1rem;
   border: 0.1rem solid #333;
