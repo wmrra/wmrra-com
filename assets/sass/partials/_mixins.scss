@@ -157,3 +157,14 @@
   font-size: 3rem;
   color: $level-color;
 }
+
+@mixin header-text { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  @include media-max($mobile-breakpoint) {
+    flex-direction: column;
+  }
+}
