@@ -2,7 +2,7 @@
 
 <div class="home-content-section-header">
     <h1>You are</h1>
-    <img class="logo" alt="WMRRA - Washington Motorcycle Road Racing Association" src="http://localhost:1313/images/WMRRA-logo.jpg">
+    <img class="logo" alt="WMRRA - Washington Motorcycle Road Racing Association" src="/images/WMRRA-logo.jpg">
     </br>
     </br>
   </div>
