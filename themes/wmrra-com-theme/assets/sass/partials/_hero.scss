@@ -62,7 +62,7 @@
   background-color:rgba($wmmra-dark-red, 0.8);
   color: $white;
 
-  @include media-min($medium-screen-breakpoint) {
+  @include media-min($mobile-breakpoint) {
     width: 50%;
   }
 }
