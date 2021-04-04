@@ -2,6 +2,10 @@ socialLinks:
   - name: Facebook
     link: https://www.facebook.com/WMRRA
     icon: fab fa-facebook
+  
+  - name: Instagram
+    link: https://www.instagram.com/wmrra_racing/
+    icon: fab fa-instagram
 
   - name: Twitter
     link: https://twitter.com/wmrra
