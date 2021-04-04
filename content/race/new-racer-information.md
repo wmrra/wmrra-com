@@ -25,9 +25,9 @@ Welcome to the WMRRA Family.
 ## Steps to becoming a new WMRRA racer
 
 1. Attend a [classroom New Racer School](#nrs-new-racer-school-dates)
-1. Register for a [Novice license](/race/register).
+1. Register for a [Novice license](/race/register)
 1. Attend an [on-track NRS School](#nrs-on-track-providers)
-1. Register for your [first race](/race/register).
+1. Register for your [first race](/race/register)
 
 For a more thorough overview, please read the [2021 New Racer Packet](https://drive.google.com/file/d/1HR9dMMePtrhtbWR8QL3q2w2V6jP_DHpR)
 
