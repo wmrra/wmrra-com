@@ -3,9 +3,8 @@ title   : "Volunteer"
 date    : 2021-01-31T14:45:00-8:00
 draft   : false
 description: "Volunteer With WMRRA"
+headerImage: "/images/Volunteers-2.jpg"
 ---
-
-![](/images/Volunteers-2.jpg)
 
 # Come join us!
 Love watching motorcycle racing? Want to see what happens behind the scenes? Join us for the best seat in the house!

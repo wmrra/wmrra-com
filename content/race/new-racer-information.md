@@ -1,11 +1,12 @@
-![](/images/Novice-Racer.jpg)
+---
+title   : "New Racer Information"
+date    : 2021-02-01T20:45:00-8:00
+draft   : false
+description: "New Racer Information"
+headerImage: "/images/Novice-Racer.jpg"
+---
 
-<div class="home-content-section-header">
-    <h1>You are</h1>
-    <img class="logo" alt="WMRRA - Washington Motorcycle Road Racing Association" src="/images/WMRRA-logo.jpg">
-    </br>
-    </br>
-  </div>
+{{< incpartial "new-racer-header.html" >}}
 
 Congratulations on taking the first step on your journey to being a motorcycle
 road racer. This is a journey you'll remember forever.

@@ -1,7 +1,15 @@
 {{ define "main" }}
+  <div class="content-wrapper">
+    {{ if .Params.showTitle }}
+      <h1>{{ .Params.title }}</h1>  
+    {{ end }}
 
-<div class="content-wrapper">
+    {{ if .Params.headerImage}}
+      <div class="header-image-wrapper">
+        <img src="{{ .Params.headerImage }}" />
+      </div>
+    {{ end }}
+  
     <div>{{ .Content }}</div>
-</div>
-
+  </div>
 {{ end }}

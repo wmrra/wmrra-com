@@ -87,14 +87,7 @@
 }
 
 .home-content-section-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-  @include media-max($mobile-breakpoint) {
-    flex-direction: column;
-  }
+  @include header-text;
 
   .logo {
     width: auto;
