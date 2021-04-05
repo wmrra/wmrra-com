@@ -8,20 +8,25 @@
   color: $white;
   font-size: 1.2rem;
 
-  @include media-min($small-screen-breakpoint) {
-    flex-direction: row;
+  .copyright {
+    flex: 1;
   }
 
+  @include media-min($medium-screen-breakpoint) {
+    flex-direction: row;
+  }
 }
 
 .footer-links {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 4rem;
+  display: flex;
+  flex: 2;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 30rem;
   margin-bottom: 2rem;
   font-size: 3rem;
 
-  @include media-min($small-screen-breakpoint) {
+  @include media-min($medium-screen-breakpoint) {
     margin-bottom: 0;
   }
 
