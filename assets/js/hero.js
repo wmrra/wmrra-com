@@ -110,7 +110,6 @@ function populateRaceEventContent(block) {
   // BUT Javascript dates are NOT ZERO-INDEXED when you're trying to make a date (╯°□°)╯︵ ┻━┻
   // also, if you don't put the slashes in the date, Safari cries about it
   var nextRaceEventDate = new Date(`${month + 1}/${day}/${new Date().getFullYear()}`);
-  console.log(nextRaceEventDate)
 
   var textContainer = $(block).children(".hero-announcement-text");
   if (areSameDate(new Date(), nextRaceEventDate)) {
