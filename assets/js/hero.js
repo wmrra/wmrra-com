@@ -112,7 +112,7 @@ function populateRaceEventContent(block) {
   var nextRaceEventDate = new Date(`${month + 1}/${day}/${new Date().getFullYear()}`);
 
   var textContainer = $(block).children(".hero-announcement-text");
-  if (new Date().getDate() === nextRaceEventDate.getDate()) {
+  if (areSameDate(new Date(), nextRaceEventDate)) {
     textContainer.append($("<h1>").text("It's Race Day!"));
   } else {
     var eventTime = nextRaceEventDate.getTime();
@@ -183,6 +183,16 @@ function extractRaceEventMonthAndDay(raceEvent) {
     month: getMonthNumber(eventDateParts[0]), 
     day: parseInt(eventDateParts[1].split("-")[0]), 
   };
+}
+
+// Returns true if year, month, and day of both of the
+// passed dates are the same
+function areSameDate(date1, date2) {
+  return (
+    date1.getYear() === date2.getYear() 
+    && date1.getMonth() === date2.getMonth() 
+    && date1.getDate() === date2.getDate()
+  );
 }
 
 // pads any single-digit numbers with a leading 0 
