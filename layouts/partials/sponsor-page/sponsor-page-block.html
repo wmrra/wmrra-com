@@ -5,7 +5,7 @@
   {{ isVipSponsor: did they give us big money? }}
 {{*/}}
 
-{{ $socialStyle := dict "website" "fas fa-laptop" "facebook" "fab fa-facebook" "twitter" "fab fa-twitter" }}
+{{ $socialStyle := dict "website" "fas fa-laptop" "facebook" "fab fa-facebook" "twitter" "fab fa-twitter" "instagram" "fab fa-instagram" }}
 {{ $sponsorClass := (lower (delimit (split (replaceRE " Sponsor" "" .sponsorLevel) " ") "-")) }}
 {{ $available := (in .context.name "Sponsorship Available") }}
 
