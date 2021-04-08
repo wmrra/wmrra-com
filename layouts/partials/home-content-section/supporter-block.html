@@ -11,6 +11,8 @@
   {{ $url = .context.social.facebook }}
 {{ else if .context.social.twitter }}
   {{ $url = .context.social.twitter}}
+{{ else if .context.social.instagram }}
+  {{ $url = .context.social.instagram}}
 {{ end }}
 
 {{ if .isTitleSponsor }}
