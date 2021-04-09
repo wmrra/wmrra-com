@@ -76,10 +76,19 @@
 }
 
 .hero-announcement-text {
-  margin-bottom: 2rem;
+  @include flex-column-centered;
+  margin: 0 auto 2rem;
+
+  h1,
+  h2 {
+    line-height: 4rem;
+  }
 }
 
 .hero-announcement-button {
+  @include link-overrides($white);
+
+  display: inline-block;
   padding: 1rem;
   border: 0.2rem solid $white;
   color: $white;
@@ -87,10 +96,6 @@
   box-shadow: $default-box-shadow;
 
   &:hover {
-    margin-top: -0.2rem;
-    border-width: 0.3rem;
-    color: $white;
-    text-decoration: none;
-    font-weight: bold;
+    transform: scale(1.1);
   }
 }

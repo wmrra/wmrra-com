@@ -1,7 +1,7 @@
-{{ $whatYearIsIt := string time.Now.Year }}
+{{ $whatYearIsIt := string time.Now.Year }} 
 {{ $latestNews := (where site.RegularPages.ByDate "Section" "news" | last 1) }}
-{{ $currentSchedule := jsonify (index site.Data.schedule $whatYearIsIt) }}
-{{/* Add: last race results */}}
+{{ $currentSchedule := jsonify (index site.Data.schedule $whatYearIsIt) }} 
+{{/* To add: last race results */}}
 
 <div class="hero-announcement-content">
   {{/* Only ONE of these will remain; the fancy javascript will decide which one */}} 
@@ -24,8 +24,19 @@
     class="hero-announcement-content-block"
     data-schedule="{{ $currentSchedule }}"
   >
-    {{/* Yes, it's an empty div! It'll be populated via Javascript */}}
-    <div class="hero-announcement-text"></div>
+    <div class="hero-announcement-text">
+      <h1>It's Race Day!</h1>
+    </div>
+
+    <div class="race-day-button-wrapper">
+      <a
+        class="hero-announcement-button"
+        href="https://racehero.io/orgs/wmrra-official"
+        target="_blank"
+      >
+        Live Timing
+      </a>
+    </div>
   </div>
 
   <div id="default" class="hero-announcement-content-block">
