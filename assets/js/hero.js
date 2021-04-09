@@ -72,7 +72,12 @@ function shouldShowNextRaceEvent(raceScheduleBlock) {
     return false;
   }
 
-  return !!getNextRaceEvent(scheduleData);
+  var hasNextRaceEvent = !!getNextRaceEvent(scheduleData);
+  
+  // remove schedule data so it doesn't pollute the dom
+  $(raceScheduleBlock).removeAttr("data-schedule");
+
+  return hasNextRaceEvent;
 }
 
 // looks through the schedule and finds the next
@@ -86,11 +91,13 @@ function getNextRaceEvent(schedule) {
     
     while (!nextRaceEvent && scheduleIndex < schedule.length) {
       var currentEvent = schedule[scheduleIndex];
-      var { month, day } = extractRaceEventMonthAndDay(currentEvent);
+      var raceEventStartDate = extractRaceEventDates(currentEvent)[0];
+      var eventMonth = raceEventStartDate.getMonth();
+      var startDay = raceEventStartDate.getDate()
   
       // event is in a month that's in the past OR
       // event is this month, but is on a day that's in the past
-      if (month < currentMonth || (month === currentMonth && day < currentDay)) {
+      if (eventMonth< currentMonth || (eventMonth === currentMonth && startDay < currentDay)) {
         scheduleIndex++;
         continue;
       }
@@ -106,27 +113,29 @@ function getNextRaceEvent(schedule) {
 // if there is an upcoming/current race event,
 // we'll either show a countdown clock or let folx know it's race day
 function populateRaceEventContent(block) {
-  var { month, day } = extractRaceEventMonthAndDay(nextRaceEvent);
-  // BUT Javascript dates are NOT ZERO-INDEXED when you're trying to make a date (╯°□°)╯︵ ┻━┻
-  // also, if you don't put the slashes in the date, Safari cries about it
-  var nextRaceEventDate = new Date(`${month + 1}/${day}/${new Date().getFullYear()}`);
-
+  var raceEventDays = extractRaceEventDates(nextRaceEvent);
   var textContainer = $(block).children(".hero-announcement-text");
-  if (areSameDate(new Date(), nextRaceEventDate)) {
-    textContainer.append($("<h1>").text("It's Race Day!"));
-  } else {
-    var eventTime = nextRaceEventDate.getTime();
 
+  if (raceEventDays.some(eventDate => areSameDate(new Date(), eventDate))) {
+    textContainer.append($("<h2>").text(`Round ${nextRaceEvent.round} at ${nextRaceEvent.location}`))
+    var circuitInfoButton = $("<a>").addClass("hero-announcement-button").attr("href", nextRaceEvent.locationLink).attr("target", "_blank").text("Circuit Info");
+    textContainer.siblings(".race-day-button-wrapper").append(circuitInfoButton);
+  } else {
+    var eventStartDate = raceEventDays[0];
+
+    textContainer.empty();
+    textContainer.siblings().empty();
     textContainer.append($("<h1>").text("Next Race Round"));
     textContainer.append($("<h2>").text(`${nextRaceEvent.date} at ${nextRaceEvent.location}`));
 
     // if next race event Date object isn't valid, we can bail out before adding the countdown
-    if (!nextRaceEventDate instanceof Date || isNaN(nextRaceEventDate)) {
+    if (!eventStartDate instanceof Date || isNaN(eventStartDate)) {
       return;
     }
 
     // populate the countdown clock immediately, 
     // then start updating every second (otherwise it is momentarily invisible)
+    var eventTime = eventStartDate.getTime();
     var countdownContainer = buildCountdownContainerHtml();
     textContainer.append(countdownContainer);
     calculateNextCountdownTime(eventTime, countdownContainer);
@@ -177,12 +186,16 @@ function buildCountdownContainerHtml() {
 }
 
 // event data format: "May 17-18"
-function extractRaceEventMonthAndDay(raceEvent) {
+// return format: [ "05/17/<current-year>", "05/18/<current-year>" ]
+function extractRaceEventDates(raceEvent) {
+  var year = new Date().getFullYear();
   var eventDateParts = raceEvent.date.split(" ");
-  return { 
-    month: getMonthNumber(eventDateParts[0]), 
-    day: parseInt(eventDateParts[1].split("-")[0]), 
-  };
+  var month = getMonthNumber(eventDateParts[0]);
+  var days = eventDateParts[1].split("-");
+
+   // Javascript months are NOT ZERO-INDEXED when you're trying to make a date (╯°□°)╯︵ ┻━┻
+  // also, if you don't put the slashes in the date, Safari cries about it
+  return days.map(dayString => new Date(`${month + 1}/${parseInt(dayString)}/${year}`));
 }
 
 // Returns true if year, month, and day of both of the
@@ -203,7 +216,7 @@ function formatCountdownNumber(countdownNumber) {
 
 // AnNa WhY nOt JuSt UsE a lIbRaRy?
 // it's overkill, that's why
-// also, months in Javascript are zero-indexed, so
+// also, months in Javascript are zero-indexed, so ¯\_(ツ)_/¯
 const MONTH_NAMES = [ 
   "January", 
   "February", 

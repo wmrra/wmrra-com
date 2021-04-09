@@ -6,6 +6,7 @@
   flex-direction: column;
   justify-content: center;
   height: 100%;
+  width: 100%;
   opacity: 0;
 
   &.the-chosen-one {
@@ -58,6 +59,35 @@
   .countdown-label {
     font-size: 1.6rem;
     font-weight: 500;
+  }
+}
+
+.race-day-button-wrapper {
+  @include flex-column-centered;
+
+  width: 100%;
+  max-width: 45rem;
+  margin: 0 auto;
+
+  @include media-min($large-screen-breakpoint) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .hero-announcement-button {
+    width: 20rem;
+    margin-bottom: 1.5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include media-min($large-screen-breakpoint) {
+      &:last-child {
+        margin-bottom: 1.5rem;
+      }
+    }
   }
 }
 
