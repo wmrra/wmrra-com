@@ -116,7 +116,7 @@ function populateRaceEventContent(block) {
   var raceEventDays = extractRaceEventDates(nextRaceEvent);
   var textContainer = $(block).children(".hero-announcement-text");
 
-  if (raceEventDays.some(eventDate => areSameDate(new Date(), eventDate))) {
+  if (raceEventDays.some(eventDate => areSameDate(new Date("05/08/2021"), eventDate))) {
     textContainer.append($("<h2>").text(`Round ${nextRaceEvent.round} at ${nextRaceEvent.location}`))
     var circuitInfoButton = $("<a>").addClass("hero-announcement-button").attr("href", nextRaceEvent.locationLink).attr("target", "_blank").text("Circuit Info");
     textContainer.siblings(".race-day-button-wrapper").append(circuitInfoButton);
