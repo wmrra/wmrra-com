@@ -79,16 +79,27 @@
   @include flex-column-centered;
   margin: 0 auto 2rem;
 
-  h1,
+  h1 {
+    max-width: 90%;
+    line-height: 5rem;
+  }
+
   h2 {
     line-height: 4rem;
   }
+}
+
+.hero-announcement-button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-announcement-button {
   @include link-overrides($white);
 
   display: inline-block;
+  min-width: 20rem;
   padding: 1rem;
   border: 0.2rem solid $white;
   color: $white;

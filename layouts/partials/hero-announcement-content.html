@@ -15,7 +15,9 @@
         <h1>{{ .Title }}</h1>
         <h3>{{ .Description }}</h3>
       </div>
-      <a class="hero-announcement-button" href="{{ .Permalink }}">Read More</a>
+      <div class="hero-announcement-button-wrapper">
+        <a class="hero-announcement-button" href="{{ .Permalink }}">Read More</a>
+      </div>
     </div>
   {{ end }}
 
