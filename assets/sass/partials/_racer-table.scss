@@ -1,5 +1,5 @@
 .table-wrapper { // At wide widths, use two columns of tables
-  @include media-max($medium-screen-breakpoint) {
+  @include media-max($mobile-breakpoint) {
     grid-template-columns: 1fr;
     grid-gap: 0rem;
 
