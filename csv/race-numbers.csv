@@ -1,159 +1,177 @@
-Number,Last Name,First Name
-1,Robarts,Adam
-2,Sarbora,Chris
-3,Pinkstaff,Brian
-4,Campbell,Steven
-5,Adam,Faussett
-6,McComsey,Paul
-7,Darling,Matt
-8,Clary,Derick
-9,Retired,(Marty Wilkison)
-10,Campbell,Steven
-11,Szilveszter,Mark
-12,Strobel,Morgan
-14,Wassemiller,Mikel
-15,Wright,David
-17,Pearce,David
-17X,Verderico,Sam
-19,Wartchow,Tim
-21,Smith,Ian
-23,Griffin,Darrin
-24,Hobbs,Charles
-25,Teuton,Scott
-26,Wells,Damon
-27,Vaage,Aaron
-29,Kohlstaedt,David
-31,Cresap,Ryan
-32,Brown,Jay
-33,Retired,Wmrra
-36,Hawson,Nick
-38,Mermut,Volga
-39,Schnider,Scott
-40,Stine,Robert
-41,Monson,Jacob
-42,Adams,James
-43,White,Billy
-44,Lorentzen,Dan
-46,Kump,Kumpy
-47,Wilcox,Christopher
-48,Retired,(Marty Capadona)
-48,Burchill,Brian
-49,Stone,Keith
-50,Pearson,Doug
-53,Swendseid,Kent
-54,Moore,Andy
-55,Retired,Wmrra
-57,Altis,Christopher
-58,Smith,Zachary
-58X,Diestler,Drat
-61,LaBlue,Dion
-62,Workman,Rob
-63,Kim,Rich
-64,Griffin,Cliff
-64X,Sarbora,Chris
-66,Hudak,Jonathan
-67,Alexander,Steven
-69,Lenz,Doug
-70,Retired,(Jim Kuniyuki)
-71,Craick,Duncan
-72,Carpenter,Carol
-73,Melnyk,Philip
-74,Retired,(Mike Sullivan)
-77,Walbon,Dustin
-78,Cresap,Sean
-79,Doody,Jason
-81,Ryder,Gary
-82,Nanthrup,Kevin
-83,Dickson,Brittany
-84,Kudo,Micah
-85,Parlin,Ryan
-86,Gauerke,Eric
-88,Smith,Cedric
-92,Ohman,Joel
-93,Rudy,Ron
-94,Coleman,Mitch
-95,Heinricks,Dave
-96,Burchill,Doug
-97,Lane,Jeff
-99,Bostashvili,David
-102,Hansen,Shaun
-104,Burgess,Chris
-107,Halbert,Andy
-117,Staples,Matt
-121,Pinkstaff,Brian
-124,Soderholm,Gavin
-126,Dobbs,Mallory
-131,River,Emily
-134,Retired,(Kurt Husted)
-149,Nusbaum,Howard
-152,Harris,Scott
-166,Taylor,Matt
-181,Wichgers,Matthew
-202,Knudsen,Dustin
-204,Faussett,Adam
-213,Sandoval,Tico
-214,O'Mahony,Karen
-219,Fowler,Tim
-220,O'Mahony,Tim
-222,Mann,Chris
-230,Gienau,Paul
-236,Retired,(Jim Bailey)
-247,Gingerich,Sergio
-253,Goddard, Jeremy
-254,Retired,(Wiley Brandell)
-272,Williams,Donald
-283,Retired,Wmrra
-284,Visser,Garret
-289,Platt,Crystal
-303,Retired,(Kelly Johnson)
-311,Cook,Troy
-313,Kitchell,Matthew
-314,Retired,(Claude Jinks)
-343,McElhany,Miles
-350,Retired,(John Lippis)
-351,White,Matthew
-393,Nadershahi M.D.,Arash
-412,Andrist,Stacey
-420,Andrist,Miles
-444,Retired,(John Doyle)
-479,Andrist,Brett
-494,Phillips,Stephen
-498,Moore,Eric
-676,Winter,Matthew
-703X,Ceccacci,Jeff
-717,Lange,Don
-726,Retired,(Alex Anderson)
-777,Wright,Joseph
-802,Van Patten,Joe
-803,O'Brien,Luke
-806,Markey,Pete
-807,Eaker,Chris
-808,Khan,Salman
-810,Hutter,Seppi
-811,Victorson,Eric
-812,Arnesen,Thomas
-813,Kapaldo,Andrew
-816,Dawson,Ken
-819,Chancellor,Jennifer
-820,Kreller,Amanda
-821,Kibis,Aleksandr
-822,Puchek,Morgan
-823,Koger,Terrence
-826,Lund,Perry
-827,Carrihill,Colin
-830,McCullough,Kevin
-833,Burke,James
-844,Brown,Lucas
-864,Love,Brent
-868,Dinescu,Stephanie
-875,Rohatinsky,Shaun
-888,Canright,Greg
-900,Oster,Logan
-901,Oster,Dave
-902,DeShon,Loren
-904,Hart,Dawson
-905,Balma,Cory
-906,Schmal,Nick
-907,Radcliff,Keith
-911,Prindle,Robert
-928,Retired,(Khalil Mohmed)
+Last Name,First Name,No.
+Robarts,Adam,1
+Sarbora,Chris,2
+Pinkstaff,Brian,3
+Campbell,Steven,4
+Faussett,Adam,5
+McComsey,Paul,6
+Darling,Matt,7
+Clary,Derick,8
+Campbell,Steven,10
+Szilveszter,Mark,11
+Strobel,Morgan,12
+Wassemiller,Mikel,14
+Wright,David,15
+Pearce,David,17
+Verderico,Sam,17X
+Wartchow,Tim,19
+Smith,Ian,21
+Griffin,Darrin,23
+Hobbs,Charles,24
+Teuton,Scott,25
+Wells,Damon,26
+Vaage,Aaron,27
+Kohlstaedt,David,29
+Cresap,Ryan,31
+Brown,Jay,32
+Retired,WMRRA,33
+DeGross,Mark,35
+Hawson,Nick,36
+Mermut,Volga,38
+Schnider,Scott,39
+Stine,Robert,40
+Monson,Jacob,41
+Adams,James,42
+White,Billy,43
+Lorentzen,Dan,44
+Kump,Kumpy,46
+Wilcox,Christopher,47
+Burchill,Brian,48
+Retired,(Marty Capadona),48
+Stone,Keith,49
+Pearson,Doug,50
+Smith,Micah,52
+Swendseid,Kent,53
+Moore,Andy,54
+Retired,(Richard King),55
+Altis,Christopher,57
+Smith,Zachary,58
+Diestler,Drat,58X
+LaBlue,Dion,61
+Workman,Rob,62
+Kim,Rich,63
+Griffin,Cliff,64
+Sarbora,Chris,64X
+Hudak,Jonathan,66
+Alexander,Steven,67
+Lenz,Doug,69
+Retired,(Jim Kuniyuki),70
+Craick,Duncan,71
+Carpenter,Carol,72
+Melnyk,Philip,73
+Retired,(Mike Sullivan),74
+Walbon,Dustin,77
+Cresap,Sean,78
+Doody,Jason,79
+Ryder,Gary,81
+Nanthrup,Kevin,82
+Dickson,Brittany,83
+Kudo,Micah,84
+Parlin,Ryan,85
+Gauerke,Eric,86
+Smith,Cedric,88
+Robarts,Adam,89
+Ohman,Joel,92
+Rudy,Ron,93
+Coleman,Mitch,94
+Heinricks,Dave,95
+Burchill,Doug,96
+Lane,Jeff,97
+Bostashvili,David,99
+Hansen,Shaun,102
+Burgess,Chris,104
+Halbert,Andy,107
+Staples,Matt,117
+Pinkstaff,Brian,121
+Soderholm,Gavin,124
+Dobbs,Mallory,126
+River,Emily,131
+Retired,(Kurt Husted),134
+Nusbaum,Howard,149
+Harris,Scott,152
+Taylor,Matt,166
+Wichgers,Matthew,181
+Knudsen,Dustin,202
+Faussett,Adam,204
+Sandoval,Tico,213
+O'Mahony,Karen,214
+Fowler,Tim,219
+O'Mahony,Tim,220
+Mann,Chris,222
+Gienau,Paul,230
+Smith,Simon,234
+Retired,(Jim Bailey),236
+Gingerich,Sergio,247
+Goddard,Jeremy,253
+Retired,(Wiley Brandell),254
+Williams,Donald,272
+Retired,WMRRA,283
+Visser,Garret,284
+Platt,Crystal,289
+Retired,(Kelly Johnson),303
+Cook,Troy,311
+Kitchell,Matthew,313
+Retired,(Claude Jinks),314
+Fulbright,Garrick,314
+Janacek,Jolene,339
+McElhany,Miles,343
+Retired,(John Lippis),350
+White,Matthew,351
+"Nadershahi, M.D.",Arash,393
+Andrist,Stacey,412
+Andrist,Miles,420
+Retired,(John Doyle),444
+Andrist,Brett,479
+Phillips,Stephen,494
+Moore,Eric,498
+Winter,Matthew,676
+Lange,Don,717
+Retired,(Alex Anderson),726
+Halbert,Zach,769
+Wright,Joseph,777
+Kirkland,Jonathan,800
+Van Patten,Joe,802
+O'Brien,Luke,803
+Markey,Pete,806
+Eaker,Chris,807
+Khan,Salman,808
+Hutter,Seppi,810
+Victorson,Eric,811
+Arnesen,Thomas,812
+Kapaldo,Andrew,813
+Dawson,Ken,816
+Baxter,Payden,817
+Smith,Becky,818
+Chancellor,Jennifer,819
+Kreller,Amanda,820
+Kibis,Aleksandr,821
+Puchek,Morgan,822
+Koger,Terrence,823
+Vento,John,824
+Lund,Perry,826
+Carrihill,Colin,827
+Desouza,Cory,829
+McCullough,Kevin,830
+Burke,James,833
+Brown,Lucas,844
+Love,Brent Dwyer,864
+Dinescu,Stephanie,868
+Terrell,Chance,869
+Crawford,Sam,870
+Rohatinsky,Shaun,875
+Canright,Greg,888
+Oster,Logan,900
+Oster,Dave,901
+Pittman,Charles,902
+Fitch,Hunter,903
+Hansen,Mark,904
+Balma,Cory,905
+Schmal,Nick,906
+Radcliff,Keith,907
+Prindle,Robert,911
+Hart,Dawson,913
+DeShon,Loren,914
+Lenihan,Drew,916
+Retired,(Khalil Mohmed),928
+Ritnoppakun,Christopher,965
+O'Neill,Kevin,999
