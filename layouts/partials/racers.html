@@ -41,10 +41,10 @@
 
   {{ range $idx, $row := $csv  }}
   {{ if and (ne $idx 0) (gt $idx $split) }}
-    {{ $number := index $row 0 }}
-    {{ $lastName := index $row 1 }}
-    {{ $firstName := index $row 2 }}
-
+    {{ $lastName := index $row 0 }}
+    {{ $firstName := index $row 1 }}
+    {{ $number := index $row 2 }}
+    
   <div class="racer-table-row">
     <div class="racer-table-cell center red">
       {{ $number }}
