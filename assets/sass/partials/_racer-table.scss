@@ -16,7 +16,7 @@
 
 .racer-table-row {
   display: grid;
-  grid-template-columns: 8rem minmax(8rem, 1fr) minmax(15rem, 2fr) 7rem;
+  grid-template-columns: 8rem minmax(15rem, 1fr) minmax(15rem, 1fr) 7rem;
   background-color: $white;
 
   &.table-header {
