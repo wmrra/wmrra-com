@@ -24,7 +24,7 @@
     color: $white;
 
     &.second-header {
-      @include media-max($medium-screen-breakpoint) {
+      @include media-max($mobile-breakpoint) {
         display: none;
       }
     }
