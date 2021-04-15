@@ -1,5 +1,5 @@
 .table-wrapper { // At wide widths, use two columns of tables
-  @include media-max($medium-screen-breakpoint) {
+  @include media-max($mobile-breakpoint) {
     grid-template-columns: 1fr;
     grid-gap: 0rem;
 
@@ -16,7 +16,7 @@
 
 .racer-table-row {
   display: grid;
-  grid-template-columns: 8rem minmax(8rem, 1fr) minmax(15rem, 2fr) 7rem;
+  grid-template-columns: 8rem minmax(15rem, 1fr) minmax(15rem, 1fr) 7rem;
   background-color: $white;
 
   &.table-header {
@@ -24,7 +24,7 @@
     color: $white;
 
     &.second-header {
-      @include media-max($medium-screen-breakpoint) {
+      @include media-max($mobile-breakpoint) {
         display: none;
       }
     }
