@@ -17,7 +17,7 @@ sponsorData:
   - title: Formula Ultra Sponsors
     sponsors:
       - name          : "Flying Bulldog"
-        #image         : /images/sponsors/your-logo.png
+        image         : /images/sponsors/flying-bulldog.jpg
         description   : >
           Sponsor Formula Ultra and see some info about your business here.
         social:
@@ -36,7 +36,6 @@ sponsorData:
           twitter  : https://twitter.com/LawTigers
           website  : https://lawtigers.com/
     
-    
       - name          : Bellevue Motorsports
         image         : images/sponsors/bellevue-motorsports.png
         description   : >
@@ -45,7 +44,6 @@ sponsorData:
           facebook : https://www.facebook.com/bellevuemotosports
           # twitter  : https://twitter.com/
           website  : https://bellevuemotosports.com/
-
 
       - name          : Tiger Tail
         image         : images/sponsors/tiger-tail.jpg
@@ -64,7 +62,6 @@ sponsorData:
           # facebook : https://www.facebook.com/
           # twitter  : https://twitter.com/
           website  : /sponsor
-          # TODO: need logo
       
       - name          : Michelin
         image         : images/sponsors/michelin.png
@@ -73,25 +70,25 @@ sponsorData:
         social:
           #facebook : https://www.facebook.com/michelin
           # twitter  : https://twitter.com/
-          website  : /sponsor
+          website  : https://www.michelinman.com/motorbike/browse-tires/by-usage/racing
 
       - name          : Jimmy Boyle Insurance
         image         : images/sponsors/state-farm.jpg
         description   : >
-          Middleweight Supersport
+          Middleweight Supersport & Open GP Twins Sponsor
         social:
           #facebook : https://www.facebook.com/
           #twitter  : https://twitter.com/
           website  : https://www.statefarm.com/agent/us/wa/bellevue/jimmy-boyle-d8nnb1ys000
 
       - name          : Four Wheel Specialty
-        #image         : /images/sponsors/your-logo.png
+        image         : /images/sponsors/4wheels.jpg
         description   : >
           Formula 2 Sponsor
         social:
           # facebook : https://www.facebook.com/
           # twitter  : https://twitter.com/
-          website  : /sponsor
+          website  : http://www.4wheelspecialty.com/
       
       - name          : Añar Mortgage
         image         : /images/sponsors/dane-the-mortgage-guy.jpg
@@ -112,7 +109,6 @@ sponsorData:
             # twitter  : https://twitter.com/
             website  : https://www.kumpracingservice.com/
 
-
       - name          : 2Fast Track Days
         image         : images/sponsors/2fast.jpg
         description   : >
@@ -122,7 +118,6 @@ sponsorData:
           # twitter  : https://twitter.com/
           website  : http://www.2-fast.org/
 
-
       - name          : CMS Logistics
         image         : /images/sponsors/cms-logo.png
         description   : >
@@ -130,16 +125,7 @@ sponsorData:
         social:
           # facebook : https://www.facebook.com/
           # twitter  : https://twitter.com/
-          website  : /sponsor
-
-      - name          : Jimmy Boyle Insurance
-        image         : images/sponsors/state-farm.jpg
-        description   : >
-          Open GP Twins
-        social:
-          #facebook : https://www.facebook.com/
-          #twitter  : https://twitter.com/
-          website  : https://www.statefarm.com/agent/us/wa/bellevue/jimmy-boyle-d8nnb1ys000
+          website  : https://cmscompanies.com/our-companies/
 
       - name          : Optimum Performance Motorsports
         image         : images/sponsors/optimum-performance-motorsports.png
@@ -159,15 +145,14 @@ sponsorData:
           # twitter  : https://twitter.com/
           website  : http://superbikeunderground.com/
 
-
       - name          : 2 Wheel DynoWorks
-        #image         : /images/sponsors/your-logo.png
+        image         : /images/sponsors/2wheeldynoworks.png
         description   : >
           Open Superbike Sponsor  
         social:
-          # facebook : https://www.facebook.com/
+          facebook : https://www.facebook.com/2wheeldynoworks/
           # twitter  : https://twitter.com/
-          website  : /sponsor
+          website  : https://2wheeldynoworks.com/
 
       - name          : Triumph of Seattle
         image         : images/sponsors/triumph-of-seattle.png
@@ -178,14 +163,14 @@ sponsorData:
           # twitter  : https://twitter.com/
           website  : https://triumphofseattle.com/
   
-      - name          : I90 Motorsports
-        #image         : images/sponsors/krs.png
+      - name          : I-90 Motorsports
+        image         : images/sponsors/i-90motorsports.png
         description   : >
           Open Sportsman Sponsor
         social:
           #facebook : https://www.facebook.com/
           # twitter  : https://twitter.com/
-          website  : /sponsor
+          website  : https://www.i-90motorsports.com/
       
       - name          : 600 Sportsman Sponsorship Available
         #image         : /images/sponsors/your-logo.png
@@ -196,7 +181,6 @@ sponsorData:
           # twitter  : https://twitter.com/
           website  : /sponsor
 
-
       - name          : Howling Hands Massage
         #image         : /images/sponsors/your-logo.png
         description   : >
@@ -206,16 +190,15 @@ sponsorData:
           # twitter  : https://twitter.com/
           website  : /sponsor
 
-    # TODO: open classic + 600 classic split, aren't these combined?
-      - name          : Moto Shippers
-        #image         : /images/sponsors/your-logo.png
+      # TODO: open classic + 600 classic split, aren't these combined?
+      - name          : MotoShippers
+        image         : /images/sponsors/motoshippers.png
         description   : >
           600 Classic Superbike Sponsor
         social:
           # facebook : https://www.facebook.com/
           # twitter  : https://twitter.com/
-          website  : /sponsor
-
+          website  : https://www.motoshippers.com/
 
       ########## VINTAGE CLASSES ##########
       - name          : Smarty Pants Garage
