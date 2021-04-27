@@ -17,7 +17,7 @@ sponsorData:
   - title: Formula Ultra Sponsors
     sponsors:
       - name          : "Flying Bulldog"
-        image         : /images/sponsors/your-logo.png
+        #image         : /images/sponsors/your-logo.png
         description   : >
           Sponsor Formula Ultra and see some info about your business here.
         social:
