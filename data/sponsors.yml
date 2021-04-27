@@ -16,10 +16,10 @@ sponsorData:
 
   - title: Formula Ultra Sponsors
     sponsors:
-      - name          : "Flying Bulldog"
+      - name          : "Flying Bulldog Racing"
         image         : /images/sponsors/flying-bulldog.jpg
         description   : >
-          Sponsor Formula Ultra and see some info about your business here.
+          Team Flying Bulldog Racing
         social:
           # facebook : https://www.facebook.com/
           # twitter  : https://twitter.com/
@@ -54,15 +54,17 @@ sponsorData:
           twitter  : https://twitter.com/tigertailusa
           website  : https://tigertailusa.com/
 
-      - name          : Pit Stop Massage Bar
-        #image         : /images/sponsors/your-logo.png
-        description   : > 
-          Lightweight Superbike Sponsor
+      ########## VINTAGE CLASSES ##########
+      # Honda 160 Vintage, 250 Vintage, 500 Vintage, 750 Vintage, Lightweight Superbike Vintage Sponsor
+      - name          : Smarty Pants Garage
+        image         : /images/sponsors/smarty-pants.png
+        description   : >
+          Vintage Racing Classes Sponsor
         social:
-          # facebook : https://www.facebook.com/
+          facebook : https://www.facebook.com/smartypantsgt
           # twitter  : https://twitter.com/
-          website  : /sponsor
-      
+          website  : https://www.smartypantsseattle.com
+
       - name          : Michelin
         image         : images/sponsors/michelin.png
         description   : >
@@ -172,10 +174,29 @@ sponsorData:
           # twitter  : https://twitter.com/
           website  : https://www.i-90motorsports.com/
       
-      - name          : 600 Sportsman Sponsorship Available
-        #image         : /images/sponsors/your-logo.png
+      - name          : Skagit Powersports
+        image         : /images/sponsors/skagit-powersports.png
         description   : >
           600 Sportsman Sponsor
+        social:
+          # facebook : https://www.facebook.com/
+          # twitter  : https://twitter.com/
+          website  : https://www.skagitpowersports.com/
+
+      # TODO: open classic + 600 classic split, aren't these combined?
+      - name          : MotoShippers
+        image         : /images/sponsors/motoshippers.png
+        description   : >
+          600 Classic Superbike Sponsor
+        social:
+          # facebook : https://www.facebook.com/
+          # twitter  : https://twitter.com/
+          website  : https://www.motoshippers.com/
+
+      - name          : Pit Stop Massage Bar
+        #image         : /images/sponsors/your-logo.png
+        description   : > 
+          Lightweight Superbike Sponsor
         social:
           # facebook : https://www.facebook.com/
           # twitter  : https://twitter.com/
@@ -190,25 +211,6 @@ sponsorData:
           # twitter  : https://twitter.com/
           website  : /sponsor
 
-      # TODO: open classic + 600 classic split, aren't these combined?
-      - name          : MotoShippers
-        image         : /images/sponsors/motoshippers.png
-        description   : >
-          600 Classic Superbike Sponsor
-        social:
-          # facebook : https://www.facebook.com/
-          # twitter  : https://twitter.com/
-          website  : https://www.motoshippers.com/
-
-      ########## VINTAGE CLASSES ##########
-      - name          : Smarty Pants Garage
-        image         : /images/sponsors/smarty-pants.png
-        description   : >
-          Honda 160 Vintage, 250 Vintage, 500 Vintage, 750 Vintage, Lightweight Superbike Vintage Sponsor
-        social:
-          facebook : https://www.facebook.com/smartypantsgt
-          # twitter  : https://twitter.com/
-          website  : https://www.smartypantsseattle.com
       
   # - title: TEMPLATE
   #   sponsors:
