@@ -20,10 +20,10 @@ sponsorData:
         image         : /images/sponsors/flying-bulldog.jpg
         description   : >
           Team Flying Bulldog Racing
-        social:
+        #social:
           # facebook : https://www.facebook.com/
           # twitter  : https://twitter.com/
-          website  : /sponsor
+          # website  : /sponsor
       
   - title: Race Class Sponsors
     sponsors:
@@ -197,19 +197,19 @@ sponsorData:
         #image         : /images/sponsors/your-logo.png
         description   : > 
           Lightweight Superbike Sponsor
-        social:
+        #social:
           # facebook : https://www.facebook.com/
           # twitter  : https://twitter.com/
-          website  : /sponsor
+          # website  : /sponsor
 
       - name          : Howling Hands Massage
         #image         : /images/sponsors/your-logo.png
         description   : >
           Open Classic Superbike Sponsor
-        social:
+        #social:
           # facebook : https://www.facebook.com/
           # twitter  : https://twitter.com/
-          website  : /sponsor
+          # website  : /sponsor
 
       
   # - title: TEMPLATE
