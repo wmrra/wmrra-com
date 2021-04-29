@@ -182,17 +182,16 @@ sponsorData:
           # facebook : https://www.facebook.com/
           # twitter  : https://twitter.com/
           website  : https://www.skagitpowersports.com/
-
-      # TODO: open classic + 600 classic split, aren't these combined?
+    
       - name          : MotoShippers
         image         : /images/sponsors/motoshippers.png
         description   : >
-          600 Classic Superbike Sponsor
+          Motorcycle Recovery Truck Sponsor
         social:
           # facebook : https://www.facebook.com/
           # twitter  : https://twitter.com/
           website  : https://www.motoshippers.com/
-
+      
       - name          : Pit Stop Massage Bar
         #image         : /images/sponsors/your-logo.png
         description   : > 
@@ -211,7 +210,6 @@ sponsorData:
           # twitter  : https://twitter.com/
           # website  : /sponsor
 
-      
   # - title: TEMPLATE
   #   sponsors:
   #     - name          : Sponsor Name
