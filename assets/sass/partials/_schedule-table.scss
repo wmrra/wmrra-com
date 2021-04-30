@@ -22,7 +22,7 @@
 
   @include media-min($medium-screen-breakpoint) {
     display: grid;
-    grid-template-columns: 8rem minmax(8rem, 1fr) minmax(15rem, 2fr) minmax(10rem, 1fr) 7rem;
+    grid-template-columns: 8rem minmax(8rem, 3fr) minmax(8rem, 5fr) minmax(10rem, 1fr) 7rem;
 
     &:not(.table-header) {
       &:nth-child(odd) {
