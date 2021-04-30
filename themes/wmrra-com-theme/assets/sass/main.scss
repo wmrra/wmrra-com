@@ -108,3 +108,56 @@ p {
   border: 0.1rem solid #333;
 }
 
+.event-schedule{
+  h1 {
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+    position: relative;
+
+    &::after {
+      content: "";
+      flex: 1;
+      height: 0.3rem;
+      margin-left: 1rem;
+      background-color: #b1041d;
+    }
+  }
+
+  table, th, td {
+    border-style: ridge;
+  }
+
+  table { 
+    width: 100%;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 1rem;
+    height: 4rem;
+
+    &:first-child {
+      min-width: 8.5rem;
+    }
+  }
+
+  @include media-max($medium-screen-breakpoint) {
+    th, td {
+      &:nth-child(2),
+      &:nth-child(3) {
+        display: none;
+      }
+    }
+  }
+}
+
+.event-schedule-header {
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+  padding: 1rem;
+  background-color: $wmmra-dark-red;
+  color: $white;
+  text-align: center;
+  line-height: 4.5rem;
+}
