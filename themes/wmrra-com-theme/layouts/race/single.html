@@ -1,0 +1,19 @@
+{{ define "main" }}
+  <div class="content-wrapper">
+    {{ if .Params.useEventLayout }}
+      <h1 class="event-schedule-header">{{ .Params.title }}</h1>
+    {{ end }}  
+
+    {{ if .Params.headerImage}}
+      <div class="header-image-wrapper">
+        <img src="{{ .Params.headerImage }}" />
+      </div>
+    {{ end }}
+  
+    {{ if .Params.useEventLayout }}
+      <div class="event-schedule">{{ .Content }}</div>
+    {{ else }}
+      <div>{{ .Content }}</div>
+    {{ end }}
+  </div>
+{{ end }}
