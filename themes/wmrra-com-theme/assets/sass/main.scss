@@ -108,3 +108,18 @@ p {
   border: 0.1rem solid #333;
 }
 
+.event-schedule{
+  table, th, td {
+    border-style:ridge;
+  }
+
+  table { 
+    width: 100%;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 10px;
+    height: 40px;
+  }
+}

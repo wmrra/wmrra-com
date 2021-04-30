@@ -1,0 +1,15 @@
+{{ define "main" }}
+  <div class="content-wrapper">
+    {{ if .Params.showTitle }}
+      <h1>{{ .Params.title }}</h1>  
+    {{ end }}
+
+    {{ if .Params.headerImage}}
+      <div class="header-image-wrapper">
+        <img src="{{ .Params.headerImage }}" />
+      </div>
+    {{ end }}
+  
+    <div class="event-schedule">{{ .Content }}</div>
+  </div>
+{{ end }}
