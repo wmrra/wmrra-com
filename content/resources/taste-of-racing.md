@@ -1,7 +1,7 @@
 # Taste of Racing
 Taste of Racing is a way for you to experience riding in a “racing” environment without committing the time and money towards a race weekend or a track day. We are focusing this towards the ones who want to ride the track, but have not yet committed to racing or attending a track day. This will be a 20 minute controlled session on the track for $20 with experienced control riders. The hidden agenda here is to get you hooked on racing and track riding in general. General riding rules will be discussed during a riders’ meeting before the Taste of Racing session.
 
-> **_NOTE:_**: For the 2021 Season ToR may not be allowed to run due to restrictions. Please reach out to registration before the event. Also, reminder that there is no entry fee for 2021 thanks to generous sponsors, so you can come out for free and watch racing.
+> **_NOTE:_** For the 2021 Season ToR may not be allowed to run due to restrictions. Please reach out to registration before the event. Also, reminder that there is no entry fee for 2021 thanks to generous sponsors, so you can come out for free and watch racing.
 
 
 # When, Where, Time, Cost
