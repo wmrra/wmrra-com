@@ -115,12 +115,23 @@ p {
     margin-top: 4rem;
     position: relative;
 
-    &::after {
-      content: "";
-      flex: 1;
-      height: 0.3rem;
-      margin-left: 1rem;
-      background-color: #b1041d;
+    @include media-min($small-screen-breakpoint) {
+      &::before {
+        @include pseudo-icon("\f21c");
+        position: absolute;
+        right: 0;
+        padding-left: 1rem;
+        background-color: $white;
+        color: $wmmra-dark-red;
+      }
+      
+      &::after {
+        content: "";
+        flex: 1;
+        height: 0.3rem;
+        margin-left: 1rem;
+        background-color: #b1041d;
+      }
     }
   }
 
