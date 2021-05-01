@@ -119,6 +119,9 @@ function populateRaceEventContent(block) {
   if (raceEventDays.some(eventDate => areSameDate(new Date(), eventDate))) {
     textContainer.append($("<h2>").text(`Round ${nextRaceEvent.round} at ${nextRaceEvent.location}`))
     var circuitInfoButton = $("<a>").addClass("hero-announcement-button").attr("href", nextRaceEvent.locationLink).attr("target", "_blank").text("Circuit Info");
+    var scheduleUrl = `${window.location.origin}/race/events/${raceEventDays[0].getFullYear()}-round-${nextRaceEvent.round}`;
+    var scheduleButton = $("<a>").addClass("hero-announcement-button").attr("href", scheduleUrl).attr("target", "_blank").text("Event Schedule");
+    textContainer.siblings(".race-day-button-wrapper").append(scheduleButton);
     textContainer.siblings(".race-day-button-wrapper").append(circuitInfoButton);
   } else {
     var eventStartDate = raceEventDays[0];
