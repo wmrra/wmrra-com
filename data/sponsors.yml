@@ -147,14 +147,14 @@ sponsorData:
           # twitter  : https://twitter.com/
           website  : http://superbikeunderground.com/
 
-      - name          : 2 Wheel DynoWorks
-        image         : /images/sponsors/2wheeldynoworks.png
+      - name          : MotoShippers
+        image         : /images/sponsors/motoshippers.png
         description   : >
-          Open Superbike Sponsor  
+          Open Superbike Sponsor
         social:
-          facebook : https://www.facebook.com/2wheeldynoworks/
+          # facebook : https://www.facebook.com/
           # twitter  : https://twitter.com/
-          website  : https://2wheeldynoworks.com/
+          website  : https://www.motoshippers.com/
 
       - name          : Triumph of Seattle
         image         : images/sponsors/triumph-of-seattle.png
@@ -183,15 +183,6 @@ sponsorData:
           # twitter  : https://twitter.com/
           website  : https://www.skagitpowersports.com/
     
-      - name          : MotoShippers
-        image         : /images/sponsors/motoshippers.png
-        description   : >
-          Motorcycle Recovery Truck Sponsor
-        social:
-          # facebook : https://www.facebook.com/
-          # twitter  : https://twitter.com/
-          website  : https://www.motoshippers.com/
-      
       - name          : Pit Stop Massage Bar
         #image         : /images/sponsors/your-logo.png
         description   : > 
