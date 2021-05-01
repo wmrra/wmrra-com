@@ -86,6 +86,10 @@
 
   h2 {
     line-height: 4rem;
+
+    @include media-max($large-screen-breakpoint) {
+      margin: 0;
+    }
   }
 }
 
