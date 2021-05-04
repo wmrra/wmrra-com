@@ -182,24 +182,25 @@ sponsorData:
           # facebook : https://www.facebook.com/
           # twitter  : https://twitter.com/
           website  : https://www.skagitpowersports.com/
-    
+
       - name          : Pit Stop Massage Bar
-        #image         : /images/sponsors/your-logo.png
+        image         : /images/sponsors/pit-stop-massage.jpg
         description   : > 
           Lightweight Superbike Sponsor
         #social:
           # facebook : https://www.facebook.com/
           # twitter  : https://twitter.com/
           # website  : /sponsor
-
+      
       - name          : Howling Hands Massage
-        #image         : /images/sponsors/your-logo.png
+        image         : /images/sponsors/howling-hands.jpeg
         description   : >
           Open Classic Superbike Sponsor
         #social:
           # facebook : https://www.facebook.com/
           # twitter  : https://twitter.com/
           # website  : /sponsor
+
 
   # - title: TEMPLATE
   #   sponsors:
