@@ -183,19 +183,19 @@ sponsorData:
           # twitter  : https://twitter.com/
           website  : https://www.skagitpowersports.com/
       
-      - name          : Howling Hands Massage
-        image         : /images/sponsors/howling-hands.jpeg
-        description   : >
-          Open Classic Superbike Sponsor
+      - name          : Pit Stop Massage Bar
+        image         : /images/sponsors/pit-stop-massage.jpg
+        description   : > 
+          Lightweight Superbike Sponsor
         #social:
           # facebook : https://www.facebook.com/
           # twitter  : https://twitter.com/
           # website  : /sponsor
-    
-      - name          : Pit Stop Massage Bar
-        #image         : /images/sponsors/your-logo.png
-        description   : > 
-          Lightweight Superbike Sponsor
+      
+      - name          : Howling Hands Massage
+        image         : /images/sponsors/howling-hands.jpeg
+        description   : >
+          Open Classic Superbike Sponsor
         #social:
           # facebook : https://www.facebook.com/
           # twitter  : https://twitter.com/
