@@ -4,7 +4,7 @@
 {{*/}}
 
 {{ if .context.image }}
-  <img src="{{ .context.image | absURL }}"  alt="{{ .context.name }}" />
+  <img src="{{ .context.image | absURL }}"  alt="{{ .context.name }}" title="{{ .context.name }}" />
 {{ else }}
   <div class="supporter-placeholder">
     <div class="supporter-placeholder-text">{{ .context.name }}</div>
