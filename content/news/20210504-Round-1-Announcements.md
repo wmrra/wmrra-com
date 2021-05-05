@@ -23,8 +23,7 @@ the [Licensing Application](http://msreg.com/WMRRA2021Licensing)
 # Volunteers
 
 If you would like to volunteer for the race weekend. Please use this link http://msreg.com/WMRRARD1Volunteers2021.
-2. Tech slips: come pick up your tech slips BEFORE you go to tech with your bike. You must review them to make sure you are in the right class, not missing a class, have the correct bikes. If you do not and you come to us 5 minutes before a race, you will be put at the back of the grid. Also, the helmet requirements changed this year so make sure your current helmet will pass. Info is in the rulebook.
-3. I do NOT have an
+
 
 # Schedule
 
@@ -33,6 +32,10 @@ Click here for the [event schedule](https://wmrra.com/race/events/2021-round-1/)
 # Pit Layout, Tech
 
 Tech Inspection will be held Friday Evening and Saturday morning. 
+
+Danielle says she should be done with slips by 4 PM Friday and not a minute sooner
+
+Pick up your Tech slips from registration BEFORE coming to tech. Registration should have them available after 4PM, Friday. You must review them to make sure you are in the right class, not missing a class, have the correct bikes. 
 
 The pit layout has changed a bit since last season. When pitting please respect reserved and off limits areas. 
 
