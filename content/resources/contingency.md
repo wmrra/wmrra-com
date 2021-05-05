@@ -1,5 +1,14 @@
 # Contingency
 
+
+## How?
+To submit contingency you should
+1) Fill out application form for each event and return to registration.
+1) Submit your form by:
+     - Giving directly to Mallory Dobbs BEFORE your race.
+     - Upload to a shared [Google Drive](https://drive.google.com/drive/folders/1_DCLxAiHmhm5KREo7THUcx_4piLDztcM)
+1) Reminder, you need to do this every race weekend.
+
 ## Yamaha
 
 How to Register: https://www.yamahamotorsports.com/sport/campaign/contingencyform_roadrace
