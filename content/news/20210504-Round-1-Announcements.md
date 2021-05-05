@@ -9,8 +9,9 @@ WMRRA is excited to host Round 1, a joint round with OMRRA, at the Ridge Motorsp
 park, this weekend. Here are a few bits of information to aid you in your weekend of racing!
 
 # Online Waiver
-If you are attending Round 1, Please complete the [Online Waiver](https://waiver.fr/p-KiEv9). This
-will be required to enter the facility
+If you are attending Round 1, Please complete the [Ridge Online Waiver](https://waiver.fr/p-KiEv9) as
+well as the [WMRRA Online SpeedWaiver]( https://wmrra.speedwaiver.com/gwsyf). These are both 
+required to enter the facility
 
 
 # Registration
