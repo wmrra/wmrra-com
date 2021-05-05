@@ -41,8 +41,7 @@ How to Register: Fill out application form for each event and return to registra
 [2021-Bridgestone-Claim-Form](/contingency/2021-Bridgestone-Claim-Form.pdf)
 
 
-<!-- Payout Information: (still waiting to get this from the Bridgestone Representative, Mallory will forward as soon as I get it) -->
-
+Payout Information: [2021 Bridgestone WMRRA Payout](contingency/2021-Bridgestone-WMRRA-Payout.pdf)
 
 
 ## Questions?
