@@ -4,7 +4,8 @@
 {{/* To add: last race results */}}
 
 <div class="hero-announcement-content">
-  {{/* Only ONE of these will remain; the fancy javascript will decide which one */}} 
+  {{/* Only ONE of these will remain; the fancy javascript will decide which one */}}
+  {{/* Precedence is determined in hero.js; if you add a new block here, add it there */}}
   {{ range $latestNews }}
     <div
       id="latest-announcement"
@@ -21,11 +22,7 @@
     </div>
   {{ end }}
 
-  <div
-    id="next-race-event"
-    class="hero-announcement-content-block"
-    data-schedule="{{ $currentSchedule }}"
-  >
+  <div id="race-day" class="hero-announcement-content-block">
     <div class="hero-announcement-text">
       <h1>It's Race Day!</h1>
     </div>
@@ -38,6 +35,16 @@
       >
         Live Timing
       </a>
+    </div>
+  </div>
+
+  <div
+    id="next-race-event"
+    class="hero-announcement-content-block"
+    data-schedule="{{ $currentSchedule }}"
+  >
+    <div class="hero-announcement-text">
+      <h1>Next Race Round</h1>
     </div>
   </div>
 
