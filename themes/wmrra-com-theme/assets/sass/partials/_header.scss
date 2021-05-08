@@ -45,7 +45,7 @@
   top: 4.7rem;
   right: -1.5rem;
   z-index: 100;
-  width: 35rem;
+  width: 32rem;
   padding: 0 2rem;
   font-size: 2.4rem;
   cursor: pointer;
@@ -113,6 +113,10 @@
         margin-left: 1rem;
       }
     }
+  }
+
+  @include media-min($small-screen-breakpoint) {
+    width: 35rem;
   }
 }
 
