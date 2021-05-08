@@ -72,9 +72,12 @@
     overflow-y: scroll;
 
     .go_back {
+      position: sticky;
+      top: 0;
       margin: 0 -2rem;
       padding: 1rem;
       border-bottom: 0.1rem solid $light-gray;
+      background-color: $extra-light-gray;
 
       &::before {
         @include pseudo-icon("\f100");
