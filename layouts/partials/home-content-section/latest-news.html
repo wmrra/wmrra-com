@@ -1,4 +1,4 @@
-{{ $latestNews := ((where site.RegularPages.ByDate "Section" "news").Reverse | last 4) }}
+{{ $latestNews := ((where site.RegularPages.ByDate "Section" "news").Reverse | first 4) }}
 <div class="home-content-section-wrapper">
   <div class="home-content-section-header">
     <h1>Latest News</h1>
