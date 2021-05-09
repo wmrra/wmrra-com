@@ -1,6 +1,6 @@
 {{ define "main" }}
   <div class="content-wrapper">
-    <h1>{{ .Title }}</h1>
+    <h1 class="big-red-header">{{ .Title }}</h1>
 
     <div class="news-list-wrapper">
       {{ $paginator := .Paginate (.Pages | lang.Merge (where .Sites.First.RegularPages "Section" .Section)) -}}
