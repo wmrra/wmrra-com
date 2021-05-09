@@ -1,0 +1,26 @@
+
+<div class="news-post-block">
+  <div class="post-title">{{ .Title }}</div>
+  <div class="post-content-wrapper">
+    <div class="post-date">{{ .Date.Format "January 2, 2006" }}</div>
+    <div class="summary-content">
+      {{ if .Summary }}
+        <div class="summary-text">
+          {{ .Summary }}
+        </div> 
+        <a class="post-link summary" href="{{ .RelPermalink }}">
+          <span>Read More</span>
+          <i aria-hidden="true" class="fas fa-angle-double-right"></i>
+        </a>
+      {{ else }}
+        <div class="description-text">
+          <span>{{ .Description }}</span>
+          <a class="post-link description" href="{{ .RelPermalink }}">
+            <span>Read More</span>
+            <i aria-hidden="true" class="fas fa-angle-double-right"></i>
+          </a>
+        </div>
+      {{ end }}
+    </div> 
+  </div>
+</div>

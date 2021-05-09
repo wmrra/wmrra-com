@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <div class="content-wrapper">
+    <h1>{{ .Title }}</h1>
+
+    <div class="news-list-wrapper">
+      {{ $paginator := .Paginate (.Pages | lang.Merge (where .Sites.First.RegularPages "Section" .Section)) -}}
+      {{ range $paginator.Pages }}
+        {{ partial "news-post-summary" . }}
+      {{ end }}
+    </div>
+
+    <div class="news-list-pagination">
+      {{/* pagination go here */}}
+    </div>
+  </div>
+{{ end }}
