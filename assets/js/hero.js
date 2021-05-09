@@ -86,7 +86,7 @@ function shouldShowLatestAnnouncement(latestAnnouncementBlock) {
   var announcementDate = new Date(dateData)
   var daysSinceAnnouncement = Math.floor(((new Date() - announcementDate) / 1000) / (60 * 60 *24));
 
-  return daysSinceAnnouncement <= 7;
+  return daysSinceAnnouncement <= 4;
 }
 
 function isRaceDay(){
@@ -108,13 +108,12 @@ function getNextRaceEvent(schedule) {
     
     while (!nextRaceEvent && scheduleIndex < schedule.length) {
       var currentEvent = schedule[scheduleIndex];
-      var raceEventStartDate = extractRaceEventDates(currentEvent)[0];
-      var eventMonth = raceEventStartDate.getMonth();
-      var startDay = raceEventStartDate.getDate()
+      var raceEventDays = extractRaceEventDates(currentEvent);
+      var eventMonth = raceEventDays[0].getMonth();
 
       // event is in a month that's in the past OR
       // event is this month, but is on a day that's in the past
-      if (eventMonth < currentMonth || (eventMonth === currentMonth && startDay < currentDay)) {
+      if (eventMonth < currentMonth || (eventMonth === currentMonth && raceEventDays.every(day => day.getDate() < currentDay))) {
         scheduleIndex++;
         continue;
       }
