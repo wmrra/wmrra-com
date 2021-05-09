@@ -633,9 +633,11 @@ $xxxlarge-screen-breakpoint: 120em; // big
     }
   
     .post-link {
-      @include link-overrides($wmmra-dark-red);
+      @include link-overrides($default-text-color);
 
       &:hover {
+        color: $wmmra-dark-red;
+        
         i {
           @include bouncy-animation();
         }

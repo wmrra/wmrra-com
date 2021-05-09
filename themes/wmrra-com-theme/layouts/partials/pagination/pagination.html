@@ -1,0 +1,4 @@
+<div class="pagination-container">
+  {{ partial "pagination/page-button" (dict "buttonText" "Prev" "url" .prevUrl "pageCount" .pageCount) }}
+  {{ partial "pagination/page-button" (dict "buttonText" "Next" "url" .nextUrl "pageCount" .pageCount) }}
+</div>

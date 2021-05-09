@@ -1,16 +1,28 @@
 {{ define "main" }}
+  {{ $paginator := .Paginator }}
+  {{ $pageCount := $paginator.PageSize }}
+  {{ $prevUrl := "" }}
+  {{ $nextUrl := "" }}
+
+  {{ if $paginator.HasPrev }}
+    {{ $prevUrl = $paginator.Prev.URL }}
+  {{ end }}
+
+  {{ if $paginator.HasNext }}
+    {{ $nextUrl = $paginator.Next.URL }}
+  {{ end }}
+
   <div class="content-wrapper">
     <h1 class="big-red-header">{{ .Title }}</h1>
 
     <div class="news-list-wrapper">
-      {{ $paginator := .Paginate (.Pages | lang.Merge (where .Sites.First.RegularPages "Section" .Section)) -}}
       {{ range $paginator.Pages }}
         {{ partial "news-post-summary" . }}
       {{ end }}
     </div>
 
-    <div class="news-list-pagination">
-      {{/* pagination go here */}}
-    </div>
+    {{ if gt $paginator.TotalPages 1 }}
+      {{ partial "pagination/pagination" (dict "prevUrl" $prevUrl "nextUrl" $nextUrl "pageCount" $pageCount) }}
+     {{ end }} 
   </div>
 {{ end }}
