@@ -1,0 +1,15 @@
+{{ $disabled := (eq .url "") }}
+{{ $buttonClass := printf "page-button %s" (lower .buttonText) }}
+{{ if $disabled }}
+  {{ $buttonClass = printf "%s disabled" $buttonClass }}
+{{ end }}
+
+{{ if $disabled }}
+  <div class="{{ $buttonClass }}">
+    <span class="button-text">{{ .buttonText }} {{ .pageCount }}</span>
+  </div>
+{{ else }}
+  <a href="{{ .url }}" class="{{ $buttonClass }}">
+    <span class="button-text">{{ .buttonText }} {{ .pageCount }}</span>
+  </a>
+{{ end }}
