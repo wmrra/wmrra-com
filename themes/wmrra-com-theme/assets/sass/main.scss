@@ -39,12 +39,17 @@ body {
 }
 
 body {
+  height: 100vh;
   font-family: "Fjalla One", sans-serif;
 }
 
 p {
   margin: 0 0 1.5rem;
   line-height: 2.5rem;
+}
+
+#content {
+  min-height: calc(100% - 14.7rem); // allow for header + footer
 }
 
 .content-wrapper {
