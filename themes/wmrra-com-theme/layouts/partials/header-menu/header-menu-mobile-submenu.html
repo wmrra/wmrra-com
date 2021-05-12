@@ -3,7 +3,9 @@
 
 <div class="header-menu-mobile-content submenu hidden {{ lower .name }}">
   <div class="go_back">Back</div>
-  {{ range .children }}
-    <a href="{{ .link }}">{{ .name }}</a>
-  {{ end }}
+  <div class="mobile-menu-links-wrapper">
+    {{ range .children }}
+      <a href="{{ .link }}">{{ .name }}</a>
+    {{ end }}
+  </div>
 </div>

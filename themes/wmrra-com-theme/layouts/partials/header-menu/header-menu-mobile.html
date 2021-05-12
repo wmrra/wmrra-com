@@ -3,11 +3,13 @@
   <i aria-hidden="true" class="menu-icon fas fa-bars" title="Open main menu"></i>
   <i aria-hidden="true" class="menu-close-icon fas fa-times" title="Close menu"></i>
     <div class="header-menu-mobile-content main hidden">
-      {{ range $.Site.Data.menu.menu }}
-        <div class="mobile-menu-link main">
-          {{.name}}
-        </div>
-      {{ end }}
+      <div class="mobile-menu-links-wrapper">
+        {{ range $.Site.Data.menu.menu }}
+          <div class="mobile-menu-link main">
+            {{.name}}
+          </div>
+        {{ end }}
+      </div>
     </div>
 
     {{ range $.Site.Data.menu.menu }}
