@@ -1,35 +1,26 @@
-<div class="relative {{ .classes }} weight-{{ .context.Weight }}">
 
-    <div class="news-summary bg-white mb2 pa3 pa4-l gray">
-      {{ if eq .context.Section "news" }}
-        <date class="f6 db" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
-          {{ .context.Date.Format "January 2, 2006" }}
-        </date>
-      {{ end }}
-  
-      <h1 class="near-black f3">
-        <a href="{{ .context.RelPermalink }}" class="link primary-color dim">
-        {{- if eq .context.Section "functions" -}}
-          {{ .context.LinkTitle }}
-        {{- else -}}
-          {{ .context.Title }}
-        {{- end -}}
+<div class="news-post-block">
+  <div class="post-title">{{ .Title }}</div>
+  <div class="post-content-wrapper">
+    <div class="post-date">{{ .Date.Format "January 2, 2006" }}</div>
+    <div class="summary-content">
+      {{ if .Summary }}
+        <div class="summary-text">
+          {{ .Summary }}
+        </div> 
+        <a class="post-link summary" href="{{ .RelPermalink }}">
+          <span>Read More</span>
+          <i aria-hidden="true" class="fas fa-angle-double-right"></i>
         </a>
-      </h1>
-  
-      <div class="lh-copy links">
-        {{ if .context.Params.description  }}
-            {{ .context.Params.description | markdownify }}
-          {{ else }}
-            {{ .context.Summary  }}
-        {{ end }}
-  
-          <a href="{{ .context.RelPermalink }}" class="f6 mt2 db link primary-color dim">
-            Read More &raquo;
+      {{ else }}
+        <div class="description-text">
+          <span>{{ .Description }}</span>
+          <a class="post-link description" href="{{ .RelPermalink }}">
+            <span>Read More</span>
+            <i aria-hidden="true" class="fas fa-angle-double-right"></i>
           </a>
-  
-      </div>
-  
-  
-    </div>
+        </div>
+      {{ end }}
+    </div> 
   </div>
+</div>

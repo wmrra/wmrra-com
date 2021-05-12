@@ -1,7 +1,10 @@
 // global vars live out here (partials caused problems)
 $wmmra-dark-red: #b1041d;
+$wmmra-dark-red-20: #8e0317;
 $white: #fff;
 $default-text-color: #333;
+$light-default-text-color: #6a6a6a;
+$disabled-text-color: #bbb;
 $black: #000;
 $medium-gray: #817f82;
 $light-gray: #dedadb;
@@ -88,6 +91,7 @@ p {
 @import "themes/wmrra-com-theme/assets/sass/partials/header";
 @import "themes/wmrra-com-theme/assets/sass/partials/hero";
 @import "themes/wmrra-com-theme/assets/sass/partials/footer";
+@import "themes/wmrra-com-theme/assets/sass/partials/news";
 
 // TODO: make a partial for this content
 .header-image-wrapper {
@@ -168,7 +172,7 @@ p {
   }
 }
 
-.event-schedule-header {
+.big-red-header {
   margin-top: 0;
   margin-bottom: 2.5rem;
   padding: 1rem;
@@ -176,4 +180,53 @@ p {
   color: $white;
   text-align: center;
   line-height: 4.5rem;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.page-button {
+  @include link-overrides($white);
+
+  width: 12rem;
+  margin: 0 2rem;
+  padding: 1rem 0;
+  background-color: $wmmra-dark-red;
+  text-align: center;
+
+  &:hover {
+    background-color: $wmmra-dark-red-20;
+  }
+
+  &.disabled {
+    background-color: $light-gray;
+    color: $disabled-text-color;
+    cursor: default;
+
+    &:hover {
+      background-color: $light-gray;
+    }
+  }
+
+  &.prev {
+    .button-text {
+      &::before {
+        @include pseudo-icon("\f100");
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  &.next {
+    .button-text {
+      &::after {
+        @include pseudo-icon("\f101");
+        margin-left: 0.5rem;
+      }
+    }
+  }
 }
