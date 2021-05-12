@@ -45,12 +45,8 @@
   top: 4.7rem;
   right: -1.5rem;
   z-index: 100;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 35rem;
-  min-height: 35rem;
-  padding: 2rem 4rem;
+  width: 32rem;
+  padding: 0 2rem;
   font-size: 2.4rem;
   cursor: pointer;
 
@@ -59,17 +55,29 @@
   }
 
   &.main {
+    height: 35rem;
     background-color: $wmmra-dark-red;
     color: $white;
+
+    .mobile-menu-links-wrapper {
+        height: 100%;
+        justify-content: space-around;
+    }
   }
 
-  &.submenu {    
+  &.submenu {
+    height: min-content; 
+    max-height: 50rem;   
     background-color: $extra-light-gray;
+    overflow-y: scroll;
 
     .go_back {
-      margin: 0 -4rem;
-      padding: 0 1rem 1rem;
+      position: sticky;
+      top: 0;
+      margin: 0 -2rem;
+      padding: 1rem;
       border-bottom: 0.1rem solid $light-gray;
+      background-color: $extra-light-gray;
 
       &::before {
         @include pseudo-icon("\f100");
@@ -80,6 +88,16 @@
 
     a {
       @include link-overrides($default-text-color);
+    }
+  }
+  
+  .mobile-menu-links-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    
+    a {
+      margin: 1rem;
     }
   }
 
@@ -98,6 +116,10 @@
         margin-left: 1rem;
       }
     }
+  }
+
+  @include media-min($small-screen-breakpoint) {
+    width: 35rem;
   }
 }
 
