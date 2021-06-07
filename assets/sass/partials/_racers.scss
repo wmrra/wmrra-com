@@ -1,0 +1,118 @@
+// TODO: condense + comment this functionality
+
+.racers-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  // TODO: responsive widths
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-left: 75px;
+}
+
+.racer-cell {
+  position: relative;
+  width: 80px;
+  height: 110px;
+  text-align: center;
+  margin-left: 16px;
+  margin-right: 18px;
+  left: -30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 0;
+    height: 0;
+    border-bottom: 55px solid transparent;
+    border-top: 55px solid transparent;
+    border-right: 30px solid transparent;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 80px;
+    width: 0;
+    height: 0;
+    border-top: 55px solid transparent;
+    border-bottom: 55px solid transparent;
+    border-left: 30px solid transparent;
+  }
+
+  &.flipper-container {
+    perspective: 1000px;
+
+    &:nth-child(odd) {
+      margin-top: -55px;
+    }
+
+    &:hover {
+      .flipper {
+        transform: rotateY(180deg);
+      }
+    }
+  }
+
+  &.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+  }
+
+
+  &.content {
+    @include flex-column-centered;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 2.5px solid $white;
+    border-bottom: 2.5px solid $white;
+    text-align: center;
+    
+    &::before {
+      border-top: 52.5px solid transparent;
+      border-bottom: 52.5px solid transparent;
+    }
+
+    &::after {
+      border-top: 52.5px solid transparent;
+      border-bottom: 52.5px solid transparent;
+    }
+  }
+
+  &.front,
+  &.back {
+    backface-visibility: hidden;
+  }
+
+  &.front {
+    z-index: 2;
+    background-color: #ccc;
+
+    &::before {
+      border-right-color: #ccc;
+    }
+
+    &::after {
+      border-left-color: #ccc;
+    }
+  }
+
+  &.back {
+    left: -32px;
+    background-color: $wmmra-dark-red;
+    transform: rotateY(180deg);
+
+    &::before {
+      border-right-color: $wmmra-dark-red;
+    }
+
+    &::after {
+      border-left-color: $wmmra-dark-red;
+    }
+  }
+}
