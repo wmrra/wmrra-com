@@ -100,6 +100,13 @@
     &::after {
       border-left-color: #ccc;
     }
+
+    img {
+      width: 140px;
+      height: 118px;
+      z-index: 3;
+      clip-path: polygon(21% 5%, 79% 5%, 100% 50%, 79% 95%, 21% 95%, 0% 50%);
+    }
   }
 
   &.back {
