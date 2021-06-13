@@ -89,7 +89,7 @@ function shouldShowLatestAnnouncement(latestAnnouncementBlock) {
   return daysSinceAnnouncement <= 4;
 }
 
-function isRaceDay(){
+function isRaceDay() {
   return nextRaceEventDays.some(eventDate => areSameDate(new Date(), eventDate));
 }
 
@@ -211,11 +211,25 @@ function extractRaceEventDates(raceEvent) {
   var year = new Date().getFullYear();
   var eventDateParts = raceEvent.date.split(" ");
   var month = getMonthNumber(eventDateParts[0]);
-  var days = eventDateParts[1].split("-");
+  var startAndEndDays = eventDateParts[1].split("-").map(dayString => parseInt(dayString));
+
+  // total days of event: start + end + all days between
+  // if the event is longer than 2 days, we need to add
+  // the days between
+  var startDate = startAndEndDays[0];
+  var endDate = startAndEndDays[1];
+  var eventDays = startAndEndDays;
+  
+  if (endDate - startDate > 1) {
+    // trick for building an " x-to-y range" array:
+    // build an array the length of the range
+    // populate with the index values offset by the range start
+    eventDays = [...Array(endDate - startDate + 1).keys()].map(index => index + startDate);
+  }
 
   // Javascript months are NOT ZERO-INDEXED when you're trying to make a date (╯°□°)╯︵ ┻━┻
   // also, if you don't put the slashes in the date, Safari cries about it
-  return days.map(dayString => new Date(`${month + 1}/${parseInt(dayString)}/${year}`));
+  return eventDays.map(day => new Date(`${month + 1}/${day}/${year}`));
 }
 
 // Returns true if year, month, and day of both of the
