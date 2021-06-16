@@ -18,6 +18,7 @@
     location: The Ridge Motorsports Park
     locationLink: https://www.ridgemotorsportspark.com/
     jointRound: false
+    eventSchedule: /race/events/2021-round-3
 
   - date: July 10-11
     round: 4
