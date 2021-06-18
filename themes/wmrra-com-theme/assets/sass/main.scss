@@ -51,6 +51,16 @@ p {
   line-height: 2.5rem;
 }
 
+
+table, th, td {
+  border-style: ridge;
+}
+
+th, td {
+  text-align: left;
+  padding: 1rem;
+}
+
 #content {
   min-height: calc(100% - 14.7rem); // allow for header + footer
 }
