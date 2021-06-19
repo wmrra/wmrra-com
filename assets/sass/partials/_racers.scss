@@ -91,14 +91,19 @@
 
   &.front {
     z-index: 2;
-    background-color: #ccc;
+    background-color: $wmrra-light-gray;
 
     &::before {
-      border-right-color: #ccc;
+      border-right-color: $wmrra-light-gray;
     }
 
     &::after {
-      border-left-color: #ccc;
+      border-left-color: $wmrra-light-gray;
+    }
+
+    .racer-number {
+      font-size: 3.8rem;
+      color: $wmmra-dark-red;
     }
 
     img {
@@ -121,5 +126,20 @@
     &::after {
       border-left-color: $wmmra-dark-red;
     }
+
+    .racer-name,
+    .racer-number {
+      color: $white;
+    }
+
+    .racer-number {
+      font-size: 2.6rem;
+    }
+  }
+
+  .racer-number {
+    font-family: "Knewave";
+    text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.1rem;
   }
 }

@@ -12,11 +12,11 @@
 
   <div class="racer-cell flipper-container">
     <div class="racer-cell flipper">
-      <div class="racer-cell content front">
+      <div class="racer-cell content front" data-number="{{ $number }}">
        {{ if $exists }} 
         <img src="{{ $imgPath | absURL }}" />
       {{ else }}
-        {{ $number }}
+        <div class="racer-number">{{ $number }}</div>
       {{ end }}
       </div>
       <div class="racer-cell content back">
