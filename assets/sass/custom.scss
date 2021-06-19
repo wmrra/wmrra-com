@@ -30,10 +30,10 @@ $text-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.5);
 $default-box-shadow: 0 0.8rem 0.8rem -0.5rem rgba(0, 0, 0, 0.3);
 
 // approx px as em values - https://stackoverflow.com/a/43131958
-$small-screen-breakpoint: 23rem; // 360px
+$small-screen-breakpoint: 23em; // 360px
 $medium-screen-breakpoint: 30em; // 480px
 $mobile-breakpoint: 48em; // 768px
-$large-screen-breakpoint: 64rem; // 1024px
+$large-screen-breakpoint: 64em; // 1024px
 $xlarge-screen-breakpoint: 81em; // 1300px
 $xxlarge-screen-breakpoint: 100em; // 1600px
 $xxxlarge-screen-breakpoint: 120em; // big

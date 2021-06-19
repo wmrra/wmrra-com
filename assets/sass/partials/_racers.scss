@@ -1,11 +1,22 @@
 // TODO: condense + comment this functionality
+@mixin offset-rows($row-count, $margin-val) {
+  $i: 1;
+
+  @while $i <= $row-count {
+    &:nth-child(#{$row-count}n + #{$i}) {
+      margin-top: #{$margin-val}rem;
+    }
+
+    $i: $i + 2;
+  }
+}
 
 .racers-wrapper {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   // TODO: responsive widths
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
   padding-top: 60px;
   padding-left: 75px;
@@ -47,15 +58,29 @@
   &.flipper-container {
     perspective: 1000px;
 
-    &:nth-child(odd) {
-      margin-top: -55px;
-    }
-
     &:hover {
       .flipper {
         transform: rotateY(180deg);
       }
     }
+
+    // TODO: a mobile layout
+
+    @include media-min(789px) {
+      @include offset-rows(6, -5.5);
+    }
+
+    @include media-min(903px) {
+      @include offset-rows(6, 0);
+      @include offset-rows(7, -5.5);
+    }
+
+    @include media-min(1017px) {
+      @include offset-rows(7, 0);
+      @include offset-rows(8, -5.5);
+    }
+
+    //@include media-min()
   }
 
   &.flipper {
