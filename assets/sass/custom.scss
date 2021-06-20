@@ -13,10 +13,9 @@ $default-link-color: #337ab7;
 // grays
 $dark-gray: #433f3f;
 $medium-gray: #817f82;
-$light-gray: #dedadb;
-$light-gray-180: #fcfbfb; // 80% lighter than base
-$alternate-row-gray: #f2f2f3;
 $wmrra-light-gray: #dedadb;
+$wmrra-light-gray-180: #fcfbfb; // 80% lighter than base
+$alternate-row-gray: #f2f2f3;
 
 // sponsor colors
 $sponsor-gold: #f9Af10;
@@ -136,7 +135,7 @@ $xxxlarge-screen-breakpoint: 120em; // big
   justify-items: center;
   margin: 1.5rem 4rem;
   padding: 2rem;
-  background-color: $light-gray;
+  background-color: $wmrra-light-gray;
 
   &.title,
   &.formula-ultra {
@@ -246,7 +245,7 @@ $xxxlarge-screen-breakpoint: 120em; // big
   .supporter-image-wrapper {
     @include flex-column-centered;
 
-    background-color: $light-gray-180;
+    background-color: $wmrra-light-gray-180;
   }
 
   .supporter-title,

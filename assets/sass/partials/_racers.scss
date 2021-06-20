@@ -18,21 +18,22 @@
 .racers-outer {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .racers-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  padding-top: 60px;
+  width: 100%;
 
   @include media-min(789px) {
     @include max-grid-width(6);
-    flex-flow: row wrap;
     justify-content: flex-start;
     align-items: flex-start;
     margin-left: 55px;
+    padding-top: 60px;
   }
 
   @include media-min(898px) {
@@ -46,8 +47,12 @@
 }
 
 .racer-cell-label {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: 21rem;
   margin-top: 0.5rem;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
 
   @include media-min(789px) {
     display: none;
@@ -56,8 +61,8 @@
 
 .racer-cell {
   position: relative;
-  width: 200px;
-  height: 260px;
+  width: 120px;
+  height: 150px;
   text-align: center;
 
   &::before,
@@ -67,18 +72,18 @@
     top: 0;
     width: 0;
     height: 0;
-    border-bottom: 130px solid transparent;
-    border-top: 130px solid transparent;
+    border-bottom: 75px solid transparent;
+    border-top: 75px solid transparent;
   }
 
   &::before {
-    left: -60px;
-    border-right: 60px solid transparent;
+    left: -35px;
+    border-right: 35px solid transparent;
   }
 
   &::after {
-    left: 200px;
-    border-left: 60px solid transparent;
+    left: 120px;
+    border-left: 35px solid transparent;
   }
 
   @include media-min(789px) {
@@ -107,20 +112,21 @@
 
   &.flipper-container {
     perspective: 1000px;
-    margin-bottom: 8rem;
+
+    @include media-max(789px) {
+      margin: 0 4.5rem 7rem;
+    }
 
     @include media-min(789px) {
+      @include offset-rows(6, -5.5);
+      
       width: 90px;
+
       &:hover {
         .flipper {
           transform: rotateY(180deg);
         }
       }
-    }
-
-    @include media-min(789px) {
-      margin-bottom: 0;
-      @include offset-rows(6, -5.5);
     }
 
     @include media-min(898px) {
@@ -140,7 +146,7 @@
 
     &::before,
     &::after {
-      border:none;
+      border: none;
     }
   }
 
@@ -156,8 +162,8 @@
 
     &::before,
     &::after {
-      border-bottom: 127.5px solid transparent;
-      border-top: 127.5px solid transparent;
+      border-bottom: 72.5px solid transparent;
+      border-top: 72.5px solid transparent;
     }
 
     @include media-min(789px) {
@@ -187,7 +193,7 @@
     }
 
     .racer-number {
-      font-size: 10rem;
+      font-size: 6.45rem;
       color: $wmmra-dark-red;
 
       @include media-min(789px) {
@@ -197,8 +203,8 @@
 
     img {
       z-index: 3;
-      width: 320px;
-      height: 284px;
+      width: 190px;
+      height: 165px;
       clip-path: polygon(19% 5%, 81% 5%, 100% 50%, 81% 95%, 19% 95%, 0% 50%);
 
       @include media-min(789px) {
@@ -253,5 +259,31 @@
     font-family: "Righteous";
     text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
     letter-spacing: 0.1rem;
+  }
+}
+
+// racer search
+.racer-search-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 0 5.5rem;
+
+  &::before {
+    @include pseudo-icon("\f002");
+    position: absolute;
+    left: 6.3rem;
+    color: $wmrra-light-gray;
+  }
+
+  input {
+    @include placeholder-text;
+
+    width: 100%;
+    padding: 0.4rem 0.4rem 0.4rem 3.3rem;
+    border: 1px solid  $wmrra-light-gray;
+    border-radius: 5px;
   }
 }

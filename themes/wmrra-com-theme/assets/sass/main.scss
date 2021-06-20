@@ -7,7 +7,7 @@ $light-default-text-color: #6a6a6a;
 $disabled-text-color: #bbb;
 $black: #000;
 $medium-gray: #817f82;
-$light-gray: #dedadb;
+$wmrra-light-gray: #dedadb;
 $extra-light-gray: #fcfcfc;
 $default-box-shadow: 0 0.8rem 0.8rem -0.5rem rgba(0, 0, 0, 0.3);
 
@@ -203,12 +203,12 @@ p {
   }
 
   &.disabled {
-    background-color: $light-gray;
+    background-color: $wmrra-light-gray;
     color: $disabled-text-color;
     cursor: default;
 
     &:hover {
-      background-color: $light-gray;
+      background-color: $wmrra-light-gray;
     }
   }
 
