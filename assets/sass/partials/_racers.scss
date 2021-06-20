@@ -282,26 +282,43 @@
   }
 }
 
-// racer search
+// header + racer search
+.racer-grid-header {
+  max-width: 91.2rem;
+  margin: 0 auto;
+}
+
 .racer-search-wrapper {
+  @include flex-column-centered;
+
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 2rem;
-  padding: 0 5.5rem;
 
   &::before {
     @include pseudo-icon("\f002");
+
     position: absolute;
-    left: 6.3rem;
+    top: 0.5rem;
+    left: 1rem;
     color: $wmrra-light-gray;
+  }
+
+  .retired-number-blurb {
+    font-style: italic;
+    font-size: 1.4rem;
+    color: $light-default-text-color;
+
+    i {
+      margin-right: 0.2rem;
+      font-style: italic;
+    }
   }
 
   input {
     @include placeholder-text;
 
     width: 100%;
+    margin-bottom: 0.5rem;
     padding: 0.4rem 0.4rem 0.4rem 3.3rem;
     border: 1px solid  $wmrra-light-gray;
     border-radius: 5px;
