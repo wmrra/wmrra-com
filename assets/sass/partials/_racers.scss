@@ -11,20 +11,38 @@
   }
 }
 
+@mixin max-grid-width($row-count) {
+  max-width: #{$row-count * 114}px;
+}
+
+.racers-outer {
+  display: flex;
+  justify-content: center;
+}
+
 .racers-wrapper {
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1000px;
-  margin: 0 auto;
   padding-top: 60px;
 
   @include media-min(789px) {
+    @include max-grid-width(6);
     flex-flow: row wrap;
+    justify-content: flex-start;
     align-items: flex-start;
-    padding-left: 75px;
+    margin-left: 55px;
   }
+
+  @include media-min(898px) {
+    @include max-grid-width(7);
+  }
+
+  @include media-min(1014px) {
+    @include max-grid-width(8);
+  }
+
 }
 
 .racer-cell-label {
@@ -68,7 +86,7 @@
     width: 80px;
     height: 110px;
     margin-left: 16px;
-    margin-right: 18px;
+    margin-right: 8px;
     
     &::before,
     &::after {
@@ -92,6 +110,7 @@
     margin-bottom: 8rem;
 
     @include media-min(789px) {
+      width: 90px;
       &:hover {
         .flipper {
           transform: rotateY(180deg);
@@ -104,12 +123,12 @@
       @include offset-rows(6, -5.5);
     }
 
-    @include media-min(903px) {
+    @include media-min(898px) {
       @include offset-rows(6, 0);
       @include offset-rows(7, -5.5);
     }
 
-    @include media-min(1017px) {
+    @include media-min(1014px) {
       @include offset-rows(7, 0);
       @include offset-rows(8, -5.5);
     }
@@ -118,6 +137,11 @@
   &.flipper {
     transition: 0.6s;
     transform-style: preserve-3d;
+
+    &::before,
+    &::after {
+      border:none;
+    }
   }
 
 
@@ -214,6 +238,10 @@
       @include media-max(789px) {
         display: none;
       }
+    }
+
+    .retired-name {
+      font-style: italic;
     }
 
     @include media-min(789px) {
