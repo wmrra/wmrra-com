@@ -178,6 +178,21 @@
   &.front,
   &.back {
     backface-visibility: hidden;
+
+    &.retired {
+      .racer-number {
+        &::before {
+          @include pseudo-icon("\f11e");
+          position: absolute;
+          top: -0.5rem;
+          left: -0.5rem;
+          opacity: 0.45;
+          color: $white;
+          font-size: 8.5rem;
+          text-shadow: none;
+        }
+      }
+    }
   }
 
   &.front {
@@ -195,6 +210,11 @@
     .racer-number {
       font-size: 6.45rem;
       color: $wmmra-dark-red;
+
+      .digits {
+        position: relative;
+        z-index: 2;
+      }
 
       @include media-min(789px) {
         font-size: 3.8rem;

@@ -1,52 +1,57 @@
 {{ $csv := getCSV "," "/csv/race-numbers.csv" }}
 
-<div>
+<div class="racer-grid-header">
   <div class="racer-search-wrapper">
     <input type="text" placeholder="Search by name or number" />
   </div>
-  <div class="racers-outer">
-    <div class="racers-wrapper">
-      {{ range $idx, $row := $csv }}
-        {{ if (ne $idx 0) }}
-          {{ $lastName := index $row 0 }}
-          {{ $firstName := index $row 1 }}
-          {{ $fullName := (print $firstName " " $lastName)}}
-          {{ $number := index $row 2 }}
-          {{ $imgPath := (print "images/racers/" $number ".png") }}
-          {{ $staticPath := (print "static/" $imgPath) }}
-          {{ $exists := fileExists $staticPath }}
-          {{ $containerClass := "racer-cell flipper-container" }}
-          {{ if not $exists }}
-            {{ $containerClass = (print $containerClass " no-image") }}
-          {{ end }}
-          <div class="{{ $containerClass }}" data-name="{{ $fullName }}" data-number="{{ $number }}">
-            <div class="racer-cell flipper">
-              <div class="racer-cell content front">
-                {{ if $exists }} 
-                  <img src="{{ $imgPath | absURL }}" />
-                {{ else }}
-                  <div class="racer-number">{{ $number }}</div>
-                {{ end }}
-              </div>
-              <div class="racer-cell content back">
+  <div>
+    <i aria-hidden="true" class="fas fa-flag-checkered" title="Checkered flag icon denotes retired race number"></i>
+    <span>Denotes retired race number</span>
+  </div>
+</div>
+
+<div class="racers-outer">
+  <div class="racers-wrapper">
+    {{ range $idx, $row := $csv }}
+      {{ if (ne $idx 0) }}
+        {{ $number := index $row 2 }}
+        {{ $retired := (eq (lower (index $row 0)) "retired") }}
+        {{ $imgPath := (print "images/racers/" $number ".png") }}
+        {{ $staticPath := (print "static/" $imgPath) }}
+        {{ $hasImage := fileExists $staticPath }}
+        {{ $contentClass := "racer-cell content"}}
+        {{ $fullName := "" }}
+        {{ if $retired }}
+          {{ $fullName = index $row 1 }}
+          {{ $contentClass = (print $contentClass " retired") }}
+        {{ else }}
+          {{ $fullName = (print (index $row 1) " " (index $row 0)) }}
+        {{ end }}
+
+        <div class="racer-cell flipper-container" data-name="{{ $fullName }}" data-number="{{ $number }}">
+          <div class="racer-cell flipper">
+            <div class='{{ (print $contentClass " front") }}'>
+              {{ if $hasImage }} 
+                <img src="{{ $imgPath | absURL }}" />
+              {{ else }}
                 <div class="racer-number">
-                  {{ $number }}
+                  <span class="digits">{{ $number }}</span>
                 </div>
-                <div class="racer-name">
-                  {{ if eq (lower $firstName) "retired" }}
-                    <span>{{ upper $firstName }}</span>
-                    <span class="retired-name">{{ $lastName }}</span>
-                  {{ else }}
-                    {{ $fullName }}
-                  {{ end }}
-                </div>
+              {{ end }}
+            </div>
+            <div class='{{ (print $contentClass " back") }}'>
+              <div class="racer-number">
+                <span class="digits">{{ $number }}</span>
+              </div>
+              <div class="racer-name">
+                  {{ $fullName }}
               </div>
             </div>
-
-            <div class="racer-cell-label">{{ $fullName }}</div>
           </div>
-        {{ end }}
+
+          <div class="racer-cell-label">{{ $fullName }}</div>
+        </div>
       {{ end }}
-    </div>
+    {{ end }}
   </div>
 </div>
