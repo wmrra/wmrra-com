@@ -2,40 +2,39 @@
 
 <div class="racers-wrapper">
   {{ range $idx, $row := $csv }}
-  {{ if (ne $idx 0) }}
-  {{ $lastName := index $row 0 }}
-  {{ $firstName := index $row 1 }}
-  {{ $number := index $row 2 }}
-  {{ $imgPath := (print "images/racers/" $number ".png") }}
-  {{ $staticPath := (print "static/" $imgPath) }}
-  {{ $exists := fileExists $staticPath }}
-  {{ $containerClass := "racer-cell flipper-container" }}
-  {{ if not $exists }}
-    {{ $containerClass = (print $containerClass " no-image") }}
-  {{ end }}
-
-  <div class="{{ $containerClass }}">
-    <div class="racer-cell flipper">
-      <div class="racer-cell content front">
-       {{ if $exists }} 
-        <img src="{{ $imgPath | absURL }}" />
-      {{ else }}
-        <div class="racer-number">{{ $number }}</div>
+    {{ if (ne $idx 0) }}
+      {{ $lastName := index $row 0 }}
+      {{ $firstName := index $row 1 }}
+      {{ $number := index $row 2 }}
+      {{ $imgPath := (print "images/racers/" $number ".png") }}
+      {{ $staticPath := (print "static/" $imgPath) }}
+      {{ $exists := fileExists $staticPath }}
+      {{ $containerClass := "racer-cell flipper-container" }}
+      {{ if not $exists }}
+        {{ $containerClass = (print $containerClass " no-image") }}
       {{ end }}
-      </div>
-      <div class="racer-cell content back">
-        <div class="racer-number">
-          {{ $number }}
-        </div>
-        <div class="racer-name">
-          {{ $firstName }} {{ $lastName }}
-        </div>
-      </div>
-    </div>
 
-    <div class="racer-cell-label">{{ $firstName }} {{ $lastName }}</div>
-  </div>
+      <div class="{{ $containerClass }}">
+        <div class="racer-cell flipper">
+          <div class="racer-cell content front">
+            {{ if $exists }} 
+              <img src="{{ $imgPath | absURL }}" />
+            {{ else }}
+              <div class="racer-number">{{ $number }}</div>
+            {{ end }}
+          </div>
+          <div class="racer-cell content back">
+            <div class="racer-number">
+              {{ $number }}
+            </div>
+            <div class="racer-name">
+              {{ $firstName }} {{ $lastName }}
+            </div>
+          </div>
+        </div>
 
-  {{ end }}
+        <div class="racer-cell-label">{{ $firstName }} {{ $lastName }}</div>
+      </div>
+    {{ end }}
   {{ end }}
 </div>
