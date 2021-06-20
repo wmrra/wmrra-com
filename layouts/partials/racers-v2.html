@@ -9,10 +9,14 @@
   {{ $imgPath := (print "images/racers/" $number ".png") }}
   {{ $staticPath := (print "static/" $imgPath) }}
   {{ $exists := fileExists $staticPath }}
+  {{ $containerClass := "racer-cell flipper-container" }}
+  {{ if not $exists }}
+    {{ $containerClass = (print $containerClass " no-image") }}
+  {{ end }}
 
-  <div class="racer-cell flipper-container">
+  <div class="{{ $containerClass }}">
     <div class="racer-cell flipper">
-      <div class="racer-cell content front" data-number="{{ $number }}">
+      <div class="racer-cell content front">
        {{ if $exists }} 
         <img src="{{ $imgPath | absURL }}" />
       {{ else }}
@@ -28,6 +32,8 @@
         </div>
       </div>
     </div>
+
+    <div class="racer-cell-label">{{ $firstName }} {{ $lastName }}</div>
   </div>
 
   {{ end }}
