@@ -6,7 +6,7 @@ description: "Season Points after Round 2"
 ---
 
 
-For a complete breakdown by class an [spreadsheet (.xlsx) can be downloaded](/downloads/2021/WMRRA-2021-Points-as-of-061721.xlsx).
+For a complete breakdown by class a [spreadsheet (.xlsx) can be downloaded](/downloads/2021/WMRRA-2021-Points-as-of-061721.xlsx).
 
 # Overall Points Standings as of June 17, 2021
 
