@@ -25,6 +25,7 @@
     location: Pacific Raceways
     locationLink: https://pacificraceways.com/
     jointRound: false
+    eventSchedule: /race/events/2021-round-4
 
   - date: July 16-18
     round: 5
