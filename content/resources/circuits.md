@@ -7,6 +7,8 @@ WMRRA operates at a variety of tracks in the pacific northwest.
 
 ![](/images/track-maps/pacific-raceways.png)
 
+View a [paddock map](/images/track-maps/pacific-raceways-paddock.png)
+
 Pacific Raceways opened in 1960. The track was originally named Pacific Raceways, then became known as Seattle International Raceways in 1969, being renamed in 2002 back to Pacific Raceways.
 
 The course has more than 125 feet (38 m) of elevation change and a beautiful naturally wooded back section.
@@ -16,6 +18,8 @@ The course has more than 125 feet (38 m) of elevation change and a beautiful nat
 #### [1060 W Eells Hill Rd, Shelton, WA 98584](https://goo.gl/maps/t2T8LToK3MP2)
 
 ![](/images/track-maps/ridge.png)
+
+View a [paddock map](/images/track-maps/ridge-paddock.png)
 
 Between the picturesque Cascade and Olympic mountain ranges, in Mason County, the birthplace of racing in Washington State. Set in a relaxed rural natural forest environment with stunning views of Mt. Rainier and Mt St. Helens, only minutes from The Olympic National Forest and scenic Hood Canal.
 
