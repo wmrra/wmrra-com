@@ -7,7 +7,7 @@ WMRRA operates at a variety of tracks in the pacific northwest.
 
 ![](/images/track-maps/pacific-raceways.png)
 
-View a [paddock map](/images/track-maps/pacific-raceways-paddock.jpg)
+View a [paddock map](/images/track-maps/pacific-raceways-paddock.png)
 
 Pacific Raceways opened in 1960. The track was originally named Pacific Raceways, then became known as Seattle International Raceways in 1969, being renamed in 2002 back to Pacific Raceways.
 
