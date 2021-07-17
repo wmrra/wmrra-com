@@ -502,9 +502,9 @@ $xxxlarge-screen-breakpoint: 120em; // big
 .supporter-level-benefits-modal {
   display: none;
   position: fixed;
-  top: 20%;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   z-index: 101;
   padding: 2rem;
   width: 80%;
@@ -561,7 +561,7 @@ $xxxlarge-screen-breakpoint: 120em; // big
       max-height: 38rem;
       margin-bottom: 0;
       padding-inline-start: 3rem;
-      overflow: scroll;
+      overflow-y: auto;
 
       li {
         margin-bottom: 0.5rem;
