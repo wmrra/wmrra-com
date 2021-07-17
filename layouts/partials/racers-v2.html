@@ -2,7 +2,7 @@
 
 <div class="racer-grid-header">
   <div class="racer-search-wrapper">
-    <input type="text" placeholder="Search by name or number" />
+    <input class="racer-search-input" type="text" placeholder="Search by name or number" />
     <div class="retired-number-blurb">
       <i aria-hidden="true" class="fas fa-flag-checkered" title="Checkered flag icon denotes retired race number"></i>
       <span>Denotes retired race number</span>
@@ -28,7 +28,7 @@
           {{ $fullName = (print (index $row 1) " " (index $row 0)) }}
         {{ end }}
 
-        <div class="racer-flipper-container" data-name="{{ $fullName }}" data-number="{{ $number }}">
+        <div class="racer-flipper-container fancy" data-name="{{ $fullName }}" data-number="{{ $number }}">
           <div class="racer-flipper">
             <div class='{{ (print $contentClass " front") }}'>
               {{ if $hasImage }} 

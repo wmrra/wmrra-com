@@ -28,7 +28,7 @@
   }
 }
 
-@mixin hexagon-container {
+@mixin small-hexagon-container {
   @include hexagon-base();
   left: -30px;
   width: 80px;
@@ -50,6 +50,47 @@
   &::after {
     left: 80px;
     border-left: 30px solid transparent;
+  }
+}
+
+@mixin small-hexagon-content {
+  &::before,
+  &::after {
+    border-top: 52.5px solid transparent;
+    border-bottom: 52.5px solid transparent;
+  }
+
+  &.retired {
+    .racer-number {
+      &::before {
+        top: 54%;
+        font-size: 8.5rem;
+      }
+    }
+  }
+
+  &.front {
+    .racer-number {
+      font-size: 3.8rem;
+    }
+
+    img {
+      width: 140px;
+      height: 118px;
+      clip-path: polygon(21% 5%, 79% 5%, 100% 50%, 79% 95%, 21% 95%, 0% 50%);
+    }
+  }
+
+  &.back {
+    left: -32px;
+
+    .racer-number {
+      font-size: 2.8rem;
+    }
+
+    .racer-name {
+      display: block;
+    }
   }
 }
 
@@ -88,22 +129,23 @@
   align-items: center;
   width: 100%;
 
-  @include media-min(789px) {
-    @include max-grid-width(6);
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-left: 55px;
-    padding-top: 60px;
+  &:not(.search-results) {
+    @include media-min(789px) {
+      @include max-grid-width(6);
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-left: 55px;
+      padding-top: 60px;
+    }
+  
+    @include media-min(898px) {
+      @include max-grid-width(7);
+    }
+  
+    @include media-min(1014px) {
+      @include max-grid-width(8);
+    }
   }
-
-  @include media-min(898px) {
-    @include max-grid-width(7);
-  }
-
-  @include media-min(1014px) {
-    @include max-grid-width(8);
-  }
-
 }
 
 .racer-cell-label {
@@ -119,25 +161,9 @@
   }
 }
 
-.racer-cell {
-  @include big-hexagon-container();
-
+@mixin fancy-racer-container {
   @include media-min(789px) {
-    @include hexagon-container();
-  }
-}
-
-.racer-flipper-container {
-  @include big-hexagon-container();
-  position: relative;
-  perspective: 1000px;
-
-  @include media-max(789px) {
-    margin: 0 4.5rem 7rem;
-  }
-
-  @include media-min(789px) {
-    @include hexagon-container();
+    @include small-hexagon-container();
     @include offset-rows(6, -5.5);
       
     width: 90px;
@@ -158,155 +184,145 @@
     @include offset-rows(7, 0);
     @include offset-rows(8, -5.5);
   }
+
+  .racer-flipper {
+    @include media-min(789px) {
+      @include small-hexagon-container();
+    }
+  }
+
+  .racer-content {
+    @include media-min(789px) {
+      @include small-hexagon-container();
+      @include small-hexagon-content();
+    }
+  }
 }
 
-.racer-flipper {
+.racer-flipper-container {
   @include big-hexagon-container();
   position: relative;
-  transition: 0.6s;
-  transform-style: preserve-3d;
+  perspective: 1000px;
 
-  @include media-min(789px) {
-    @include hexagon-container();
+  @include media-max(789px) {
+    margin: 0 4.5rem 7rem;
   }
 
-  &::before,
-  &::after {
-    border: none;
-  }
-}
-
-.racer-content {
-  @include big-hexagon-container();
-  @include flex-column-centered;
-
-  position: absolute;
-  top: 0;
-  border-top: 2.5px solid $white;
-  border-bottom: 2.5px solid $white;
-  text-align: center;
-  backface-visibility: hidden;
-
-  &::before,
-  &::after {
-    border-bottom: 72.5px solid transparent;
-    border-top: 72.5px solid transparent;
+  &:not(.fancy) {
+    margin: 0 4.5rem 7rem;
   }
 
-  &.retired {
-    .racer-number {
-      &::before {
-        @include pseudo-icon("\f11e");
-        position: absolute;
-        top: 54%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        opacity: 0.45;
-        color: $white;
-        font-size: 8.5rem;
-        text-shadow: none;
-      }
+  &.fancy {
+    @include fancy-racer-container();
+  }
 
-      @include media-max(789px) {
+  .racer-flipper {
+    @include big-hexagon-container();
+    position: relative;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+  
+    &::before,
+    &::after {
+      border: none;
+    }
+  }
+
+  .racer-content {
+    @include big-hexagon-container();
+    @include flex-column-centered;
+  
+    position: absolute;
+    top: 0;
+    border-top: 2.5px solid $white;
+    border-bottom: 2.5px solid $white;
+    text-align: center;
+    backface-visibility: hidden;
+  
+    &::before,
+    &::after {
+      border-bottom: 72.5px solid transparent;
+      border-top: 72.5px solid transparent;
+    }
+  
+    &.retired {
+      .racer-number {
         &::before {
+          @include pseudo-icon("\f11e");
+          position: absolute;
           top: 52%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          opacity: 0.45;
+          color: $white;
           font-size: 12rem;
+          text-shadow: none;
         }
       }
     }
-  }
-
-  &.front {
-    left: 0;
-    z-index: 2;
-    background-color: $wmrra-light-gray;
-
-    &::before {
-      border-right-color: $wmrra-light-gray;
-    }
-
-    &::after {
-      border-left-color: $wmrra-light-gray;
-    }
-
-    .racer-number {
-      font-size: 6.45rem;
-      color: $wmmra-dark-red;
-
-      .digits {
-        position: relative;
-        z-index: 2;
+  
+    &.front {
+      left: 0;
+      z-index: 2;
+      background-color: $wmrra-light-gray;
+  
+      &::before {
+        border-right-color: $wmrra-light-gray;
       }
-
-      @include media-min(789px) {
-        font-size: 3.8rem;
+  
+      &::after {
+        border-left-color: $wmrra-light-gray;
       }
-    }
-
-    img {
-      z-index: 3;
-      width: 190px;
-      height: 165px;
-      clip-path: polygon(19% 5%, 81% 5%, 100% 50%, 81% 95%, 19% 95%, 0% 50%);
-
-      @include media-min(789px) {
-        width: 140px;
-        height: 118px;
-        clip-path: polygon(21% 5%, 79% 5%, 100% 50%, 79% 95%, 21% 95%, 0% 50%);
+  
+      .racer-number {
+        font-size: 6.45rem;
+        color: $wmmra-dark-red;
+  
+        .digits {
+          position: relative;
+          z-index: 2;
+        }
+      }
+  
+      img {
+        z-index: 3;
+        width: 190px;
+        height: 165px;
+        clip-path: polygon(19% 5%, 81% 5%, 100% 50%, 81% 95%, 19% 95%, 0% 50%);
       }
     }
-  }
-
-  &.back {
-    left: 0;
-    background-color: $wmmra-dark-red;
-    transform: rotateY(180deg);
-
-    &::before {
-      border-right-color: $wmmra-dark-red;
-    }
-
-    &::after {
-      border-left-color: $wmmra-dark-red;
-    }
-
-    .racer-name,
-    .racer-number {
-      color: $white;
-    }
-
-    .racer-number {
-      font-size: 10rem;
-
-      @include media-min(789px) {
-        font-size: 2.8rem;
+  
+    &.back {
+      left: 0;
+      background-color: $wmmra-dark-red;
+      transform: rotateY(180deg);
+  
+      &::before {
+        border-right-color: $wmmra-dark-red;
       }
-    }
-
-    .racer-name {
-      @include media-max(789px) {
+  
+      &::after {
+        border-left-color: $wmmra-dark-red;
+      }
+  
+      .racer-name,
+      .racer-number {
+        color: $white;
+      }
+  
+      .racer-number {
+        font-size: 10rem;
+      }
+  
+      .racer-name {
         display: none;
       }
     }
-
-    @include media-min(789px) {
-      left: -32px;
-    }
-  }
-
-  .racer-number {
-    font-family: "Righteous";
-    text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
-    letter-spacing: 0.1rem;
-  }
   
-  @include media-min(789px) {
-    @include hexagon-container();
-
-    &::before,
-    &::after {
-      border-top: 52.5px solid transparent;
-      border-bottom: 52.5px solid transparent;
+    .racer-number {
+      font-family: "Righteous";
+      text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
+      letter-spacing: 0.1rem;
     }
   }
 }
