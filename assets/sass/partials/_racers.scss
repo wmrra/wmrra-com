@@ -184,12 +184,20 @@
         &::before {
           @include pseudo-icon("\f11e");
           position: absolute;
-          top: -0.5rem;
-          left: -0.5rem;
+          top: 54%;
+          left: 50%;
+          transform: translate(-50%, -50%);
           opacity: 0.45;
           color: $white;
           font-size: 8.5rem;
           text-shadow: none;
+        }
+
+        @include media-max(789px) {
+          &::before {
+            top: 52%;
+            font-size: 12rem;
+          }
         }
       }
     }
