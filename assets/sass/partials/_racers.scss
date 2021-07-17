@@ -15,6 +15,66 @@
   max-width: #{$row-count * 114}px;
 }
 
+@mixin hexagon-base {
+  text-align: center;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+  }
+}
+
+@mixin hexagon-container {
+  @include hexagon-base();
+  left: -30px;
+  width: 80px;
+  height: 110px;
+  margin-left: 16px;
+  margin-right: 8px;
+  
+  &::before,
+  &::after {
+    border-bottom: 55px solid transparent;
+    border-top: 55px solid transparent;
+  }
+
+  &::before {
+    left: -30px;
+    border-right: 30px solid transparent;
+  }
+
+  &::after {
+    left: 80px;
+    border-left: 30px solid transparent;
+  }
+}
+
+@mixin big-hexagon-container {
+  @include hexagon-base();
+  width: 120px;
+  height: 150px;
+
+  &::before,
+  &::after {
+    border-bottom: 75px solid transparent;
+    border-top: 75px solid transparent;
+  }
+
+  &::before {
+    left: -35px;
+    border-right: 35px solid transparent;
+  }
+
+  &::after {
+    left: 120px;
+    border-left: 35px solid transparent;
+  }
+}
+
 .racers-outer {
   display: flex;
   justify-content: center;
@@ -60,150 +120,104 @@
 }
 
 .racer-cell {
+  @include big-hexagon-container();
+
+  @include media-min(789px) {
+    @include hexagon-container();
+  }
+}
+
+.racer-flipper-container {
+  @include big-hexagon-container();
   position: relative;
-  width: 120px;
-  height: 150px;
-  text-align: center;
+  perspective: 1000px;
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 0;
-    height: 0;
-    border-bottom: 75px solid transparent;
-    border-top: 75px solid transparent;
-  }
-
-  &::before {
-    left: -35px;
-    border-right: 35px solid transparent;
-  }
-
-  &::after {
-    left: 120px;
-    border-left: 35px solid transparent;
+  @include media-max(789px) {
+    margin: 0 4.5rem 7rem;
   }
 
   @include media-min(789px) {
-    left: -30px;
-    width: 80px;
-    height: 110px;
-    margin-left: 16px;
-    margin-right: 8px;
-    
-    &::before,
-    &::after {
-      border-bottom: 55px solid transparent;
-      border-top: 55px solid transparent;
-    }
-  
-    &::before {
-      left: -30px;
-      border-right: 30px solid transparent;
-    }
-  
-    &::after {
-      left: 80px;
-      border-left: 30px solid transparent;
-    }
-  }
-
-  &.flipper-container {
-    perspective: 1000px;
-
-    @include media-max(789px) {
-      margin: 0 4.5rem 7rem;
-    }
-
-    @include media-min(789px) {
-      @include offset-rows(6, -5.5);
+    @include hexagon-container();
+    @include offset-rows(6, -5.5);
       
-      width: 90px;
+    width: 90px;
 
-      &:hover {
-        .flipper {
-          transform: rotateY(180deg);
-        }
-      }
-    }
-
-    @include media-min(898px) {
-      @include offset-rows(6, 0);
-      @include offset-rows(7, -5.5);
-    }
-
-    @include media-min(1014px) {
-      @include offset-rows(7, 0);
-      @include offset-rows(8, -5.5);
-    }
-  }
-
-  &.flipper {
-    transition: 0.6s;
-    transform-style: preserve-3d;
-
-    &::before,
-    &::after {
-      border: none;
-    }
-  }
-
-
-  &.content {
-    @include flex-column-centered;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-top: 2.5px solid $white;
-    border-bottom: 2.5px solid $white;
-    text-align: center;
-
-    &::before,
-    &::after {
-      border-bottom: 72.5px solid transparent;
-      border-top: 72.5px solid transparent;
-    }
-
-    @include media-min(789px) {
-      &::before,
-      &::after {
-        border-top: 52.5px solid transparent;
-        border-bottom: 52.5px solid transparent;
+    &:hover {
+      .racer-flipper {
+        transform: rotateY(180deg);
       }
     }
   }
 
-  &.front,
-  &.back {
-    backface-visibility: hidden;
+  @include media-min(898px) {
+    @include offset-rows(6, 0);
+    @include offset-rows(7, -5.5);
+  }
 
-    &.retired {
-      .racer-number {
+  @include media-min(1014px) {
+    @include offset-rows(7, 0);
+    @include offset-rows(8, -5.5);
+  }
+}
+
+.racer-flipper {
+  @include big-hexagon-container();
+  position: relative;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+
+  @include media-min(789px) {
+    @include hexagon-container();
+  }
+
+  &::before,
+  &::after {
+    border: none;
+  }
+}
+
+.racer-content {
+  @include big-hexagon-container();
+  @include flex-column-centered;
+
+  position: absolute;
+  top: 0;
+  border-top: 2.5px solid $white;
+  border-bottom: 2.5px solid $white;
+  text-align: center;
+  backface-visibility: hidden;
+
+  &::before,
+  &::after {
+    border-bottom: 72.5px solid transparent;
+    border-top: 72.5px solid transparent;
+  }
+
+  &.retired {
+    .racer-number {
+      &::before {
+        @include pseudo-icon("\f11e");
+        position: absolute;
+        top: 54%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.45;
+        color: $white;
+        font-size: 8.5rem;
+        text-shadow: none;
+      }
+
+      @include media-max(789px) {
         &::before {
-          @include pseudo-icon("\f11e");
-          position: absolute;
-          top: 54%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          opacity: 0.45;
-          color: $white;
-          font-size: 8.5rem;
-          text-shadow: none;
-        }
-
-        @include media-max(789px) {
-          &::before {
-            top: 52%;
-            font-size: 12rem;
-          }
+          top: 52%;
+          font-size: 12rem;
         }
       }
     }
   }
 
   &.front {
+    left: 0;
     z-index: 2;
     background-color: $wmrra-light-gray;
 
@@ -244,6 +258,7 @@
   }
 
   &.back {
+    left: 0;
     background-color: $wmmra-dark-red;
     transform: rotateY(180deg);
 
@@ -274,10 +289,6 @@
       }
     }
 
-    .retired-name {
-      font-style: italic;
-    }
-
     @include media-min(789px) {
       left: -32px;
     }
@@ -287,6 +298,16 @@
     font-family: "Righteous";
     text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
     letter-spacing: 0.1rem;
+  }
+  
+  @include media-min(789px) {
+    @include hexagon-container();
+
+    &::before,
+    &::after {
+      border-top: 52.5px solid transparent;
+      border-bottom: 52.5px solid transparent;
+    }
   }
 }
 

@@ -19,7 +19,7 @@
         {{ $imgPath := (print "images/racers/" $number ".png") }}
         {{ $staticPath := (print "static/" $imgPath) }}
         {{ $hasImage := fileExists $staticPath }}
-        {{ $contentClass := "racer-cell content"}}
+        {{ $contentClass := "racer-content"}}
         {{ $fullName := "" }}
         {{ if $retired }}
           {{ $fullName = index $row 1 }}
@@ -28,8 +28,8 @@
           {{ $fullName = (print (index $row 1) " " (index $row 0)) }}
         {{ end }}
 
-        <div class="racer-cell flipper-container" data-name="{{ $fullName }}" data-number="{{ $number }}">
-          <div class="racer-cell flipper">
+        <div class="racer-flipper-container" data-name="{{ $fullName }}" data-number="{{ $number }}">
+          <div class="racer-flipper">
             <div class='{{ (print $contentClass " front") }}'>
               {{ if $hasImage }} 
                 <img src="{{ $imgPath | absURL }}" />
