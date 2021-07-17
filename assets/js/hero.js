@@ -128,9 +128,10 @@ function getNextRaceEvent(schedule) {
 
 // it's race day! put the pertinent info front and center
 function populateRaceDayContent(block) {
+  var schedule = nextRaceEvent["eventSchedule"];
   var textContainer = $(block).children(".hero-announcement-text");
   var circuitInfoButton = $("<a>").addClass("hero-announcement-button").attr("href", nextRaceEvent.locationLink).attr("target", "_blank").text("Circuit Info");
-  var scheduleUrl = `${window.location.origin}/race/events/${nextRaceEventDays[0].getFullYear()}-round-${nextRaceEvent.round}`;
+  var scheduleUrl = schedule.startsWith("http") ? schedule : `${window.location.origin}${schedule}`;
   var scheduleButton = $("<a>").addClass("hero-announcement-button").attr("href", scheduleUrl).attr("target", "_blank").text("Event Schedule");
 
   textContainer.append($("<h2>").text(`Round ${nextRaceEvent.round} at ${nextRaceEvent.location}`))
