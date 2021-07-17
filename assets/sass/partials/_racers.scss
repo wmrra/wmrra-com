@@ -148,19 +148,6 @@
   }
 }
 
-.racer-cell-label {
-  position: relative;
-  left: 50%;
-  transform: translate(-50%);
-  width: 21rem;
-  margin-top: 0.5rem;
-  font-size: 2.2rem;
-
-  @include media-min(789px) {
-    display: none;
-  }
-}
-
 @mixin fancy-racer-container {
   @include media-min(789px) {
     @include small-hexagon-container();
@@ -195,6 +182,12 @@
     @include media-min(789px) {
       @include small-hexagon-container();
       @include small-hexagon-content();
+    }
+  }
+
+  .racer-cell-label {
+    @include media-min(789px) {
+      display: none;
     }
   }
 }
@@ -324,6 +317,15 @@
       text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
       letter-spacing: 0.1rem;
     }
+  }
+
+  .racer-cell-label {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 21rem;
+    margin-top: 0.5rem;
+    font-size: 2.2rem;
   }
 }
 
