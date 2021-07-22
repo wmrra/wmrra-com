@@ -39,6 +39,7 @@
     location: The Ridge Motorsports Park
     locationLink: https://www.ridgemotorsportspark.com/
     jointRound: true
+    eventSchedule: /race/events/2021-round-6
 
   - date: September 11-12
     round: 7
