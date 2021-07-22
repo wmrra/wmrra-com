@@ -1,0 +1,14 @@
+
+# Porting xlsx schedule to the site.
+
+1) Get spreadsheet of schedule from the race director
+
+2) Go to https://www.tablesgenerator.com/markdown_tables
+
+3) Copy the day's schedule from xlsx and then click genearte, copy to clipboard.
+
+4) Go to /home/crwilcox/workspace/wmrra-com/data/schedule.yml and add a link
+   to the schedule on the race weekend.
+   for example: eventSchedule: /race/events/2021-round-6
+
+
