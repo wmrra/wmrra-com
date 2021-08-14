@@ -1,9 +1,23 @@
-// TODO: condense + comment this functionality
-@mixin offset-rows($row-count, $margin-val) {
+// min screen widths required to display the
+// hexagon grid with the given column count
+// units in px (not em) because they need to be
+// pretty precise and actually work well with zoom
+// 6 columns is the base minimum for the grid to work
+$small-hexagon-grid-6: 789px;
+$small-hexagon-grid-7: 898px;
+$small-hexagon-grid-8: 1014px;
+
+
+// given a column count for the hexagon grid and a
+// top margin value, calculates the correct nth
+// hexagon child to apply the top margin value to
+// so that every other column of hexagons is offset,
+// allowing the hexagons to interlock
+@mixin offset-columns($column-count, $margin-val) {
   $i: 1;
 
-  @while $i <= $row-count {
-    &:nth-child(#{$row-count}n + #{$i}) {
+  @while $i <= $column-count {
+    &:nth-child(#{$column-count}n + #{$i}) {
       margin-top: #{$margin-val}rem;
     }
 
@@ -11,10 +25,14 @@
   }
 }
 
-@mixin max-grid-width($row-count) {
-  max-width: #{$row-count * 114}px;
+// calculate the max grid width based on column count
+// so the grid can correctly interlock
+@mixin max-grid-width($column-count) {
+  max-width: #{$column-count * 11.4}rem;
 }
 
+// hexagon mixins
+// base styles for hexagons of all sizes
 @mixin hexagon-base {
   text-align: center;
 
@@ -28,36 +46,38 @@
   }
 }
 
+// small hexagon
+// used in interlocking grid at larger screen sizes 
 @mixin small-hexagon-container {
   @include hexagon-base();
-  left: -30px;
-  width: 80px;
-  height: 110px;
-  margin-left: 16px;
-  margin-right: 8px;
+  left: -3rem;
+  width: 8rem;
+  height: 11rem;
+  margin-left: 1.6rem;
+  margin-right: 0.8rem;
   
   &::before,
   &::after {
-    border-bottom: 55px solid transparent;
-    border-top: 55px solid transparent;
+    border-bottom: 5.5rem solid transparent;
+    border-top: 5.5rem solid transparent;
   }
 
   &::before {
-    left: -30px;
-    border-right: 30px solid transparent;
+    left: -3rem;
+    border-right: 3rem solid transparent;
   }
 
   &::after {
-    left: 80px;
-    border-left: 30px solid transparent;
+    left: 8rem;
+    border-left: 3rem solid transparent;
   }
 }
 
 @mixin small-hexagon-content {
   &::before,
   &::after {
-    border-top: 52.5px solid transparent;
-    border-bottom: 52.5px solid transparent;
+    border-top: 5.25rem solid transparent;
+    border-bottom: 5.25rem solid transparent;
   }
 
   &.retired {
@@ -75,14 +95,14 @@
     }
 
     img {
-      width: 140px;
-      height: 118px;
+      width: 14rem;
+      height: 11.8rem;
       clip-path: polygon(21% 5%, 79% 5%, 100% 50%, 79% 95%, 21% 95%, 0% 50%);
     }
   }
 
   &.back {
-    left: -32px;
+    left: -3.2rem;
 
     .racer-number {
       font-size: 2.8rem;
@@ -94,28 +114,82 @@
   }
 }
 
+// large hexagon
+// used in search results and smaller screens
 @mixin big-hexagon-container {
   @include hexagon-base();
-  width: 120px;
-  height: 150px;
+  width: 12rem;
+  height: 15rem;
 
   &::before,
   &::after {
-    border-bottom: 75px solid transparent;
-    border-top: 75px solid transparent;
+    border-bottom: 7.5rem solid transparent;
+    border-top: 7.5rem solid transparent;
   }
 
   &::before {
-    left: -35px;
-    border-right: 35px solid transparent;
+    left: -3.5rem;
+    border-right: 3.5rem solid transparent;
   }
 
   &::after {
-    left: 120px;
-    border-left: 35px solid transparent;
+    left: 12rem;
+    border-left: 3.5rem solid transparent;
   }
 }
 
+// this is the fancy flippy container
+// used for the small interlocking grid only, so it
+// only applies the styles at hexagon grid screen widths
+@mixin fancy-racer-container {
+  @include media-min($small-hexagon-grid-6) {
+    @include small-hexagon-container();
+    @include offset-columns(6, -5.5);
+      
+    width: 90px;
+
+    &:hover {
+      .racer-flipper {
+        transform: rotateY(180deg);
+      }
+    }
+  }
+
+  // for the following 2 media queries:
+  // the FIRST offset call clears the config for the previous column count
+  // the SECOND offset call sets up the config for the new column count
+  // they are BOTH NECESSARY (don't remove either)
+  @include media-min($small-hexagon-grid-7) {
+    @include offset-columns(6, 0);
+    @include offset-columns(7, -5.5);
+  }
+
+  @include media-min($small-hexagon-grid-8) {
+    @include offset-columns(7, 0);
+    @include offset-columns(8, -5.5);
+  }
+
+  .racer-flipper {
+    @include media-min($small-hexagon-grid-6) {
+      @include small-hexagon-container();
+    }
+  }
+
+  .racer-content {
+    @include media-min($small-hexagon-grid-6) {
+      @include small-hexagon-container();
+      @include small-hexagon-content();
+    }
+  }
+
+  .racer-cell-label {
+    @include media-min($small-hexagon-grid-6) {
+      display: none;
+    }
+  }
+}
+
+// racer grid
 .racers-outer {
   display: flex;
   justify-content: center;
@@ -130,64 +204,20 @@
   width: 100%;
 
   &:not(.search-results) {
-    @include media-min(789px) {
+    @include media-min($small-hexagon-grid-6) {
       @include max-grid-width(6);
       justify-content: flex-start;
       align-items: flex-start;
-      margin-left: 55px;
-      padding-top: 60px;
+      margin-left: 5.5rem;
+      padding-top: 6rem;
     }
   
-    @include media-min(898px) {
+    @include media-min($small-hexagon-grid-7) {
       @include max-grid-width(7);
     }
   
-    @include media-min(1014px) {
+    @include media-min($small-hexagon-grid-8) {
       @include max-grid-width(8);
-    }
-  }
-}
-
-@mixin fancy-racer-container {
-  @include media-min(789px) {
-    @include small-hexagon-container();
-    @include offset-rows(6, -5.5);
-      
-    width: 90px;
-
-    &:hover {
-      .racer-flipper {
-        transform: rotateY(180deg);
-      }
-    }
-  }
-
-  @include media-min(898px) {
-    @include offset-rows(6, 0);
-    @include offset-rows(7, -5.5);
-  }
-
-  @include media-min(1014px) {
-    @include offset-rows(7, 0);
-    @include offset-rows(8, -5.5);
-  }
-
-  .racer-flipper {
-    @include media-min(789px) {
-      @include small-hexagon-container();
-    }
-  }
-
-  .racer-content {
-    @include media-min(789px) {
-      @include small-hexagon-container();
-      @include small-hexagon-content();
-    }
-  }
-
-  .racer-cell-label {
-    @include media-min(789px) {
-      display: none;
     }
   }
 }
@@ -195,9 +225,9 @@
 .racer-flipper-container {
   @include big-hexagon-container();
   position: relative;
-  perspective: 1000px;
+  perspective: 100rem;
 
-  @include media-max(789px) {
+  @include media-max($small-hexagon-grid-6) {
     margin: 0 4.5rem 7rem;
   }
 
@@ -227,15 +257,15 @@
   
     position: absolute;
     top: 0;
-    border-top: 2.5px solid $white;
-    border-bottom: 2.5px solid $white;
+    border-top: 0.25rem solid $white;
+    border-bottom: 0.25rem solid $white;
     text-align: center;
     backface-visibility: hidden;
   
     &::before,
     &::after {
-      border-bottom: 72.5px solid transparent;
-      border-top: 72.5px solid transparent;
+      border-bottom: 7.25rem solid transparent;
+      border-top: 7.25rem solid transparent;
     }
   
     &.retired {
@@ -279,8 +309,8 @@
   
       img {
         z-index: 3;
-        width: 190px;
-        height: 165px;
+        width: 19rem;
+        height: 16.5rem;
         clip-path: polygon(19% 5%, 81% 5%, 100% 50%, 81% 95%, 19% 95%, 0% 50%);
       }
     }
@@ -367,7 +397,7 @@
     width: 100%;
     margin-bottom: 0.5rem;
     padding: 0.4rem 0.4rem 0.4rem 3.3rem;
-    border: 1px solid  $wmrra-light-gray;
-    border-radius: 5px;
+    border: 0.1rem solid  $wmrra-light-gray;
+    border-radius: 0.5rem;
   }
 }
