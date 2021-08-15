@@ -232,10 +232,20 @@ $small-hexagon-grid-8: 1014px;
   }
 }
 
-.racer-flipper-container {
+// to achieve the "card flip" effect, we need:
+// - an outer container to define the "3d space"
+// - an inner container/card to flip and hold our content
+// - containers for the front and back content of the card
+// read more: https://medium.com/designer-recipes/understanding-card-flip-animation-using-css-391c40ed3136
+.racer-flipper-container { // outer container
   @include big-hexagon-container();
   position: relative;
-  perspective: 100rem;
+
+  // ensures our card exists in "3d" by
+  // defining "how far away" the 3d object 
+  // is from the user; needs to be sufficiently 
+  // far away to give the card full space to "flip over"
+  perspective: 100rem; 
 
   @include media-max($small-hexagon-grid-6) {
     margin: 0 4.5rem 7rem;
@@ -249,11 +259,14 @@ $small-hexagon-grid-8: 1014px;
     @include fancy-racer-container();
   }
 
-  .racer-flipper {
+  .racer-flipper { // inner container/card
     @include big-hexagon-container();
     position: relative;
     transition: 0.6s;
-    transform-style: preserve-3d;
+
+    // ensures we're still in "3d space" when we
+    // apply the transform to "flip" the card
+    transform-style: preserve-3d; 
   
     &::before,
     &::after {
@@ -261,7 +274,7 @@ $small-hexagon-grid-8: 1014px;
     }
   }
 
-  .racer-content {
+  .racer-content { // actual content on the card
     @include big-hexagon-container();
     @include flex-column-centered;
   
@@ -270,7 +283,7 @@ $small-hexagon-grid-8: 1014px;
     border-top: 0.25rem solid $white;
     border-bottom: 0.25rem solid $white;
     text-align: center;
-    backface-visibility: hidden;
+    backface-visibility: hidden; // hides the back side of the card
   
     &::before,
     &::after {
