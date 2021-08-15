@@ -4,14 +4,13 @@ function activateRacerSearch() {
   var racers = $(".racer-flipper-container");
 
   $(".racer-search-input").keyup(function() {
-    searchTerm = $(this).val();
+    searchTerm = $(this).val().toLowerCase();
 
     var matches = racers.filter(function() {
       var racer = $(this);
-      var normalizedSearchTerm = searchTerm.toLowerCase();
-      var normalizedName = racer.attr("data-name").toLowerCase();
+      var name = racer.attr("data-name").toLowerCase();
       var number = racer.attr("data-number");
-      return normalizedName.includes(normalizedSearchTerm) || number.includes(normalizedSearchTerm);
+      return name.includes(searchTerm) || number.includes(searchTerm);
     });
 
     if (searchTerm.length > 0) {
