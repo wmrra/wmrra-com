@@ -1,8 +1,5 @@
-const SINGLE_CHAR_REGEX = new RegExp(/^[a-zA-Z\d]{1}$/);
-
-var searchTerm = "";
-
 function activateRacerSearch() {
+  var searchTerm = "";
   var racerContainer = $(".racers-wrapper");
   var racers = $(".racer-flipper-container");
 
