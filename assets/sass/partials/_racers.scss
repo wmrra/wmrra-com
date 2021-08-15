@@ -1,8 +1,8 @@
 // min screen widths required to display the
-// hexagon grid with the given column count
-// units in px (not em) because they need to be
-// pretty precise and actually work well with zoom
-// 6 columns is the base minimum for the grid to work
+// hexagon grid with the given column count.
+// units in px (not em) for very fine-grained control
+// (they actually work fine with screen zoom in/out).
+// min cols is 6, max is 8; displays at >= "tablet"-type widths.
 $small-hexagon-grid-6: 789px;
 $small-hexagon-grid-7: 898px;
 $small-hexagon-grid-8: 1014px;
@@ -25,8 +25,8 @@ $small-hexagon-grid-8: 1014px;
   }
 }
 
-// calculate the max grid width based on column count
-// so the grid can correctly interlock
+// restricts the max width of the grid container
+// based on column count so the grid can correctly interlock
 @mixin max-grid-width($column-count) {
   max-width: #{$column-count * 11.4}rem;
 }
@@ -47,7 +47,7 @@ $small-hexagon-grid-8: 1014px;
 }
 
 // small hexagon
-// used in interlocking grid at larger screen sizes 
+// used in the interlocking grid at larger screen sizes 
 @mixin small-hexagon-container {
   @include hexagon-base();
   left: -3rem;
@@ -94,6 +94,7 @@ $small-hexagon-grid-8: 1014px;
       font-size: 3.8rem;
     }
 
+    // clip path based on https://stackoverflow.com/a/41396720
     img {
       width: 14rem;
       height: 11.8rem;
@@ -115,7 +116,7 @@ $small-hexagon-grid-8: 1014px;
 }
 
 // large hexagon
-// used in search results and smaller screens
+// used in search results and on smaller screens
 @mixin big-hexagon-container {
   @include hexagon-base();
   width: 12rem;
@@ -140,7 +141,8 @@ $small-hexagon-grid-8: 1014px;
 
 // this is the fancy flippy container
 // used for the small interlocking grid only, so it
-// only applies the styles at hexagon grid screen widths
+// contains media queries to only apply the styles
+// at screen widths that can accommodate the grid
 @mixin fancy-racer-container {
   @include media-min($small-hexagon-grid-6) {
     @include small-hexagon-container();
@@ -307,6 +309,7 @@ $small-hexagon-grid-8: 1014px;
         }
       }
   
+      // clip-path based on https://stackoverflow.com/a/41396720
       img {
         z-index: 3;
         width: 19rem;
