@@ -32,6 +32,11 @@ $small-hexagon-grid-8: 1014px;
 }
 
 // hexagon mixins
+// note that these styles need to apply to all
+// descendant containers of the parent hexagon container
+// so that everything keeps that nice hexagonal shape
+// (hence the mixins)
+
 // base styles for hexagons of all sizes
 @mixin hexagon-base {
   text-align: center;
@@ -142,7 +147,10 @@ $small-hexagon-grid-8: 1014px;
 // this is the fancy flippy container
 // used for the small interlocking grid only, so it
 // contains media queries to only apply the styles
-// at screen widths that can accommodate the grid
+// at screen widths that can accommodate the grid;
+// using this mixin allows us to display search
+// results in the "big hexagons" at any screen size,
+// because it can be easily controlled via class name
 @mixin fancy-racer-container {
   @include media-min($small-hexagon-grid-6) {
     @include small-hexagon-container();
@@ -160,7 +168,7 @@ $small-hexagon-grid-8: 1014px;
   // for the following 2 media queries:
   // the FIRST offset call clears the config for the previous column count
   // the SECOND offset call sets up the config for the new column count
-  // they are BOTH NECESSARY (don't remove either)
+  // they are BOTH NECESSARY (don't remove either!)
   @include media-min($small-hexagon-grid-7) {
     @include offset-columns(6, 0);
     @include offset-columns(7, -5.5);
@@ -191,7 +199,7 @@ $small-hexagon-grid-8: 1014px;
   }
 }
 
-// racer grid
+// actual racer grid styles
 .racers-outer {
   display: flex;
   justify-content: center;
