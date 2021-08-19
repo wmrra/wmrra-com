@@ -272,6 +272,8 @@ function getMonthNumber(name) {
 }
 
 $(document).ready(function() {
-  selectHeroImage();
-  displayHeroContent();
+  if ($(".home-content-wrapper").length > 0) {
+    selectHeroImage();
+    displayHeroContent();
+  }
 });
