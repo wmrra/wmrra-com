@@ -168,3 +168,29 @@
     flex-direction: column;
   }
 }
+
+@mixin placeholder-text {
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $wmrra-light-gray;
+    font-size: 1.4rem;
+    font-style: italic;
+  }
+  
+  &::-moz-placeholder { /* Firefox 19+ */
+    color: $wmrra-light-gray;
+    font-size: 1.4rem;
+    font-style: italic;
+  }
+
+  &:-ms-input-placeholder { /* IE 10+ */
+    color: $wmrra-light-gray;
+    font-size: 1.4rem;
+    font-style: italic;
+  }
+
+  &:-moz-placeholder { /* Firefox 18- */
+    color: $wmrra-light-gray;
+    font-size: 1.4rem;
+    font-style: italic;
+  }
+}

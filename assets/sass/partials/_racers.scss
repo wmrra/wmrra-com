@@ -1,0 +1,427 @@
+// min screen widths required to display the
+// hexagon grid with the given column count.
+// units in px (not em) for very fine-grained control
+// (they actually work fine with screen zoom in/out).
+// min cols is 6, max is 8; displays at >= "tablet"-type widths.
+$small-hexagon-grid-6: 789px;
+$small-hexagon-grid-7: 898px;
+$small-hexagon-grid-8: 1014px;
+
+
+// given a column count for the hexagon grid and a
+// top margin value, calculates the correct nth
+// hexagon child to apply the top margin value to
+// so that every other column of hexagons is offset,
+// allowing the hexagons to interlock
+@mixin offset-columns($column-count, $margin-val) {
+  $i: 1;
+
+  @while $i <= $column-count {
+    &:nth-child(#{$column-count}n + #{$i}) {
+      margin-top: #{$margin-val}rem;
+    }
+
+    $i: $i + 2;
+  }
+}
+
+// restricts the max width of the grid container
+// based on column count so the grid can correctly interlock
+@mixin max-grid-width($column-count) {
+  max-width: #{$column-count * 11.4}rem;
+}
+
+// hexagon mixins
+// note that these styles need to apply to all
+// descendant containers of the parent hexagon container
+// so that everything keeps that nice hexagonal shape
+// (hence the mixins)
+
+// base styles for hexagons of all sizes
+@mixin hexagon-base {
+  text-align: center;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+  }
+}
+
+// small hexagon
+// used in the interlocking grid at larger screen sizes 
+@mixin small-hexagon-container {
+  @include hexagon-base();
+  left: -3rem;
+  width: 8rem;
+  height: 11rem;
+  margin-left: 1.6rem;
+  margin-right: 0.8rem;
+  
+  &::before,
+  &::after {
+    border-bottom: 5.5rem solid transparent;
+    border-top: 5.5rem solid transparent;
+  }
+
+  &::before {
+    left: -3rem;
+    border-right: 3rem solid transparent;
+  }
+
+  &::after {
+    left: 8rem;
+    border-left: 3rem solid transparent;
+  }
+}
+
+@mixin small-hexagon-content {
+  &::before,
+  &::after {
+    border-top: 5.25rem solid transparent;
+    border-bottom: 5.25rem solid transparent;
+  }
+
+  &.retired {
+    .racer-number {
+      &::before {
+        top: 54%;
+        font-size: 8.5rem;
+      }
+    }
+  }
+
+  &.front {
+    .racer-number {
+      font-size: 3.8rem;
+    }
+
+    // clip path based on https://stackoverflow.com/a/41396720
+    img {
+      width: 14rem;
+      height: 11.8rem;
+      clip-path: polygon(21% 5%, 79% 5%, 100% 50%, 79% 95%, 21% 95%, 0% 50%);
+    }
+  }
+
+  &.back {
+    left: -3.2rem;
+
+    .racer-number {
+      font-size: 2.8rem;
+    }
+
+    .racer-name {
+      display: block;
+    }
+  }
+}
+
+// large hexagon
+// used in search results and on smaller screens
+@mixin big-hexagon-container {
+  @include hexagon-base();
+  width: 12rem;
+  height: 15rem;
+
+  &::before,
+  &::after {
+    border-bottom: 7.5rem solid transparent;
+    border-top: 7.5rem solid transparent;
+  }
+
+  &::before {
+    left: -3.5rem;
+    border-right: 3.5rem solid transparent;
+  }
+
+  &::after {
+    left: 12rem;
+    border-left: 3.5rem solid transparent;
+  }
+}
+
+// this is the fancy flippy container
+// used for the small interlocking grid only, so it
+// contains media queries to only apply the styles
+// at screen widths that can accommodate the grid;
+// using this mixin allows us to display search
+// results in the "big hexagons" at any screen size,
+// because it can be easily controlled via class name
+@mixin fancy-racer-container {
+  @include media-min($small-hexagon-grid-6) {
+    @include small-hexagon-container();
+    @include offset-columns(6, -5.5);
+      
+    width: 90px;
+
+    &:hover {
+      .racer-flipper {
+        transform: rotateY(180deg);
+      }
+    }
+  }
+
+  // for the following 2 media queries:
+  // the FIRST offset call clears the config for the previous column count
+  // the SECOND offset call sets up the config for the new column count
+  // they are BOTH NECESSARY (don't remove either!)
+  @include media-min($small-hexagon-grid-7) {
+    @include offset-columns(6, 0);
+    @include offset-columns(7, -5.5);
+  }
+
+  @include media-min($small-hexagon-grid-8) {
+    @include offset-columns(7, 0);
+    @include offset-columns(8, -5.5);
+  }
+
+  .racer-flipper {
+    @include media-min($small-hexagon-grid-6) {
+      @include small-hexagon-container();
+    }
+  }
+
+  .racer-content {
+    @include media-min($small-hexagon-grid-6) {
+      @include small-hexagon-container();
+      @include small-hexagon-content();
+    }
+  }
+
+  .racer-cell-label {
+    @include media-min($small-hexagon-grid-6) {
+      display: none;
+    }
+  }
+}
+
+// actual racer grid styles
+.racers-outer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.racers-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  &:not(.search-results) {
+    @include media-min($small-hexagon-grid-6) {
+      @include max-grid-width(6);
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-left: 5.5rem;
+      padding-top: 6rem;
+    }
+  
+    @include media-min($small-hexagon-grid-7) {
+      @include max-grid-width(7);
+    }
+  
+    @include media-min($small-hexagon-grid-8) {
+      @include max-grid-width(8);
+    }
+  }
+}
+
+// to achieve the "card flip" effect, we need:
+// - an outer container to define the "3d space"
+// - an inner container/card to flip and hold our content
+// - containers for the front and back content of the card
+// read more: https://medium.com/designer-recipes/understanding-card-flip-animation-using-css-391c40ed3136
+.racer-flipper-container { // outer container
+  @include big-hexagon-container();
+  position: relative;
+
+  // ensures our card exists in "3d" by
+  // defining "how far away" the 3d object 
+  // is from the user; needs to be sufficiently 
+  // far away to give the card full space to "flip over"
+  perspective: 100rem; 
+
+  @include media-max($small-hexagon-grid-6) {
+    margin: 0 4.5rem 7rem;
+  }
+
+  &:not(.fancy) {
+    margin: 0 4.5rem 7rem;
+  }
+
+  &.fancy {
+    @include fancy-racer-container();
+  }
+
+  .racer-flipper { // inner container/card
+    @include big-hexagon-container();
+    position: relative;
+    transition: 0.6s;
+
+    // ensures we're still in "3d space" when we
+    // apply the transform to "flip" the card
+    transform-style: preserve-3d; 
+  
+    &::before,
+    &::after {
+      border: none;
+    }
+  }
+
+  .racer-content { // actual content on the card
+    @include big-hexagon-container();
+    @include flex-column-centered;
+  
+    position: absolute;
+    top: 0;
+    border-top: 0.25rem solid $white;
+    border-bottom: 0.25rem solid $white;
+    text-align: center;
+    backface-visibility: hidden; // hides the back side of the card
+  
+    &::before,
+    &::after {
+      border-bottom: 7.25rem solid transparent;
+      border-top: 7.25rem solid transparent;
+    }
+  
+    &.retired {
+      .racer-number {
+        &::before {
+          @include pseudo-icon("\f11e");
+          position: absolute;
+          top: 52%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          opacity: 0.45;
+          color: $white;
+          font-size: 12rem;
+          text-shadow: none;
+        }
+      }
+    }
+  
+    &.front {
+      left: 0;
+      z-index: 2;
+      background-color: $wmrra-light-gray;
+  
+      &::before {
+        border-right-color: $wmrra-light-gray;
+      }
+  
+      &::after {
+        border-left-color: $wmrra-light-gray;
+      }
+  
+      .racer-number {
+        font-size: 6.45rem;
+        color: $wmmra-dark-red;
+  
+        .digits {
+          position: relative;
+          z-index: 2;
+        }
+      }
+  
+      // clip-path based on https://stackoverflow.com/a/41396720
+      img {
+        z-index: 3;
+        width: 19rem;
+        height: 16.5rem;
+        clip-path: polygon(19% 5%, 81% 5%, 100% 50%, 81% 95%, 19% 95%, 0% 50%);
+      }
+    }
+  
+    &.back {
+      left: 0;
+      background-color: $wmmra-dark-red;
+      transform: rotateY(180deg);
+  
+      &::before {
+        border-right-color: $wmmra-dark-red;
+      }
+  
+      &::after {
+        border-left-color: $wmmra-dark-red;
+      }
+  
+      .racer-name,
+      .racer-number {
+        color: $white;
+      }
+  
+      .racer-number {
+        font-size: 10rem;
+      }
+  
+      .racer-name {
+        display: none;
+      }
+    }
+  
+    .racer-number {
+      font-family: "Righteous";
+      text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
+      letter-spacing: 0.1rem;
+    }
+  }
+
+  .racer-cell-label {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 21rem;
+    margin-top: 0.5rem;
+    font-size: 2.2rem;
+  }
+}
+
+// header + racer search
+.racer-grid-header {
+  max-width: 91.2rem;
+  margin: 0 auto;
+}
+
+.racer-search-wrapper {
+  @include flex-column-centered;
+
+  position: relative;
+  margin-bottom: 2rem;
+
+  &::before {
+    @include pseudo-icon("\f002");
+
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+    color: $wmrra-light-gray;
+  }
+
+  .retired-number-blurb {
+    font-style: italic;
+    font-size: 1.4rem;
+    color: $light-default-text-color;
+
+    i {
+      margin-right: 0.2rem;
+      font-style: italic;
+    }
+  }
+
+  input {
+    @include placeholder-text;
+
+    width: 100%;
+    margin-bottom: 0.5rem;
+    padding: 0.4rem 0.4rem 0.4rem 3.3rem;
+    border: 0.1rem solid  $wmrra-light-gray;
+    border-radius: 0.5rem;
+  }
+}
