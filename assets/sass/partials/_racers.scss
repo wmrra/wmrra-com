@@ -283,7 +283,9 @@ $small-hexagon-grid-8: 1014px;
     border-top: 0.25rem solid $white;
     border-bottom: 0.25rem solid $white;
     text-align: center;
-    backface-visibility: hidden; // hides the back side of the card
+    // hides the back side of the card
+    backface-visibility: hidden; 
+    -webkit-backface-visibility: hidden;
   
     &::before,
     &::after {
