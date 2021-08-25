@@ -11,6 +11,8 @@ As a racer, it’s your responsibility to know the rules, read the rule book!
 
 [2021 WMRRA Rulebook](/pdfs/rulebook/2021WMRRARuleBook.pdf)
 
+[WMRRA Bylaws](/pdfs/rulebook/2021WMRRABylaws.pdf)
+
 # Referee Rulings
 
 All referee rulings will be publically posted here for the current race season. At the end of the season, all clarifications will be brought in front of the Rules Committee to be considered for the following years rulebook.
