@@ -7,7 +7,6 @@ $small-hexagon-grid-6: 789px;
 $small-hexagon-grid-7: 898px;
 $small-hexagon-grid-8: 1014px;
 
-
 // given a column count for the hexagon grid and a
 // top margin value, calculates the correct nth
 // hexagon child to apply the top margin value to
@@ -283,9 +282,11 @@ $small-hexagon-grid-8: 1014px;
     border-top: 0.25rem solid $white;
     border-bottom: 0.25rem solid $white;
     text-align: center;
-    // hides the back side of the card
     backface-visibility: hidden; 
     -webkit-backface-visibility: hidden;
+    
+    // lol firefox - https://stackoverflow.com/questions/9604982
+    transform: rotateX(0deg);
   
     &::before,
     &::after {
@@ -313,7 +314,7 @@ $small-hexagon-grid-8: 1014px;
       left: 0;
       z-index: 2;
       background-color: $wmrra-light-gray;
-  
+
       &::before {
         border-right-color: $wmrra-light-gray;
       }
