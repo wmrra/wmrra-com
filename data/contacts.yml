@@ -98,10 +98,10 @@ contacts:
     #   phone:
     #   email: Cashier@wmrra.com
 
-    # - position: Air Fence Coordinator
-    #   name:
-    #   phone:
-    #   email: airfence@wmrra.com
+    - position: Air Fence Coordinator
+      name: Chris La Fayette
+      phone:
+      email: airfence@wmrra.com
 
     - position: Pit Gate
       name: Katie Morris
