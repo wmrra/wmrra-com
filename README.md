@@ -4,7 +4,7 @@ Welcome to the repository for the [WMRRA.com](https://wmrra.com) website!
 
 # Running Locally
 
-This project uses a static site generator called [Hugo](gohugo.io).
+This project uses a static site generator called [Hugo](https://gohugo.io).
 
 1) Install [Hugo](https://gohugo.io/getting-started/installing/#quick-install).
    ```bash
