@@ -38,11 +38,14 @@ function displayHeroContent() {
     }
   }
 
-  if (blockToShow) {
-    heroBlocks.not(blockToShow).remove();
-    populateBlockContent(blockToShow);
-    $(blockToShow).addClass("the-chosen-one");
+  if (!blockToShow){
+    // Default to showing the latest news announcement. 
+    blockToShow = heroBlocks.filter(`#latest-announcement`);
   }
+
+  heroBlocks.not(blockToShow).remove();
+  populateBlockContent(blockToShow);
+  $(blockToShow).addClass("the-chosen-one");
 
   // remove all data attrs from hero blocks so they don't pollute the dom
   heroBlocks.removeAttr("data")
