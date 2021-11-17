@@ -45,8 +45,7 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: 'Staged: ${{ steps.firebase-deploy.outputs.STAGING_URL }}'
-
+              body: 'Staged:\n│ Channel ID    │ Last Release Time   │ URL                                                   │ Expire Time         │\n${{ steps.firebase-deploy.outputs.STAGING_URL }}'
             })
 
       - name: "Remove stage label"
