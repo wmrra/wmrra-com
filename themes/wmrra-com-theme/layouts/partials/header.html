@@ -1,8 +1,8 @@
-{{ $logo := "images/WMRRA-logo.jpg" }}
+{{ $logo := "/images/WMRRA-logo.jpg" }}
 <div class="modal-overlay hidden"></div>
 <div class="header">
   <div class="header-logo">
-    <a href="{{ .Site.BaseURL }}"><img class="header-logo" src="{{ $logo | absURL }}"/></a>
+    <a href="{{ "/" | absURL }}"><img class="header-logo" src="{{ $logo | absURL }}"/></a>
   </div>
   <div class="header-menu">
     {{ partial "header-menu/header-menu.html" . }}
