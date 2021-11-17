@@ -47,7 +47,6 @@ jobs:
               repo: context.repo.repo,
               body: 'Staged:\n\n| Channel ID | Last Release Time | URL | Expire Time |\n|----|----|----|----|\n${{ steps.firebase-deploy.outputs.STAGING_URL | sed  "s/│/|/g"  }}'
             })
-
       - name: "Remove stage label"
         uses: actions/github-script@v3
         with:
