@@ -34,9 +34,8 @@ jobs:
               hugo --config config.staging.yml
               # npx firebase-tools deploy --token $FIREBASE_TOKEN  --project wmrra-staging
               CHANNEL_ID="staging"
-              npx firebase-tools hosting:channel:deploy $CHANNEL_ID --token $FIREBASE_TOKEN  --project wmrra-staging
-              output="$(npx firebase-tools firebase hosting:channel:list --token $FIREBASE_TOKEN  --project wmrra-staging)"
-              echo '::set-output name=STAGING_URL::output'
+              npx firebase-tools hosting:channel:deploy $CHANNEL_ID --token $FIREBASE_TOKEN --project wmrra-staging
+              echo "::set-output name=STAGING_URL::$(npx firebase-tools hosting:channel:list --token $FIREBASE_TOKEN --project wmrra-staging)\n"
       - name: "Comment that PR is staged"
         uses: actions/github-script@v3
         with:
