@@ -51,6 +51,6 @@ WMRRA partners with many track day providers for the on track portion of NRS. Pl
 [Click here for registration instructions.](/race/register)
 
 # Forms
-[All Documents & Forms](resources/documents-and-forms)
+[All Documents & Forms](/resources/documents-and-forms)
 
 [2021 New Racer Class Documents](https://drive.google.com/drive/folders/1Hs4HVXwj8818XKt0wttb_QKQtjhsuqvQ)
