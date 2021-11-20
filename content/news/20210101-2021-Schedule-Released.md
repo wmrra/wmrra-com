@@ -5,4 +5,4 @@ draft   : false
 description: "WMRRA/OMRRA have released the 2021 schedule."
 ---
 
-![](/images/2021_schedule.png)
+<img src="/images/2021_schedule.png" width="725">
