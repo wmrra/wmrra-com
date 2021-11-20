@@ -29,10 +29,14 @@ jobs:
         shell: bash
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        id: firebase-deploy
         run:  |
               hugo --config config.staging.yml
-              npx firebase-tools deploy --token $FIREBASE_TOKEN  --project wmrra-staging
-  
+              # npx firebase-tools deploy --token $FIREBASE_TOKEN  --project wmrra-prod
+              PR_NUMBER=$(echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }')
+              CHANNEL_ID="staging-${PR_NUMBER}"
+              npx firebase-tools hosting:channel:deploy $CHANNEL_ID --token $FIREBASE_TOKEN --project wmrra-prod
+              echo "::set-output name=STAGING_URL::$(npx firebase-tools hosting:channel:list --token $FIREBASE_TOKEN --project wmrra-prod | grep $CHANNEL_ID | sed 's/│/|/g')\n"
       - name: "Comment that PR is staged"
         uses: actions/github-script@v3
         with:
@@ -42,9 +46,8 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: 'Staged at https://wmrra-staging.web.app'
+              body: 'Staged:\n\n| Channel ID | Last Release Time | URL | Expire Time |\n|----|----|----|----|\n${{ steps.firebase-deploy.outputs.STAGING_URL }}'
             })
-
       - name: "Remove stage label"
         uses: actions/github-script@v3
         with:
