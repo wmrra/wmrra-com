@@ -1,4 +1,47 @@
 "2021":
+  - date: May 6-8
+    round: 1
+    location: The Ridge Motorsports Park
+    locationLink: https://www.ridgemotorsportspark.com/
+    jointRound: true
+ 
+  - date: June 10-12
+    round: 2
+    location: Portland International Raceway
+    locationLink: https://www.portlandraceway.com/
+    jointRound: true
+
+  - date: June 17-19
+    round: 3
+    location: The Ridge Motorsports Park
+    locationLink: https://www.ridgemotorsportspark.com/
+    jointRound: false
+
+  - date: July 8-10
+    round: 4
+    location: Pacific Raceways
+    locationLink: https://pacificraceways.com/
+    jointRound: false
+
+  - date: July 29-31
+    round: 5
+    location: Portland International Raceway
+    locationLink: https://www.portlandraceway.com/
+    jointRound: true
+
+  - date: August 19-21
+    round: 6
+    location: The Ridge Motorsports Park
+    locationLink: https://www.ridgemotorsportspark.com/
+    jointRound: true
+
+  - date: September 9-11
+    round: 7
+    location: Pacific Raceways
+    locationLink: https://pacificraceways.com/
+    jointRound: false
+
+"2021":
   - date: May 8-9
     round: 1
     location: The Ridge Motorsports Park
