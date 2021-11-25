@@ -4,19 +4,12 @@
 {{ $currentYear := string time.Now.Year}}
 {{ $nextYear := string (add time.Now.Year 1)}}
 
-{{ $scheduleYear := $nextYear}}
+{{ $scheduleYear := $currentYear}}
+{{if in site.Data.schedule $nextYear }}
+  {{ $scheduleYear = $nextYear}}
+{{ end }}
 
 {{ $currentSchedule := jsonify (index site.Data.schedule $scheduleYear) }} 
-{{ if (not $currentSchedule)}}
-  {{ $scheduleYear := $currentYear }}
-  {{ $currentSchedule = jsonify (index site.Data.schedule $currentYear) }} 
-{{ end }}
-
-
-{{ range $elem_index, $elem_val := site.Data.schedule }}
-  {{ $currentSchedule = jsonify $elem_val }}
-  {{ $scheduleYear = $elem_index }}
-{{ end }}
 {{/* To add: last race results */}}
 
 <div class="hero-announcement-content">
