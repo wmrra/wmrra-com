@@ -42,7 +42,6 @@ function displayHeroContent() {
 
   if (!blockToShow){
     // Default to showing the latest news announcement.
-    console.log("no block to show") 
     blockToShow = heroBlocks.filter(`#latest-announcement`);
   }
 
