@@ -3,12 +3,10 @@
 <!-- Get next year's schedule if available, or this years -->
 {{ $currentYear := string time.Now.Year}}
 {{ $nextYear := string (add time.Now.Year 1)}}
-
 {{ $scheduleYear := $currentYear}}
-{{if in site.Data.schedule $nextYear }}
+{{ if isset site.Data.schedule $nextYear }}
   {{ $scheduleYear = $nextYear}}
 {{ end }}
-
 {{ $currentSchedule := jsonify (index site.Data.schedule $scheduleYear) }} 
 {{/* To add: last race results */}}
 

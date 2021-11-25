@@ -28,7 +28,6 @@ function displayHeroContent() {
   var heroBlocks = $(".hero-announcement-content-block");
   var raceEventYear = heroBlocks.filter("#next-race-event")?.data("year");
   var raceSchedule = heroBlocks.filter("#next-race-event")?.data("schedule");
-  
   nextRaceEvent = getNextRaceEvent(raceSchedule, raceEventYear);
   nextRaceEventDays = extractRaceEventDates(nextRaceEvent, raceEventYear);
 
@@ -110,6 +109,8 @@ function getNextRaceEvent(schedule, year) {
     if (now.getFullYear() != year){
       // If the next season is in the following year, figure out the first
       // event by using Jan 1, next-year, as 'now'
+      // TODO: could change date math to account for year also, though this has
+      // the same effect
       now  = new Date(year,1,1);
     }
     var currentMonth = now.getMonth();
