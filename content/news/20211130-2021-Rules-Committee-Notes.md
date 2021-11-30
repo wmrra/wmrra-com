@@ -31,8 +31,8 @@ This provides an additional scheduling spot for another 600 event that would be 
 
 ### 6. Restructure Formula Female Classes to allow riders on a wider variety of machinery to compete.
 
-- Female GP: (1000s, 600s, 700 Twins)
-- Female Lightweight (LW, ULW machinery)
+- Female GP: (Open, 600, MW SBK)
+- Female Lightweight (LW, ULW SBK)
 
 ### 7. The list of retired and reserved racers numbers has been expanded in the rulebook to more accuately reflect the list of retired/reserved numbers.
 
