@@ -23,7 +23,7 @@ The spirit of novice is to grow individuals into expert racers. Removing an ince
 
 ### 3. Rename Formula 2 to Formula 600.
 
-### 4. Formula 600 competitors will be awared 1.5 the number of points shown in Section M.1b per race.
+### 4. Formula 600 competitors will be awarded 1.5 the number of points shown in Section M.1b per race.
 
 ### 5. Eliminate Classic SBK Class.
 
