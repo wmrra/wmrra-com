@@ -30,16 +30,16 @@ This is redundant as the rulebook specifies at a higher level that race directio
 - Female GP: (1000s, 600s, 700 Twins)
 - Female Lightweight (LW, ULW machinery)
 
-### 6. Rename Formula 2 to Formula 600
+### 6. Rename Formula 2 to Formula 600.
 
-### 7. Eliminate Classic SBK Class
+### 7. Eliminate Classic SBK Class.
 
 This provides an additional scheduling spot for another 600 event that would be more inclusive of all riders. This class has also created an ability to 'upset' the championship if you elect to ride a 2009 or older motorcycle.
 
 ### 8. Modify safety wire requirements for recessed axles.
 
-### 9. Align black flag/meatball flag verbiage in our rulebook to better align with OMRRA
+### 9. Align black flag/meatball flag verbiage in our rulebook to better align with OMRRA.
 
-### 10. Formula 2 competitors will be awared 1.6 the number of points shown in Section M.1b per race
+### 10. Formula 2 competitors will be awared 1.6 the number of points shown in Section M.1b per race.
 
 ### 11. Clarify that unsportsmanlike conduct, such as irresponsible riding, will not be tolerated.
