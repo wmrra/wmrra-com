@@ -11,31 +11,35 @@ This year's rules committee met 13 November 2021 for around 8.5 hours to go thro
 
 While the below is not complete, this is an overview of the changes to expect for the 2022 season. Thanks to everyone that took the time to author and submit proposals!
 
-1. Create a new classification of Amateur which will incorporate current novice and sportsman races.
-    - The end result should be better opportunities for novice competitors as well as sportsman competitors. This also eliminates one contentious point of sportsman, breakout times, and replaces it with a number of podiums for advancement.
+### 1. Create a new classification of Amateur which will incorporate current novice and sportsman races.
 
-2. Only first year novices are eligible for a novice championship.
-    - As the spirit of novice is to grow individuals into expert racers, a championship incentive to return a second year to win a championship creates a perverse incentive. This modification alleviates this.
+The end result should be better opportunities for novice competitors as well as sportsman competitors. This also eliminates one contentious point of sportsman, breakout times, and replaces it with a number of podiums for graduation from amateur category races.
 
-3. The list of retired and reserved racers numbers has been expanded in the rulebook to more accuately reflect the list of retired/reserved numbers.
+### 2. Only first year novices are eligible for a novice championship.
 
-4. Remove the line "Exceptions may
-be approved in advance by the WMRRA Referee
-and/or Race Director." from D.2.J.V, pertaining to novice machinery. This is redundant as the rulebook specifies at a higher level that race direction is allowed to apply discretion where necessary.
+The spirit of novice is to grow individuals into expert racers. Removing an incentive to return a second year to win a championship better matches the intent of the class.
 
-5. Restructure Formula Female Classes to allow riders on a wider variety of machinery to compete.
-    - Female GP: (1000s, 600s, 700 Twins)
-    - Female Lightweight (LW, ULW machinery)
+### 3. The list of retired and reserved racers numbers has been expanded in the rulebook to more accuately reflect the list of retired/reserved numbers.
 
-6. Rename Formula 2 to Formula 600
+### 4. Remove the line "Exceptions may be approved in advance by the WMRRA Referee and/or Race Director." from D.2.J.V, pertaining to novice machinery.
 
-7. Eliminate Classic SBK Class
-    - This provides an additional scheduling spot for another 600 event that would be more inclusive of all riders. This class has also created an ability to 'upset' the championship if you elect to ride a 2009 or older motorcycle.
+This is redundant as the rulebook specifies at a higher level that race direction is allowed to apply discretion where necessary.
 
-8. Modify safety wire requirements for recessed axles.
+### 5. Restructure Formula Female Classes to allow riders on a wider variety of machinery to compete.
 
-9. Align black flag/meatball flag verbiage in our rulebook to better align with OMRRA
+- Female GP: (1000s, 600s, 700 Twins)
+- Female Lightweight (LW, ULW machinery)
 
-10. Formula 2 competitors will be awared 1.6 the number of points shown in Section M.1b per race
+### 6. Rename Formula 2 to Formula 600
 
-11. Clarify that unsportsmanlike conduct, such as irresponsible riding, will not be tolerated.
+### 7. Eliminate Classic SBK Class
+
+This provides an additional scheduling spot for another 600 event that would be more inclusive of all riders. This class has also created an ability to 'upset' the championship if you elect to ride a 2009 or older motorcycle.
+
+### 8. Modify safety wire requirements for recessed axles.
+
+### 9. Align black flag/meatball flag verbiage in our rulebook to better align with OMRRA
+
+### 10. Formula 2 competitors will be awared 1.6 the number of points shown in Section M.1b per race
+
+### 11. Clarify that unsportsmanlike conduct, such as irresponsible riding, will not be tolerated.
