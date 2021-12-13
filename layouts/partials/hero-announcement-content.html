@@ -1,6 +1,13 @@
-{{ $whatYearIsIt := string time.Now.Year }} 
 {{ $latestNews := (where site.RegularPages.ByDate "Section" "news" | last 1) }}
-{{ $currentSchedule := jsonify (index site.Data.schedule $whatYearIsIt) }} 
+
+<!-- Get next year's schedule if available, or this years -->
+{{ $currentYear := string time.Now.Year}}
+{{ $nextYear := string (add time.Now.Year 1)}}
+{{ $scheduleYear := $currentYear}}
+{{ if isset site.Data.schedule $nextYear }}
+  {{ $scheduleYear = $nextYear}}
+{{ end }}
+{{ $currentSchedule := jsonify (index site.Data.schedule $scheduleYear) }} 
 {{/* To add: last race results */}}
 
 <div class="hero-announcement-content">
@@ -42,6 +49,7 @@
     id="next-race-event"
     class="hero-announcement-content-block"
     data-schedule="{{ $currentSchedule }}"
+    data-year="{{ $scheduleYear }}"
   >
     <div class="hero-announcement-text">
       <h1>Next Race Round</h1>
