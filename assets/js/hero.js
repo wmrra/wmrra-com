@@ -26,9 +26,10 @@ function selectHeroImage() {
 function displayHeroContent() {
   var blockToShow;
   var heroBlocks = $(".hero-announcement-content-block");
+  var raceEventYear = heroBlocks.filter("#next-race-event")?.data("year");
   var raceSchedule = heroBlocks.filter("#next-race-event")?.data("schedule");
-  nextRaceEvent = getNextRaceEvent(raceSchedule);
-  nextRaceEventDays = extractRaceEventDates(nextRaceEvent);
+  nextRaceEvent = getNextRaceEvent(raceSchedule, raceEventYear);
+  nextRaceEventDays = extractRaceEventDates(nextRaceEvent, raceEventYear);
 
   for (var blockId of ORDERED_HERO_BLOCK_IDS) {
     const block = heroBlocks.filter(`#${blockId}`);
@@ -39,7 +40,7 @@ function displayHeroContent() {
   }
 
   if (!blockToShow){
-    // Default to showing the latest news announcement. 
+    // Default to showing the latest news announcement.
     blockToShow = heroBlocks.filter(`#latest-announcement`);
   }
 
@@ -98,20 +99,28 @@ function isRaceDay() {
 
 // looks through the schedule and finds the next
 // race event in the list (based on the current date)
-function getNextRaceEvent(schedule) {
+function getNextRaceEvent(schedule, year) {
   if (!schedule) {
     return null;
   }
 
   if (!nextRaceEvent) {
     var now  = new Date();
+    if (now.getFullYear() != year){
+      // If the next season is in the following year, figure out the first
+      // event by using Jan 1, next-year, as 'now'
+      // TODO: could change date math to account for year also, though this has
+      // the same effect
+      now  = new Date(year,1,1);
+    }
     var currentMonth = now.getMonth();
     var currentDay = now.getDate();
     var scheduleIndex = 0;
     
     while (!nextRaceEvent && scheduleIndex < schedule.length) {
       var currentEvent = schedule[scheduleIndex];
-      var raceEventDays = extractRaceEventDates(currentEvent);
+      var raceEventDays = extractRaceEventDates(currentEvent, year);
+      var eventYear =  raceEventDays[0].getFullYear();      
       var eventMonth = raceEventDays[0].getMonth();
 
       // event is in a month that's in the past OR
@@ -207,12 +216,11 @@ function buildCountdownContainerHtml() {
 
 // event data format: "May 17-18"
 // return format: [ "05/17/<current-year>", "05/18/<current-year>" ]
-function extractRaceEventDates(raceEvent) {
+function extractRaceEventDates(raceEvent, year) {
   if (!raceEvent) {
     return [];
   }
 
-  var year = new Date().getFullYear();
   var eventDateParts = raceEvent.date.split(" ");
   var month = getMonthNumber(eventDateParts[0]);
   var startAndEndDays = eventDateParts[1].split("-").map(dayString => parseInt(dayString));
