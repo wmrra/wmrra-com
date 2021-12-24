@@ -30,17 +30,17 @@ Welcome to the WMRRA Family.
 1. Attend an [on-track NRS School](#nrs-on-track-providers)
 1. Register for your [first race](/race/register)
 
-For a more thorough overview, please read the [2021 New Racer Packet](https://drive.google.com/file/d/1HR9dMMePtrhtbWR8QL3q2w2V6jP_DHpR)
 
 ## NRS (New Racer School) Dates
 
-- [March 27, 2021 - 10AM-3PM](https://www.motorsportreg.com/events/wmrra-2021-novice-classroom-ridge-motorsports-park-road-course-753535?fbclid=IwAR1l3vz_r_CGJsOxO3JxMj-IitInrnv1cy6rQ04dVyqXl3ke3bbu8FfCb68)
-
-- June 12, 2021 - 10AM-2:30PM. Online through Zoom. Contact Jason Pierce, NoviceRep@wmrra.com for details.
-
+To Be Announced
 
 ## NRS On-Track Providers
-WMRRA partners with many track day providers for the on track portion of NRS. Please contact a track day provider to complete the NRS on track portion. Typically this will be available the Friday before a race round.
+WMRRA partners with many track day providers for the on track portion of NRS.
+
+Please contact Dion La Blue, Novice Rep, for more details.
+
+Typically this will be available the Friday before a race round.
 
 - [2-Fast](https://2-fast.org/)
 - [MotoVixens](https://motovixens.com/)
