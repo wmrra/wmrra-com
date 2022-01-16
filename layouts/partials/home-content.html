@@ -1,5 +1,4 @@
-{{ $whatYearIsIt := string time.Now.Year }}
-{{ $currentSchedule := index .Site.Data.schedule $whatYearIsIt }}
+{{ $scheduleJson := jsonify .Site.Data.schedule }}
 
 <div class="home-content">
   <div class="home-content-section we-are-wmrra">
@@ -10,9 +9,9 @@
     {{ partial "home-content-section/latest-news" . }}
   </div>
 
-  {{ with $currentSchedule }}
-    <div class="home-content-section homepage-schedule">
-      {{ partial "home-content-section/homepage-schedule" (dict "scheduleData" $currentSchedule "year" $whatYearIsIt) }}
+  {{ with $scheduleJson }}
+    <div data-schedule="{{ $scheduleJson }}" class="home-content-section homepage-schedule loading">
+      {{ partial "home-content-section/homepage-schedule" }}
     </div>
   {{ end }}
 

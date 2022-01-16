@@ -1,7 +1,9 @@
+{{ $homeScript := resources.Get "js/home.js" | minify }}
 {{ $heroScript := resources.Get "js/hero.js" | minify }}
 {{ $supporterScript := resources.Get "js/supporter-levels.js" | minify }}
 {{ $racersScript := resources.Get "js/racers.js" | minify }}
 
+<script src="{{ $homeScript.Permalink }}"></script>
 <script src="{{ $heroScript.Permalink }}"></script>
 <script src="{{ $supporterScript.Permalink }}"></script>
 <script src="{{ $racersScript.Permalink }}"></script>
