@@ -31,7 +31,7 @@ Lunch	We provide lunch, usually pizza, or sandwiches, and beverages too!
 After Lunch	Stock up on waters and head back out to your corner.
 5:00pm	Shutdown. Bundle up your flags and head in to drop off your radio, and vest, and stop by for a cold drink! (Adult beverages and / or cold sodas provided)
 
-**Please dress properly for the weather. Wear shoes that are comfortable for standing, running and will protect you on the track (sneakers, boots, etc are okay – flipflops are not). Please wear long pants, and bring a pair of work gloves if you have them (sometimes parts are hot). Please do not wear any red clothing – unfortunately this looks too much like a “red flag” and is a safety concern. If you have any questions on what to wear or bring please [contact the WMRRA Corner Captain, Craig Johnson](CornerCaptain@wmrra.com)**
+**Please dress properly for the weather. Wear shoes that are comfortable for standing, running and will protect you on the track (sneakers, boots, etc are okay – flipflops are not). Please wear long pants, and bring a pair of work gloves if you have them (sometimes parts are hot). Please do not wear any red clothing – unfortunately this looks too much like a “red flag” and is a safety concern. If you have any questions on what to wear or bring please [contact the WMRRA Corner Captain, Craig Johnson](emailto:Corner.Captain@wmrra.com)**
 
 # Here are the things we’ll take care of when you volunteer your time:
 We value the time you spend with us and want to make it even easier for you to come join us for the weekend.
@@ -42,7 +42,7 @@ We value the time you spend with us and want to make it even easier for you to c
 
 [For specific circuit information, click here](/resources/circuits)
 
-*Please [contact WMRRA Corner Captain](CornerCaptain@wmrra.com) regarding any questions.
+*Please [contact WMRRA Corner Captain](mailto:Corner.Captain@wmrra.com) regarding any questions.
 
 # Want more information?
 So you don’t know anything about corner working? Don’t worry!
@@ -57,5 +57,5 @@ Groups participating as corner workers have an opportunity to receive exposure o
 
 Past groups include: Goldwing Touring Association, Tacoma Harley Owner’s Group, and Christian Motorcyclists Association of Washington.
 
-Contact our [Corner Captain, Craig Johnson](CornerCaptain@wmrra.com) for more information.
+Contact our [Corner Captain, Craig Johnson](mailto:Corner.Captain@wmrra.com) for more information.
 
