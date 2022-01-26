@@ -1,7 +1,11 @@
 {{ $sponsorData := index .Site.Data.sponsors.sponsorData }}
 {{ $titleSponsors := slice }}
-{{ $uniqueSponsors := slice }}
 {{ $titleSponsorCount := 0 }}
+{{ $fuSponsors := slice }}
+{{ $fuSponsorCount := 0 }}
+{{ $f2Sponsors := slice }}
+{{ $f2SponsorCount := 0 }}
+{{ $sectionRowClass := "" }}
 
 {{ with $sponsorData }}
   {{/* Separate title sponsors from the rest */}}
@@ -10,45 +14,94 @@
       {{ $titleSponsors = $titleSponsors | append .sponsors }}
       {{ $titleSponsorCount = (len .sponsors) }}
     {{ end }}
+    {{ if eq .title "Formula Ultra Sponsors" }} 
+      {{ $fuSponsors = $fuSponsors | append .sponsors }}
+      {{ $fuSponsorCount = (len .sponsors) }}
+    {{ end }}
+    {{ if eq .title "Formula 600 Sponsors" }} 
+      {{ $f2Sponsors = $f2Sponsors | append .sponsors }}
+      {{ $f2SponsorCount = (len .sponsors) }}
+    {{ end }}
   {{ end }}
+
+  {{/* Pluralize sponsor text in case we ever get more than 1 */}}
+  {{ $titleSponsorText := "Title Sponsor" }}
+  {{ if gt $titleSponsorCount 1 }}
+    {{ $titleSponsorText := "Title Sponsors"}}
+  {{ end }}
+  
+  {{ $fuSponsorText := "Formula Ultra Sponsor" }}
+  {{ if gt $fuSponsorCount 1 }}
+    {{ $fuSponsorText := "Formula Ultra Sponsors" }}
+  {{ end }}
+
+  {{ $f2SponsorText := "Formula 600 Sponsor" }}
+  {{ if gt $f2SponsorCount 1 }}
+    {{ $f2SponsorText := "Formula 600 Sponsors" }}
+  {{ end }}
+
+  {{ if and (gt $fuSponsorCount 0) (gt $f2SponsorCount 0)  }}
+    {{ $sectionRowClass = "two-row" }}
+  {{ else }}
+    {{ $sectionRowClass = "one-row" }}
+  {{end}}
 
   <div class="home-content-section-wrapper supporters">
     <div class="home-content-section-header">
       <h1>Thank you to our sponsors!</h1>
     </div>
-
     <div class="supporter-splash">
-      {{ if gt $titleSponsorCount 0 }}
-        {{ $ribbonText := "Title Sponsor" }}
-        {{ if gt $titleSponsorCount 1 }}
-          {{ $ribbonText = "Title Sponsors"}}
-        {{ end }}
-        <div class="title-supporters-wrapper">
-          <div class="title-supporter-ribbon">
-            <div class="ribbon-content">{{ $ribbonText }}</div>
+      <div class="supporters-section title {{ $sectionRowClass }}">
+        <div class="supporters-group">
+          <div class="supporter-ribbon">
+            <div class="ribbon-content">{{ $titleSponsorText }}</div>
           </div>
-          {{ range $titleSponsors }}
-            {{ $uniqueSponsors = $uniqueSponsors | append .name }}
-            <div>
+  
+          <div class="supporter-logos">
+            {{ range $titleSponsors }}
               {{ partial "home-content-section/supporter-block" (dict "context" . "isTitleSponsor" true) }}  
+            {{ end }}
+          </div>
+        </div>
+      </div>
+
+      {{ with $fuSponsors }}
+      <div class="supporters-section formula-ultra {{ $sectionRowClass }} ">
+          <div class="supporters-group">
+            <div class="supporter-ribbon">
+              <div class="ribbon-content">{{ $fuSponsorText }}</div>
             </div>
-          {{ end }}
+    
+            <div class="supporter-logos">
+              {{ range $fuSponsors }}
+                {{ partial "home-content-section/supporter-block" (dict "context" . "isTitleSponsor" true) }}  
+              {{ end }}
+            </div>
+          </div>
         </div>
       {{ end }}
 
-        <div class="all-supporters-wrapper">
-          <div class="all-supporters-inner">
-            {{ range $sponsorData }}
-              {{ range where .sponsors ".name" "not in" $uniqueSponsors }}
-                {{ if in .name "Sponsorship Available" }}
-                  {{/* Do nothing */}}
-                {{ else }}
-                  {{ $uniqueSponsors = $uniqueSponsors | append .name }}
-                  {{ partial "home-content-section/supporter-block" (dict "context" .) }}
-                {{ end }}
+      {{ with $f2Sponsors }}
+        <div class="supporters-section formula-600 {{ $sectionRowClass }}">
+          <div class="supporters-group">
+            <div class="supporter-ribbon">
+              <div class="ribbon-content">{{ $f2SponsorText }}</div>
+            </div>
+    
+            <div class="supporter-logos">
+              {{ range $f2Sponsors }}
+                {{ partial "home-content-section/supporter-block" (dict "context" . "isTitleSponsor" true) }}  
               {{ end }}
-            {{ end }}
+            </div>
           </div>
+        </div>
+      {{ end }}
+
+      <div class="all-supporters-link-wrapper">
+        <a href="/sponsor" class="all-supporters-link site-button">
+          <span>View all sponsors</span>
+          <i aria-hidden="true" class="fas fa-angle-double-right"></i>
+        </a>
       </div>
     </div>
   </div>
