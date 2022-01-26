@@ -341,25 +341,9 @@
 }
 
 .all-news-link {
-  @include link-overrides($white);
+  @include bouncy-arrow-link($white);
 
-  display: flex;
-  align-items: center;
   font-size: 2.75rem;
-  color: $white;
-  text-transform: uppercase;
-
-  i {
-    margin-top: -0.3rem;
-    margin-left: 0.5rem;
-  }
-
-  &:hover, 
-  &:visited {
-    i {
-      @include bouncy-animation();
-     }
-  }
 }
 
 .homepage-schedule-wrapper {
@@ -368,8 +352,88 @@
 }
 
 .supporter-splash {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
+  max-width: 120rem;
+
+  @include media-min($large-screen-breakpoint) {
+    display: grid;
+    justify-content: unset;
+    grid-gap: 3rem;
+  }
+
+  .supporter-ribbon {
+    @include ribbon(3rem, 2.5rem, -4rem);
+  
+    width: 70%;
+    max-width: 40rem;
+    margin: 0 auto 1rem;
+
+    @include media-max($medium-screen-breakpoint) {
+      @include ribbon(1.95rem, 2.5rem, -4rem);
+    } 
+  }
+  
+  .supporters-section {   
+    &.title {
+      grid-row: 1;
+
+      &.one-row {
+        grid-column: 1;
+      }
+
+      &.two-row {
+        grid-column: span 2;
+      }
+    }
+
+    &.formula-ultra,
+    &.formula-600 {
+      &.one-row {
+        grid-row: 1;
+        grid-column: 2;
+      }
+
+      &.two-row {
+        grid-row: 2;
+      }
+    }
+
+    &.formula-ultra {
+      &.two-row {
+        grid-column: 1;
+      }
+    }
+
+    &.formula-600 {
+      &.two-row {
+        grid-column: 2;
+      }
+    }
+
+    @include media-max($large-screen-breakpoint) {
+      margin: 0 -2rem 3rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    } 
+
+  }
+  
+  .supporters-group {
+    @include flex-column-centered;
+  
+    margin: 0 auto;
+  }
+  
+  .supporter-logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 
   .supporter-block-wrapper {
     margin: 1rem;
@@ -441,40 +505,25 @@
       }
     }
   }
-}
 
-.title-supporters-wrapper {
-  @include flex-column-centered;
+  .all-supporters-link-wrapper {
+    grid-column: span 2;
 
-  margin: 0 -2rem;
-  padding-bottom: 2rem;
-  border-bottom: 0.2rem solid $wmmra-dark-red;
-
-  h2 {
-    margin: 0;
-    font-size: 4rem;
-    font-weight: bold;
-    text-transform: uppercase;
+    text-align: center;
   }
-}
 
-.title-supporter-ribbon { 
-  @include ribbon(3rem, 2.5rem, -4rem);
+  .all-supporters-link {
+    @include bouncy-arrow-link($white);
 
-  width: 70%;
-  max-width: 40rem;
-  margin: 0 auto 1rem;
-}
+    max-width: 32rem;
 
-.all-supporters-wrapper {
-  margin: 0 auto;
-}
+    margin: 0 auto;
+    padding: 1.5rem 0;
 
-.all-supporters-inner {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
-  max-width: 120rem;
-  padding-top: 2rem;
+    font-size: 1.8rem;
+
+    @include media-min($medium-screen-breakpoint) {
+      font-size: 2.6rem;
+    }
+  }
 }

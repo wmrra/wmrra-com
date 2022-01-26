@@ -194,3 +194,25 @@
     font-style: italic;
   }
 }
+
+@mixin bouncy-arrow-link($color) {
+  @include link-overrides($color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $color;
+  text-transform: uppercase;
+
+  i {
+    margin-top: -0.3rem;
+    margin-left: 0.5rem;
+  }
+
+  &:hover, 
+  &:visited {
+    i {
+      @include bouncy-animation();
+     }
+  }
+}
