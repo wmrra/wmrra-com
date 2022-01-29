@@ -1,0 +1,34 @@
+{{ $volunteerOpportunities := .Site.Data.volunteers }}
+
+<div>
+  <div>
+    <h1>Volunteer with us</h1>
+    <p>
+      Volunteers are the heart and soul of WMRRA. They organize our race events, 
+      help keep us safe on track, and do the work behind the scenes to ensure
+      we can continue to participate in the sport we love. There are a wide 
+      variety of opportunities for all talents and interests - even if you're not a racer!
+    </p>
+  </div>
+
+  {{ with $volunteerOpportunities.raceDayVolunteers }}
+    <div>
+      <h2>Race day volunteers</h2>
+      <div class="volunteer-block-container">
+        {{ range . }}
+          {{ partial "volunteer/volunteer-opportunity-block" (dict "context" .) }}
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+
+  {{ with $volunteerOpportunities.clubVolunteers }}
+    <div>
+      <h2>Club volunteers</h2>
+      <div class="volunteer-block-container">
+        {{ range . }}
+          {{ partial "volunteer/volunteer-opportunity-block" (dict "context" .) }}
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}

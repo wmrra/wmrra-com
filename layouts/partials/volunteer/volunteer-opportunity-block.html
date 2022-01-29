@@ -1,0 +1,9 @@
+{{/*}}
+  {{ partial args: }}
+  {{ context: the opportunity being rendered }}
+{{*/}}
+
+<div class="volunteer-opportunity-block">
+  <i aria-hidden="true" class="volunteer-icon fas {{.context.icon}}"></i>
+  <span class="volunteer-text">{{ .context.name }}</span>
+</div>

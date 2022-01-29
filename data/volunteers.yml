@@ -1,0 +1,19 @@
+raceDayVolunteers:
+  - name: "Corner worker"
+    icon: "fa-flag"
+  - name: "Tech inspection"
+    icon: "fa-wrench"
+  - name: "Scoring and timing"
+    icon: "fa-stopwatch"
+  - name: "Registration"
+    icon: "fa-clipboard-list"
+  - name: "Crash truck assistant"
+    icon: "fa-truck"
+  - name: "Starter's assistant"
+    icon: "fa-tachometer-alt"
+
+clubVolunteers:
+  - name: "Marketing"
+    icon: "fa-piggy-bank"
+  - name: "Promotion"
+    icon: "fa-bullhorn"

@@ -1,0 +1,26 @@
+.volunteer-block-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+
+.volunteer-opportunity-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  padding: 1.5rem;
+
+  background-color: $wmrra-light-gray;
+
+  .volunteer-icon {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    color: $wmmra-dark-red;
+  }
+
+  .volunteer-text {
+    font-size: 2rem;
+  }
+}
