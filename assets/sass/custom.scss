@@ -353,6 +353,16 @@ $xxxlarge-screen-breakpoint: 120em; // big
   border-style: solid;
   border-radius: 1rem;
 
+  .supporter-level-content {
+    .supporter-level {
+      font-size: 3rem;
+    }
+    
+    .cost {
+      font-size: 2.6rem;
+    }
+  }
+
   &.level-10000 {
     border-color: $sponsor-gold;
 
@@ -362,14 +372,6 @@ $xxxlarge-screen-breakpoint: 120em; // big
     }
 
     .supporter-level-content {
-      .supporter-level {
-        font-size: 3rem;
-      }
-      
-      .cost {
-        font-size: 2.6rem;
-      }
-  
       .inquiry-button {
         background-color: $sponsor-gold;
 
@@ -391,14 +393,6 @@ $xxxlarge-screen-breakpoint: 120em; // big
     }
 
     .supporter-level-content {
-      .supporter-level {
-        font-size: 2.8rem;
-      }
-      
-      .cost {
-        font-size: 2.4rem;
-      }
-  
       .inquiry-button {
         background-color: $sponsor-silver;
 
@@ -409,32 +403,16 @@ $xxxlarge-screen-breakpoint: 120em; // big
     }
   }
 
-  &.level-500{
+  &.level-500 {
     border-color: $sponsor-bronze;
 
     &::before {
       @include sponsor-level-badge("\f559", $sponsor-bronze);
       top: -4.5rem;
     }
-
     .supporter-level-content {
-      @include media-min($large-screen-breakpoint) {
-        grid-template-rows: 8rem 29rem 1fr;
-      }
-
-      .supporter-level {
-        font-size: 2.4rem;
-      }
-      
-      .cost {
-        font-size: 2.4rem;
-      }
-  
       .inquiry-button {
         background-color: $sponsor-bronze;
-        padding: 0.75rem;
-        width: 17rem;
-        font-size: 1.6rem;
 
         &:hover {
           filter: brightness(120%);
