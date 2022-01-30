@@ -48,7 +48,7 @@
               <div class="benefits">
                 <ul>
                   {{ range (first 4 .benefits) }}
-                    <li>{{ . }}</li>
+                    <li>{{ . | safeHTML }}</li>
                   {{ end }}
                 </ul>
                 {{ if $showModalLink }}
