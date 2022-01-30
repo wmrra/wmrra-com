@@ -381,7 +381,8 @@ $xxxlarge-screen-breakpoint: 120em; // big
   }
 
   &.level-5000,
-  &.level-1000 {
+  &.level-1000,
+  &.level-750 {
     border-color: $sponsor-silver;
 
     &::before {
@@ -408,7 +409,7 @@ $xxxlarge-screen-breakpoint: 120em; // big
     }
   }
 
-  &.level-500, &.level-750{
+  &.level-500{
     border-color: $sponsor-bronze;
 
     &::before {
