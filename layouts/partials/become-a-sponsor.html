@@ -35,7 +35,7 @@
       <div class="become-a-supporter-blocks-row">
         {{ range . }}
           {{ $levelId := (lower (delimit (split (replaceRE `\sSponsor\s?-?\s?` "" .level) " ") "-")) }}
-          {{ $blockClass := (print "level-" .costInDollars) }}
+          {{ $blockClass := (print "level-" .tier) }}
           {{ $formattedCost := (print "$" (lang.NumFmt 0 .costInDollars)) }}
           {{ $mailSubject := (print "Becoming a WMRRA " .level) }}
           {{ $showModalLink := (gt (len .benefits) 4) }}

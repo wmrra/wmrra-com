@@ -1,5 +1,6 @@
 sponsorshipLevelData:
   - level: Title Sponsor
+    tier: gold
     costInDollars: 10_000
     benefits:
       - Exclusive naming rights to the Overall WMRRA Championship.
@@ -16,6 +17,7 @@ sponsorshipLevelData:
       - Four passes to the 2021 WMRRA Annual Awards Banquet.
 
   - level: Purse Race Sponsor - Formula Ultra
+    tier: gold
     costInDollars: 10_000
     benefits:
       - Exclusive naming rights to the overall class championship.
@@ -32,6 +34,7 @@ sponsorshipLevelData:
       - Four passes to the 2021 WMRRA Annual Awards Banquet.
 
   - level: Purse Race Sponsor - Formula 600
+    tier: silver
     costInDollars: 5_000
     benefits:
       - Exclusive naming rights to the overall class championship.
@@ -48,6 +51,7 @@ sponsorshipLevelData:
       - Four passes to the WMRRA Annual Awards Banquet.
 
   - level: Race Class Sponsor
+    tier: silver
     costInDollars: 750
     benefits:
       - Exclusive naming rights to one of WMRRA’s race classes. (Ex. Open Super Sport sponsored by ABC)
@@ -60,6 +64,7 @@ sponsorshipLevelData:
     disclaimer: Some classes cost a higher amount, typically due to running multiple heats in a weekend.
 
   - level: General Club Sponsor
+    tier: bronze
     costInDollars: 500
     benefits:
       - Sponsor logo on website sponsors page; https://wmrra.com/sponsor 
@@ -68,6 +73,7 @@ sponsorshipLevelData:
       - Promotional mention through WMRRA social media.
   
   - level: Taste of Racing (TOR) Rental
+    tier: bronze
     costInDollars: 500
     benefits:
       - Available Saturday each race weekend during lunch break.
