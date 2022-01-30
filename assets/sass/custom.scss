@@ -408,7 +408,7 @@ $xxxlarge-screen-breakpoint: 120em; // big
     }
   }
 
-  &.level-500 {
+  &.level-500, &.level-750{
     border-color: $sponsor-bronze;
 
     &::before {
