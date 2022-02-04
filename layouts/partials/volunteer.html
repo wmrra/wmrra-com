@@ -1,7 +1,7 @@
 {{ $volunteerOpportunities := .Site.Data.volunteers }}
 
-<div>
-  <div>
+<div class="volunteer-page-content">
+  <div class="volunteer-page-section">
     <h1>Volunteer with us</h1>
     <p>
       Volunteers are the heart and soul of WMRRA. They organize our race events, 
@@ -12,7 +12,7 @@
   </div>
 
   {{ with $volunteerOpportunities.raceDayVolunteers }}
-    <div>
+  <div class="volunteer-page-section">
       <h2>Race day volunteers</h2>
       <div class="volunteer-block-container">
         {{ range . }}
@@ -23,7 +23,7 @@
   {{ end }}
 
   {{ with $volunteerOpportunities.clubVolunteers }}
-    <div>
+  <div class="volunteer-page-section">
       <h2>Club volunteers</h2>
       <div class="volunteer-block-container">
         {{ range . }}

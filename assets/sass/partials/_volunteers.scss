@@ -1,3 +1,23 @@
+.volunteer-page-content {
+  h1,
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+}
+
+.volunteer-page-section {
+  margin-bottom: 5rem;
+}
+
 .volunteer-block-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
@@ -10,9 +30,23 @@
   align-items: center;
   justify-content: center;
   
+  height: 15rem;
   padding: 1.5rem;
 
   background-color: $wmrra-light-gray;
+
+  &:hover {
+    background-color: $wmmra-dark-red;
+    color: $white;
+
+    .volunteer-icon {
+      display: none;
+    }
+
+    .volunteer-description {
+      display: block;
+    }
+  }
 
   .volunteer-icon {
     margin-bottom: 1rem;
@@ -22,5 +56,13 @@
 
   .volunteer-text {
     font-size: 2rem;
+  }
+
+  .volunteer-description {
+    display: none;
+
+    margin: 1rem 2rem 0;
+    font-size: 1.4rem;
+    text-align: center;
   }
 }
