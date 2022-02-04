@@ -9,7 +9,7 @@ headerImage: "/images/Racer-Responsibility.jpg"
 
 As a racer, it’s your responsibility to know the rules, read the rule book!
 
-[2021 WMRRA Rulebook](/pdfs/rulebook/2021WMRRARuleBook.pdf)
+[2022 WMRRA Rulebook](/pdfs/rulebook/2022WMRRARuleBook.pdf)
 
 [WMRRA Bylaws](/pdfs/rulebook/2021WMRRABylaws.pdf)
 
