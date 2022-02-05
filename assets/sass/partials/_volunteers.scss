@@ -17,6 +17,10 @@
 
   p {
     margin: 0;
+
+    + p {
+      margin-top: 1rem;
+    }
   }
 }
 
@@ -40,7 +44,7 @@
   }
 
   &.volunteer-blocks {
-    p{
+    p {
       text-align: center;
     }
   }
@@ -96,5 +100,46 @@
     margin: 1rem 2rem 0;
     font-size: 1.4rem;
     text-align: center;
+  }
+}
+
+.corner-working-benefits-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+  grid-gap: 5rem;
+
+  margin: 4rem 0 0;
+  padding: 0;
+
+  list-style: none;
+
+  li {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+
+    h3 {
+      margin: 0 0 1rem;
+    }
+
+    i {
+      margin-right: 2rem;
+      
+      color: $wmmra-dark-red;
+      font-size: 2.8rem;
+    }
+  }
+}
+
+.corner-worker-faq {
+  @include sliding-drawers(40rem);
+
+  .corner-worker-faq-entry {
+    margin-bottom: 2rem;
+  }
+
+  .faq-entry-question {
+    font-size: 2rem;
   }
 }
