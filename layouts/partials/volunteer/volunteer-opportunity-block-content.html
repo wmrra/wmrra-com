@@ -1,0 +1,8 @@
+{{/*}}
+  {{ partial args: }}
+  {{ context: the opportunity being rendered }}
+{{*/}}
+
+<i aria-hidden="true" class="volunteer-icon fas {{.context.icon}}"></i>
+<span class="volunteer-text">{{ .context.name }}</span>
+<span class="volunteer-description">{{ .context.description }}</span>
