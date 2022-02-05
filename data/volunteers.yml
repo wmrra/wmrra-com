@@ -2,6 +2,7 @@ raceDayVolunteers:
   - name: "Corner worker"
     icon: "fa-flag"
     description: "Keep racers safe while enjoying racing from the best seat in the house."
+    url: "/volunteer/corner-working"
   - name: "Announcer"
     icon: "fa-microphone-alt"
     description: "Broadcast race schedules, lineups, and commentary over the racetrack PA system"
