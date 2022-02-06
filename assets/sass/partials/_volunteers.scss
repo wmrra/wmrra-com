@@ -138,7 +138,7 @@
   }
 
   @include media-min($small-screen-breakpoint) {
-    grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
   }
 }
 
