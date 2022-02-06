@@ -218,8 +218,6 @@
 }
 
 @mixin sliding-drawers($max-content-height) {
-
-
   .sliding-drawer {
     &.is-open {
       .sliding-drawer-indicator {
