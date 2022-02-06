@@ -7,7 +7,7 @@ raceDayVolunteers:
     description: "Inspect racers' bikes the morning of race day to ensure they are compliant with WMRRA's technical regulations."
   - name: "Scoring and timing"
     icon: "fa-stopwatch"
-    description: "Something something scoring and timing."
+    description: "Help make sure racers transponders are read, timing is accurate, and we can score the results."
   - name: "Registration"
     icon: "fa-clipboard-list"
     description: "Help riders sign up for races and file the right paperwork."
@@ -24,7 +24,7 @@ raceDayVolunteers:
 clubVolunteers:
   - name: "Marketing"
     icon: "fa-piggy-bank"
-    description: "Something something make us money"
+    description: "Interested in helping the club get its name out there? Proficient in social media?"
   - name: "Promotion"
     icon: "fa-bullhorn"
-    description: "Something something tell people about WMRRA"
+    description: "Help WMRRA find sponsors, create branded merchandise, and more"
