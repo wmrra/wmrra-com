@@ -52,4 +52,4 @@ clubVolunteers:
   - name: "Website"
     icon: "fa-keyboard"
     description: "Build, maintain, and author content for the WMRRA website"
-    contact: "2ndvp@wmrra.com"
+    url: "https://github.com/wmrra/wmrra-com#contributing"
