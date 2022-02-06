@@ -1,12 +1,12 @@
 .volunteer-page-content {
   h1,
   h2 {
+    margin: 0 0 2rem;
     text-align: center;
     text-transform: uppercase;
   }
 
   h1 {
-    margin: 0 0 2rem;
     font-size: 6rem;
   }
 
@@ -46,6 +46,12 @@
   &.volunteer-blocks {
     p {
       text-align: center;
+    }
+  }
+
+  &.corner-working {
+    h2 {
+      margin-bottom: 3rem;
     }
   }
 }
@@ -105,10 +111,10 @@
 
 .corner-working-benefits-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
   grid-gap: 5rem;
 
-  margin: 4rem 0 0;
+  margin: 0;
   padding: 0;
 
   list-style: none;
@@ -130,10 +136,31 @@
       font-size: 2.8rem;
     }
   }
+
+  @include media-min($small-screen-breakpoint) {
+    grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
+  }
+}
+
+.corner-worker-sign-up-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+
+  .site-button {
+    @include bouncy-arrow-link($white);
+
+    width: 20rem;
+    padding: 1rem 0;
+
+    font-size: 2rem;
+    text-transform: none;
+  }
 }
 
 .corner-worker-faq {
-  @include sliding-drawers(40rem);
+  @include sliding-drawers(120rem);
 
   .corner-worker-faq-entry {
     margin-bottom: 2rem;
@@ -141,5 +168,12 @@
 
   .faq-entry-question {
     font-size: 2rem;
+  }
+
+  .faq-entry-answer {
+    ul {
+      margin-top: 1rem;
+      line-height: 3rem;
+    }
   }
 }

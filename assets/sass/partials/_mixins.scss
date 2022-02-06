@@ -218,6 +218,8 @@
 }
 
 @mixin sliding-drawers($max-content-height) {
+
+
   .sliding-drawer {
     &.is-open {
       .sliding-drawer-indicator {
@@ -249,6 +251,8 @@
     cursor: pointer;
 
     .sliding-drawer-indicator {
+      margin-left: 1rem;
+
       &.open {
         display: none;
       }
@@ -263,7 +267,7 @@
     max-height: 0;
 
     overflow: hidden;
-    transition: max-height 350ms ease-out;
+    transition: max-height 500ms ease-in-out;
 
     .sliding-drawer-content-inner {
       padding: 1.5rem 3rem;
