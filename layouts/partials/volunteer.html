@@ -1,0 +1,50 @@
+{{ $volunteerOpportunities := .Site.Data.volunteers }}
+
+<div class="volunteer-page-content">
+  <div class="volunteer-page-header-image">
+    <img alt="Some of our intrepid WMRRA volunteers" src="/images/wmrra-volunteers.png">
+  </div>
+  <div class="volunteer-page-section">
+    <h1>Volunteer with us</h1>
+    <p>
+      Volunteers are the heart and soul of WMRRA. They organize our race events, 
+      help keep us safe on track, and do the work behind the scenes to ensure
+      we can continue to participate in the sport we love. There are a wide 
+      variety of opportunities for all talents and interests - even if you're not a racer!
+      <br />
+      Select an opportunity to contact us and learn more about how you can help.
+    </p>
+  </div>
+
+  {{ with $volunteerOpportunities.raceDayVolunteers }}
+  <div class="volunteer-page-section volunteer-blocks">
+      <h2>Race day volunteers</h2>
+      <p>
+        Folks who do all the things on and off the track that keep race events running smoothly and safely.
+        <br /> 
+        Some jobs require a commitment for a full race day, but many can be performed for only part of
+        the day or before/after racing.
+      </p>
+      <div class="volunteer-block-container">
+        {{ range . }}
+          {{ partial "volunteer/volunteer-opportunity-block" (dict "context" .) }}
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+
+  {{ with $volunteerOpportunities.clubVolunteers }}
+  <div class="volunteer-page-section volunteer-blocks">
+      <h2>Club volunteers</h2>
+      <p>
+        Folks who put in the work behind the scenes to operate and grow the club. 
+        <br />
+        These jobs offer fairly flexible hours and committments and don't necessarily require work on race event days.
+      </p>
+      <div class="volunteer-block-container">
+        {{ range . }}
+          {{ partial "volunteer/volunteer-opportunity-block" (dict "context" .) }}
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}

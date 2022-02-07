@@ -104,7 +104,18 @@ function activateMobileMenu() {
   });
 }
 
+function activateSlidingDrawers() {
+  const drawers = $(".sliding-drawer-header");
+
+  if (drawers.length > 0) {
+    drawers.click(function() {
+      $(this).parent(".sliding-drawer").toggleClass("is-open");
+    })
+  }
+}
+
 $(document).ready(function() {
   activateHeaderMenu();
   activateMobileMenu();
+  activateSlidingDrawers();
 });
