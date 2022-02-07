@@ -1,0 +1,22 @@
+{{/*}}
+  {{ partial args: }}
+  {{ context: the opportunity being rendered }}
+{{*/}}
+
+{{ $href := "" }}
+
+{{ if .context.contact }}
+  {{ $href = printf "mailto:%s" .context.contact }}
+{{ else if .context.url }}
+  {{ $href = .context.url }}
+{{ end }}
+
+{{ if gt (len $href) 0 }}
+  <a class="volunteer-opportunity-block" href="{{ $href }}">
+    {{ partial "volunteer/volunteer-opportunity-block-content" (dict "context" .context) }}
+  </a>
+{{ else }}
+  <div class="volunteer-opportunity-block">
+    {{ partial "volunteer/volunteer-opportunity-block-content" (dict "context" .context) }}
+  </div>
+{{ end }}
