@@ -13,7 +13,7 @@ It may be the off season but the volunteer work doesn't stop. Since the last rou
 - Planned the WMRRA Awards Banquet
 - Opened [2022 License Registration](https://www.motorsportreg.com/events/wmrra-2022-licensing-headquarters-519397)
 - Released the [2022 Rulebook](/pdfs/rulebook/2022WMRRARuleBook.pdf)
-- Planning the 2022 Novice Racer School (NRS) - look for an announcment soon!
+- Planning the 2022 Novice Racer School (NRS) - look for an announcement soon!
 
 While a lot of people volunteer with WMRRA, we could always use more folks to
 step up and help out. It takes a lot of people to make our club work. Like
