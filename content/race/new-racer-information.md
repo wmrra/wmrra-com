@@ -44,7 +44,7 @@ Typically this will be available the Friday before a race round.
 
 - [2-Fast](https://2-fast.org/)
 - [MotoVixens](https://motovixens.com/)
-- [Optimum Performace Rider Training](https://optimum-performance.org/)
+- [Optimum Performance Rider Training](https://optimum-performance.org/)
 
 
 ## Race Registration
