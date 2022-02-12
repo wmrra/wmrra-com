@@ -33,7 +33,7 @@ Welcome to the WMRRA Family.
 
 ## NRS (New Racer School) Dates
 
-To Be Announced
+To Be Announced.
 
 ## NRS On-Track Providers
 WMRRA partners with many track day providers for the on track portion of NRS.
