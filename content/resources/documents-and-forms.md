@@ -1,7 +1,5 @@
 # Documents and Forms
 
-[New Racer Information Packet](/downloads/2020-New-Racer-Info-Packet.pdf)
-
 [Medical Form](/downloads/2021-WMRRA-Medical-Info-Form.pdf)
 
 [Novice Graduation Form](/downloads/2021-Novice-Graduation-Form.pdf)
