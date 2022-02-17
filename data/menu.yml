@@ -5,6 +5,8 @@ ctaButton:
 menu:
   - name: Race
     children:
+      - name: Spectate
+        link: /spectate
       - name: Race Results and Live Timing
         link: https://racehero.io/orgs/wmrra-official
       - name: Racer Numbers
@@ -20,17 +22,20 @@ menu:
       - name: Documents and Forms
         link: /resources/documents-and-forms
 
-  - name: Support
+  - name: Sponsor
     children: 
-      - name: Volunteer
-        link: /volunteer
-      - name: Spectate
-        link: /spectate
-      - name: Sponsor
+      - name: Sponsors
         link: /sponsor
+      - name: Become a Sponsor
+        link: /sponsor/become-a-sponsor/
       # https://github.com/crwilcox/wmrra-com/issues/4
       #- name: Make a Donation
       #  link: https://www.paypal.com/paypalme/wmrra
+
+  - name: Volunteer
+    children: 
+      - name: Volunteer with WMRRA
+        link: /volunteer
 
   - name: Resources
     children: 
