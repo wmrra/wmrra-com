@@ -2,7 +2,7 @@ sponsorData:
   - title: Title Sponsors
     sponsors:
       - name          : Sponsorship Available
-        image         : images/sponsors/your-logo.png
+        image         : /images/sponsors/your-logo.png
         description   : >
 
         social:
@@ -14,7 +14,7 @@ sponsorData:
   - title: Formula Ultra Sponsors
     sponsors:
       - name          : Sponsorship Available
-        image         : images/sponsors/your-logo.png
+        image         : /images/sponsors/your-logo.png
         description   : >
 
         social:
@@ -27,7 +27,7 @@ sponsorData:
     sponsors:
     
       - name          : Sponsorship Available
-        image         : images/sponsors/your-logo.png
+        image         : /images/sponsors/your-logo.png
         description   : >
           Formula 600 Sponsor
         social:
@@ -37,7 +37,7 @@ sponsorData:
           website   : https://wmrra.com/sponsor/become-a-sponsor
           
       - name          : Sponsorship Available
-        image         : images/sponsors/your-logo.png
+        image         : /images/sponsors/your-logo.png
         description   : >
           Open Supersport Sponsor
         social:
@@ -47,7 +47,7 @@ sponsorData:
           website   : https://wmrra.com/sponsor/become-a-sponsor
 
       - name          : Sponsorship Available
-        image         : images/sponsors/your-logo.png
+        image         : /images/sponsors/your-logo.png
         description   : >
           Open Superbike Sponsor
         social:
@@ -57,7 +57,7 @@ sponsorData:
           website   : https://wmrra.com/sponsor/become-a-sponsor
       
       - name          : Sponsorship Available
-        image         : images/sponsors/your-logo.png
+        image         : /images/sponsors/your-logo.png
         description   : >
           600 Supersport Sponsor
         social:
@@ -67,7 +67,7 @@ sponsorData:
           website   : https://wmrra.com/sponsor/become-a-sponsor
      
       - name          : Sponsorship Available
-        image         : images/sponsors/your-logo.png
+        image         : /images/sponsors/your-logo.png
         description   : >
           600 Superbike Sponsor
         social:
@@ -77,7 +77,7 @@ sponsorData:
           website   : https://wmrra.com/sponsor/become-a-sponsor
 
       - name          : Sponsorship Available
-        image         : images/sponsors/your-logo.png
+        image         : /images/sponsors/your-logo.png
         description   : >
           Middleweight Supersport
         social:
@@ -87,7 +87,7 @@ sponsorData:
           website   : https://wmrra.com/sponsor/become-a-sponsor
       
       - name          : Sponsorship Available
-        image         : images/sponsors/your-logo.png
+        image         : /images/sponsors/your-logo.png
         description   : >
           Middleweight Superbike Sponsor
         social:
@@ -98,7 +98,7 @@ sponsorData:
 
       
       - name          : Sponsorship Available
-        image         : images/sponsors/your-logo.png
+        image         : /images/sponsors/your-logo.png
         description   : >
           450 Superbike Sponsor
         social:
@@ -108,7 +108,7 @@ sponsorData:
           website   : https://wmrra.com/sponsor/become-a-sponsor
 
       - name          : Sponsorship Available
-        image         : images/sponsors/your-logo.png
+        image         : /images/sponsors/your-logo.png
         description   : >
           Lightweight Supersport Sponsor
         social:
@@ -118,7 +118,7 @@ sponsorData:
           website   : https://wmrra.com/sponsor/become-a-sponsor
 
       - name          : Sponsorship Available
-        image         : images/sponsors/your-logo.png
+        image         : /images/sponsors/your-logo.png
         description   : > 
           Lightweight Superbike Sponsor
         social:
@@ -127,7 +127,7 @@ sponsorData:
           # instagram: https://instagram.com/
           website   : https://wmrra.com/sponsor/become-a-sponsor
       - name          : Sponsorship Available
-        image         : images/sponsors/your-logo.png
+        image         : /images/sponsors/your-logo.png
         description   : >
           Ultra Lightweight Supersport Sponsor
         social:
@@ -137,7 +137,7 @@ sponsorData:
           website   : https://wmrra.com/sponsor/become-a-sponsor
       
       - name          : Sponsorship Available
-        image         : images/sponsors/your-logo.png
+        image         : /images/sponsors/your-logo.png
         description   : "250 Ninja Cup Sponsor"
         social:
           # facebook  : https://www.facebook.com/facebook
@@ -146,7 +146,7 @@ sponsorData:
           website   : https://wmrra.com/sponsor/become-a-sponsor
 
       - name          : Sponsorship Available
-        image         : images/sponsors/your-logo.png
+        image         : /images/sponsors/your-logo.png
         description   : >
           GP Forty Sponsor
         social:
@@ -156,7 +156,7 @@ sponsorData:
           website   : https://wmrra.com/sponsor/become-a-sponsor
 
       - name          : Sponsorship Available
-        image         : images/sponsors/your-logo.png
+        image         : /images/sponsors/your-logo.png
         description   : >
           Female GP Sponsor
         social:
@@ -166,7 +166,7 @@ sponsorData:
           website   : https://wmrra.com/sponsor/become-a-sponsor
 
       - name          : Sponsorship Available
-        image         : images/sponsors/your-logo.png
+        image         : /images/sponsors/your-logo.png
         description   : >
           Female Lightweight GP Sponsor
         social:
@@ -176,7 +176,7 @@ sponsorData:
           website   : https://wmrra.com/sponsor/become-a-sponsor
   
       - name          : Sponsorship Available
-        image         : images/sponsors/your-logo.png
+        image         : /images/sponsors/your-logo.png
         description   : >
           Open Amateur Sponsor
         social:
@@ -186,7 +186,7 @@ sponsorData:
           website   : https://wmrra.com/sponsor/become-a-sponsor
       
       - name          : Sponsorship Available
-        image         : images/sponsors/your-logo.png
+        image         : /images/sponsors/your-logo.png
         description   : >
           Amateur 600 Sponsor
         social:
@@ -196,7 +196,7 @@ sponsorData:
           website   : https://wmrra.com/sponsor/become-a-sponsor
 
       - name          : Sponsorship Available
-        image         : images/sponsors/your-logo.png
+        image         : /images/sponsors/your-logo.png
         description   : >
           Middleweight Amateur Sponsor
         social:
@@ -208,7 +208,7 @@ sponsorData:
       ########## VINTAGE CLASSES ##########
       # Honda 160 Vintage, 250 Vintage, 500 Vintage, 750 Vintage, Lightweight Superbike Vintage Sponsor
       - name          : Sponsorship Available
-        image         : images/sponsors/your-logo.png
+        image         : /images/sponsors/your-logo.png
         description   : >
           Vintage Racing Sponsor: Honda 160
         social:
@@ -218,7 +218,7 @@ sponsorData:
           website   : https://wmrra.com/sponsor/become-a-sponsor
       
       - name          : Sponsorship Available
-        image         : images/sponsors/your-logo.png
+        image         : /images/sponsors/your-logo.png
         description   : >
           Vintage Racing Sponsor: 250
         social:
@@ -228,7 +228,7 @@ sponsorData:
           website   : https://wmrra.com/sponsor/become-a-sponsor
 
       - name          : Sponsorship Available
-        image         : images/sponsors/your-logo.png
+        image         : /images/sponsors/your-logo.png
         description   : >
           Vintage Racing Sponsor: 500
         social:
@@ -238,7 +238,7 @@ sponsorData:
           website   : https://wmrra.com/sponsor/become-a-sponsor
 
       - name          : Sponsorship Available
-        image         : images/sponsors/your-logo.png
+        image         : /images/sponsors/your-logo.png
         description   : >
           Vintage Racing Sponsor: 750
         social:
@@ -248,7 +248,7 @@ sponsorData:
           website   : https://wmrra.com/sponsor/become-a-sponsor
 
       - name          : Sponsorship Available
-        image         : images/sponsors/your-logo.png
+        image         : /images/sponsors/your-logo.png
         description   : >
           Vintage Racing Sponsor: Lightweight Superbike
         social:
@@ -258,7 +258,7 @@ sponsorData:
           website   : https://wmrra.com/sponsor/become-a-sponsor
 
       - name          : Sponsorship Available
-        image         : images/sponsors/your-logo.png
+        image         : /images/sponsors/your-logo.png
         description   : >
           Vintage Racing Sponsor: Heavyweight Superbike
         social:
