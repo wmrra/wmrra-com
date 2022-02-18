@@ -30,27 +30,26 @@ Welcome to the WMRRA Family.
 1. Attend an [on-track NRS School](#nrs-on-track-providers)
 1. Register for your [first race](/race/register)
 
-
 ## NRS (New Racer School) Dates
 
-To Be Announced.
+#### First Opportunity
+- NRS Classroom - March 19th @ Online ([register here](https://msreg.com/NRS-2022))
+- NRS On-Track - April 17th @ The Ridge ([2Fast.org](https://2-fast.org/schedule))
+
+#### Second Opportunity
+- NRS Classroom - July 16th @ Online
+- NRS On-Track - July 21st @ Pacific Raceways ([2Fast.org](https://2-fast.org/schedule))
 
 ## NRS On-Track Providers
-WMRRA partners with many track day providers for the on track portion of NRS.
-
-Please contact Dion La Blue, Novice Rep, for more details.
-
-Typically this will be available the Friday before a race round.
+WMRRA partners with two primary track day providers for the on-track portion of NRS.
 
 - [2-Fast](https://2-fast.org/)
-- [MotoVixens](https://motovixens.com/)
 - [Optimum Performance Rider Training](https://optimum-performance.org/)
-
 
 ## Race Registration
 [Click here for registration instructions.](/race/register)
 
-# Forms
+## Forms
 [All Documents & Forms](/resources/documents-and-forms)
 
 [2021 New Racer Class Documents](https://drive.google.com/drive/folders/1Hs4HVXwj8818XKt0wttb_QKQtjhsuqvQ)
