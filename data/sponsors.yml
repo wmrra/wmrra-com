@@ -22,75 +22,34 @@ sponsorData:
           # twitter : https://twitter.com/
           # instagram: https://instagram.com/
           website   : https://wmrra.com/sponsor/become-a-sponsor
-      
+
   - title: Race Class Sponsors
     sponsors:
-      - name          : Sponsorship Available
-        image         : images/sponsors/your-logo.png
-        description   : >
-          Ninja Cup Sponsor
-        social:
-          # facebook  : https://www.facebook.com/facebook
-          # twitter : https://twitter.com/
-          # instagram: https://instagram.com/
-          website   : https://wmrra.com/sponsor/become-a-sponsor
     
       - name          : Sponsorship Available
         image         : images/sponsors/your-logo.png
         description   : >
-          Ultra Lightweight Supersport Sponsor
-        social:
-          # facebook  : https://www.facebook.com/facebook
-          # twitter : https://twitter.com/
-          # instagram: https://instagram.com/
-          website   : https://wmrra.com/sponsor/become-a-sponsor
-
-      - name          : Sponsorship Available
-        image         : images/sponsors/your-logo.png
-        description   : >
-          Lightweight Supersport Sponsor
-        social:
-          # facebook  : https://www.facebook.com/facebook
-          # twitter : https://twitter.com/
-          # instagram: https://instagram.com/
-          website   : https://wmrra.com/sponsor/become-a-sponsor
-
-      ########## VINTAGE CLASSES ##########
-      # Honda 160 Vintage, 250 Vintage, 500 Vintage, 750 Vintage, Lightweight Superbike Vintage Sponsor
-      - name          : Sponsorship Available
-        image         : images/sponsors/your-logo.png
-        description   : >
-          Vintage Racing Classes Sponsor
-        social:
-          # facebook  : https://www.facebook.com/facebook
-          # twitter : https://twitter.com/
-          # instagram: https://instagram.com/
-          website   : https://wmrra.com/sponsor/become-a-sponsor
-
-      - name          : Sponsorship Available
-        image         : images/sponsors/your-logo.png
-        description   : >
-          Middle Weight Superbike Sponsor
-        social:
-           # facebook  : https://www.facebook.com/facebook
-          # twitter : https://twitter.com/
-          # instagram: https://instagram.com/
-          website   : https://wmrra.com/sponsor/become-a-sponsor
-
-      - name          : Sponsorship Available
-        image         : images/sponsors/your-logo.png
-        description   : >
-          Middleweight Supersport & Open GP Twins Sponsor
-        social:
-          # facebook  : https://www.facebook.com/facebook
-          # twitter : https://twitter.com/
-          # instagram: https://instagram.com/
-          website   : https://wmrra.com/sponsor/become-a-sponsor
-
-      - name          : Sponsorship Available
-        image         : images/sponsors/your-logo.png
-        description   : >
           Formula 600 Sponsor
+        social:
+          # facebook  : https://www.facebook.com/facebook
+          # twitter : https://twitter.com/
+          # instagram: https://instagram.com/
+          website   : https://wmrra.com/sponsor/become-a-sponsor
+          
+      - name          : Sponsorship Available
+        image         : images/sponsors/your-logo.png
+        description   : >
+          Open Supersport Sponsor
+        social:
+          # facebook  : https://www.facebook.com/facebook
+          # twitter : https://twitter.com/
+          # instagram: https://instagram.com/
+          website   : https://wmrra.com/sponsor/become-a-sponsor
+
+      - name          : Sponsorship Available
+        image         : images/sponsors/your-logo.png
+        description   : >
+          Open Superbike Sponsor
         social:
           # facebook  : https://www.facebook.com/facebook
           # twitter : https://twitter.com/
@@ -120,23 +79,24 @@ sponsorData:
       - name          : Sponsorship Available
         image         : images/sponsors/your-logo.png
         description   : >
-          Amateur 600 Sponsor/Amateur 1000 Sponsor
+          Middleweight Supersport
         social:
           # facebook  : https://www.facebook.com/facebook
           # twitter : https://twitter.com/
           # instagram: https://instagram.com/
           website   : https://wmrra.com/sponsor/become-a-sponsor
-
+      
       - name          : Sponsorship Available
         image         : images/sponsors/your-logo.png
         description   : >
-          Formula Forty Sponsor
+          Middleweight Superbike Sponsor
         social:
-          # facebook  : https://www.facebook.com/facebook
+           # facebook  : https://www.facebook.com/facebook
           # twitter : https://twitter.com/
           # instagram: https://instagram.com/
           website   : https://wmrra.com/sponsor/become-a-sponsor
 
+      
       - name          : Sponsorship Available
         image         : images/sponsors/your-logo.png
         description   : >
@@ -150,7 +110,35 @@ sponsorData:
       - name          : Sponsorship Available
         image         : images/sponsors/your-logo.png
         description   : >
-          Open Supersport Sponsor
+          Lightweight Supersport Sponsor
+        social:
+          # facebook  : https://www.facebook.com/facebook
+          # twitter : https://twitter.com/
+          # instagram: https://instagram.com/
+          website   : https://wmrra.com/sponsor/become-a-sponsor
+
+      - name          : Sponsorship Available
+        image         : images/sponsors/your-logo.png
+        description   : > 
+          Lightweight Superbike Sponsor
+        social:
+          # facebook  : https://www.facebook.com/facebook
+          # twitter : https://twitter.com/
+          # instagram: https://instagram.com/
+          website   : https://wmrra.com/sponsor/become-a-sponsor
+      - name          : Sponsorship Available
+        image         : images/sponsors/your-logo.png
+        description   : >
+          Ultra Lightweight Supersport Sponsor
+        social:
+          # facebook  : https://www.facebook.com/facebook
+          # twitter : https://twitter.com/
+          # instagram: https://instagram.com/
+          website   : https://wmrra.com/sponsor/become-a-sponsor
+      
+      - name          : Sponsorship Available
+        image         : images/sponsors/your-logo.png
+        description   : "250 Ninja Cup Sponsor"
         social:
           # facebook  : https://www.facebook.com/facebook
           # twitter : https://twitter.com/
@@ -160,7 +148,7 @@ sponsorData:
       - name          : Sponsorship Available
         image         : images/sponsors/your-logo.png
         description   : >
-          Open Superbike Sponsor
+          GP Forty Sponsor
         social:
           # facebook  : https://www.facebook.com/facebook
           # twitter : https://twitter.com/
@@ -170,7 +158,17 @@ sponsorData:
       - name          : Sponsorship Available
         image         : images/sponsors/your-logo.png
         description   : >
-          Formula Female Sponsor
+          Female GP Sponsor
+        social:
+          # facebook  : https://www.facebook.com/facebook
+          # twitter : https://twitter.com/
+          # instagram: https://instagram.com/
+          website   : https://wmrra.com/sponsor/become-a-sponsor
+
+      - name          : Sponsorship Available
+        image         : images/sponsors/your-logo.png
+        description   : >
+          Female Lightweight GP Sponsor
         social:
           # facebook  : https://www.facebook.com/facebook
           # twitter : https://twitter.com/
@@ -190,7 +188,7 @@ sponsorData:
       - name          : Sponsorship Available
         image         : images/sponsors/your-logo.png
         description   : >
-          600 Amateur Sponsor
+          Amateur 600 Sponsor
         social:
           # facebook  : https://www.facebook.com/facebook
           # twitter : https://twitter.com/
@@ -199,8 +197,20 @@ sponsorData:
 
       - name          : Sponsorship Available
         image         : images/sponsors/your-logo.png
-        description   : > 
-          Lightweight Superbike Sponsor
+        description   : >
+          Middleweight Amateur Sponsor
+        social:
+          # facebook  : https://www.facebook.com/facebook
+          # twitter : https://twitter.com/
+          # instagram: https://instagram.com/
+          website   : https://wmrra.com/sponsor/become-a-sponsor
+
+      ########## VINTAGE CLASSES ##########
+      # Honda 160 Vintage, 250 Vintage, 500 Vintage, 750 Vintage, Lightweight Superbike Vintage Sponsor
+      - name          : Sponsorship Available
+        image         : images/sponsors/your-logo.png
+        description   : >
+          Vintage Racing Sponsor: Honda 160
         social:
           # facebook  : https://www.facebook.com/facebook
           # twitter : https://twitter.com/
@@ -210,13 +220,52 @@ sponsorData:
       - name          : Sponsorship Available
         image         : images/sponsors/your-logo.png
         description   : >
-          Open Classic Superbike Sponsor
+          Vintage Racing Sponsor: 250
         social:
           # facebook  : https://www.facebook.com/facebook
           # twitter : https://twitter.com/
           # instagram: https://instagram.com/
           website   : https://wmrra.com/sponsor/become-a-sponsor
 
+      - name          : Sponsorship Available
+        image         : images/sponsors/your-logo.png
+        description   : >
+          Vintage Racing Sponsor: 500
+        social:
+          # facebook  : https://www.facebook.com/facebook
+          # twitter : https://twitter.com/
+          # instagram: https://instagram.com/
+          website   : https://wmrra.com/sponsor/become-a-sponsor
+
+      - name          : Sponsorship Available
+        image         : images/sponsors/your-logo.png
+        description   : >
+          Vintage Racing Sponsor: 750
+        social:
+          # facebook  : https://www.facebook.com/facebook
+          # twitter : https://twitter.com/
+          # instagram: https://instagram.com/
+          website   : https://wmrra.com/sponsor/become-a-sponsor
+
+      - name          : Sponsorship Available
+        image         : images/sponsors/your-logo.png
+        description   : >
+          Vintage Racing Sponsor: Lightweight Superbike
+        social:
+          # facebook  : https://www.facebook.com/facebook
+          # twitter : https://twitter.com/
+          # instagram: https://instagram.com/
+          website   : https://wmrra.com/sponsor/become-a-sponsor
+
+      - name          : Sponsorship Available
+        image         : images/sponsors/your-logo.png
+        description   : >
+          Vintage Racing Sponsor: Heavyweight Superbike
+        social:
+          # facebook  : https://www.facebook.com/facebook
+          # twitter : https://twitter.com/
+          # instagram: https://instagram.com/
+          website   : https://wmrra.com/sponsor/become-a-sponsor
 
   # - title: TEMPLATE
   #   sponsors:
