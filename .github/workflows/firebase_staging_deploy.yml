@@ -7,8 +7,8 @@ on:
   # DO NOT SET THIS TO RUN ON ANY PR
   pull_request_target:
     types: [labeled]
-  pull_request:
-    types: [labeled]
+  # pull_request:
+  #   types: [labeled]
 jobs:
   # deploy to staging
   deploy:
@@ -51,7 +51,7 @@ jobs:
               
               CHANNEL_ID="staging-${PR_NUMBER}"
 
-              echo "PR: ${PR_NUMBER}"
+              echo "Staging as: ${CHANNEL_ID}"
 
               # npx firebase-tools deploy --token $FIREBASE_TOKEN  --project wmrra-prod
               hugo --config config.staging.yml
