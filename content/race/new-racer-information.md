@@ -12,15 +12,13 @@ Congratulations on taking the first step on your journey to being a motorcycle
 road racer. This is a journey you'll remember forever.
 
 WMRRA’s novice program will give you the experience and skills needed to compete
-safely on the racetrack. The New Racer Information Packet will outline all of
-the steps, and processes to becoming a Novice. We welcome you to read more,
-ask questions, and get involved with our great sport. We hope you choose to
-become part of our tight knit family of racers.
+safely on the racetrack. We hope you choose to get involved with our great sport
+and become part of our tight knit family of racers.
 
 Be sure to take photos, videos, and mental snapshots; your novice season
 will soon be a blur full of fun, friends, and of course, speed.
-Welcome to the WMRRA Family.
 
+Welcome to the WMRRA Family.
 
 
 ## Steps to becoming a new WMRRA racer
@@ -53,3 +51,10 @@ WMRRA partners with two primary track day providers for the on-track portion of 
 [All Documents & Forms](/resources/documents-and-forms)
 
 [2021 New Racer Class Documents](https://drive.google.com/drive/folders/1Hs4HVXwj8818XKt0wttb_QKQtjhsuqvQ)
+
+
+## Novice Race Classes
+
+Novice license allows entry to 600 Amateur, Open Amateur, Ninja 250 Cup, Ultra-Lightweight Supersport, Lightweight Supersport, Lightweight Superbike, 450 Superbike, Middleweight Supersport, Middleweight Superbike, or Vintage classes. 
+
+See the [WMRRA rulebook](/race/rulebook/) for more information.
