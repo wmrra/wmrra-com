@@ -1,10 +1,10 @@
 {{ $volunteerOpportunities := .Site.Data.volunteers }}
 
-<div class="volunteer-page-content">
-  <div class="volunteer-page-header-image">
+<div class="volunteer-page page-content">
+  <div class="header-image">
     <img alt="Some of our intrepid WMRRA volunteers" src="/images/wmrra-volunteers.png">
   </div>
-  <div class="volunteer-page-section">
+  <div class="page-section">
     <h1>Volunteer with us</h1>
     <p>
       Volunteers are the heart and soul of WMRRA. They organize our race events, 
@@ -21,7 +21,7 @@
   </div>
 
   {{ with $volunteerOpportunities.raceDayVolunteers }}
-  <div class="volunteer-page-section volunteer-blocks">
+  <div class="page-section volunteer-blocks">
       <h2>Race day volunteers</h2>
       <p>
         Folks who do all the things on and off the track that keep race events running smoothly and safely.
@@ -38,7 +38,7 @@
   {{ end }}
 
   {{ with $volunteerOpportunities.clubVolunteers }}
-  <div class="volunteer-page-section volunteer-blocks">
+  <div class="page-section volunteer-blocks">
       <h2>Club volunteers</h2>
       <p>
         Folks who put in the work behind the scenes to operate and grow the club. 

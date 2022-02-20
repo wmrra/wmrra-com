@@ -101,31 +101,9 @@
     color: $white;
   }
 
-  &.homepage-schedule {
-    min-height: 40rem;
+  &.current-schedule {
     background-color: $wmrra-light-gray;
     color: $wmmra-dark-red;
-    
-    &.loading {
-      .schedule-loading {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        grid-row: span 2;
-        font-size: 5rem;
-      }
-
-      .home-content-section-header,
-      .homepage-schedule-wrapper {
-        display: none;
-      }
-    }
-
-    &:not(.loading) {
-      .schedule-loading {
-        display: none;
-      }
-    }
   }
 }
 
@@ -138,7 +116,8 @@
   max-width: 160rem;
 }
 
-.home-content-section-header {
+.home-content-section-header,
+.current-schedule-header {
   @include header-text;
 
   .logo {
@@ -153,7 +132,7 @@
     text-transform: uppercase;
 
     @include media-min($small-screen-breakpoint) {
-      font-size: 7rem;;
+      font-size: 7rem;
     }
   }
 }
