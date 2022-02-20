@@ -31,7 +31,9 @@ jobs:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
         id: firebase-deploy
         run:  |
-              [ -z "$FIREBASE_TOKEN" ] && echo "Empty FIREBASE_TOKEN"
+              if [ -z "${FIREBASE_TOKEN}" ]; then
+                echo "FIREBASE_TOKEN is unset."
+              fi
 
               PR_NUMBER=$(echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }')
               CHANNEL_ID="staging-${PR_NUMBER}"
