@@ -20,6 +20,7 @@
   &:hover {
     .circuit-image {
       filter: brightness(0) invert(1);
+      -webkit-filter: brightness(0) invert(1);
     }
   }
 
