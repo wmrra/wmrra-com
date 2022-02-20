@@ -1,0 +1,54 @@
+<div class="spectate-page page-content">
+
+  <div class="header-image">
+    <img alt="One of the many exciting race starts you'll watch" src="/images/spectate-header.jpeg">
+  </div>
+  <div class="page-section">
+    <h1>The fastest motorcycles in the PNW</h1>
+    <p>
+      Looking to add some excitement to your weekend? Come watch a race with WMRRA!
+      Our events host a wide variety of bike classes, from Ninja 250s to souped-up superbikes to
+      vintage two-strokes and everything in between. Best of all, it's <strong>completely free!</strong>
+    </p>
+    <p>
+      We race at several beautiful tracks across western Washington and northern Oregon. 
+      Check out our scehdule below to see when we're in you're neighborhood.
+    </p>
+
+    <p>
+      Looking for the best seat in the house? <a href="/volunteer/corner-working">Come try your hand at corner working.</a>
+    </p>
+  </div>
+
+  <div class="page-section spectator-schedule">
+    {{ partial "current-schedule" (dict "context" .) }}
+  </div>
+
+  
+  <div class="page-section spectator-circuits">
+    <h2>Race venues</h2>
+    <div class="spectator-circuit-blocks-container">
+      <a href="https://pacificraceways.com/" class="spectator-circuit-block" target="_blank">
+        <div class="circuit-image-container">
+          <img class="circuit-image" alt="Pacific Raceways circuit" src="/images/track-maps/pacific-raceways.png">
+        </div>
+        <h3 class="hide-on-hover"3>Pacific Raceways</h3>
+        <p class="show-on-hover">Legendary PNW track with a natural wooded setting and many exciting race views in Kent, WA.</p>
+      </a>
+      <a href="https://www.ridgemotorsportspark.com/" class="spectator-circuit-block" target="_blank">
+        <div class="circuit-image-container">
+          <img class="circuit-image" alt="The Ridge circuit" src="/images/track-maps/ridge.png">
+        </div>
+        <h3 class="hide-on-hover">The Ridge</h3>
+        <p class="show-on-hover">Gorgeous mountain views and thrilling elevation changes make for unparalled racing at this track Shelton, WA.</p>
+      </a>
+      <a href="https://portlandraceway.com/" class="spectator-circuit-block" target="_blank">
+        <div class="circuit-image-container">
+          <img class="circuit-image" alt="Portland Internation Raceway circuit" src="/images/track-maps/portland-international-raceway.png">
+        </div>
+        <h3 class="hide-on-hover">Portland International Raceway</h3>
+        <p class="show-on-hover">Fast and flat track known for hosting Indy Car races set in a city park in Portland, OR.</p>
+      </a>
+   </div>
+  </div>
+</div>

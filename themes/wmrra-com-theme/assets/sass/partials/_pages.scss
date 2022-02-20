@@ -7,11 +7,14 @@
   }
 
   h1 {
-    font-size: 6rem;
+    font-size: 5rem;
+
+    @include media-min($small-screen-breakpoint) {
+      font-size: 6rem;
+    }
   }
 
   h2 {
-    margin: 0 0 1rem;
     font-size: 4rem;
   }
 

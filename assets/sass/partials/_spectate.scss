@@ -1,0 +1,41 @@
+
+.spectator-schedule {
+  .current-schedule-header {
+    h1 {
+      margin: 0 0 2rem;
+      font-size: 4rem;
+    }
+  }
+}
+
+.spectator-circuit-blocks-container {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
+}
+
+.spectator-circuit-block {
+  @include hover-link-card(20rem);
+
+  &:hover {
+    .circuit-image {
+      filter: brightness(0) invert(1);
+    }
+  }
+
+  .circuit-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 11rem;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+}
