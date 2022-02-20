@@ -1,6 +1,10 @@
 name: Deploy to Staging
 
 on:
+  # Normally would use "pull_request". As this is used by maintainers to stage
+  # incoming PRs to a staging endpoint, we need to be able to access the firebase
+  # token. Guarded by a label which can only be applied by maintainers
+  # DO NOT SET THIS TO RUN ON ANY PR
   pull_request_target:
     types: [labeled]
 jobs:
@@ -12,9 +16,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
+          ref: ${{github.event.pull_request.head.ref}} # Fetch PR Ref, not Main (due to using pull_request_target)
+          repository: ${{github.event.pull_request.head.repo.full_name}} # Fetch PR Ref, not Main (due to using pull_request_target)
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
