@@ -15,7 +15,7 @@
 }
 
 .spectator-circuit-block {
-  @include hover-link-card(20rem);
+  @include hover-link-card(22rem);
 
   &:hover {
     .circuit-image {
@@ -28,15 +28,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 11rem;
+    height: 12rem;
   }
 
   h3 {
-    font-size: 2.2rem;
+    margin: 1rem 0 0;
     text-align: center;
   }
 
   p {
+    font-size: 1.4rem;
     text-align: center;
   }
 }
