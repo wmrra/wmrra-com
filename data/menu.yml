@@ -5,8 +5,6 @@ ctaButton:
 menu:
   - name: Race
     children:
-      - name: Spectate
-        link: /spectate
       - name: Race Results and Live Timing
         link: https://racehero.io/orgs/wmrra-official
       - name: Racer Numbers
@@ -22,9 +20,19 @@ menu:
       - name: Documents and Forms
         link: /resources/documents-and-forms
 
+  - name: Spectate
+    children: 
+      - name: Watch a WMRRA Race
+        link: /spectate
+
+  - name: Volunteer
+    children: 
+      - name: Volunteer with WMRRA
+        link: /volunteer
+
   - name: Sponsor
     children: 
-      - name: Sponsors
+      - name: Current Spponsors
         link: /sponsor
       - name: Become a Sponsor
         link: /sponsor/become-a-sponsor/
@@ -32,13 +40,10 @@ menu:
       #- name: Make a Donation
       #  link: https://www.paypal.com/paypalme/wmrra
 
-  - name: Volunteer
-    children: 
-      - name: Volunteer with WMRRA
-        link: /volunteer
-
   - name: Resources
     children: 
+      - name: WMRRA Contact Information
+        link: /contact
       - name: Schedule
         link: /race/schedule
       - name: Rulebook
@@ -61,12 +66,5 @@ menu:
         link: https://www.uwmedicine.org/airliftnw/membership
       - name: Board Minutes
         link: /board-minutes
-      - name: Legacy WMRRA Site
-        link: http://legacy.wmrra.com
-    
-  - name: Contact
-    children: 
-      - name: Contact
-        link: /contact
       - name: Report a Website Issue
         link: https://github.com/wmrra/wmrra-com/issues/new/choose

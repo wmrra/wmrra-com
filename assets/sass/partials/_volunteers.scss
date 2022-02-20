@@ -1,57 +1,19 @@
-.volunteer-page-content {
-  h1,
-  h2 {
-    margin: 0 0 2rem;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  h1 {
-    font-size: 6rem;
-  }
-
-  h2 {
-    margin: 0 0 1rem;
-    font-size: 4rem;
-  }
-
-  p {
-    margin: 0;
-
-    + p {
-      margin-top: 1rem;
-    }
-  }
-}
-
-.volunteer-page-header-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-height: 38rem;
-  overflow: hidden;
-
-  img {
-    max-width: 100rem;
-  }
-}
-
-.volunteer-page-section {
-  padding: 3rem 0;
-
-  &:not(:last-child) {
-    border-bottom: 0.3rem solid $wmmra-dark-red;
-  }
-
-  &.volunteer-blocks {
-    p {
-      text-align: center;
-    }
-  }
-
-  &.corner-working {
+.volunteer-page {
+  .page-section {
     h2 {
-      margin-bottom: 3rem;
+      margin-bottom: 1rem;
+    }
+    
+    &.volunteer-blocks {
+      p {
+        text-align: center;
+      }
+    }
+  
+    &.corner-working {
+      h2 {
+        margin-bottom: 3rem;
+      }
     }
   }
 }
@@ -64,31 +26,7 @@
 }
 
 .volunteer-opportunity-block {
-  @include link-overrides($default-text-color);
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  
-  height: 15rem;
-  padding: 1.5rem;
-
-  background-color: $wmrra-light-gray;
-
-  &:hover {
-    @include link-overrides($white);
-    background-color: $wmmra-dark-red;
-    color: $white;
-
-    .volunteer-icon {
-      display: none;
-    }
-
-    .volunteer-description {
-      display: block;
-    }
-  }
+  @include hover-link-card(15rem);
 
   .volunteer-icon {
     margin-bottom: 1rem;
@@ -101,8 +39,6 @@
   }
 
   .volunteer-description {
-    display: none;
-
     margin: 1rem 2rem 0;
     font-size: 1.4rem;
     text-align: center;

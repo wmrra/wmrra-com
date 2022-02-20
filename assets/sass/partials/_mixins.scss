@@ -275,3 +275,35 @@
     }
   }
 }
+
+@mixin hover-link-card($height) {
+  @include link-overrides($default-text-color);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  height: $height;
+  padding: 1.5rem;
+
+  background-color: $wmrra-light-gray;
+
+  &:hover {
+    @include link-overrides($white);
+    background-color: $wmmra-dark-red;
+    color: $white;
+
+    .hide-on-hover {
+      display: none;
+    }
+
+    .show-on-hover {
+      display: block;
+    }
+  }
+
+  .show-on-hover {
+    display: none;
+  }
+}

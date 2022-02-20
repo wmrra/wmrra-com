@@ -7,7 +7,7 @@ const SCHEDULE_TABLE_CELLS = [
 ];
 
 function displayCurrentSchedule() {
-  const scheduleSection = $(".home-content-section.homepage-schedule");
+  const scheduleSection = $(".current-schedule-section");
   const scheduleData = scheduleSection?.data("schedule") ?? {};
   const [scheduleToDisplay, scheduleYear] = pickScheduleToDisplay(scheduleData);
 
@@ -24,7 +24,7 @@ function displayCurrentSchedule() {
   scheduleSection.removeAttr("data-schedule");
 
   // add the year in the header
-  scheduleSection.find(".home-content-section-header").find("#current-year").text(scheduleYear);
+  scheduleSection.find(".current-schedule-header").find("#current-year").text(scheduleYear);
 
   // add the event rows to the schedule table
   const scheduleTable = scheduleSection.find(".schedule-table");
@@ -76,7 +76,7 @@ function pickScheduleToDisplay(scheduleData) {
 }
 
 $(document).ready(function() {
-  if ($(".home-content-section.homepage-schedule").length > 0) {
+  if ($(".current-schedule-section").length > 0) {
     displayCurrentSchedule();
   }
 });
