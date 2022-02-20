@@ -1,0 +1,24 @@
+.current-schedule-section {
+  min-height: 40rem;
+
+  &.loading {
+    .schedule-loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-row: span 2;
+      font-size: 5rem;
+    }
+
+    .current-schedule-header,
+    .current-schedule-wrapper {
+      display: none;
+    }
+  }
+
+  &:not(.loading) {
+    .schedule-loading {
+      display: none;
+    }
+  }
+}

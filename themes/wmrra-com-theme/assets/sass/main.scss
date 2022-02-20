@@ -30,6 +30,10 @@ $xxxlarge-screen-breakpoint: 120em; // big
   font-size: 62.5%; // 0.625px == 1 rem
 }
 
+html {
+  height: 100vh;
+}
+
 body {
   font-size: 1rem; // 10px
 }
@@ -101,6 +105,7 @@ th, td {
 @import "themes/wmrra-com-theme/assets/sass/partials/header";
 @import "themes/wmrra-com-theme/assets/sass/partials/hero";
 @import "themes/wmrra-com-theme/assets/sass/partials/footer";
+@import "themes/wmrra-com-theme/assets/sass/partials/pages";
 @import "themes/wmrra-com-theme/assets/sass/partials/news";
 
 // TODO: make a partial for this content
