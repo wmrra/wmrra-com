@@ -35,24 +35,19 @@ jobs:
         shell: bash
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-          PR_NUMBER: ${{github.event.pull_request.number}}
+          PR_REF_NUMBER: ${{github.event.pull_request.number}}
           PR_USER: ${{github.event.pull_request.user.login}}
-          PR_REF: ${{github.event.pull_request.head.ref}}
-          REPOSITORY: ${{github.event.pull_request.head.repo.full_name}}
         id: firebase-deploy
         run:  |
               if [ -z "${FIREBASE_TOKEN}" ]; then
                 echo "FIREBASE_TOKEN is unset."
               fi
-              echo "PR NUMBER: ${PR_NUMBER}"
-              echo "PR USER: ${PR_USER}"
-              echo "PR REF: ${PR_REF}"
-              echo "REPOSITORY: ${REPOSITORY}"
+
               # Get PR Number when using pull_request event
               # PR_NUMBER=$(echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }')
              
               # Get PR Number when using pull_request_target event
-              PR_NUMBER=$(echo $PR_REF | awk 'BEGIN { FS = "/" } ; { print $3 }')
+              PR_NUMBER=${PR_USER}-${PR_REF_NUMBER}
               
               CHANNEL_ID="staging-${PR_NUMBER}"
 
