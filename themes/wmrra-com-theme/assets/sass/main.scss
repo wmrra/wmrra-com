@@ -30,6 +30,10 @@ $xxxlarge-screen-breakpoint: 120em; // big
   font-size: 62.5%; // 0.625px == 1 rem
 }
 
+html {
+  height: 100vh;
+}
+
 body {
   font-size: 1rem; // 10px
 }
