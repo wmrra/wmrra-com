@@ -1,8 +1,8 @@
 # Documents and Forms
 
-[Medical Form](/downloads/2021-WMRRA-Medical-Info-Form.pdf)
+[Medical Form](/downloads/2022/2022-WMRRA-Medical-Info-Form-BLANK.pdf)
 
-[Novice Graduation Form](/downloads/2021-Novice-Graduation-Form.pdf)
+[Novice Graduation Form](/downloads/2022/2022-Novice-Graduation-Form.pdf)
 
 [Race Refund Form](/downloads/refundform.pdf)
 
