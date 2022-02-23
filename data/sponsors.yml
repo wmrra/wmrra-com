@@ -266,7 +266,25 @@ sponsorData:
           # twitter : https://twitter.com/
           # instagram: https://instagram.com/
           website   : https://wmrra.com/sponsor/become-a-sponsor
-      
+
+      - name          : CMS Logistics
+        image         : /images/sponsors/cms-logo.jpg
+        description   : >
+          Transportation Sponsor
+        social:
+          # facebook : https://www.facebook.com/
+          # twitter  : https://twitter.com/
+          website  : https://cmscompanies.com/our-companies/
+
+      - name          : MotoShippers
+        image         : /images/sponsors/motoshippers.jpg
+        description   : >
+          Motorcycle Recovery (Crash) Truck Sponsor
+        social:
+          # facebook : https://www.facebook.com/
+          # twitter  : https://twitter.com/
+          website  : https://www.motoshippers.com/
+
       - name          : StevensonFoto
         image         : /images/sponsors/stevensonfoto.jpg
         description   : >
@@ -276,7 +294,6 @@ sponsorData:
           twitter : https://twitter.com/StevensonFoto
           instagram: https://www.instagram.com/stevensonfoto/
           website   : https://stevensonfoto.com/
-
   # - title: TEMPLATE
   #   sponsors:
   #     - name          : Sponsor Name
