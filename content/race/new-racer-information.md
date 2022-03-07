@@ -43,6 +43,7 @@ WMRRA partners with two primary track day providers for the on-track portion of 
 
 - [2-Fast](https://2-fast.org/)
 - [Optimum Performance Rider Training](https://optimum-performance.org/)
+- [Motovixens](https://motovixens.com/)
 
 ## Race Registration
 [Click here for registration instructions.](/race/register)
