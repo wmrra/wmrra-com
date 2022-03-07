@@ -60,7 +60,7 @@ contacts:
     - position: Course Marshal
       name: Chris La Fayette
       phone:
-      email: course.marshal@wmrra.com
+      email:
 
     - position: Crash Truck & First Responder
       name: Ric Clements
@@ -101,7 +101,7 @@ contacts:
     - position: Air Fence Coordinator
       name: Chris La Fayette
       phone:
-      email: airfence@wmrra.com
+      email:
 
     - position: Pit Gate
       name: Katie Morris
