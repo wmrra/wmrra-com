@@ -1,6 +1,6 @@
 {{ if fileExists "static/minutes" }}
     {{ $files := readDir "static/minutes" }}
-    {{ range $files }}
+    {{ range sort $files "Name" "desc"}}
         {{ $separated := split .Name "-" }}
         {{ $date := index $separated 0}}
         {{ $year := substr $date 0 4 }} 
