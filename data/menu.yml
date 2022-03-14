@@ -32,7 +32,7 @@ menu:
 
   - name: Sponsor
     children: 
-      - name: Current Spponsors
+      - name: Current Sponsors
         link: /sponsor
       - name: Become a Sponsor
         link: /sponsor/become-a-sponsor/
