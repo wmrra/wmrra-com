@@ -8,67 +8,72 @@ sponsorshipLevelData:
       - Sponsor name on Overall Championship trophies.
       - Prominent logo placement on WMRRA printed media (ex. programs, posters)
       - Prominent logo placement on Digital race day schedule
-      - Prominent logo placement on the <a href="https://wmrra.com">WMRRA homepage</a>.
+      - Prominent logo placement and links to your business on the <a href="https://wmrra.com">WMRRA homepage</a>.
       - Prominent logo placement on the <a href="https://wmrra.com/sponsor">sponsors page</a>, along with a short description. 
       - WMRRA will display sponsor-supplied banners each race weekend.
-      - Paddock booth area for use each race weekend.
       - Regular announcements over the PA during race weekends.
-      - Promotional mention through WMRRA social media.
-      - Four passes to the 2021 WMRRA Annual Awards Banquet.
+      - Promotional mention through WMRRA social media highlighting special promotions as requested. 
+      - Four WMRRA paddock gate passes.
+      - Includes benefits of Vendor Permit Sponsorship.
+
 
   - level: Purse Race Sponsor - Formula Ultra
     tier: gold
     costInDollars: 10_000
     benefits:
-      - Exclusive naming rights to the overall class championship.
+      - Exclusive naming rights to the class championship (Formula Ultra sponsored by ABC).
+      - Provides payouts to 1st, 2nd, 3rd place finishers of Formula Ultra.
       - Premier awards ceremony commencing directly after each race.
       - Giant check presented with sponsor’s name at each awards ceremony.
       - Road Racing magazine article each round highlighting results and sponsorship.
       - Sponsor name on season end class trophies.
-      - Prominent logo placement on the <a href="https://wmrra.com">WMRRA homepage</a>.
-      - Prominent logo placement on the <a href="https://wmrra.com/sponsor">sponsors page</a>, along with a short description. 
+      - Prominent logo placement and links to your business on the <a href="https://wmrra.com">WMRRA homepage</a>.
+      - Logo on motorcycle technical inspection stickers.
       - WMRRA will display sponsor-supplied banners each race weekend.
-      - Paddock booth area for use each race weekend.
       - Special announcements over the PA throughout race weekends.
       - Promotional mention through WMRRA social media highlighting special promotions as requested. 
-      - Four passes to the 2021 WMRRA Annual Awards Banquet.
+      - Four WMRRA paddock gate passes.
+      - Includes benefits of Race Class Sponsor.
+      - Includes benefits of Vendor Permit Sponsorship.
+
 
   - level: Purse Race Sponsor - Formula 600
     tier: silver
     costInDollars: 5_000
     benefits:
-      - Exclusive naming rights to the overall class championship.
+      - Exclusive naming rights to the class championship (Formula 600 sponsored by ABC).
+      - Provides payouts to 1st, 2nd, 3rd place finishers of Formula 600.
       - Premier awards ceremony commencing directly after each race.
       - Giant check presented with sponsor’s name at each awards ceremony.
       - Road Racing magazine article each round highlighting results and sponsorship.
-      - Sponsor name on season end class trophies.
-      - Prominent logo placement on the <a href="https://wmrra.com">WMRRA homepage</a>.
-      - Prominent logo placement on the <a href="https://wmrra.com/sponsor">sponsors page</a>, along with a short description. 
+      - Prominent logo placement and links to your business on the <a href="https://wmrra.com">WMRRA homepage</a>.
       - WMRRA will display sponsor-supplied banners each race weekend.
-      - Paddock booth area for use each race weekend.
       - Special announcements over the PA throughout race weekends.
       - Promotional mention through WMRRA social media highlighting special promotions as requested. 
-      - Four passes to the WMRRA Annual Awards Banquet.
+      - Four WMRRA paddock gate passes.
+      - Includes benefits of Race Class Sponsor.
+      - Includes benefits of Vendor Permit Sponsorship.
+
 
   - level: Race Class Sponsor
     tier: silver
     costInDollars: 750
     benefits:
-      - Exclusive naming rights to one of WMRRA’s race classes. (Ex. Open Super Sport sponsored by ABC)
+      - Exclusive naming rights to the race class. (Ex. Open Super Sport sponsored by ABC)
       - Sponsor name on daily and year-end class championship trophies.
-      - Sponsor logo on website <a href="https://wmrra.com/sponsor">sponsors page</a>.
-      - Paddock booth area for use each race weekend in designated vendor area.
       - PA announcements during the sponsored race event.
-      - Promotional mention through WMRRA social media.
-      - Two passes to the WMRRA Annual Awards Banquet.
+      - Includes benefits of Vendor Permit Sponsorship.
+
     disclaimer: Some classes cost a higher amount, typically due to running multiple heats in a weekend.
 
-  - level: General Club Sponsor
+  - level: Vendor Permit Sponsor
     tier: bronze
     costInDollars: 500
     benefits:
+      - Permission to operate as a vendor at WMRRA sanctioned events.
       - Sponsor logo on website <a href="https://wmrra.com/sponsor">sponsors page</a>.
       - Paddock booth area for use each race weekend in designated vendor area.
+      - Two WMRRA paddock gate passes.
       - PA announcements during the race weekend.
       - Promotional mention through WMRRA social media.
   
