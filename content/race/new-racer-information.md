@@ -51,7 +51,7 @@ WMRRA partners with two primary track day providers for the on-track portion of 
 ## Forms
 [All Documents & Forms](/resources/documents-and-forms)
 
-[2021 New Racer Class Documents](https://drive.google.com/drive/folders/1Hs4HVXwj8818XKt0wttb_QKQtjhsuqvQ)
+[New Racer Class Documents](https://drive.google.com/drive/folders/1Hs4HVXwj8818XKt0wttb_QKQtjhsuqvQ)
 
 
 ## Novice Race Classes
