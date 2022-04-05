@@ -97,15 +97,14 @@ sponsorData:
           website   : https://wmrra.com/sponsor/become-a-sponsor
 
       
-      - name          : Sponsorship Available
-        image         : /images/sponsors/your-logo.png
+      - name          : Optimum Performance Motorsports
+        image         : images/sponsors/optimum-performance-motorsports.png
         description   : >
           450 Superbike Sponsor
         social:
-          # facebook  : https://www.facebook.com/facebook
-          # twitter : https://twitter.com/
-          # instagram: https://instagram.com/
-          website   : https://wmrra.com/sponsor/become-a-sponsor
+          facebook : https://www.facebook.com/OptimumPerformanceMotorsports
+          # twitter  : https://twitter.com/
+          website  : https://opmotorsports.com/
 
       - name          : Sponsorship Available
         image         : /images/sponsors/your-logo.png
@@ -126,15 +125,15 @@ sponsorData:
           # twitter : https://twitter.com/
           # instagram: https://instagram.com/
           website   : https://wmrra.com/sponsor/become-a-sponsor
-      - name          : Sponsorship Available
-        image         : /images/sponsors/your-logo.png
+      - name          : Turbine Traders
+        image         : /images/sponsors/turbine-traders.png
         description   : >
           Ultra Lightweight Supersport Sponsor
         social:
           # facebook  : https://www.facebook.com/facebook
           # twitter : https://twitter.com/
           # instagram: https://instagram.com/
-          website   : https://wmrra.com/sponsor/become-a-sponsor
+          website   : https://turbinetraders.com
       
       - name          : Sponsorship Available
         image         : /images/sponsors/your-logo.png
