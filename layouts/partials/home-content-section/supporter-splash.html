@@ -51,6 +51,34 @@
       <h1>Thank you to our sponsors!</h1>
     </div>
     <div class="supporter-splash">
+
+    <!-- START TODO: remove this once we have title sponsors, Formula Ultra/600 Sponsors -->
+    {{ $sponsors := slice }}
+    {{ $sponsorCount := 0 }}
+    {{/* Separate title sponsors from the rest */}}
+    {{ range . }}
+      {{ if eq .title "Race Class Sponsors" }}
+        {{range .sponsors }}
+          {{ if ne .name "Sponsorship Available" }}
+          {{ $sponsors = $sponsors | append . }}
+          {{end}}
+          {{ $sponsorCount = (len $sponsors) }}
+        {{ end }}
+      {{ end }}
+    {{end}}
+      <div class="supporters-section title two-row">
+        <div class="supporters-group">
+          <div class="supporter-logos">
+            {{ range first 2 $sponsors }}
+              {{ partial "home-content-section/supporter-block" (dict "context" . "isTitleSponsor" true) }}
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    <!-- END TODO: remove this once we have title sponsors, Formula Ultra/600 Sponsors -->
+
+    <!-- TODO: commented out as we don't have Title, FU, Form 600 sponsors -->
+    <!--
       <div class="supporters-section title {{ $sectionRowClass }}">
         <div class="supporters-group">
           <div class="supporter-ribbon">
@@ -96,6 +124,7 @@
           </div>
         </div>
       {{ end }}
+      -->
 
       <div class="all-supporters-link-wrapper">
         {{/*  <a href="/sponsor" class="all-supporters-link site-button">
