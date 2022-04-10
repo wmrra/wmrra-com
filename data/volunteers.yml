@@ -5,7 +5,7 @@ raceDayVolunteers:
     url: "/volunteer/corner-working"
   - name: "Announcer"
     icon: "fa-microphone-alt"
-    description: "Broadcast race schedules, lineups, and commentary over the racetrack PA system. Email chieftech@wmrra.com."
+    description: "Broadcast race schedules, lineups, and commentary over the racetrack PA system. Email 1stvp@wmrra.com."
     contact: "1stvp@wmrra.com"
   - name: "Tech inspection"
     icon: "fa-wrench"
