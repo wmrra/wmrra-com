@@ -69,7 +69,7 @@
       <div class="supporters-section title two-row">
         <div class="supporters-group">
           <div class="supporter-logos">
-            {{ range first 2 $sponsors }}
+            {{ range first 3 $sponsors }}
               {{ partial "home-content-section/supporter-block" (dict "context" . "isTitleSponsor" true) }}
             {{ end }}
           </div>
