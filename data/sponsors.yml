@@ -173,25 +173,23 @@ sponsorData:
           # instagram: https://instagram.com/
           website   : https://wmrra.com/sponsor/become-a-sponsor
   
-      - name          : Sponsorship Available
-        image         : /images/sponsors/your-logo.png
+      - name          : 2Fast Track Days
+        image         : images/sponsors/2fast.jpg
         description   : >
           Open Amateur Sponsor
         social:
-          # facebook  : https://www.facebook.com/facebook
-          # twitter : https://twitter.com/
-          # instagram: https://instagram.com/
-          website   : https://wmrra.com/sponsor/become-a-sponsor
+          facebook : https://www.facebook.com/2FastLLC
+          # twitter  : https://twitter.com/
+          website  : http://www.2-fast.org/
       
-      - name          : Sponsorship Available
-        image         : /images/sponsors/your-logo.png
+      - name          : 2Fast Track Days
+        image         : images/sponsors/2fast.jpg
         description   : >
-          Amateur 600 Sponsor
+          600 Amateur Sponsor
         social:
-          # facebook  : https://www.facebook.com/facebook
-          # twitter : https://twitter.com/
-          # instagram: https://instagram.com/
-          website   : https://wmrra.com/sponsor/become-a-sponsor
+          facebook : https://www.facebook.com/2FastLLC
+          # twitter  : https://twitter.com/
+          website  : http://www.2-fast.org/
 
       - name          : Sponsorship Available
         image         : /images/sponsors/your-logo.png
