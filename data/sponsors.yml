@@ -46,26 +46,26 @@ sponsorData:
           # instagram: https://instagram.com/
           website   : https://wmrra.com/sponsor/become-a-sponsor
 
-      - name          : Sponsorship Available
-        image         : /images/sponsors/your-logo.png
+      - name          : Superheroes Moving and Storage
+        image         : /images/sponsors/superheroes-moving.png
         description   : >
           Open Superbike Sponsor
         social:
-          # facebook  : https://www.facebook.com/facebook
+          facebook  : https://www.facebook.com/superheroesmoving
           # twitter : https://twitter.com/
           # instagram: https://instagram.com/
-          website   : https://wmrra.com/sponsor/become-a-sponsor
+          website   : https://superheroesmoving.com/
       
-      - name          : Sponsorship Available
-        image         : /images/sponsors/your-logo.png
+      - name          : StevensonFoto
+        image         : /images/sponsors/stevensonfoto.jpg
         description   : >
           600 Supersport Sponsor
         social:
-          # facebook  : https://www.facebook.com/facebook
-          # twitter : https://twitter.com/
-          # instagram: https://instagram.com/
-          website   : https://wmrra.com/sponsor/become-a-sponsor
-     
+          facebook  : https://www.facebook.com/StevensonFoto
+          twitter : https://twitter.com/StevensonFoto
+          instagram: https://www.instagram.com/stevensonfoto/
+          website   : https://stevensonfoto.com/
+
       - name          : Sponsorship Available
         image         : /images/sponsors/your-logo.png
         description   : >
