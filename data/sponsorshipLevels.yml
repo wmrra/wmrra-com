@@ -62,11 +62,11 @@ sponsorshipLevelData:
       - Exclusive naming rights to the race class. (Ex. Open Super Sport sponsored by ABC)
       - Sponsor name on daily and year-end class championship trophies.
       - PA announcements during the sponsored race event.
-      - Includes benefits of Vendor Permit Sponsorship.
+      - Includes benefits of General Club Sponsor.
 
     disclaimer: Some classes cost a higher amount, typically due to running multiple heats in a weekend.
 
-  - level: Vendor Permit Sponsor
+  - level: General Club Sponsor
     tier: bronze
     costInDollars: 500
     benefits:
@@ -77,6 +77,14 @@ sponsorshipLevelData:
       - PA announcements during the race weekend.
       - Promotional mention through WMRRA social media.
   
+  
+  - level: Vendor Permit
+    tier: bronze
+    costInDollars: 250
+    benefits:
+      - Permission to operate as a vendor at WMRRA sanctioned events.
+      - Paddock booth area for use each race weekend in designated vendor area.
+
   - level: Taste of Racing (TOR) Rental
     tier: bronze
     costInDollars: 500
