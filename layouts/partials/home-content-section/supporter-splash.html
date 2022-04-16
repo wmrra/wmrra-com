@@ -74,6 +74,13 @@
             {{ end }}
           </div>
         </div>
+        <div class="supporters-group">
+          <div class="supporter-logos">
+            {{ range after 3 (first 5 $sponsors) }}
+              {{ partial "home-content-section/supporter-block" (dict "context" . "isTitleSponsor" true) }}
+            {{ end }}
+          </div>
+        </div>
       </div>
     <!-- END TODO: remove this once we have title sponsors, Formula Ultra/600 Sponsors -->
 
