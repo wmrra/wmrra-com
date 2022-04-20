@@ -263,6 +263,17 @@ sponsorData:
           # instagram: https://instagram.com/
           website   : https://wmrra.com/sponsor/become-a-sponsor
 
+      - name          : CTRacing / Pirelli
+        image         : /images/sponsors/ctr-pirelli-logo.jpg
+        description   : >
+          Club Sponsor
+        social:
+          facebook  : https://www.facebook.com/StevensonFoto
+          # twitter :
+          # instagram: 
+          website   : https://www.ctracingservices.com
+
+      # Reciprocal Sponsors
       - name          : CMS Logistics
         image         : /images/sponsors/cms-logo.jpg
         description   : >
@@ -290,6 +301,8 @@ sponsorData:
           twitter : https://twitter.com/StevensonFoto
           instagram: https://www.instagram.com/stevensonfoto/
           website   : https://stevensonfoto.com/
+
+
   # - title: TEMPLATE
   #   sponsors:
   #     - name          : Sponsor Name
