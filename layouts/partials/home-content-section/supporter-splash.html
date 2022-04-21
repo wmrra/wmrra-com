@@ -76,7 +76,7 @@
         </div>
         <div class="supporters-group">
           <div class="supporter-logos">
-            {{ range after 3 (first 5 $sponsors) }}
+            {{ range after 3 (first 6 $sponsors) }}
               {{ partial "home-content-section/supporter-block" (dict "context" . "isTitleSponsor" true) }}
             {{ end }}
           </div>

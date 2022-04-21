@@ -36,15 +36,15 @@ sponsorData:
           # instagram: https://instagram.com/
           website   : https://wmrra.com/sponsor/become-a-sponsor
           
-      - name          : Sponsorship Available
-        image         : /images/sponsors/your-logo.png
+      - name          : Paulson's Motorsports
+        image         : /images/sponsors/paulsons.jpg
         description   : >
           Open Supersport Sponsor
         social:
-          # facebook  : https://www.facebook.com/facebook
-          # twitter : https://twitter.com/
-          # instagram: https://instagram.com/
-          website   : https://wmrra.com/sponsor/become-a-sponsor
+          facebook  : https://www.facebook.com/PaulsonsinLacey
+          twitter   : https://twitter.com/PaulsonsMotors2
+          instagram : https://www.instagram.com/paulsons_motorsports/
+          website   : https://www.paulsons.co/
 
       - name          : Superheroes Moving and Storage
         image         : /images/sponsors/superheroes-moving.png
