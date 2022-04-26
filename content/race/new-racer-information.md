@@ -31,11 +31,11 @@ Welcome to the WMRRA Family.
 ## NRS (New Racer School) Dates
 
 #### First Opportunity
-- NRS Classroom - March 19th @ Online ([register here](https://msreg.com/NRS-2022))
+- NRS Classroom - March 19th @ Online
 - NRS On-Track - April 17th @ The Ridge ([2Fast.org](https://2-fast.org/schedule))
 
 #### Second Opportunity
-- NRS Classroom - July 16th @ Online
+- NRS Classroom - July 16th @ Online ([register here](https://msreg.com/NRS-2022-july))
 - NRS On-Track - July 21st @ Pacific Raceways ([2Fast.org](https://2-fast.org/schedule))
 
 ## NRS On-Track Providers
