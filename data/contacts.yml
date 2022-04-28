@@ -12,7 +12,7 @@ contacts:
       email: 1stvp@wmrra.com
 
     - position: 2nd VP - Marketing, Promotion, Administration ☑
-      name: Chris Wilcox
+      name: Vacant Position
       phone: 
       email: 2ndvp@wmrra.com
 
@@ -139,14 +139,14 @@ contacts:
     #   email: 
 
     - position: Supersport SME
-      name: Phillip Melnyk
-      phone: 425.698.3548
-      email: supersport.sme@wmrra.com
+      name: Vacant Position
+      phone:
+      email:
 
     - position: Superbike SME
-      name: Phillip Melnyk
-      phone: 425.698.3548
-      email: superbike.sme@wmrra.com
+      name: Vacant Position
+      phone:
+      email:
 
     - position: Vintage SME
       name: Stephen Phillips
@@ -160,7 +160,7 @@ contacts:
       email: treasurer@wmrra.com
 
     - position: Marketing Manager
-      name: Chris Wilcox
+      name: Vacant Position
       phone: 
       email: promotions@wmrra.com
 
@@ -185,12 +185,7 @@ contacts:
     #   email: 
 
     - position: Website Administration
-      name: Chris Wilcox
-      phone: 
-      email: website@wmrra.com
-
-    - position: Website Administration
-      name: Anna Piechowski
+      name: Vacant Position
       phone: 
       email: website@wmrra.com
   
