@@ -4,6 +4,7 @@
     location: The Ridge Motorsports Park
     locationLink: https://www.ridgemotorsportspark.com/
     jointRound: true
+    eventSchedule: /race/events/2022-round-1
  
   - date: June 10-12
     round: 2
