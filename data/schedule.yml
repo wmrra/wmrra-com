@@ -18,7 +18,7 @@
     location: The Ridge Motorsports Park
     locationLink: https://www.ridgemotorsportspark.com/
     jointRound: false
-    eventSchedule: /race/events/2022-round-3
+    eventSchedule: https://dl.motorsportreg.com/c5e15ee0-1896-420a-8e38-b7e3e114397e/
 
   - date: July 8-10
     round: 4
