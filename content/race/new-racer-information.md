@@ -51,9 +51,6 @@ WMRRA partners with two primary track day providers for the on-track portion of 
 ## Forms
 [All Documents & Forms](/resources/documents-and-forms)
 
-[New Racer Class Documents](https://drive.google.com/drive/folders/1Hs4HVXwj8818XKt0wttb_QKQtjhsuqvQ)
-
-
 ## Novice Race Classes
 
 Novice license allows entry to 600 Amateur, Open Amateur, Ninja 250 Cup, Ultra-Lightweight Supersport, Lightweight Supersport, Lightweight Superbike, 450 Superbike, Middleweight Supersport, Middleweight Superbike, and Vintage classes. 
