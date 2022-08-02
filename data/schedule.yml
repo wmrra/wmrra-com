@@ -32,6 +32,7 @@
     location: Portland International Raceway
     locationLink: https://www.portlandraceway.com/
     jointRound: true
+    eventSchedule: https://www.omrra.com/wp-content/uploads/2022/07/OMRRA-July-2022-Schedule-v1.pdf
 
   - date: August 19-21
     round: 6
