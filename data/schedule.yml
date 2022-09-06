@@ -46,7 +46,8 @@
     location: Pacific Raceways
     locationLink: https://pacificraceways.com/
     jointRound: false
-
+    eventSchedule: https://dl.motorsportreg.com/94d5eb3f-7912-4eab-b2d2-505db7ed16d5/
+    
 "2021":
   - date: May 8-9
     round: 1
