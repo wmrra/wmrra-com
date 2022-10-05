@@ -2,13 +2,13 @@
 contacts:
   electedOfficials:
     - position: President ☑
-      name: Cliff Griffin
-      phone: 206.450.2453
+      name: Colt Bristow
+      phone: 206.595.0635
       email: president@wmrra.com 
 
     - position: 1st VP - Race Director ☑
-      name: Colt Bristow
-      phone: 206.595.0635
+      name: Jeff Wieand
+      phone: 
       email: 1stvp@wmrra.com
 
     - position: 2nd VP - Marketing, Promotion, Administration ☑
@@ -17,8 +17,8 @@ contacts:
       email: 2ndvp@wmrra.com
 
     - position: 3rd VP - Registration/Admin ☑
-      name: Danielle Campbell
-      phone: 253.592.8762
+      name: Emily River
+      phone: 
       email: registration@wmrra.com
 
     - position: Referee ☑
@@ -32,7 +32,7 @@ contacts:
       email: secretary@wmrra.com
 
     - position: Novice Rep ☑
-      name: Dion LaBlue
+      name: Damon Poor 
       phone: 
       email: novicerep@wmrra.com
 
@@ -170,7 +170,7 @@ contacts:
     #   email:
 
     # - position: Registrar
-    #   name: 
+    #   name: Emily River 
     #   phone: 
     #   email: 
 
