@@ -1,5 +1,5 @@
-{{ if fileExists "static/rulesproposals" }}
-    {{ $files := readDir "static/rulesproposals" }}
+{{ if fileExists "static/ rules-proposals" }}
+    {{ $files := readDir "static/ rules-proposals" }}
     {{ range sort $files "Name" "desc"}}
         {{ $separated := split .Name "-" }}
         {{ $date := index $separated 0}}
