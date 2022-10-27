@@ -1,4 +1,4 @@
-WMRRA operates at a variety of tracks in the pacific northwest.
+WMRRA operates at a variety of tracks in the Pacific Northwest.
 
 
 # Pacific Raceways
