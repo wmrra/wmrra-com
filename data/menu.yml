@@ -7,8 +7,8 @@ menu:
     children:
       - name: Race Results and Live Timing
         link: https://racehero.io/orgs/wmrra-official
-      - name: Racer Numbers
-        link: /race/racers
+      # - name: Racer Numbers
+      #   link: /race/racers
       - name: Register to Race
         link: /race/register
       - name: Rulebook
@@ -66,7 +66,7 @@ menu:
         link: https://www.uwmedicine.org/airliftnw/membership
       - name: Board Minutes
         link: /board-minutes
-      - name: Rules Proposals
-        link: /rules-proposals
+      # - name: Rules Proposals
+      #   link: /rules-proposals
       - name: Report a Website Issue
         link: https://github.com/wmrra/wmrra-com/issues/new/choose
