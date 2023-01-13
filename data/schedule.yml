@@ -3,7 +3,7 @@
     round: 1
     location: Portland International Raceway
     locationLink: https://www.portlandraceway.com/
-    jointRound: false
+    jointRound: true
  
   - date: June 9-11
     round: 2
