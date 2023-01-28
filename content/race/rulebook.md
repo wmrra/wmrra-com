@@ -9,7 +9,7 @@ headerImage: "/images/Racer-Responsibility.jpg"
 
 As a racer, it’s your responsibility to know the rules, read the rule book!
 
-[2022 WMRRA Rulebook](/pdfs/rulebook/2022WMRRARuleBook.pdf)
+[2023 WMRRA Rulebook](/pdfs/rulebook/2023WMRRARuleBook.pdf)
 
 [WMRRA Bylaws](/pdfs/rulebook/2021WMRRABylaws.pdf)
 
@@ -22,7 +22,7 @@ If anyone disagrees with a referee ruling, you may appeal to the Executive Board
 The authority of the referee in the interpretation of these rules shall be absolute. In the absence of the referee, the WMRRA president will appoint a temporary referee for that event. A rider may appeal the referee’s decision to the WMRRA executive board. The appeal must be received or date stamped within seventy-two (72) hours after the event. See Bylaws Article 5D and 5E for appeals process.
 
 ## Rulings
-No rulings have been made for the 2021 season.
+No rulings have been made for the 2023 season.
 
 <!-- 
 Rulings can be numerated by starting with 1.
