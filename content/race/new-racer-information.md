@@ -23,27 +23,27 @@ Welcome to the WMRRA Family.
 
 ## Steps to becoming a new WMRRA racer
 
-1. Attend a [classroom New Racer School](#nrs-new-racer-school-dates)
-1. Register for a [Novice license](/race/register)
-1. Attend an [on-track NRS School](#nrs-on-track-providers)
-1. Register for your [first race](/race/register)
+1. Register for a [Novice license](https://tinyurl.com/2sh7v95t)
+2. Attend an NRS classroom session (date below)
+3. Attend an NRS on-track session (date below)
+4. Register for your [first race](/race/register)
 
-## NRS (New Racer School) Dates
+- First year novices will need to complete BOTH the classroom and on-track portion of the NRS to be eligible to race.
+- Returning novices will NOT be required to attend the NRS but if you interested in this year's program and requirements you are welcome to join us.
 
-#### First Opportunity
-- NRS Classroom - March 19th @ Online
-- NRS On-Track - April 17th @ The Ridge ([2Fast.org](https://2-fast.org/schedule))
+## NRS (New Racer School) Date
+- NRS Classroom - March 18th 9 a.m. - 11:30 a.m. @ KFG Motorsports ([map](https://goo.gl/maps/CFaycryFTdzVeeSc7))
+- Register for the class here -> [Motorsportsreg.com](https://tinyurl.com/4padhwbs)
+- It is required to purchase a Novice License either before or at the time of the NRS classroom event.
 
-#### Second Opportunity
-- NRS Classroom - July 16th @ Online ([register here](https://msreg.com/NRS-2022-july))
-- NRS On-Track - July 21st @ Pacific Raceways ([2Fast.org](https://2-fast.org/schedule))
+## NRS On-Track Dates
+The on track portion will be hosted and ran by [2Fast Motorcycle Track Days & Instruction](https://2-fast.org/schedule). The class will run regardless of weather conditions. Having a set of rain or DOT tires may be a requirement to participate in wet weather. Much like race day you will need to be prepared for the potential of rain.
 
-## NRS On-Track Providers
-WMRRA partners with two primary track day providers for the on-track portion of NRS.
+- NRS On-Track - April 24th @ The Ridge Motorsports Park ([map](https://tinyurl.com/2p8w8fnh))
+- Register for the track session here -> [2Fast.org](https://2-fast.org/schedule)
 
-- [2-Fast](https://2-fast.org/)
-- [Optimum Performance Rider Training](https://optimum-performance.org/)
-- [Motovixens](https://motovixens.com/)
+<!-- - [Optimum Performance Rider Training](https://optimum-performance.org/) -->
+<!-- - [Motovixens](https://motovixens.com/) -->
 
 ## Race Registration
 [Click here for registration instructions.](/race/register)
