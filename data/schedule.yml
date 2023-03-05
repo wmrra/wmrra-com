@@ -15,7 +15,7 @@
     round: 3
     location: The Ridge Motorsports Park
     locationLink: https://www.ridgemotorsportspark.com/
-    jointRound: false
+    jointRound: true
 
   - date: July 14-16
     round: 4
