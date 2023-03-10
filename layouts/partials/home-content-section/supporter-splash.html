@@ -25,7 +25,8 @@
   {{ end }}
 
   {{/* Pluralize sponsor text in case we ever get more than 1 */}}
-  {{ $titleSponsorText := "Title Sponsor" }}
+  <!--This isn't working so I provided a work around-->
+  {{ $titleSponsorText := "Title Sponsors" }}
   {{ if gt $titleSponsorCount 1 }}
     {{ $titleSponsorText := "Title Sponsors"}}
   {{ end }}
@@ -52,8 +53,9 @@
     </div>
     <div class="supporter-splash">
 
-    <!-- START TODO: remove this once we have title sponsors, Formula Ultra/600 Sponsors -->
-    {{ $sponsors := slice }}
+      <!-- START TODO: remove this once we have title sponsors, Formula Ultra/600 Sponsors -->
+<!--
+      {{ $sponsors := slice }}
     {{ $sponsorCount := 0 }}
     {{/* Separate title sponsors from the rest */}}
     {{ range . }}
@@ -66,6 +68,7 @@
         {{ end }}
       {{ end }}
     {{end}}
+
       <div class="supporters-section title two-row">
         <div class="supporters-group">
           <div class="supporter-logos">
@@ -82,16 +85,17 @@
           </div>
         </div>
       </div>
+      -->
     <!-- END TODO: remove this once we have title sponsors, Formula Ultra/600 Sponsors -->
-
+    
     <!-- TODO: commented out as we don't have Title, FU, Form 600 sponsors -->
-    <!--
+
       <div class="supporters-section title {{ $sectionRowClass }}">
         <div class="supporters-group">
           <div class="supporter-ribbon">
             <div class="ribbon-content">{{ $titleSponsorText }}</div>
           </div>
-  
+      
           <div class="supporter-logos">
             {{ range $titleSponsors }}
               {{ partial "home-content-section/supporter-block" (dict "context" . "isTitleSponsor" true) }}  
@@ -99,14 +103,13 @@
           </div>
         </div>
       </div>
-
+<!--
       {{ with $fuSponsors }}
       <div class="supporters-section formula-ultra {{ $sectionRowClass }} ">
           <div class="supporters-group">
             <div class="supporter-ribbon">
               <div class="ribbon-content">{{ $fuSponsorText }}</div>
             </div>
-    
             <div class="supporter-logos">
               {{ range $fuSponsors }}
                 {{ partial "home-content-section/supporter-block" (dict "context" . "isTitleSponsor" true) }}  
@@ -115,14 +118,13 @@
           </div>
         </div>
       {{ end }}
-
+     
       {{ with $f2Sponsors }}
         <div class="supporters-section formula-600 {{ $sectionRowClass }}">
           <div class="supporters-group">
             <div class="supporter-ribbon">
               <div class="ribbon-content">{{ $f2SponsorText }}</div>
             </div>
-    
             <div class="supporter-logos">
               {{ range $f2Sponsors }}
                 {{ partial "home-content-section/supporter-block" (dict "context" . "isTitleSponsor" true) }}  
@@ -133,7 +135,8 @@
       {{ end }}
       -->
 
-      <div class="all-supporters-link-wrapper">
+      <!-- <div class="all-supporters-link-wrapper"> Commenting out due to layout change using blank value below-->
+        <div class=" ">
         {{/*  <a href="/sponsor" class="all-supporters-link site-button">
           <span>View all sponsors</span>
           <i aria-hidden="true" class="fas fa-angle-double-right"></i>
