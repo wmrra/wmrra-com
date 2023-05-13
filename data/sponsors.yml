@@ -38,15 +38,15 @@ sponsorData:
   - title: Race Class Sponsors
     sponsors:
     
-      - name          : Sponsorship Available
-        image         : /images/sponsors/your-logo.png
+      - name          : Speedtrap
+        image         : /images/sponsors/speedtrap-white.jpg
         description   : >
           Formula 600 Sponsor
         social:
           # facebook  : https://www.facebook.com/facebook
           # twitter : https://twitter.com/
           # instagram: https://instagram.com/
-          website   : https://wmrra.com/sponsor/become-a-sponsor
+          website   : https://speedtrapmagazine.com/
           
       - name          : Sponsorship Available
         image         : /images/sponsors/your-logo.png
@@ -58,35 +58,35 @@ sponsorData:
           # instagram: https://instagram.com/
           website   : https://wmrra.com/sponsor/become-a-sponsor
 
-      - name          : Sponsorship Available
-        image         : /images/sponsors/your-logo.png
+      - name          : Bonimoto
+        image         : /images/sponsors/bonimoto.png
         description   : >
           Open Superbike Sponsor
         social:
-          # facebook  : https://www.facebook.com/facebook
+          facebook  : https://www.facebook.com/bonimoto/
           # twitter : https://twitter.com/
-          # instagram: https://instagram.com/
-          website   : https://wmrra.com/sponsor/become-a-sponsor
+          instagram: https://www.instagram.com/bonimoto/?hl=en
+          website   : https://bonimotonw.com/
       
-      - name          : Sponsorship Available
-        image         : /images/sponsors/your-logo.png
+      - name          : Stevenson Foto
+        image         : /images/sponsors/stevensonfoto.jpg
         description   : >
           600 Supersport Sponsor
         social:
-          # facebook  : https://www.facebook.com/facebook
+          facebook  : https://www.facebook.com/StevensonFoto
           # twitter : https://twitter.com/
-          # instagram: https://instagram.com/
-          website   : https://wmrra.com/sponsor/become-a-sponsor
+          instagram: https://www.instagram.com/stevensonfoto/
+          website   : https://stevensonfoto.com/
 
-      - name          : Sponsorship Available
-        image         : /images/sponsors/your-logo.png
+      - name          : The Fix
+        image         : /images/sponsors/thefix.jpg
         description   : >
           600 Superbike Sponsor
         social:
-          # facebook  : https://www.facebook.com/facebook
+          facebook  : https://www.facebook.com/TheFixMotorsports/
           # twitter : https://twitter.com/
-          # instagram: https://instagram.com/
-          website   : https://wmrra.com/sponsor/become-a-sponsor
+          # instagram:https://instagram.com/ 
+          website   : http://thefixmotorsports.com/?fbclid=IwAR0KCM5HeRaJj4CVScq1xIKCUn_IO5JlvExJyhJLwZuUqt94C5HVU4MiK6o
 
       - name          : Sponsorship Available
         image         : /images/sponsors/your-logo.png
@@ -118,15 +118,15 @@ sponsorData:
           # instagram: https://instagram.com/
           website   : https://wmrra.com/sponsor/become-a-sponsor
 
-      - name          : Sponsorship Available
-        image         : /images/sponsors/your-logo.png
+      - name          : Tracktime
+        image         : /images/sponsors/tracktime.jpg
         description   : >
           Lightweight Supersport Sponsor
         social:
-          # facebook  : https://www.facebook.com/facebook
+          facebook  : https://www.facebook.com/tracktime.bike/
           # twitter : https://twitter.com/
-          # instagram: https://instagram.com/
-          website   : https://wmrra.com/sponsor/become-a-sponsor
+          instagram: https://www.instagram.com/tracktime.bike/?hl=en
+          website   : https://www.tracktime.bike/
 
       - name          : Sponsorship Available
         image         : /images/sponsors/your-logo.png
@@ -148,14 +148,14 @@ sponsorData:
           # instagram: https://instagram.com/
           website   : https://wmrra.com/sponsor/become-a-sponsor
       
-      - name          : Sponsorship Available
-        image         : /images/sponsors/your-logo.png
+      - name          : Kump Racing Service
+        image         : /images/sponsors/krs.png
         description   : "250 Ninja Cup Sponsor"
         social:
-          # facebook  : https://www.facebook.com/facebook
+          facebook  : https://www.facebook.com/people/Kump-Racing-Service/100060041149299/
           # twitter : https://twitter.com/
           # instagram: https://instagram.com/
-          website   : https://wmrra.com/sponsor/become-a-sponsor
+          # website   : https://wmrra.com/sponsor/become-a-sponsor
 
       - name          : Sponsorship Available
         image         : /images/sponsors/your-logo.png
@@ -167,15 +167,15 @@ sponsorData:
           # instagram: https://instagram.com/
           website   : https://wmrra.com/sponsor/become-a-sponsor
 
-      - name          : Sponsorship Available
-        image         : /images/sponsors/your-logo.png
+      - name          : Bonimoto
+        image         : /images/sponsors/bonimoto.png
         description   : >
           Female GP Sponsor
         social:
-          # facebook  : https://www.facebook.com/facebook
+          facebook  : https://www.facebook.com/bonimoto/
           # twitter : https://twitter.com/
-          # instagram: https://instagram.com/
-          website   : https://wmrra.com/sponsor/become-a-sponsor
+          instagram: https://www.instagram.com/bonimoto/?hl=en
+          website   : https://bonimotonw.com/
 
       - name          : Sponsorship Available
         image         : /images/sponsors/your-logo.png
