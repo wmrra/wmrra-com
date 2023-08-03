@@ -11,7 +11,7 @@ As a racer, it’s your responsibility to know the rules, read the rule book!
 
 [2023 WMRRA Rulebook](/pdfs/rulebook/2023WMRRARuleBook.pdf)
 
-[WMRRA Bylaws](/pdfs/rulebook/2021WMRRABylaws.pdf)
+[WMRRA Bylaws](/pdfs/rulebook/2023WMRRABylaws.pdf)
 
 # Referee Rulings
 
