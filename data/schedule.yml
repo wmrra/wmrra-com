@@ -32,6 +32,7 @@
     location: Pacific Raceways
     locationLink: https://pacificraceways.com/
     jointRound: false
+    eventSchedule: /pdfs/rulebook/2023R5_Schedule.pdf
 
   - date: September 15-17
     round: 6
