@@ -39,6 +39,7 @@
     location: The Ridge Motorsports Park
     locationLink: https://www.ridgemotorsportspark.com/
     jointRound: true
+    eventSchedule: /pdfs/rulebook/2023R6_Schedule.pdf
 
 "2022":
   - date: May 6-8
