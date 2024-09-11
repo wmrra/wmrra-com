@@ -2,27 +2,27 @@
 contacts:
   electedOfficials:
     - position: President ☑
-      name: Colt Bristow
-      phone: 206.595.0635
+      name: Kumpy Kump
+      phone: 
       email: president@wmrra.com 
 
     - position: 1st VP - Race Director ☑
-      name: Jeff Wieand
+      name: CJ Hobbs
       phone: 
       email: 1stvp@wmrra.com
 
     - position: 2nd VP - Marketing, Promotion, Administration ☑
-      name: Doug Burchill
+      name: Vacant
       phone: 
       email: 2ndvp@wmrra.com
 
     - position: 3rd VP - Registration/Admin ☑
-      name: Emily River
+      name: Danielle Mulkins
       phone: 
       email: registration@wmrra.com
 
     - position: Referee ☑
-      name: CJ Hobbs
+      name: Louis Stevenson
       phone: 
       email: referee@wmrra.com
 
@@ -68,7 +68,7 @@ contacts:
       email: crash@wmrra.com
 
     - position: Chief Tech Inspector
-      name: Heidi Harris
+      name: Paul McComsey
       phone: 
       email: chieftech@wmrra.com
 
@@ -109,7 +109,7 @@ contacts:
       email:
 
     - position: Starter
-      name: Elijah Knoll
+      name:
       phone:
       email:
 
@@ -206,7 +206,7 @@ contacts:
       email: 
 
     - position: Position 4 ☑
-      name: Jeff Lane 
+      name: Chris Wilcox 
       phone: 
-      email: 
+      email: wmrra@crwilcox.com
     
