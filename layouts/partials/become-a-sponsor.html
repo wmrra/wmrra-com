@@ -7,12 +7,12 @@
     {{ if or (lt (len $row) 2) (eq (index ($row) 0).costInDollars .costInDollars) }}
       {{ $row = $row | append . }}
     {{ else }}
-      {{ $sponsorshipRows = $sponsorshipRows | append (slice $row) }}
+      {{ $sponsorshipRows = $sponsorshipRows | append slice ( $row) }}
       {{ $row = (slice . ) }}
     {{ end }}
   {{ end }}
   {{ if gt (len $row) 0 }}
-    {{ $sponsorshipRows = $sponsorshipRows | append (slice $row) }}
+    {{ $sponsorshipRows = $sponsorshipRows | append slice ( $row) }}
   {{ end }}
 {{ end }}
 
@@ -52,7 +52,7 @@
         {{ range . }}
           {{ $levelId := (lower (delimit (split (replaceRE `\sSponsor\s?-?\s?` "" .level) " ") "-")) }}
           {{ $blockClass := (print "level-" .tier) }}
-          {{ $formattedCost := (print "$" (lang.NumFmt 0 .costInDollars)) }}
+          {{ $formattedCost := (print "$" (lang.FormatNumberCustom 0 .costInDollars)) }}
           {{ $mailSubject := (print "Becoming a WMRRA " .level) }}
           {{ $showModalLink := (gt (len .benefits) 4) }}
           <div class="become-a-supporter-level-block {{ $blockClass }}">

@@ -1,4 +1,12 @@
-{{ $csv := getCSV "," "/csv/race-numbers.csv" }}
+
+{{ $csv := dict }}
+{{ $p := "csv/race-numbers.csv" }}
+{{ with resources.Get $p }}
+  {{ $opts := dict "delimiter" "," }}
+  {{ $csv = . | transform.Unmarshal $opts }}
+{{ else }}
+  {{ errorf "Unable to get resource %q" $p }}
+{{ end }}
 
 <div class="racer-grid-header">
   <div class="racer-search-wrapper">
