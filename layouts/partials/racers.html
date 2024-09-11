@@ -1,4 +1,13 @@
-{{ $csv := getCSV "," "/csv/race-numbers.csv"  }}
+{{ $csv := dict }}
+{{ $p := "csv/race-numbers.csv" }}
+{{ with resources.Get $p }}
+  {{ $opts := dict "delimiter" "," }}
+  {{ $csv = . | transform.Unmarshal $opts }}
+{{ else }}
+  {{ errorf "Unable to get resource %q" $p }}
+{{ end }}
+
+
 {{ $split := div (len $csv) 2}}
 <div class="table-wrapper">
 
