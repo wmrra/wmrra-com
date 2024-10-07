@@ -1,6 +1,6 @@
 ---
 title   : "Become a WMRRA Sponsor Email Template"
-date    : 2021-02-28T12:51:24-8:00
+date    : "2021-02-28T12:51:24-8:00"
 draft   : false
 description: "Sponsor WMRRA"
 ---
