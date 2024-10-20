@@ -1,3 +1,60 @@
+"2025":
+  - date: April 18-20
+    round: 1
+    location: The Ridge Motorsports Park
+    locationLink: https://www.ridgemotorsportspark.com/
+    jointRound: false
+    -- eventSchedule: /pdfs/rulebook/2023R3_Schedule.pdf
+ 
+  - date: May 2-4
+    round: 2
+    location: Portland International Raceway
+    locationLink: https://www.portlandraceway.com/
+    jointRound: true
+    -- eventSchedule: https://www.omrra.com/wp-content/uploads/2023/05/OMRRA-June-2023-Schedule_v1.pdf
+
+  - date: June 6-8
+    round: 3
+    location: Portland International Raceway
+    locationLink: https://www.portlandraceway.com/
+    jointRound: true
+    -- eventSchedule: /pdfs/rulebook/2023R3_Schedule.pdf
+
+  - date: June 20-22
+    round: 4
+    location: The Ridge Motorsports Park
+    locationLink: https://www.ridgemotorsportspark.com/
+    jointRound: true
+    -- eventSchedule: /pdfs/rulebook/2023R3_Schedule.pdf
+
+  - date: July 18-20
+    round: 5
+    location: The Ridge Motorsports Park
+    locationLink: https://www.ridgemotorsportspark.com/
+    jointRound: true
+    -- eventSchedule: /pdfs/rulebook/2023R3_Schedule.pdf 
+
+  - date: August 1-3
+    round: 6
+    location: Portland International Raceway
+    locationLink: https://www.portlandraceway.com/
+    jointRound: true
+    -- eventSchedule: /pdfs/rulebook/2023R5_Schedule.pdf
+
+  - date: August 15-17
+    round: 7
+    location: Pacific Raceways
+    locationLink: https://pacificraceways.com/
+    jointRound: false
+    -- eventSchedule: https://www.omrra.com/wp-content/uploads/2023/05/OMRRA-June-2023-Schedule_v1.pdf
+
+  - date: September 19-21
+    round: 8
+    location: Pacific Raceways
+    locationLink: https://pacificraceways.com/
+    jointRound: true
+    -- eventSchedule: /pdfs/rulebook/2023R5_Schedule.pdf
+
 "2024":
   - date: May 3-5
     round: 1
