@@ -5,10 +5,6 @@ ctaButton:
 menu:
   - name: Race
     children:
-      - name: Race Results and Live Timing
-        link: https://racehero.io/orgs/wmrra-official
-      - name: Championship Point Standings
-        link: https://www.speedhive.com/Organizations/96388/Championships?m=true
       # - name: Racer Numbers
       #   link: /race/racers
       - name: Register to Race
