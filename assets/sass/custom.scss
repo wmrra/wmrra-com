@@ -290,36 +290,15 @@ $xxxlarge-screen-breakpoint: 120em; // big
 }
 
 // TODO: yet another partial
-.new-racer-header {
-  @include header-text;
-  margin: 4rem 0 3rem;
+.new-racer-form-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
 
-  .logo {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 6rem;
-    margin-top: -1rem;
-
-    @include media-min($small-screen-breakpoint) {
-      max-height: 7rem;
-      margin-left: 0.5rem;
-    }
-  }
-    
-  h1 {
-    margin: 0;
-    font-size: 4rem;
-    text-transform: uppercase;
-
-    @include media-min($small-screen-breakpoint) {
-      font-size: 5rem;
-    }
-
-    @include media-max($mobile-breakpoint) {
-      margin-bottom: 1rem;
-    }
-  }
+#new-racer-form-iframe {
+  visibility: hidden;
 }
 
 // TODO: another partial
