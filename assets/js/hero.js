@@ -90,7 +90,7 @@ function shouldShowLatestAnnouncement(latestAnnouncementBlock) {
   var announcementDate = new Date(dateData)
   var daysSinceAnnouncement = Math.floor(((new Date() - announcementDate) / 1000) / (60 * 60 *24));
 
-  return daysSinceAnnouncement <= 15;
+  return daysSinceAnnouncement <= 30;
 }
 
 function isRaceDay() {

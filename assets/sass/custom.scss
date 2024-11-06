@@ -290,6 +290,22 @@ $xxxlarge-screen-breakpoint: 120em; // big
 }
 
 // TODO: yet another partial
+.new-racer-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.new-racer-nrs-callout {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid $wmmra-dark-red;
+  border-radius: 4px;
+  background: rgba($wmmra-dark-red, 0.1);
+  font-size: 2rem;
+  text-align: center;
+}
+
 .new-racer-form-loading {
   display: flex;
   justify-content: center;
