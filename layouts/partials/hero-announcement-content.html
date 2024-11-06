@@ -1,4 +1,5 @@
-{{ $latestNews := (where site.RegularPages.ByDate "Section" "news" | last 1) }}
+{{ $currentDateString := printf "%s" (time.Now.Format "2006-01-02") }}
+{{ $featuredAnnouncement := (sort (where (where site.RegularPages "Section" "news") "Params.featureUntil" "gt" $currentDateString) "Params.featureUntil" "asc" | first 1) }}
 
 <!-- Get next year's schedule if available, or this years -->
 {{ $currentYear := string time.Now.Year}}
@@ -10,14 +11,16 @@
 {{ $currentSchedule := jsonify (index site.Data.schedule $scheduleYear) }} 
 {{/* To add: last race results */}}
 
+<span data-test="{{ $featuredAnnouncement }}"></span>
+
 <div class="hero-announcement-content">
   {{/* Only ONE of these will remain; the fancy javascript will decide which one */}}
   {{/* Precedence is determined in hero.js; if you add a new block here, add it there */}}
-  {{ range $latestNews }}
+  {{ range $featuredAnnouncement }}
     <div
       id="latest-announcement"
       class="hero-announcement-content-block"
-      data-date="{{ .Date }}"
+      data-feature-until="{{ .Params.featureUntil }}"
     >
       <div class="hero-announcement-text">
         <h1>{{ .Title }}</h1>

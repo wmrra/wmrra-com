@@ -81,16 +81,15 @@ function populateBlockContent(block) {
 }
 
 function shouldShowLatestAnnouncement(latestAnnouncementBlock) {
-  var dateData = $(latestAnnouncementBlock).data("date");
+  var featureUntilData = $(latestAnnouncementBlock).data("feature-until");
 
-  if (!dateData) {
+  if (!featureUntilData) {
     return false;
   }
 
-  var announcementDate = new Date(dateData)
-  var daysSinceAnnouncement = Math.floor(((new Date() - announcementDate) / 1000) / (60 * 60 *24));
-
-  return daysSinceAnnouncement <= 30;
+  // theoretically, there won't be a featured article if the "feature until" date has passed
+  // BUT it's good to double-check here anyway
+  return new Date(featureUntilData) > new Date();
 }
 
 function isRaceDay() {
