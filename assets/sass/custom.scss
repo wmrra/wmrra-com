@@ -529,3 +529,9 @@ $xxxlarge-screen-breakpoint: 120em; // big
     }
   }
 }
+
+.news-hero-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
