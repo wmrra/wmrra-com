@@ -7,14 +7,18 @@ socialLinks:
     link: https://www.instagram.com/wmrra_racing/
     icon: fab fa-instagram
 
-  - name: Twitter
-    link: https://twitter.com/wmrra
-    icon: fab fa-twitter
+  # - name: Twitter
+  #   link: https://twitter.com/wmrra
+  #   icon: fab fa-twitter
+
+  - name: Discord
+    link: https://discord.gg/Ebgz2jNeYs
+    icon: fab fa-discord
+
+  # - name: Twitch
+  #   link: https://www.twitch.tv/wmrra/
+  #   icon: fab fa-twitch
   
-  - name: Twitch
-    link: https://www.twitch.tv/wmrra/
-    icon: fab fa-twitch
-  
-  - name: YouTube
-    link: https://www.youtube.com/channel/UCnG1-KQgvUo-o2uO9SA1rtQ
-    icon: fab fa-youtube
+  # - name: YouTube
+  #   link: https://www.youtube.com/channel/UCnG1-KQgvUo-o2uO9SA1rtQ
+  #   icon: fab fa-youtube
