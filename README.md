@@ -51,7 +51,15 @@ The racer numbers are defined at [csv/race-numbers.csv](csv/race-numbers.csv)
 ## Updating the Menu
 The menu is defined at [data/menu.yml](data/menu.yml)
 
-Menus are under top menu names and include a name and a link. For example:
+Menu items can either be a top-level link or label with links in a submenu.
+
+Top-level links are defined this way:
+```
+- name: Volunteer
+  link: /volunteer
+```
+
+Labels with submenus are defined this way:
 ```
   - name: Resources
     children: 

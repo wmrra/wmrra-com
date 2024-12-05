@@ -2,8 +2,8 @@
 
 .header {
   display: grid;
-  grid-template-columns: 0.3fr 1fr;
-  grid-gap: 3rem;
+  grid-template-columns: 0.25fr 1fr;
+  grid-gap: 1rem;
   align-items: center;
   padding: 0 1.5rem;
   height: 6.5rem;
@@ -97,7 +97,17 @@
     padding: 1rem 0;
     
     a {
-      margin: 1rem;
+      &:not(.main) {
+        margin: 1rem;
+      }
+    }
+  }
+
+  a {
+    &.mobile-menu-link {
+      &.main {
+        @include link-overrides($white);
+      }
     }
   }
 
@@ -129,12 +139,17 @@
   align-items:  center;
 }
 
+a {
+  &.header-menu-item {
+    @include link-overrides($default-text-color); 
+  }
+}
+
 .header-menu-item {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 6.5rem;
-  width: 9.5rem;
   cursor: pointer;
 
   &:hover {
