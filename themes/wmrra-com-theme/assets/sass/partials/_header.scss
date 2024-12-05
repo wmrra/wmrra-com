@@ -97,7 +97,17 @@
     padding: 1rem 0;
     
     a {
-      margin: 1rem;
+      &:not(.main) {
+        margin: 1rem;
+      }
+    }
+  }
+
+  a {
+    &.mobile-menu-link {
+      &.main {
+        @include link-overrides($white);
+      }
     }
   }
 

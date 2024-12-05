@@ -1,3 +1,18 @@
+<!--
+  We have 2 different types of header menu entries
+
+  Option 1: Menu item is a direct link (no children)
+  - name: top-level name
+    link: direct page link or URL
+
+  Option 2: Menu item has several children  
+  - name: top-level name
+    children: 
+      - name: link-1
+        link: direct page link or URL
+      - name: link-2
+        link: direct page link or URL
+-->
 <div class="header-menu-mobile-overlay hidden"></div>
 <div class="header-menu-mobile">
   <i aria-hidden="true" class="menu-icon fas fa-bars" title="Open main menu"></i>
@@ -5,14 +20,22 @@
     <div class="header-menu-mobile-content main hidden">
       <div class="mobile-menu-links-wrapper">
         {{ range $.Site.Data.menu.menu }}
-          <div class="mobile-menu-link main">
-            {{.name}}
-          </div>
+          {{ if .link }}
+            <a href="{{.link}}" class="mobile-menu-link main">
+              {{ .name }}
+            </a>
+          {{ else }}
+            <div class="mobile-menu-link main">
+              {{.name}}
+            </div>
+          {{ end }}
         {{ end }}
       </div>
     </div>
 
     {{ range $.Site.Data.menu.menu }}
-      {{ partial "header-menu/header-menu-mobile-submenu" . }}
+      {{ if .children }}
+        {{ partial "header-menu/header-menu-mobile-submenu" . }}
+      {{ end }}  
     {{ end }}
 </div>
