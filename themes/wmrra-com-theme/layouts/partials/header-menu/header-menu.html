@@ -1,37 +1,50 @@
 
 <!--
-- name: top-level name
-  link:
-  children: 
-    - name: link-1
-      link: 
-    - name: link-2
-      link:
+  We have 2 different types of header menu entries
+
+  Option 1: Menu item is a direct link (no children)
+  - name: top-level name
+    link: direct page link or URL
+
+  Option 2: Menu item has several children  
+  - name: top-level name
+    children: 
+      - name: link-1
+        link: direct page link or URL
+      - name: link-2
+        link: direct page link or URL
 -->
+
 {{ range $.Site.Data.menu.menu }}
-
-<!--
-  Submenus are nested in the label so they can
-  all be absolutely positioned w/ respect to their
-  label. This allows the menu buttons to be positioned
-  via flex while keeping the submenus consistently
-  positioned under them using the same position values.
-  tl;dr - nesting the subemenus inside the labels is a
-  a little weird, but don't un-nest it, or the styling breaks.
--->
-<div class="header-menu-item">
-  <div class="header-menu-item-label">
-    {{ .name }}
-    <div class="header-menu-item-submenu">
-      {{ range .children }}
-        <div class="submenu-item-wrapper">
-          <a href="{{.link}}">{{ .name }}</a>
+  {{ if .link }}
+    <a href="{{.link}}" class="header-menu-item">
+      <div class="header-menu-item-label">
+        {{ .name }}
+      </div>
+    </a>
+  {{ else }}
+    <!--
+      Submenus are nested in the label so they can
+      all be absolutely positioned w/ respect to their
+      label. This allows the menu buttons to be positioned
+      via flex while keeping the submenus consistently
+      positioned under them using the same position values.
+      tl;dr - nesting the subemenus inside the labels is a
+      a little weird, but don't un-nest it, or the styling breaks.
+    -->
+    <div class="header-menu-item">
+      <div class="header-menu-item-label">
+        {{ .name }}
+        <div class="header-menu-item-submenu">
+          {{ range .children }}
+            <div class="submenu-item-wrapper">
+              <a href="{{.link}}">{{ .name }}</a>
+            </div>
+          {{ end }}
         </div>
-      {{ end }}
+      </div>
     </div>
-  </div>
-</div>
-
+  {{ end }}
 {{ end }}
 
 {{ with $.Site.Data.menu.ctaButton }}

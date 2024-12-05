@@ -19,14 +19,11 @@ menu:
         link: /resources/documents-and-forms
 
   - name: Spectate
-    children: 
-      - name: Watch a WMRRA Race
-        link: /spectate
+    link: /spectate
+
 
   - name: Volunteer
-    children: 
-      - name: Volunteer with WMRRA
-        link: /volunteer
+    link: /volunteer
 
   - name: Sponsor
     children: 
@@ -68,3 +65,6 @@ menu:
       #   link: /rules-proposals
       - name: Report a Website Issue
         link: https://github.com/wmrra/wmrra-com/issues/new/choose
+
+  - name: WMRRA Shop
+    link: https://wmrra.boldstores.com
