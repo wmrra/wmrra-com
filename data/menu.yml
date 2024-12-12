@@ -12,9 +12,11 @@ menu:
       - name: Rulebook
         link: /race/rulebook
       - name: Schedule
-        link: /race/schedule
+        link: /race/schedule  
+      - name: Pricing
+        link: /race/pricing 
       - name: New Racer Information
-        link: /race/new-racer-information
+        link: /race/new-racer-information 
       - name: Documents and Forms
         link: /resources/documents-and-forms
 
