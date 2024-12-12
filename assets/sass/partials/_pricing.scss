@@ -1,0 +1,66 @@
+.pricing-page {
+  .pricing-tables-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+  
+  .pricing-table-title {
+    padding: 0.6rem 1.8rem;
+    font-size: 2.4rem;
+    background-color: $wmmra-dark-red;
+    color: $white;
+  }
+
+  .pricing-table {
+    max-width: 60%;
+
+    .pricing-text-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    
+    .pricing-item-name {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .pricing-details {
+      font-size: 1.2rem;
+      color: $medium-gray;
+    }
+
+    .price-cell {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    [role='row'] {
+      display: grid;
+      grid-template-columns: 4fr 1fr;
+      padding: 1.8rem;
+      border: 1px solid $wmrra-light-gray;
+      border-top: none;
+    }
+  }
+
+  .pricing-tables-footer {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 2rem;
+  }
+
+  .pricing-refundable-icon {
+    font-size: 1rem;
+    color: $wmmra-dark-red;
+  }
+
+  h1 {
+    margin-top: 2rem;
+    font-size: 4rem; 
+    text-align: left;
+  }
+}

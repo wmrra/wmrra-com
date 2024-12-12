@@ -6,7 +6,7 @@ pricingData:
         details: Includes WMRRA event gate fees for the license holder
       - name: First year new racer package
         price: 99.00
-        details: Includes NRS classroom session, WMRRA novice license and first race; must be a novice
+        details: Includes NRS classroom session, WMRRA novice license, and first race; must be a novice
       - name: Annual club membership - non-racer
         price: 50.00
         details: Any volunteer that works 3 consecutive race weekends will have the fee waived

@@ -1,1 +1,43 @@
-<div>Hi mom!</div>
+{{ $pricing := .Site.Data.pricing }}
+
+<div class="pricing-page page-content">
+  <h1>Club and Event Fees</h1>
+
+  {{ with $pricing }}
+    <div class="pricing-tables-container">
+      {{ range .pricingData }}
+        <div class="pricing-table" role="table">
+          <div class="pricing-table-title">{{ .category }}</div>
+          <div role="rowgroup">
+            {{ range $index, $item := .items }}
+              <div role="row" aria-rowindex="{{ $index }}">
+                <span role="cell">
+                  <span class="pricing-text-container">
+                    <span class="pricing-item-name">
+                      <span>{{ $item.name }}</span>
+                      {{ if $item.refundable }}
+                        <i aria-hidden="true" class="fas fa-asterisk pricing-refundable-icon" title="This fee is refundable"></i>
+                        <span class="sr-only">This fee is refundable</span>
+                      {{ end }}
+                    </span>
+                    {{ if $item.details }}
+                      <span class="pricing-details">{{ $item.details }}</span>
+                    {{ end }}
+                  </span>
+                </span>
+                <span role="cell" class="price-cell">
+                  ${{ $item.price }}
+                </span>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  {{ end }}
+
+  <div class="pricing-tables-footer">
+    <i aria-hidden="true" class="fas fa-asterisk pricing-refundable-icon" title="This icon denotes a refundable fee"></i>
+    <span>Denotes refundable fee</span>
+  </div>
+</div>
