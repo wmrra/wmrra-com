@@ -1,0 +1,30 @@
+pricingData:
+  - category: Membership Fees
+    items:
+      - name: Annual race license and club membership
+        price: 200.00
+        details: Includes WMRRA event gate fees for the license holder
+      - name: First year new racer package
+        price: 99.00
+        details: Includes NRS classroom session, WMRRA novice license, and first race; must be a novice
+      - name: Annual club membership - non-racer
+        price: 50.00
+        details: Any volunteer that works 3 consecutive race weekends will have the fee waived
+      - name: Mid-season race number change
+        price: 50.00
+      
+  - category: Race Event Fees
+    items:
+      - name: Single-event license - non-WMRRA license holders
+        price: 75.00
+      - name: Event registration processing fee
+        price: 130.00
+      - name: Late registration fee
+        price: 30.00
+        details: Incurred for registration submitted after noon on Friday of the race event weekend
+      - name: Non-member registration processing fee
+        price: 5.00
+      - name: Race entry fee
+        price: 70.00
+        refundable: true
+        details: Cost per individual race entered at the event
