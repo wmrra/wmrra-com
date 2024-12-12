@@ -27,9 +27,4 @@ pricingData:
       - name: Race entry fee
         price: 70.00
         refundable: true
-        details: Cost per individual race entered at the event 
-
-
-
-
-    
+        details: Cost per individual race entered at the event
