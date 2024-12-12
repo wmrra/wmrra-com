@@ -25,7 +25,7 @@ pricingData:
       - name: Non-member registration processing fee
         price: 5.00
       - name: Race entry fee
-        price: 65.00
+        price: 70.00
         refundable: true
         details: Cost per individual race entered at the event 
 
