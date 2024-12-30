@@ -1,0 +1,46 @@
+.season-standings {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  .season-standings-links-wrapper {
+    display: flex;
+    gap: 3rem;
+  }
+
+  .season-standings-link {
+    @include link-overrides($white);
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    height: 18rem;
+    width: 18rem;
+    padding: 2rem;
+    background: $wmmra-dark-red;
+    font-size: 2rem;
+
+    &:hover {
+      filter: brightness(120%);
+      
+      .season-standings-link-text,
+      i {
+        transform: scale(1.1);
+      }
+    }
+
+    i {
+      margin: auto;
+      font-size: 5rem;
+    }
+  }
+
+  h1 {
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-size: 4rem; 
+    text-align: left;
+  }
+}
