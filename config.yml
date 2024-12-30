@@ -3,7 +3,8 @@ languageCode: en-us
 title: Washington Motorcycle Road Racing Association
 theme: wmrra-com-theme
 #disablePathToLower: true
-paginate: 12
+pagination:
+  pagerSize: 12
 
 params:
   dateFormat: "January 1, 2021"
