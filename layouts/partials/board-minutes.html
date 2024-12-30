@@ -1,5 +1,9 @@
 {{ if fileExists "static/minutes" }}
     {{ $files := readDir "static/minutes" }}
+    {{ $minutesByYear := dict }}
+    {{ $currentYear := "" }}
+    {{ $currentMins := slice }}
+    {{ $allYears := slice }}
     {{ range sort $files "Name" "desc"}}
         {{ $separated := split .Name "-" }}
         {{ $date := index $separated 0}}
@@ -8,15 +12,32 @@
         {{ $day := substr $date 6 2 }} 
         {{ $date := print $year "-" $month "-" $day }}
 
-        <div class="w-100 ph4 ph5-ns pb5 pb6-ns pt1 pt3-ns ">
-            <article class="cf pa3 pa4-m pa4-l nested-copy-line-height nested-img">
-            <h1 class="primary-color-dark">
-                <a href="/minutes/{{ .Name }}">{{.Name}}</a>
-            </h1>
-            <div class="nested-copy-line-height">
-                From {{ dateFormat "Monday, Jan 2, 2006" $date }} 
-            </div>
-            </article>
-        </div>
+        {{ if and (ne $currentYear $year) }}
+            {{ if (gt (len $currentYear) 0) }}
+                {{ $minutesByYear = merge $minutesByYear (dict $currentYear $currentMins)}}
+                {{ $allYears = $allYears | append $currentYear }}
+            {{ end }}
+            {{ $currentYear = $year }}
+            {{ $currentMins = slice (dict "name" .Name "date" $date) }}
+        {{ else }}
+            {{ $currentMins = $currentMins | append (dict "name" .Name "date" $date) }}
+        {{ end }} 
     {{ end }}
+
+    <div class="board-minutes page-content">
+        <h1>WMRRA Board Meeting Minutes Archive</h1>
+        {{ range $allYears }}
+            <div class="board-minutes-section">
+                <div class="board-minutes-year">{{ . }}</div>
+                <div class="board-minutes-links-wrapper">
+                    {{ range index $minutesByYear . }}
+                        <a class="board-minutes-link" href="/minutes/{{ .name }}">
+                            <i aria-hidden="true" class="fas fa-regular fa-file-pdf"></i>
+                            <span>{{ dateFormat "Monday, Jan 2, 2006" .date }}</span>
+                        </a>
+                    {{ end }}
+                </div>
+            </div>
+        {{ end }}
+    </div>
 {{ end }}
