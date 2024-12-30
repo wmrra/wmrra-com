@@ -23,7 +23,7 @@
   <script src="https://kit.fontawesome.com/6b9daf9439.js" crossorigin="anonymous"></script>
   {{ "<!-- Main Stylesheet -->" | safeHTML }}
   {{ $sass := resources.Get "sass/main.scss" }}
-  {{ $styles := $sass | resources.ToCSS }}
+  {{ $styles := $sass | css.Sass }}
   <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->

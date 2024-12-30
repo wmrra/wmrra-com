@@ -1,5 +1,5 @@
 {{/* Custom content for the head tag w/o modifying the theme head partial */}}
 
 {{ $customSass := resources.Get "sass/custom.scss" }}
-{{ $customStyles := $customSass | resources.ToCSS }}
+{{ $customStyles := $customSass | css.Sass }}
 <link rel="stylesheet" href="{{ $customStyles.Permalink }}" media="screen">
