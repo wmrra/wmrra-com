@@ -33,7 +33,7 @@
                     {{ range index $minutesByYear . }}
                         <a class="board-minutes-link" href="/minutes/{{ .name }}">
                             <i aria-hidden="true" class="fas fa-regular fa-file-pdf"></i>
-                            <span>{{ dateFormat "Monday, Jan 2, 2006" .date }}</span>
+                            <span>{{ dateFormat "Jan 2, 2006" .date }}</span>
                         </a>
                     {{ end }}
                 </div>
