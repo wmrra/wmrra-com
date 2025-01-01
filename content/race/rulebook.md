@@ -9,11 +9,11 @@ headerImage: "/images/Racer-Responsibility.jpg"
 
 As a racer, it’s your responsibility to know the rules, read the rule book!
 
-[2025 WMRRA Rulebook](/pdfs/rulebook/2025WMRRARuleBook.pdf)
+[2025 WMRRA Rulebook](/rulebook/2025WMRRARuleBook.pdf)
 
-[2023 Endurance Rules Addendum](/pdfs/rulebook/2023EnduranceRulesAddendum.pdf)
+[2023 Endurance Rules Addendum](/rulebook/2023EnduranceRulesAddendum.pdf)
 
-[WMRRA Bylaws](/pdfs/rulebook/2023WMRRABylaws.pdf)
+[WMRRA Bylaws](/rulebook/2023WMRRABylaws.pdf)
 
 # Referee Rulings
 
