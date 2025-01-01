@@ -46,7 +46,14 @@ description: "A brief description of the post that shows on the front page."
 The schedule is defined at [data/schedule.yml](data/schedule.yml)
 
 ## Updating Racer Numbers
-The racer numbers are defined at [csv/race-numbers.csv](csv/race-numbers.csv)
+While the page has been de-linked as it isn't up to date,
+[/race/racers](https://wmrra.com/race/racers) serves a tile grid of racer
+numbers and photos of their bikes.
+
+The racer numbers are defined at [assets/csv/race-numbers.csv](assets/csv/race-numbers.csv)
+The racer photos are defined at [static/images/racers/](static/images/racers/)
+
+Images must be named the race number and must of type png. They are 346x300px in dimensions.
 
 ## Updating the Menu
 The menu is defined at [data/menu.yml](data/menu.yml)
