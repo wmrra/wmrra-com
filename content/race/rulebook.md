@@ -13,7 +13,7 @@ As a racer, it’s your responsibility to know the rules, read the rule book!
 
 [2023 Endurance Rules Addendum](/rulebook/2023EnduranceRulesAddendum.pdf)
 
-[WMRRA Bylaws](/rulebook/2023WMRRABylaws.pdf)
+[WMRRA Bylaws](/bylaws/2023WMRRABylaws.pdf)
 
 # Referee Rulings
 
