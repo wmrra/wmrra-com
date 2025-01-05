@@ -1,6 +1,6 @@
 # Documents and Forms
 
-[Medical Form](/downloads/2022/2022-WMRRA-Medical-Info-Form.pdf)
+[Medical Form](/downloads/WMRRA-OMRRA-Medical-Form.pdf)
 
 [Novice Graduation Form](/downloads/2022/2022-Novice-Graduation-Form.pdf)
 
