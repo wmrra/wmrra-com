@@ -1,12 +1,19 @@
 @import "partials/mixins"; 
 
 .header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
   display: grid;
   grid-template-columns: 0.25fr 1fr;
   grid-gap: 1rem;
   align-items: center;
   padding: 0 1.5rem;
-  height: 6.5rem;
+  height: $header-height;
+  background-color: $white;
   font-size: 2rem;
   box-shadow: $default-box-shadow;
 }

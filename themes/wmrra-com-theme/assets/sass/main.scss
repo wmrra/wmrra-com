@@ -10,6 +10,7 @@ $medium-gray: #817f82;
 $wmrra-light-gray: #dedadb;
 $extra-light-gray: #fcfcfc;
 $default-box-shadow: 0 0.8rem 0.8rem -0.5rem rgba(0, 0, 0, 0.3);
+$header-height: 6.5rem;
 
 // approx px as em values - https://stackoverflow.com/a/43131958
 $small-screen-breakpoint: 23em; // 360px
@@ -36,18 +37,14 @@ html {
 
 body {
   font-size: 1rem; // 10px
+  font-family: "Fjalla One", sans-serif;
 }
 
 html,
 body {
   &.modal-open {
-    overflow: hidden;
+    overflow: clip; // disable scroll without impacting sticky header
   }
-}
-
-body {
-  height: 100%;
-  font-family: "Fjalla One", sans-serif;
 }
 
 p {
@@ -66,7 +63,7 @@ th, td {
 }
 
 #content {
-  min-height: calc(100% - 14.8rem); // allow for header + footer
+  min-height: calc(100vh - 14.8rem); // allow for header + footer
 }
 
 .content-wrapper {
