@@ -104,7 +104,7 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-{{ substr (.Get 
 
 <script type="text/javascript">
     (function(){
-    var url = '{{ .Get "url" }}';
+    var url = '{{ .Get "url" | absURL }}';
 
     var hidePaginator = "{{ .Get "hidePaginator" }}" === "true";
     var hideLoader = "{{ .Get "hideLoader" }}" === "true";
@@ -115,7 +115,7 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-{{ substr (.Get 
 
     // The workerSrc property shall be specified.
     if (pdfjsLib.GlobalWorkerOptions.workerSrc == '')
-      pdfjsLib.GlobalWorkerOptions.workerSrc = "{{.Site.BaseURL}}" + 'js/pdf-js/build/pdf.worker.js';
+      pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@3.4.120/build/pdf.worker.min.js';
 
     // Change the Scale value for lower or higher resolution.
     var pdfDoc = null,
