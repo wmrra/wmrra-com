@@ -16,16 +16,21 @@
       {{ range . }}
         {{ if .sponsors }}
           {{ $sponsorType := .sponsorType }}
-          {{ $isVip := (hasPrefix $sponsorType "VIP") }}
+
+          {{ $sortedSponsors := .sponsors }}
+          {{ if eq $sponsorType "Race Day" }}
+            {{ $sortedSponsors = sort .sponsors "description" }}
+          {{ else if hasPrefix $sponsorType "Club" }}
+            {{ $sortedSponsors = sort .sponsors "name" }}
+          {{ end }}
+
           <div class="supporters-page-supporters-section">
-            {{ if not $isVip }}
+            {{ if not (eq $sponsorType "VIP") }}
               <h2>{{ $sponsorType  }} Sponsors</h2>
             {{ end }}
           
             <div class="supporters-page-supporters-list">
-              {{/* Randomize the non-vip sponsor order so we're not playing favorites */}}
-              {{ $orderedSponsors := cond $isVip .sponsors (shuffle .sponsors) }}
-              {{ range $orderedSponsors }}
+              {{ range $sortedSponsors }}
                 {{ partial "sponsor-page/sponsor-page-block" (dict "context" . "sponsorType" $sponsorType ) }}  
               {{ end }}
             </div>
