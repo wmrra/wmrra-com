@@ -16,7 +16,7 @@ sponsorData:
     # sponsors:
     #   - name: <PLACEHOLDER>
     #   description: Title Sponsor
-    
+
     #   - name: <PLACEHOLDER>
     #   description: Formula Ultra
 
@@ -30,7 +30,7 @@ sponsorData:
         description: Ninja 250 Cup
 
       - name: 2Fast Track Days
-        image: /images/sponsors/2Fast.jpg
+        image: /images/sponsors/2FastTrackDays.jpg
         description: Open Amateur
         social:
           facebook: https://www.facebook.com/2FastLLC
@@ -38,7 +38,7 @@ sponsorData:
           website: https://www.2-fast.org/
 
       - name: 2Fast Track Days
-        image: /images/sponsors/2Fast.jpg
+        image: /images/sponsors/2FastTrackDays.jpg
         description: Middleweight Amateur
         social:
           facebook: https://www.facebook.com/2FastLLC
@@ -46,7 +46,7 @@ sponsorData:
           website: https://www.2-fast.org/
 
       - name: 2Fast Track Days
-        image: /images/sponsors/2Fast.jpg
+        image: /images/sponsors/2FastTrackDays.jpg
         description: 600 Amateur
         social:
           facebook: https://www.facebook.com/2FastLLC
