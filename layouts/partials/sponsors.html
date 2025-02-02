@@ -1,5 +1,4 @@
 {{ $sponsorData := index .Site.Data.sponsors.sponsorData }}
-{{ $vipSponsors := (slice "Title Sponsors" "Formula Ultra Sponsors" "Formula 600 Sponsors") }}
 
 <div>
   <div class="supporters-page-welcome">
@@ -15,27 +14,24 @@
   {{ with $sponsorData }}
     <div class="supporters-page-supporters-wrapper"> 
       {{ range . }}
-        {{ $supporterClass := lower (delimit (split (replaceRE " Sponsors" "" .title) " ") "-") }}
-        {{ $vip := (in $vipSponsors .title) }}
-        {{ $sponsorLevel := (.title | singularize) }}
-        <div class="supporters-page-supporters-section {{ $supporterClass }}">
+        {{ if .sponsors }}
+          {{ $sponsorType := .sponsorType }}
+          {{ $isVip := (hasPrefix $sponsorType "VIP") }}
+          <div class="supporters-page-supporters-section">
+            {{ if not $isVip }}
+              <h2>{{ $sponsorType  }} Sponsors</h2>
+            {{ end }}
+          
+            <div class="supporters-page-supporters-list">
+              {{/* Randomize the non-vip sponsor order so we're not playing favorites */}}
+              {{ $orderedSponsors := cond $isVip .sponsors (shuffle .sponsors) }}
+              {{ range $orderedSponsors }}
+                {{ partial "sponsor-page/sponsor-page-block" (dict "context" . "sponsorType" $sponsorType ) }}  
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
 
-          {{/* Sorts the sponsors to be filled first, then available following */}}
-          {{ $filled := slice }}
-          {{ $available := slice}}
-          {{ range .sponsors }}
-              {{ if in .name "Sponsorship Available" }}
-                {{  $available = $available | append .}}
-              {{ else }}
-                {{ $filled = $filled | append .}}
-              {{end}}
-          {{ end }}
-          {{ $sortedSponsors := $filled | append $available }}
-
-          {{ range $sortedSponsors }}
-            {{ partial "sponsor-page/sponsor-page-block" (dict "context" . "sponsorLevel" $sponsorLevel "isVipSponsor" $vip) }}  
-          {{ end }}
-        </div>
       {{ end }}
     </div>
   {{ end }}

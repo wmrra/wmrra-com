@@ -1,54 +1,42 @@
 {{/*}}
   {{ partial args: }}
   {{ context: the sponsor being rendered }}
-  {{ sponsorLevel: e.g. "Title Sponsor", "Race Class Sponsor", etc }}
-  {{ isVipSponsor: did they give us big money? }}
+  {{ sponsorType: VIP | Race Day | Club }}
 {{*/}}
 
-{{ $socialStyle := dict "website" "fas fa-laptop" "facebook" "fab fa-facebook" "twitter" "fab fa-twitter" "instagram" "fab fa-instagram" }}
-{{ $sponsorClass := (lower (delimit (split (replaceRE " Sponsor" "" .sponsorLevel) " ") "-")) }}
-{{ $available := (in .context.name "Sponsorship Available") }}
+{{ $socialStyle := dict "website" "fas fa-laptop" "facebook" "fab fa-facebook" "twitter" "fab fa-x-twitter" "instagram" "fab fa-instagram" }}
+{{ $sponsorClass := (lower (delimit (split .sponsorType " ") "-")) }}
+{{ $blockClass := (print "supporters-page-block " $sponsorClass) }}
 
-<div class="supporters-page-block {{ $sponsorClass }}">
-  {{ if or (eq .sponsorLevel "Title Sponsor") (eq .sponsorLevel "Formula Ultra Sponsor") }}
+
+<div class="{{ $blockClass }}">
+  {{ if eq .sponsorType "VIP" }}
     <div class="supporter-ribbon big">
-      <div class="ribbon-content">{{ .sponsorLevel }}</div>
+      <div class="ribbon-content">{{ .context.description }}</div>
     </div>
-  {{ else if eq .sponsorLevel "Formula 600 Sponsor" }}
-    <div class="supporter-ribbon little">{{ .sponsorLevel }}</div>
-  {{ else }}
-    <div class="supporter-title">{{ .context.description }}</div>
+  {{ else if .context.description }}
+    <div class="supporter-designation">{{ .context.description }}</div>
   {{ end }}
 
-
+  <div class="supporter-image-wrapper">
     {{ if .context.image }}
-      <div class="supporter-image-wrapper">
-        <img src="{{ .context.image | absURL }}"  alt="{{ .context.name }}" />
+      <img src="{{ .context.image | absURL }}"  alt="{{ .context.name }}" />
+    {{ else }}
+      <div class="supporter-placeholder-image">
+        <i aria-hidden="true" class="fas fa-trophy supporter-placeholder-icon"></i>
+        <span class="supporter-name">{{ .context.name }}</span>
       </div>
     {{ end }}
+  </div>
 
-    <div class="supporter-name">
-      {{ if $available }}
-        <span>Sponsorship Available</span>
-      {{ else }}
-        {{ .context.name }}
-      {{ end }}
-    </div>
-
-    {{ if .isVipSponsor }}
-      <div class="supporter-description">{{ .context.description }}</div>
-    {{ end }}
-
+  {{ if .context.social }}
     <div class="supporter-links-wrapper">
-      {{ if $available }}
-        <a href="/sponsor/become-a-sponsor" class="site-button">Become a sponsor</a>
-      {{ else }}
-        {{ $context := .context }}
-        {{ range $key, $value := .context.social }}
-          <a aria-label="{{ $key }}" href="{{ $value }}" class="supporter-link" target="_blank">
-            <i aria-hidden="true" class="{{ index $socialStyle $key }}" title="Visit the {{ $context.name }} {{ $key }}"></i>
-          </a>
-        {{ end }}
+      {{ $name := .context.name }}
+      {{ range $key, $value := .context.social }}
+        <a aria-label="{{ $key }}" href="{{ $value }}" class="supporter-link" target="_blank" rel="noreferrer">
+          <i aria-hidden="true" class="{{ index $socialStyle $key }}" title="Visit the {{ $name }} {{ $key }}"></i>
+        </a>
       {{ end }}
     </div>
+  {{ end }}
 </div>

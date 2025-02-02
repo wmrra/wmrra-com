@@ -1,0 +1,208 @@
+// note: we use SUPPORTERS for all the class names because a lot
+// of ad blockers flag the word "sponsor" and hide the content
+.supporters-page-welcome {
+  font-size: 2.4rem;
+  text-align: center;
+  white-space: pre-line;
+}
+
+.supporters-page-cta {
+  @include flex-column-centered;
+
+  position: relative;
+  margin: 3rem 0;
+  padding: 2rem;
+  background-color: $dark-gray;
+  color: $white;
+  box-shadow: $default-box-shadow;
+
+  @include media-min($mobile-breakpoint) {
+    &::before,
+    &::after {
+      @include pseudo-icon("\f11e");
+      position: absolute;
+      font-size: 8rem;
+    }
+  
+    &::before {
+      left: 6rem;
+      transform: scale(-1, 1); // flip horizontal
+    }
+  
+    &::after {
+      right: 6rem;
+    }
+  }
+
+  .cta-text {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .site-button {
+    width: 100%;
+    max-width: 42rem;
+    font-size: 2rem;
+  }
+}
+
+.supporters-page-supporters-wrapper {
+  @include media-min($mobile-breakpoint) {
+    display: grid;
+  }
+}
+
+.supporters-page-supporters-section {
+  @include flex-column-centered;
+
+  gap: 3rem;
+  padding: 3.4rem 0;
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:not(:last-child) {
+    border-bottom: 3px solid $wmmra-dark-red;
+  }
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.supporters-page-supporters-list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  gap: 1.5rem;
+  width: 100%;
+
+  @include media-min($mobile-breakpoint) {
+    grid-column: span 4;
+  }
+}
+
+.supporters-page-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.8rem;
+  background-color: $wmrra-light-gray;
+
+  &.vip {
+    height: 32rem;
+
+    .supporter-image-wrapper {
+      width: 24.5rem;
+      height: 24.5rem;
+
+      img {
+        max-width: 24rem;
+        max-height: 24rem;
+      }
+    }
+  }
+
+  &.race-day {
+    height: 30rem;
+
+    .supporter-placeholder-icon {
+      color: $sponsor-silver;
+    }
+  }
+
+  &.club {
+    height: 26rem;
+
+    .supporter-placeholder-icon {
+      color: $sponsor-bronze;
+    }
+  }
+
+  .supporter-image-wrapper {
+    @include flex-column-centered;
+
+    width: 18.5rem;
+    height: 18.5rem;
+    background-color: $white;
+
+    img {
+      max-width: 18rem;
+      max-height: 18rem;
+    }
+  }
+
+  .supporter-placeholder-image {
+    @include flex-column-centered;
+
+    flex: 1;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .supporter-placeholder-icon {
+    margin-top: auto;
+    font-size: 7.5rem;
+  }
+
+
+  .supporter-ribbon {
+    @include ribbon(2rem, 1.5rem, -2rem);
+
+    position: absolute;
+    top: 0.6rem;
+    width: 30rem;
+
+    @include media-min($small-screen-breakpoint) {
+      width: 32rem;
+    }
+    
+    @include media-max($small-screen-breakpoint) {
+      &::before,
+      &::after {
+        display: none
+      }
+    }
+  }
+
+  .supporter-designation,
+  .supporter-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .supporter-designation {
+    font-size: 2rem;
+  }
+
+  .supporter-name {
+    height: 5.4rem;
+    font-size: 1.8rem;
+  }
+
+  .supporter-links-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .supporter-link {
+    @include link-overrides($wmmra-dark-red);
+
+    font-size: 2.4rem;
+    
+    &:hover {
+      i {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
