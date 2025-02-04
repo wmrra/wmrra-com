@@ -1,0 +1,20 @@
+{{/*}}
+  {{ partial args: }}
+  {{ image: sponsor logo (optional) }}
+  {{ name: sponsor name }}
+  {{ sponsorType: VIP | Race Day | Club }}
+{{*/}}
+
+{{ $sponsorClass := (lower (delimit (split .sponsorType " ") "-")) }}
+{{ $placeholderImageClass := (print "supporter-placeholder-image " $sponsorClass) }}
+
+<div class="supporter-image-wrapper">
+  {{ if .image }}
+    <img src="{{ .image | absURL }}"  alt="{{ .name }}" />
+  {{ else }}
+    <div class="{{ $placeholderImageClass }}">
+      <i aria-hidden="true" class="fas fa-trophy supporter-placeholder-icon"></i>
+      <span class="supporter-name">{{ .name }}</span>
+    </div>
+  {{ end }}
+</div>

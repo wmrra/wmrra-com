@@ -110,22 +110,15 @@
 
   &.race-day {
     height: 30rem;
-
-    .supporter-placeholder-icon {
-      color: $sponsor-silver;
-    }
   }
 
   &.club {
     height: 26rem;
-
-    .supporter-placeholder-icon {
-      color: $sponsor-bronze;
-    }
   }
 
   .supporter-image-wrapper {
     @include flex-column-centered;
+    @include supporter-placeholder-image(7.5rem, 1.8rem, 5.4rem);
 
     width: 18.5rem;
     height: 18.5rem;
@@ -136,20 +129,6 @@
       max-height: 18rem;
     }
   }
-
-  .supporter-placeholder-image {
-    @include flex-column-centered;
-
-    flex: 1;
-    gap: 1rem;
-    padding: 1rem;
-  }
-
-  .supporter-placeholder-icon {
-    margin-top: auto;
-    font-size: 7.5rem;
-  }
-
 
   .supporter-ribbon {
     @include ribbon(2rem, 1.5rem, -2rem);
@@ -170,8 +149,7 @@
     }
   }
 
-  .supporter-designation,
-  .supporter-name {
+  .supporter-designation {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -180,11 +158,6 @@
 
   .supporter-designation {
     font-size: 2rem;
-  }
-
-  .supporter-name {
-    height: 5.4rem;
-    font-size: 1.8rem;
   }
 
   .supporter-links-wrapper {

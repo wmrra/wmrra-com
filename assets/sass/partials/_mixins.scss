@@ -307,3 +307,45 @@
     display: none;
   }
 }
+
+@mixin supporter-placeholder-image($imgSize, $fontSize, $nameHeight) {
+  .supporter-placeholder-image {
+    @include flex-column-centered;
+
+    flex: 1;
+    gap: 1rem;
+    padding: 1rem;
+
+    .supporter-placeholder-icon {
+      margin-top: auto;
+      font-size: $imgSize;
+    }
+    
+    &.vip {
+      .supporter-placeholder-icon {
+        color: $sponsor-gold;
+      }
+    }
+  
+    &.race-day {
+      .supporter-placeholder-icon {
+        color: $sponsor-silver;
+      }
+    }
+  
+    &.club {
+      .supporter-placeholder-icon {
+        color: $sponsor-bronze;
+      }
+    }
+
+    .supporter-name {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: $nameHeight;
+      text-align: center;
+      font-size: $fontSize;
+    }
+  }
+}

@@ -1,3 +1,7 @@
+// note: we use SUPPORTERS for allsponsor-related 
+// identifiers because a lot of ad blockers flag the 
+// word "sponsor" and hide the content
+
 // all hero announcement content will start hidden
 // hero.js will decide what to display
 // and these fancy styles will make it slide/fade in
@@ -95,6 +99,10 @@
   display: flex;
   justify-content: center;
   padding: 4.5rem 2rem 5.5rem;
+
+  &.supporters {
+    background-color: $wmrra-light-gray;
+  }
 
   &.latest-news {
     background-color: $wmmra-dark-red;
@@ -330,180 +338,35 @@
   max-width: 100rem;
 }
 
-.supporter-splash {
+.homepage-supporters {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  width: 100%;
-  max-width: 120rem;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 90%;
+  max-width: 98rem;
 
-  @include media-min($large-screen-breakpoint) {
-    display: grid;
-    justify-content: unset;
-    grid-gap: 3rem;
-  }
-
-  .supporter-ribbon {
-    @include ribbon(3rem, 2.5rem, -4rem);
-  
-    width: 70%;
-    max-width: 40rem;
-    margin: 0 auto 1rem;
-
-    @include media-max($medium-screen-breakpoint) {
-      @include ribbon(1.95rem, 2.5rem, -4rem);
-    } 
-  }
-  
-  .supporters-section {   
-    &.title {
-      grid-row: 1;
-
-      &.one-row {
-        grid-column: 1;
-      }
-
-      &.two-row {
-        grid-column: span 2;
-      }
-    }
-
-    &.formula-ultra,
-    &.formula-600 {
-      &.one-row {
-        grid-row: 1;
-        grid-column: 2;
-      }
-
-      &.two-row {
-        grid-row: 2;
-      }
-    }
-
-    &.formula-ultra {
-      &.two-row {
-        grid-column: 1;
-      }
-    }
-
-    &.formula-600 {
-      &.two-row {
-        grid-column: 2;
-      }
-    }
-
-    @include media-max($large-screen-breakpoint) {
-      margin: 0 -2rem 3rem;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    } 
-
-  }
-  
-  .supporters-group {
+  .supporter-image-wrapper {
     @include flex-column-centered;
-  
-    margin: 0 auto;
-  }
-  
-  .supporter-logos {
-    display: flex;
-    flex-flow: wrap;
-    align-items: center;
-    justify-content: space-around;
-  }
+    @include supporter-placeholder-image(4rem, 1.2rem, 3.6rem);
 
-  .supporter-block-wrapper {
-    margin: 1rem;
-
-    @include media-min($medium-screen-breakpoint) {
-      margin: 2rem;
-    }
-  }
-
-  .supporter-block {
-    @include flex-column-centered;
-
-    width: 12rem;
-    height: 12rem;
-
-    @include media-min($medium-screen-breakpoint) {
-      width: 15rem;
-      height: 15rem;
-    }
-
-    .supporter-placeholder {
-      @include flex-column-centered;
-
-      position: relative;
-      font-size: 2rem;
-      text-align: center;
-
-      &::after {
-        @include pseudo-icon("\f21c");
-
-        position: absolute;
-        font-size: 12rem;
-        color: $wmmra-dark-red;
-        opacity: 20%;
-
-        @include media-min($medium-screen-breakpoint) {
-          font-size: 14rem;
-        }
-      }
-    }
+    width: 12.5rem;
+    height: 12.5rem;
+    background-color: $white;
+    box-shadow: 0 1rem 2rem -1rem rgba($medium-gray, 0.5);
 
     &:hover {
-      img {
-        transform: scale(1.1);
-      }
-
-      .supporter-placeholder-text {
-        transform: scale(1.1);
-      }
+      transform: scale(1.07);
     }
 
     img {
       max-width: 12rem;
       max-height: 12rem;
-  
-      @include media-min($medium-screen-breakpoint) {
-        max-width: 15rem;
-        max-height: 15rem;
-      }
     }
 
-    &.title-supporter {
-      width: 25rem;
-      height: 25rem;
-  
-      img {
-        max-width: 25rem;
-        max-height: 25rem;
-      }
-    }
-  }
-
-  .all-supporters-link-wrapper {
-    grid-column: span 2;
-
-    text-align: center;
-  }
-
-  .all-supporters-link {
-    @include bouncy-arrow-link($white);
-
-    max-width: 32rem;
-
-    margin: 0 auto;
-    padding: 1.5rem 0;
-
-    font-size: 1.8rem;
-
-    @include media-min($medium-screen-breakpoint) {
-      font-size: 2.6rem;
-    }
+    .supporter-name {
+      height: 5.4rem;
+    }  
   }
 }

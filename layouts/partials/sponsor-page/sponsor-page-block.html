@@ -18,16 +18,7 @@
     <div class="supporter-designation">{{ .context.description }}</div>
   {{ end }}
 
-  <div class="supporter-image-wrapper">
-    {{ if .context.image }}
-      <img src="{{ .context.image | absURL }}"  alt="{{ .context.name }}" />
-    {{ else }}
-      <div class="supporter-placeholder-image">
-        <i aria-hidden="true" class="fas fa-trophy supporter-placeholder-icon"></i>
-        <span class="supporter-name">{{ .context.name }}</span>
-      </div>
-    {{ end }}
-  </div>
+  {{ partial "shared/sponsor-image" (dict "image" .context.image "name" .context.name "sponsorType" .sponsorType) }}
 
   {{ if .context.social }}
     <div class="supporter-links-wrapper">

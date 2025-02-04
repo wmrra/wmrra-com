@@ -1,0 +1,36 @@
+{{ $sponsorData := index .Site.Data.sponsors.sponsorData }}
+
+{{ with $sponsorData }}
+  {{ $vipSponsors := slice }}
+  {{ $allOtherSponsors := slice }}
+  {{ $sponsorNames := slice }}
+
+  {{ range . }}
+    {{ if .sponsors }}
+      {{ $sponsorType := .sponsorType }}
+      {{ range .sponsors}}
+        {{ if not (in $sponsorNames .name) }}
+          {{ $sponsorData := (dict "image" .image "name" .name "sponsorType" $sponsorType) }}
+          {{ if eq $sponsorType "VIP" }}
+            {{ $vipSponsors =  $vipSponsors | append $sponsorData }}
+          {{ else }}
+            {{ $allOtherSponsors =  $allOtherSponsors | append $sponsorData }}
+          {{ end }}
+          {{ $sponsorNames = $sponsorNames | append .name }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  <div class="home-content-section-wrapper">
+    <div class="home-content-section-header">
+      <h1>Thank you to our sponsors!</h1>
+    </div>
+
+    <div class="homepage-supporters" data-debug="{{ $allOtherSponsors }}">
+      {{ range sort $allOtherSponsors "name" }}
+        {{ partial "shared/sponsor-image" (dict "image" .image "name" .name "sponsorType" .sponsorType) }}  
+      {{ end }}
+    </div>
+  </div>
+{{ end }}
