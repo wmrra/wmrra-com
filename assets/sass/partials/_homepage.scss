@@ -349,7 +349,7 @@
 
   .supporter-image-wrapper {
     @include flex-column-centered;
-    @include supporter-placeholder-image(4rem, 1.2rem, 3.6rem);
+    @include supporter-placeholder-image(4rem, 1.4rem, 3.6rem);
 
     width: 12.5rem;
     height: 12.5rem;
@@ -364,9 +364,5 @@
       max-width: 12rem;
       max-height: 12rem;
     }
-
-    .supporter-name {
-      height: 5.4rem;
-    }  
   }
 }

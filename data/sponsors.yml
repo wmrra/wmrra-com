@@ -102,6 +102,21 @@ sponsorData:
           instagram: https://www.instagram.com/tracktime.bike/
           website: https://www.tracktime.bike/
 
+      - name: Kump Racing Service
+        image: /images/sponsors/KumpRacingService.jpg
+        description: Middleweight Supersport
+        social:
+          facebook: https://www.facebook.com/p/Kump-Racing-Service-100060041149299/
+          website: https://www.kumpracing.com/
+
+      - name: The Fix Motorsports
+        image: /images/sponsors/TheFix.jpg
+        description: 600 Superbike
+        social:
+          instagram: https://instagram.com/TheFixMotorsports
+          facebook: https://facebook.com/TheFixMotorsports
+          website: https://thefixmotorsports.com/
+
   - sponsorType: Club
     sponsors:
       - name: Incentive Solutions
