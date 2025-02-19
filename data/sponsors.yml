@@ -27,6 +27,7 @@ sponsorData:
   - sponsorType: Race Day
     sponsors:
       - name: B2Racing
+        image: /images/sponsors/B2Racing.jpg
         description: Ninja 250 Cup
 
       - name: 2Fast Track Days
@@ -89,6 +90,7 @@ sponsorData:
           facebook: https://www.facebook.com/groups/740877882708880
 
       - name: Abraham Balderas Construction LLC
+        image: /images/sponsors/ABConstruction.jpg
         description: Morning Riders' Meeting
         social:
           facebook: https://www.facebook.com/hashtag/abconstructionllc
@@ -134,3 +136,11 @@ sponsorData:
           facebook: https://www.facebook.com/ctracingnw
           instagram: https://www.instagram.com/ctracingnw/
           website: https://ctracingservices.com/
+
+      - name: 6D Helmets
+        image: /images/sponsors/6DHelmets.png
+        social:
+          facebook: https://www.facebook.com/6dHelmets/
+          instagram: https://www.instagram.com/6dhelmets
+          website: https://www.6dhelmets.com/
+
