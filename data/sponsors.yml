@@ -119,6 +119,14 @@ sponsorData:
           facebook: https://facebook.com/TheFixMotorsports
           website: https://thefixmotorsports.com/
 
+      - name: Cascade Motorcycle Safety
+        image: /images/sponsors/CascadeMotorcycleSafety.png
+        description: Female GP
+        social:
+          instagram: https://www.instagram.com/cascademotosafety/
+          facebook: https://www.facebook.com/CascadeMotorcycleSafety/
+          website: https://cascademotosafety.com/
+
   - sponsorType: Club
     sponsors:
       - name: Incentive Solutions
@@ -129,6 +137,7 @@ sponsorData:
           website: https://www.incentivesolutionscorp.com/
 
       - name: David Hirota
+        image: /images/sponsors/DavidHirota.jpg
 
       - name: Cascade Tire & Racing Services
         image: /images/sponsors/CTRPirelli.png
