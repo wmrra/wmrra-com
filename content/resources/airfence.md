@@ -9,6 +9,6 @@ WMRRA holds fund raisers throughout the race season(s) and gets donations from m
 Many WMRRA racers believe that “if you help set-up or tear-down the Airfence, it is highly unlikely that you will need it”. It’s a karma thing, and it works for the vast majority of our racers.
 
 # Airfence Rental
-Our Airfence is available to rent by motorcycle track-day vendors. Please contact airfence@wmrra.com for more information.
+Our Airfence is available to rent by motorcycle track-day vendors. Please contact cornercaptain@wmrra.com for more information.
 
 Airfence Rental Requirements and information for renting WMRRA Airfence for your trackday.
