@@ -4,7 +4,8 @@
     location: The Ridge Motorsports Park
     locationLink: https://www.ridgemotorsportspark.com/
     jointRound: false
-    -- eventSchedule: /downloads/2023/2023R3_Schedule.pdf
+    doublePoints: true
+    eventSchedule: /event-schedules/2025-WMRRA-Schedule-Round1.pdf
  
   - date: May 2-4
     round: 2
@@ -53,6 +54,7 @@
     location: Pacific Raceways
     locationLink: https://pacificraceways.com/
     jointRound: true
+    doublePoints: true
     -- eventSchedule: /downloads/2023/2023R5_Schedule.pdf
 
 "2024":

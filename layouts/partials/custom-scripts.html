@@ -1,10 +1,8 @@
-{{ $scheduleScript := resources.Get "js/current-schedule.js" | minify }}
 {{ $heroScript := resources.Get "js/hero.js" | minify }}
 {{ $supporterScript := resources.Get "js/supporter-levels.js" | minify }}
 {{ $racersScript := resources.Get "js/racers.js" | minify }}
 {{ $newRacerScript := resources.Get "js/new-racer.js" | minify }}
 
-<script src="{{ $scheduleScript.Permalink }}"></script>
 <script src="{{ $heroScript.Permalink }}"></script>
 <script src="{{ $supporterScript.Permalink }}"></script>
 <script src="{{ $racersScript.Permalink }}"></script>

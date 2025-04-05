@@ -1,33 +1,25 @@
-{{ $scheduleJson := jsonify .context.Site.Data.schedule }}
-{{ $sectionClass := (print "current-schedule-section loading " .classname) }}
+
+
+{{ $scheduleData := .Site.Data.schedule }}
+{{ $years := slice }}
+{{ range $year, $_data := $scheduleData }}
+  {{ $years = $years | append $year }}
+{{ end }}
+
+
 
 {{/*
    This whole thing gets populated via Javascript so we can 
    automatically update it with the current year's schedule
 */}}
-{{ with $scheduleJson }}
-  <div data-schedule="{{ $scheduleJson }}" class="{{ $sectionClass }}">
-    <div class="schedule-loading">
-      <i aria-hidden="true" class="fa fa-spinner fa-pulse" title="Schedule loading"></i>
-    </div>
-
-    <div class="current-schedule-header">
-      <h1><span id="current-year"></span> Race Schedule</h1>
-    </div>
-
-    <div class="current-schedule-wrapper">
-      <div class="schedule-table">
-        <div class="schedule-table-row table-header">
-          <div class="schedule-table-cell round">
-            {{/* This space left intentionally blank */}}
-          </div>
-          <div class="schedule-table-cell date">Date</div>
-          <div class="schedule-table-cell location">Location</div>
-          <div class="schedule-table-cell day-schedule">Schedule</div>
-      
-          <div class="schedule-table-cell joint-round">OMRRA</div>
-        </div>
+{{ with $scheduleData }}
+  {{ range sort $years "value" "desc" | first 1 }}
+    {{ $schedule := (index $scheduleData  .) }}
+    <div class="current-schedule-section home-content-section-wrapper">
+      <div class="current-schedule-header">
+        <h1>{{ . }} Race Schedule</h1>
       </div>
+      {{ partial "schedule-table" (dict "scheduleData" (index $scheduleData  .)) }} 
     </div>
-  </div>
+  {{ end }}
 {{ end }}

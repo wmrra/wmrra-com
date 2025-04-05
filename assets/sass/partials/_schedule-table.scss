@@ -1,33 +1,42 @@
 .schedule-table {
+  width: max-content;
+  border: 1px solid $wmmra-dark-red;
   color: $default-text-color;
   font-size: 1.6rem;
 
-  @include media-max($medium-screen-breakpoint) {
+  @include media-max($mobile-breakpoint) {
     display: grid;
     grid-gap: 2rem;
+    border: none;
   }
 }
 
 .schedule-table-row {
   background-color: $white;
 
-  &.table-header {
-    background-color: $wmmra-dark-red;
-    color: $white;
-
-    @include media-max($medium-screen-breakpoint) {
-      display: none;
-    }
-  }
-
-  @include media-min($medium-screen-breakpoint) {
+  @include media-min($mobile-breakpoint) {
     display: grid;
-    grid-template-columns: 8rem minmax(8rem, 3fr) minmax(8rem, 5fr) minmax(10rem, 1fr) 7rem;
+    grid-template-columns: 10rem 14rem 26rem 14rem 15rem;
 
-    &:not(.table-header) {
+    &:not(.footer) {
       &:nth-child(odd) {
         background-color: $alternate-row-gray;
       }
+    }
+  }
+
+  &.footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: $wmmra-dark-red;
+    color: $white;
+
+    @include media-max($mobile-breakpoint) {
+      justify-content: center;
+      padding: 1rem;
     }
   }
 }
@@ -38,40 +47,41 @@
   padding: 1rem;
 
   &.round {
+    display: flex;
+    gap: 0.6rem;
     background-color: $wmmra-dark-red;
     color: $white;
+    line-height: 1.6rem;
   }
 
-  &.round, 
-  &.joint-round {
+  &.event-schedule {
     justify-content: center;
   }
 
   &.date,
   &.location,
-  &.day-schedule {
+  &.event-schedule {
     @include media-min($medium-screen-breakpoint) {
       padding: 1rem 1.5rem;
     }
   }
 
-  .joint-round-icon {
-    color: $wmmra-dark-red;
+  &.logos {
+    display: flex;
+    gap: 1rem;
+  }
 
-    @include media-max($medium-screen-breakpoint) {
-      display: none;
+  .schedule-logo {
+    &.wmrra {
+      max-width: 8rem;
+    }
+
+    &.omrra {
+      max-width: 3.5rem;
     }
   }
 
-  .joint-round-text {
-    font-style: italic;
-
-    @include media-min($medium-screen-breakpoint) {
-      display: none;
-    }
-  }
-
-  @include media-max($medium-screen-breakpoint) {
+  @include media-max($mobile-breakpoint) {
     justify-content: center;
   }
 }

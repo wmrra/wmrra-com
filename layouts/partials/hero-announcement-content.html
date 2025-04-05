@@ -11,8 +11,6 @@
 {{ $currentSchedule := jsonify (index site.Data.schedule $scheduleYear) }} 
 {{/* To add: last race results */}}
 
-<span data-test="{{ $featuredAnnouncement }}"></span>
-
 <div class="hero-announcement-content">
   {{/* Only ONE of these will remain; the fancy javascript will decide which one */}}
   {{/* Precedence is determined in hero.js; if you add a new block here, add it there */}}
@@ -40,8 +38,9 @@
     <div class="race-day-button-wrapper">
       <a
         class="hero-announcement-button"
-        href="https://racehero.io/orgs/wmrra-official"
+        href="https://speedhive.mylaps.com/Organizations/96388"
         target="_blank"
+        rel="noreferrer"
       >
         Live Timing
       </a>

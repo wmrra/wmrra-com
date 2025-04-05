@@ -118,8 +118,7 @@ function getNextRaceEvent(schedule, year) {
     
     while (!nextRaceEvent && scheduleIndex < schedule.length) {
       var currentEvent = schedule[scheduleIndex];
-      var raceEventDays = extractRaceEventDates(currentEvent, year);
-      var eventYear =  raceEventDays[0].getFullYear();      
+      var raceEventDays = extractRaceEventDates(currentEvent, year);     
       var eventMonth = raceEventDays[0].getMonth();
 
       // event is in a month that's in the past OR
@@ -141,7 +140,7 @@ function getNextRaceEvent(schedule, year) {
 function populateRaceDayContent(block) {
   var schedule = nextRaceEvent["eventSchedule"];
   var textContainer = $(block).children(".hero-announcement-text");
-  var circuitInfoButton = $("<a>").addClass("hero-announcement-button").attr("href", nextRaceEvent.locationLink).attr("target", "_blank").text("Circuit Info");
+  var circuitInfoButton = $("<a>").addClass("hero-announcement-button").attr("href", nextRaceEvent.locationLink).attr("target", "_blank").attr("rel", "noreferrer").text("Circuit Info");
   var scheduleUrl = schedule.startsWith("http") ? schedule : `${window.location.origin}${schedule}`;
   var scheduleButton = $("<a>").addClass("hero-announcement-button").attr("href", scheduleUrl).attr("target", "_blank").text("Event Schedule");
 

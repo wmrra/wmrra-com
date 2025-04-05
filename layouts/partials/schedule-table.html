@@ -1,38 +1,30 @@
 <div class="schedule-table">
-  <div class="schedule-table-row table-header">
-    <div class="schedule-table-cell round">
-      {{/* This space left intentionally blank */}}
-    </div>
-    <div class="schedule-table-cell date">Date</div>
-    <div class="schedule-table-cell location">Location</div>
-    <div class="schedule-table-cell day-schedule">Schedule</div>
-
-    <div class="schedule-table-cell joint-round">OMRRA</div>
-  </div>
-
   {{ range .scheduleData }}
-  <div class="schedule-table-row">
-    <div class="schedule-table-cell round">Round {{ .round }}</div>
-    <div class="schedule-table-cell date">{{ .date }}</div>
-    <div class="schedule-table-cell location">
-      <a href="{{ .locationLink }}" target="_blank">{{ .location }}</a>
+    <div class="schedule-table-row">
+      <div class="schedule-table-cell round">
+        <span>Round {{ .round }}</span>
+        {{ if .doublePoints }}
+         <i aria-hidden="true" class="fas fa-bolt"></i>
+         <span class="sr-only">WMRRA double points round</span>
+        {{ end }}
+      </div>
+      <div class="schedule-table-cell date">{{ .date }}</div>
+      <div class="schedule-table-cell location">{{ .location }}</div>
+      <div class="schedule-table-cell logos">
+        <img class="schedule-logo wmrra" src="/images/WMRRA-logo-transparent.png" alt="This round includes the WMRRA club" />
+        {{ if .jointRound }}
+          <img class="schedule-logo omrra" src="/images/OMRRA-logo-black.png" alt="This round includes the OMRRA club" />
+        {{ end }}
+      </div>
+      <div class="schedule-table-cell event-schedule">
+        {{ if .eventSchedule }}
+        <a href="{{ .eventSchedule }}" target="_blank">Event Schedule</a>
+        {{ end }}
+      </div>
     </div>
-    <div class="schedule-table-cell day-schedule">
-      {{ if .eventSchedule }}
-      <a href="{{ .eventSchedule }}" target="_blank">Schedule</a>
-      {{ end }}
-    </div>
-    <div class="schedule-table-cell joint-round">
-      {{ if .jointRound }}
-      <i
-        aria-hidden="true"
-        class="fas fa-check-circle joint-round-icon"
-        title="Joint round with OMRRA"
-      ></i>
-      <span class="joint-round-text">Joint round with OMRRA</span>
-      {{ end }}
-    </div>
-
-  </div>
   {{ end }}
+  <div class="schedule-table-row footer">
+      <i aria-hidden="true" class="fas fa-bolt"></i>
+      <span aria-hidden="true">WMRRA double points round</span>
+  </div>
 </div>
