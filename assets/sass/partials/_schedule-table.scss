@@ -27,6 +27,7 @@
 
   &.footer {
     display: flex;
+    flex-flow: row;
     justify-content: flex-end;
     align-items: center;
     gap: 1rem;
@@ -69,6 +70,10 @@
   &.logos {
     display: flex;
     gap: 1rem;
+  }
+
+  .schedule-double-points-icon {
+    margin-top: -0.2rem;
   }
 
   .schedule-logo {
