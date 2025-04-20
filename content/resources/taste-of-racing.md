@@ -49,4 +49,4 @@ WMRRA reserves the right to cancel TOR for any reason, at any time. Refunds will
     - Checkered Flag: Session is over. Proceed around the track to track exit.
 
 # Questions?
-Questions regarding TOR, contact WMRRA Race Director, Colt Bristow at racedirector@wmrra.com
+Questions regarding TOR, contact WMRRA Race Director at racedirector@wmrra.com.
