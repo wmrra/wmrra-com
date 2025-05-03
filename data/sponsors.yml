@@ -121,11 +121,20 @@ sponsorData:
 
       - name: Cascade Motorcycle Safety
         image: /images/sponsors/CascadeMotorcycleSafety.png
-        description: Female GP
+        description: Formula Female
         social:
           instagram: https://www.instagram.com/cascademotosafety/
           facebook: https://www.facebook.com/CascadeMotorcycleSafety/
           website: https://cascademotosafety.com/
+
+      - name: Cascade Motorcycle Safety
+        image: /images/sponsors/CascadeMotorcycleSafety.png
+        description: Female Lightweight
+        social:
+          instagram: https://www.instagram.com/cascademotosafety/
+          facebook: https://www.facebook.com/CascadeMotorcycleSafety/
+          website: https://cascademotosafety.com/
+
 
   - sponsorType: Club
     sponsors:
@@ -152,4 +161,11 @@ sponsorData:
           facebook: https://www.facebook.com/6dHelmets/
           instagram: https://www.instagram.com/6dhelmets
           website: https://www.6dhelmets.com/
+      
+      - name: MotoVizion Labs
+        image: /images/sponsors/MotoVizionLabs.jpg
+        social:
+          instagram: https://www.instagram.com/getlostgoggles/
+          website: https://www.amazon.com/stores/GetLostHelmets/page/C5A39EF6-B8A8-4E02-8F36-D9DF3312DA07?lp_asin=B0BHD56MFJ&ref_=ast_bln
+      
 
