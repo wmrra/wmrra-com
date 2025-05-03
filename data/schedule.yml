@@ -5,14 +5,14 @@
     locationLink: https://www.ridgemotorsportspark.com/
     jointRound: false
     doublePoints: true
-    eventSchedule: /event-schedules/2025-WMRRA-Schedule-Round1.pdf
+    eventSchedule: /event-schedules/2025-Round1.pdf
  
   - date: May 2-4
     round: 2
     location: Portland International Raceway
     locationLink: https://www.portlandraceway.com/
     jointRound: true
-    -- eventSchedule: https://www.omrra.com/wp-content/uploads/2023/05/OMRRA-June-2023-Schedule_v1.pdf
+    eventSchedule: /event-schedules/2025-Round2.pdf
 
   - date: June 6-8
     round: 3
