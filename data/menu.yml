@@ -43,6 +43,8 @@ menu:
         link: /contact
       - name: Schedule
         link: /race/schedule
+      - name: Season Standings
+        link: https://speedhive.mylaps.com/Organizations/96388/Championships
       - name: Rulebook
         link: /race/rulebook
       - name: Race Circuits
