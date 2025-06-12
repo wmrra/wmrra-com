@@ -44,15 +44,13 @@ menu:
       - name: Schedule
         link: /race/schedule
       - name: Season Standings
-        link: https://speedhive.mylaps.com/Organizations/96388/Championships
+        link: /standings
       - name: Rulebook
         link: /race/rulebook
       - name: Race Circuits
         link: /resources/circuits
       - name: Taste of Racing (TOR)
         link: /resources/taste-of-racing
-      # - name: WMRRA Official Photographer
-      #   link: http://www.whoisdane.photography/WMRRA
       - name: Contingency Information and Forms
         link: /resources/contingency
       - name: Documents and Forms
@@ -65,8 +63,6 @@ menu:
         link: https://www.uwmedicine.org/airliftnw/membership
       - name: Board Minutes
         link: /board-minutes
-      - name: Season Standings
-        link: /standings
       # - name: Rules Proposals
       #   link: /rules-proposals
       - name: Report a Website Issue

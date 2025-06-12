@@ -1,16 +1,31 @@
-{{ if fileExists "static/standings" }}
+<div class="season-standings page-content">
+  <div class="season-standings-subsection">
+    <h2>Current WMRRA Championship Standings</h2>
+    <a 
+      class="site-button season-standings-button"
+      href="https://speedhive.mylaps.com/Organizations/96388/Championships" 
+      target="_blank" 
+      rel="noreferrer"
+    >
+      <span>View on Speedhive</span>
+      <i aria-hidden="true" class="fas fa-up-right-from-square"></i>
+    </a>
+  </div>
+
+  {{ if fileExists "static/standings" }}
     {{ $files := readDir "static/standings" }}
-    <div class="season-standings page-content">
-      <h1>WMRRA season Standings Archive</h1>
-      <div class="season-standings-links-wrapper">
-        {{ range sort $files "Name" "desc"}}
-          {{ $separated := split .Name " " }}
-          {{ $year := index $separated 0}}
-            <a class="season-standings-link" href="/standings/{{ .Name }}">
-              <i aria-hidden="true" class="fas fa-solid fa-download"></i>
-              <span class="season-standings-link-text">{{ $year }} Season</span>
-            </a>
-        {{ end }}
+      <div class="season-standings-subsection">
+        <h2>Past Seasons</h2>
+        <div class="season-standings-links-wrapper">
+          {{ range sort $files "Name" "desc"}}
+            {{ $separated := split .Name " " }}
+            {{ $year := index $separated 0}}
+              <a class="season-standings-link" href="/standings/{{ .Name }}">
+                <i aria-hidden="true" class="fas fa-solid fa-download"></i>
+                <span class="season-standings-link-text">{{ $year }} Standings</span>
+              </a>
+          {{ end }}
+        </div>
       </div>
-    </div>
-{{ end }}
+  {{ end }}
+</div>
