@@ -19,14 +19,13 @@
     location: Portland International Raceway
     locationLink: https://www.portlandraceway.com/
     jointRound: true
-    -- eventSchedule: /downloads/2023/2023R3_Schedule.pdf
 
   - date: June 20-22
     round: 4
     location: The Ridge Motorsports Park
     locationLink: https://www.ridgemotorsportspark.com/
     jointRound: true
-    -- eventSchedule: /downloads/2023/2023R3_Schedule.pdf
+    eventSchedule: /event-schedules/2025-Round4.pdf
 
   - date: July 18-20
     round: 5
