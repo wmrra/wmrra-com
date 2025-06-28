@@ -6,6 +6,7 @@
     jointRound: false
     doublePoints: true
     eventSchedule: /event-schedules/2025-Round1.pdf
+    eventProgram: /event-programs/2025-Round1-Program.pdf
  
   - date: May 2-4
     round: 2
@@ -26,6 +27,7 @@
     locationLink: https://www.ridgemotorsportspark.com/
     jointRound: true
     eventSchedule: /event-schedules/2025-Round4.pdf
+    eventProgram: /event-programs/2025-Round4-Program.pdf
 
   - date: July 18-20
     round: 5

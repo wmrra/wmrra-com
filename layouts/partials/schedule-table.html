@@ -18,7 +18,16 @@
       </div>
       <div class="schedule-table-cell event-schedule">
         {{ if .eventSchedule }}
-        <a href="{{ .eventSchedule }}" target="_blank">Event Schedule</a>
+          <a href="{{ .eventSchedule }}" target="_blank" class="site-button" title="Event schedule">
+            <i aria-hidden="true" class="fa fas fa-clipboard-list"></i>
+            <span class="sr-only">Event schedule</span>
+          </a>
+        {{ end }}
+        {{ if .eventProgram }}
+          <a href="{{ .eventProgram }}" target="_blank" class="site-button" title="Event program">
+            <i aria-hidden="true" class="fa fas fa-book-open"></i>
+            <span class="sr-only">Event program</span>
+          </a>
         {{ end }}
       </div>
     </div>

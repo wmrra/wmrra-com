@@ -1,6 +1,9 @@
 .season-standings {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  // don't like this, but it sets the container to full content window height
+  min-height: calc(100vh - 18.8rem);
 
   .season-standings-subsection {
     display: flex;

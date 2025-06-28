@@ -57,6 +57,20 @@
 
   &.event-schedule {
     justify-content: center;
+    gap: 1.2rem;
+
+    .site-button {
+      width: 4rem;
+      font-size: 1.6rem;
+    }
+
+    @include media-max($mobile-breakpoint) {
+      flex-direction: column;
+      
+      .site-button {
+        width: 100%;
+      }
+    }
   }
 
   &.date,
