@@ -1,8 +1,7 @@
 {{ $sponsorData := index .Site.Data.sponsors.sponsorData }}
 
 {{ with $sponsorData }}
-  {{ $vipSponsors := slice }}
-  {{ $allOtherSponsors := slice }}
+  {{ $allSponsors := slice }}
   {{ $sponsorNames := slice }}
 
   {{ range . }}
@@ -11,11 +10,7 @@
       {{ range .sponsors}}
         {{ if not (in $sponsorNames .name) }}
           {{ $sponsorData := (dict "image" .image "name" .name "sponsorType" $sponsorType) }}
-          {{ if eq $sponsorType "VIP" }}
-            {{ $vipSponsors =  $vipSponsors | append $sponsorData }}
-          {{ else }}
-            {{ $allOtherSponsors =  $allOtherSponsors | append $sponsorData }}
-          {{ end }}
+          {{ $allSponsors =  $allSponsors | append $sponsorData }}
           {{ $sponsorNames = $sponsorNames | append .name }}
         {{ end }}
       {{ end }}
@@ -27,8 +22,8 @@
       <h1>Thank you to our sponsors!</h1>
     </div>
 
-    <div class="homepage-supporters" data-debug="{{ $allOtherSponsors }}">
-      {{ range sort $allOtherSponsors "name" }}
+    <div class="homepage-supporters">
+      {{ range sort $allSponsors "name" }}
         {{ partial "shared/sponsor-image" (dict "image" .image "name" .name "sponsorType" .sponsorType) }}  
       {{ end }}
     </div>

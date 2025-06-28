@@ -13,12 +13,17 @@ sponsorData:
   # Title, Formula Ultra, and Formula 600 are considered VIP
   # Follow the SPONSOR TEMPLATE to add logo image, social links
   - sponsorType: VIP
-    # sponsors:
+    sponsors:
     #   - name: <PLACEHOLDER>
     #   description: Title Sponsor
 
-    #   - name: <PLACEHOLDER>
-    #   description: Formula Ultra
+      - name: The Fix Motorsports
+        image: /images/sponsors/TheFix.jpg
+        description: Formula Ultra
+        social:
+          instagram: https://instagram.com/TheFixMotorsports
+          facebook: https://facebook.com/TheFixMotorsports
+          website: https://thefixmotorsports.com/
 
     #   - name: <PLACEHOLDER>
     #   description: Formula 600
@@ -134,6 +139,14 @@ sponsorData:
           instagram: https://www.instagram.com/cascademotosafety/
           facebook: https://www.facebook.com/CascadeMotorcycleSafety/
           website: https://cascademotosafety.com/
+      
+      - name: StevensonFoto
+        image: /images/sponsors/StevensonFoto.jpg
+        description: Ultra Lightweight Supersport
+        social:
+          instagram: https://www.instagram.com/stevensonfoto/
+          facebook: https://www.facebook.com/StevensonFoto
+          website: https://stevensonfoto.com/
 
 
   - sponsorType: Club
