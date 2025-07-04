@@ -148,6 +148,14 @@ sponsorData:
           facebook: https://www.facebook.com/StevensonFoto
           website: https://stevensonfoto.com/
 
+      - name: Ishii Motor Industries
+        image: /images/sponsors/IshiiMotorIndustries.jpg
+        description: 600 Supersport
+        social:
+          instagram: https://www.instagram.com/ishiimotorindustries/
+          facebook: https://www.facebook.com/ishiiAutoRepairBellevue
+          website: https://ishiiautorepairbellevue.com/
+
 
   - sponsorType: Club
     sponsors:
