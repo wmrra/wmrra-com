@@ -1,8 +1,6 @@
 # Elections
 
-WMRRA is a volunteer run organization. Club members are elected to these
-positions by membership. They do the work behind the scenes to host events
-and promote motorcycle road racing in the Pacific Northwest.
+WMRRA operates entirely with volunteers. Club members elect individuals to the following roles to help manage the organization. These elected members generously donate their free time to work behind the scenes, promoting motorcycle road racing and securing the club's future in the Pacific Northwest.
 
 Complete and accurate information on club positions, responsibilities, and elections can be
 found in the [club bylaws](/race/rulebook/).
