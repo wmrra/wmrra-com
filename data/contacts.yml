@@ -190,22 +190,22 @@ contacts:
       email: website@wmrra.com
   
   board:
-    - position: Position 1 ☑
+    - position: Position 1 (2022-2025) ☑
       name: Mark DeGross
       phone: 
       email: mdegross@gmail.com
 
-    - position: Position 2 ☑
+    - position: Position 2 (2023-2026) ☑
       name: Craig Johnson
       phone: 253.988.3508
       email:
 
-    - position: Position 3 ☑
+    - position: Position 3 (2024-2027) ☑
       name: CJ Hobbs
       phone:
       email: 
 
-    - position: Position 4 ☑
+    - position: Position 4 (2025-2028) ☑
       name: Chris Wilcox 
       phone: 
       email: wmrra@crwilcox.com
