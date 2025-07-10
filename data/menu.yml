@@ -63,6 +63,8 @@ menu:
         link: https://www.uwmedicine.org/airliftnw/membership
       - name: Board Minutes
         link: /board-minutes
+      - name: Elections
+        link: /resources/elections
       # - name: Rules Proposals
       #   link: /rules-proposals
       - name: Report a Website Issue
