@@ -191,14 +191,14 @@ contacts:
   
   board:
     - position: Position 1 (2022-2025) ☑
-      name: Mark DeGross
-      phone: 
-      email: mdegross@gmail.com
-
-    - position: Position 2 (2023-2026) ☑
       name: Craig Johnson
       phone: 253.988.3508
       email:
+
+    - position: Position 2 (2023-2026) ☑
+      name: Mark DeGross
+      phone: 
+      email: mdegross@gmail.com
 
     - position: Position 3 (2024-2027) ☑
       name: CJ Hobbs
