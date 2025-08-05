@@ -49,7 +49,7 @@
     location: Pacific Raceways
     locationLink: https://pacificraceways.com/
     jointRound: false
-    -- eventSchedule: https://www.omrra.com/wp-content/uploads/2023/05/OMRRA-June-2023-Schedule_v1.pdf
+    eventSchedule: /event-schedules/2025-Round7.pdf
 
   - date: September 19-21
     round: 8
@@ -57,7 +57,7 @@
     locationLink: https://pacificraceways.com/
     jointRound: true
     doublePoints: true
-    -- eventSchedule: /downloads/2023/2023R5_Schedule.pdf
+    eventSchedule: /event-schedules/2025-Round8.pdf
 
 "2024":
   - date: May 3-5
