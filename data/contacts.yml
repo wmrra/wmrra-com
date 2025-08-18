@@ -27,8 +27,8 @@ contacts:
       email: referee@wmrra.com
 
     - position: Club Secretary ☑
-      name: Mallory Dobbs
-      phone: 360.280.4664
+      name: Jen Chancellor
+      phone: 
       email: secretary@wmrra.com
 
     - position: Novice Rep ☑
@@ -73,8 +73,8 @@ contacts:
       email: chieftech@wmrra.com
 
     - position: Contingency/Sponsor Manager
-      name: Mallory Dobbs
-      phone: 360.280.4664
+      name: Jen Chancellor
+      phone: 
       email: contingency@wmrra.com
 
     # - position: Announcer
@@ -175,8 +175,8 @@ contacts:
     #   email: 
 
     - position: Rulebook Editor
-      name: Mallory Dobbs
-      phone: 360.280.4664
+      name: Jen Chancellor
+      phone: 
       email: secretary@wmrra.com
 
     # - position: Charity Coordinator
@@ -190,10 +190,10 @@ contacts:
       email: website@wmrra.com
   
   board:
-    - position: Position 1 (2022-2025) ☑
-      name: Craig Johnson
-      phone: 253.988.3508
-      email:
+    - position: Position 1 (2026-2029) ☑
+      name: Paul McComsey
+      phone: 
+      email: paul@turbinetraders.com
 
     - position: Position 2 (2023-2026) ☑
       name: Mark DeGross
