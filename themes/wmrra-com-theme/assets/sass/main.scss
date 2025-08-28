@@ -33,6 +33,7 @@ $xxxlarge-screen-breakpoint: 120em; // big
 
 html {
   height: 100vh;
+  scroll-behavior: smooth;
 }
 
 body {

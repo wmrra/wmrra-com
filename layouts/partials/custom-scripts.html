@@ -1,9 +1,9 @@
 {{ $heroScript := resources.Get "js/hero.js" | minify }}
 {{ $supporterScript := resources.Get "js/supporter-levels.js" | minify }}
 {{ $racersScript := resources.Get "js/racers.js" | minify }}
-{{ $newRacerScript := resources.Get "js/new-racer.js" | minify }}
+{{ $embeddedFormScript := resources.Get "js/embedded-form.js" | minify }}
 
 <script src="{{ $heroScript.Permalink }}"></script>
 <script src="{{ $supporterScript.Permalink }}"></script>
 <script src="{{ $racersScript.Permalink }}"></script>
-<script src="{{ $newRacerScript.Permalink }}"></script>
+<script src="{{ $embeddedFormScript.Permalink }}"></script>

@@ -39,7 +39,8 @@ function showSubmenu(submenu) {
   // shouldn't repaint during this time, so users
   // won't see a flicker (according to the internet)
   menu.show()
-  var menuLeft = menu.offset().left;
+  var offset = menu.offset();
+  var menuLeft = offset != null ? offset.left : 0;
   menu.hide()
   
   var menuWidth = menu.outerWidth();

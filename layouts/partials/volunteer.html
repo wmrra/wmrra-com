@@ -6,22 +6,22 @@
   </div>
   <div class="page-section">
     <h1>Volunteer with us</h1>
-    <p>
-      Volunteers are the heart and soul of WMRRA. They organize our race events, 
-      help keep us safe on track, and do the work behind the scenes to ensure
-      we can continue to participate in the sport we love. There are a wide 
-      variety of opportunities for all talents and interests - even if you're not a racer!
-      <br />
-      Select an opportunity to contact us and learn more about how you can help. If
-      you think you can contribute in a way not listed there is still opportunity
-      for you to get involved. Pick the closest opportunity (or 
-      <a href="/contact">reach out to an executive board member</a>) so you can start
-      contributing to the club.
-    </p>
+    <div class="volunteer-blurb">
+      <p>
+        Volunteers are the heart and soul of WMRRA. They organize our race events, 
+        help keep us safe on track, and do the work behind the scenes to ensure
+        we can continue to participate in the sport we love. There are a wide 
+        variety of opportunities for all talents and interests - even if you're not a racer!
+      </p>
+      <div class="volunteer-button-container">
+        <a href="#volunteer-opportunities" class="site-button">Browse opportunities</a>
+        <a href="#volunteer-form" class="site-button">Contact us</a>
+      </div>
+    </div>
   </div>
 
   {{ with $volunteerOpportunities.raceDayVolunteers }}
-  <div class="page-section volunteer-blocks">
+    <div id="volunteer-opportunities" class="page-section volunteer-blocks">
       <h2>Race day volunteers</h2>
       <p>
         Folks who do all the things on and off the track that keep race events running smoothly and safely.
@@ -38,7 +38,7 @@
   {{ end }}
 
   {{ with $volunteerOpportunities.clubVolunteers }}
-  <div class="page-section volunteer-blocks">
+    <div class="page-section volunteer-blocks">
       <h2>Club volunteers</h2>
       <p>
         Folks who put in the work behind the scenes to operate and grow the club. 
@@ -52,3 +52,21 @@
       </div>
     </div>
   {{ end }}
+
+  <div id="volunteer-form" class="page-section">
+    <div class="embedded-form-loading">
+      <i aria-hidden="true" class="fa fa-spinner fa-3x fa-pulse" title="Content loading"></i>
+    </div>
+    <iframe 
+      id="embedded-form-iframe" 
+      src="https://docs.google.com/forms/d/e/1FAIpQLSf_Sq-AaaEglXdqzXv9Pcu996HzYaCG6BRfDz3UHTY4jNwsmw/viewform?embedded=true" 
+      width="100%" 
+      height="0" 
+      frameborder="0" 
+      marginheight="0"
+      marginwidth="0"
+      data-height="1900"
+    >
+    </iframe>
+  </div>
+</div>  

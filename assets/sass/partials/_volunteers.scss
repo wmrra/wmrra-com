@@ -18,6 +18,32 @@
   }
 }
 
+#volunteer-opportunities {
+  scroll-margin-top: 4.2rem;
+}
+
+#volunteer-form {
+  scroll-margin-top: 3rem;
+}
+
+.volunteer-blurb {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.volunteer-button-container {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 2rem;
+
+  .site-button {
+    min-width: 20rem;
+    padding: 1rem;
+  }
+}
+
 .volunteer-block-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
