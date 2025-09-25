@@ -59,6 +59,7 @@
     jointRound: true
     doublePoints: true
     eventSchedule: /event-schedules/2025-Round8.pdf
+    eventProgram: /event-programs/2025-Round8-Program.pdf
 
 "2024":
   - date: May 3-5
