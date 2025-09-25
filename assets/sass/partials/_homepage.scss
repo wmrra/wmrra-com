@@ -13,6 +13,15 @@
   width: 100%;
   opacity: 0;
 
+  &.default-content {
+    gap: 3rem;
+
+    > .hero-announcement-button {
+      align-self: center;
+      min-width: 30rem;
+    }
+  }
+
   &.the-chosen-one {
     transform: translateX(200%);
     animation: fadeIn 1.2s ease-in forwards, slideIn 1s ease-out forwards;

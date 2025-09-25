@@ -5,7 +5,7 @@ var nextRaceEventDays = null;
 
 // precedence order for hero blocks (i.e. which should show first)
 // if you add a new hero block, ADD THE ID TO THIS LIST
-const ORDERED_HERO_BLOCK_IDS = ["race-day", "latest-announcement", "next-race-event"]
+const ORDERED_HERO_BLOCK_IDS = ["race-day", "latest-announcement", "next-race-event", "default"]
 
 function selectHeroImage() {
   var homeContent = $(".home-content-wrapper")
@@ -40,8 +40,7 @@ function displayHeroContent() {
   }
 
   if (!blockToShow){
-    // Default to showing the latest news announcement.
-    blockToShow = heroBlocks.filter(`#latest-announcement`);
+    blockToShow = heroBlocks.filter(`#default`);
   }
 
   heroBlocks.not(blockToShow).remove();
