@@ -82,8 +82,6 @@ function populateBlockContent(block) {
 function shouldShowLatestAnnouncement(latestAnnouncementBlock) {
   var featureUntilData = $(latestAnnouncementBlock).data("feature-until");
 
-  console.log(featureUntilData)
-
   if (!featureUntilData) {
     return false;
   }
