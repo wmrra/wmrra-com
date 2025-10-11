@@ -72,6 +72,12 @@ th, td {
   margin: auto;
   padding: 2rem 1.5rem;
   font-size: 1.6rem;
+
+  &.news-post {
+    display: flex;
+    align-items: center;
+    min-height: calc(100vh - 14.8rem); // allow for header + footer
+  }
 }
 
 .sr-only {

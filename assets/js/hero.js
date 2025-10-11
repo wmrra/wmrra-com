@@ -82,13 +82,14 @@ function populateBlockContent(block) {
 function shouldShowLatestAnnouncement(latestAnnouncementBlock) {
   var featureUntilData = $(latestAnnouncementBlock).data("feature-until");
 
+  console.log(featureUntilData)
+
   if (!featureUntilData) {
     return false;
   }
 
-  // theoretically, there won't be a featured article if the "feature until" date has passed
-  // BUT it's good to double-check here anyway
-  return new Date(featureUntilData) > new Date();
+  // appending T00:00:00 will treat this as "midnight" of the featured day, local time
+  return new Date(`${featureUntilData}T00:00:00`) > new Date();
 }
 
 function isRaceDay() {
