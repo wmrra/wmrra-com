@@ -43,7 +43,6 @@
         <div class="become-a-supporter-blocks-row">
           {{ range . }}
             {{ $levelClass := (print "level-" (lower (delimit (split .level " ") "-"))) }}
-            {{ $formattedCost := (print "$" (lang.FormatNumberCustom 0 .fullPrice)) }}
             {{ $mailSubject := (print "WMRRA Sponsorship Interest - " .level) }}
             {{ $showModalLink := (gt (len .benefits) 4) }}
             {{ $hasDiscountValues := (and (ne .discountPrice nil) (ne .discountUntil nil)) }}
