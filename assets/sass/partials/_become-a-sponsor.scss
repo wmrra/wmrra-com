@@ -1,0 +1,304 @@
+// note: we use SUPPORTERS for all the class names because a lot
+// of ad blockers flag the word "sponsor" and hide the content
+.become-a-supporter-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .site-button {
+    padding: 1.2rem;
+  }
+}
+
+.become-a-supporter-blocks-wrapper {
+  margin: 7rem auto 0;
+}
+
+.become-a-supporter-blocks-row {
+  @include flex-column-centered;
+  gap: 7rem;
+  margin-bottom: 7rem;
+
+  @include media-min($large-screen-breakpoint) {
+    display: grid;
+    grid-column-gap: 4rem;
+  }
+}
+
+.become-a-supporter-level-block {
+  position: relative;
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: 1 / 5;
+  grid-row-gap: 1.6rem;
+  max-width: 90rem;
+  padding: 3rem 3rem 2rem 2rem;
+  border-width: 0.8rem;
+  border-style: solid;
+  border-radius: 1rem;
+
+  @include media-max($large-screen-breakpoint) {
+    width: 100%;
+  }
+
+  &::before {
+    top: -4.5rem;
+  }
+
+  &.level-title,
+  &.level-purse-race {
+    border-color: $wmmra-dark-red;
+
+    .inquiry-button {
+      background-color: $wmmra-dark-red;
+
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+  }
+
+  &.level-title {
+    border-color: $wmmra-dark-red;
+    &::before {
+      @include sponsor-level-badge("\f521", $wmmra-dark-red);
+    }
+  }
+
+  &.level-purse-race {
+    &::before {
+      @include sponsor-level-badge("\f81d", $wmmra-dark-red)
+    }
+  }
+
+  &.level-gold {
+    border-color: $sponsor-gold;
+
+    &::before {
+      @include sponsor-level-badge("\f091", $sponsor-gold);
+    }
+
+    .inquiry-button {
+      background-color: $sponsor-gold;
+
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+  }
+
+  &.level-silver {
+    border-color: $sponsor-silver;
+
+    &::before {
+      @include sponsor-level-badge("\f5a2", $sponsor-silver);
+    }
+
+
+    .inquiry-button {
+      background-color: $sponsor-silver;
+
+      &:hover {
+        background-color: $sponsor-silver-20;
+      }
+    }
+  }
+
+  &.level-bronze {
+    border-color: $sponsor-bronze;
+
+    &::before {
+      @include sponsor-level-badge("\f559", $sponsor-bronze);
+    }
+  
+    .inquiry-button {
+      background-color: $sponsor-bronze;
+
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+  }
+
+  &.level-taste-of-racing,
+  &.level-vendor-permit {
+    border-color: $light-default-text-color;
+
+    .inquiry-button {
+      background-color: $light-default-text-color;
+
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+  }
+
+  &.level-taste-of-racing {
+    &::before {
+      @include sponsor-level-badge("\f21c", $light-default-text-color);
+    }
+  }
+
+  &.level-vendor-permit {
+    &::before {
+      @include sponsor-level-badge("\f54e", $light-default-text-color);
+    }
+  }
+
+  .level-and-price {
+    @include flex-column-centered;
+
+    .level-name {
+      font-size: 4rem;
+    }
+
+    .price-details {
+      @include flex-column-centered;
+
+      .big-price {
+        font-size: 3rem;
+      }
+
+      .strikethrough-price {
+        color: $light-default-text-color;
+        opacity: 0.5;
+        font-size: 2rem;
+        text-decoration: line-through;
+      }
+    }
+
+    .disclaimer {
+      margin-top: 0.4rem;
+      color: $light-default-text-color;
+      opacity: 0.5;
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+  }
+
+  .inquiry-button {
+    @include link-overrides($white);
+
+    justify-self: center;
+    width: 22rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .benefits-list {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+
+    ul {
+      display: grid;
+      grid-template-rows: subgrid;
+      grid-row: 1 / 5;
+      grid-row-gap: 0.6rem;
+      margin: 0;
+
+      @include media-max($large-screen-breakpoint) {
+        &:not(:first-child) {
+          display: none;
+        }
+      }
+    }
+
+    li {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .see-all-benefits-link {
+    @include link-overrides($default-link-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+
+    &:hover {
+      filter: brightness(60%);
+    }
+
+    &::after {
+      @include pseudo-icon("\f105");
+      margin-left: 1rem;
+    }
+  }
+}
+
+.supporter-level-benefits-modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 101;
+  padding: 2rem;
+  width: 80%;
+  max-width: 50rem;
+  border-width: 0.8rem;
+  border-style: solid;
+  border-radius: 1rem;
+  background-color: $white;
+
+  &.level-title,
+  &.level-purse-race {
+    border-color: $wmmra-dark-red;
+  }
+
+  &.level-gold {
+    border-color: $sponsor-gold;
+  }
+
+  &.level-silver {
+    border-color: $sponsor-silver;
+  }
+
+  &.level-bronze {
+    border-color: $sponsor-bronze;
+  }
+
+  &.level-taste-of-racing,
+  &.level-vendor-permit {
+    border-color: $light-default-text-color;
+  }
+
+  .modal-close-icon {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 2.4rem;
+    color: $medium-gray;
+    cursor: pointer;
+  }
+
+  .benefits-modal-content {
+    @include flex-column-centered;
+
+    padding-top: 0.6rem;
+
+    .level {
+      margin: 0 0 1rem;
+      font-size: 2.4rem;
+      text-align: center;
+    }
+
+    ul {
+      max-height: 38rem;
+      margin-bottom: 0;
+      padding-inline-start: 3rem;
+      overflow-y: auto;
+
+      li {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}

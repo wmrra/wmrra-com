@@ -14,3 +14,5 @@ For those needing a refund on entry fees for missed races, hold on to your tech 
 
 <!-- [Travel Expense Info](/downloads/WMRRA-TRAVEL-EXPENSES-REIMBURSEMENT-POLICY.txt) -->
 [Travel Expense Info](/downloads/WMRRA-Expense-Voucher-Form.pdf)
+
+[Sponsorship request email template](/sponsor/sponsor-email-template)
