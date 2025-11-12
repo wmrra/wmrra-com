@@ -8,30 +8,30 @@ var nextRaceEventDays = null;
 const ORDERED_HERO_BLOCK_IDS = ["race-day", "latest-announcement", "next-race-event", "default"]
 
 function selectHeroImage() {
-  var homeContent = $(".home-content-wrapper")
-  var images = homeContent.data("images");
-  var imageIndex =  Math.floor(Math.random() * images.length);
-  var heroImageData = images[imageIndex];
+  const homeContent = $(".home-content-wrapper")
+  const images = homeContent.data("images");
+  const imageIndex =  Math.floor(Math.random() * images.length);
+  const heroImageData = images[imageIndex];
 
   if (heroImageData.shift) {
     homeContent.children(".hero").addClass("shift-align");
   }
 
-  var heroImageStyle = $("<style>").html(`.hero::after{ background-image: url(${window.location.origin}/images/hero/${heroImageData.filename}) };`);
+  const heroImageStyle = $("<style>").html(`.hero::after{ background-image: url(${window.location.origin}/images/hero/${heroImageData.filename}) };`);
   $("head").append(heroImageStyle);
 
   homeContent.removeAttr("data-images");
 }
 
 function displayHeroContent() {
-  var blockToShow;
-  var heroBlocks = $(".hero-announcement-content-block");
-  var raceEventYear = heroBlocks.filter("#next-race-event")?.data("year");
-  var raceSchedule = heroBlocks.filter("#next-race-event")?.data("schedule");
+  let blockToShow;
+  const heroBlocks = $(".hero-announcement-content-block");
+  const raceEventYear = heroBlocks.filter("#next-race-event")?.data("year");
+  const raceSchedule = heroBlocks.filter("#next-race-event")?.data("schedule");
   nextRaceEvent = getNextRaceEvent(raceSchedule, raceEventYear);
   nextRaceEventDays = extractRaceEventDates(nextRaceEvent, raceEventYear);
 
-  for (var blockId of ORDERED_HERO_BLOCK_IDS) {
+  for (const blockId of ORDERED_HERO_BLOCK_IDS) {
     const block = heroBlocks.filter(`#${blockId}`);
     if (shouldShowBlock(block)) {
       blockToShow = block;
@@ -80,7 +80,7 @@ function populateBlockContent(block) {
 }
 
 function shouldShowLatestAnnouncement(latestAnnouncementBlock) {
-  var featureUntilData = $(latestAnnouncementBlock).data("feature-until");
+  const featureUntilData = $(latestAnnouncementBlock).data("feature-until");
 
   if (!featureUntilData) {
     return false;
@@ -102,22 +102,22 @@ function getNextRaceEvent(schedule, year) {
   }
 
   if (!nextRaceEvent) {
-    var now  = new Date();
+    let now = new Date();
     if (now.getFullYear() != year){
       // If the next season is in the following year, figure out the first
       // event by using Jan 1, next-year, as 'now'
       // TODO: could change date math to account for year also, though this has
       // the same effect
-      now  = new Date(year,1,1);
+      now = new Date(year,1,1);
     }
-    var currentMonth = now.getMonth();
-    var currentDay = now.getDate();
-    var scheduleIndex = 0;
+    const currentMonth = now.getMonth();
+    const currentDay = now.getDate();
+    const scheduleIndex = 0;
     
     while (!nextRaceEvent && scheduleIndex < schedule.length) {
-      var currentEvent = schedule[scheduleIndex];
-      var raceEventDays = extractRaceEventDates(currentEvent, year);     
-      var eventMonth = raceEventDays[0].getMonth();
+      const currentEvent = schedule[scheduleIndex];
+      const raceEventDays = extractRaceEventDates(currentEvent, year);     
+      const eventMonth = raceEventDays[0].getMonth();
 
       // event is in a month that's in the past OR
       // event is this month, but is on a day that's in the past
@@ -136,11 +136,11 @@ function getNextRaceEvent(schedule, year) {
 
 // it's race day! put the pertinent info front and center
 function populateRaceDayContent(block) {
-  var schedule = nextRaceEvent["eventSchedule"];
-  var textContainer = $(block).children(".hero-announcement-text");
-  var circuitInfoButton = $("<a>").addClass("hero-announcement-button").attr("href", nextRaceEvent.locationLink).attr("target", "_blank").attr("rel", "noreferrer").text("Circuit Info");
-  var scheduleUrl = schedule.startsWith("http") ? schedule : `${window.location.origin}${schedule}`;
-  var scheduleButton = $("<a>").addClass("hero-announcement-button").attr("href", scheduleUrl).attr("target", "_blank").text("Event Schedule");
+  const schedule = nextRaceEvent["eventSchedule"];
+  const textContainer = $(block).children(".hero-announcement-text");
+  const circuitInfoButton = $("<a>").addClass("hero-announcement-button").attr("href", nextRaceEvent.locationLink).attr("target", "_blank").attr("rel", "noreferrer").text("Circuit Info");
+  const scheduleUrl = schedule.startsWith("http") ? schedule : `${window.location.origin}${schedule}`;
+  const scheduleButton = $("<a>").addClass("hero-announcement-button").attr("href", scheduleUrl).attr("target", "_blank").text("Event Schedule");
 
   textContainer.append($("<h2>").text(`Round ${nextRaceEvent.round} at ${nextRaceEvent.location}`))
   textContainer.siblings(".race-day-button-wrapper").append(scheduleButton);
@@ -149,8 +149,8 @@ function populateRaceDayContent(block) {
 
 // if there is an upcoming race event, we'll show a countdown clock
 function populateNextRaceEventContent(block) {
-  var textContainer = $(block).children(".hero-announcement-text");
-  var eventStartDate = nextRaceEventDays[0];
+  const textContainer = $(block).children(".hero-announcement-text");
+  const eventStartDate = nextRaceEventDays[0];
 
   textContainer.append($("<h2>").text(`${nextRaceEvent.date} at ${nextRaceEvent.location}`));
 
@@ -161,8 +161,8 @@ function populateNextRaceEventContent(block) {
 
   // populate the countdown clock immediately, 
   // then start updating every second (otherwise it is momentarily invisible)
-  var eventTime = eventStartDate.getTime();
-  var countdownContainer = buildCountdownContainerHtml();
+  const eventTime = eventStartDate.getTime();
+  const countdownContainer = buildCountdownContainerHtml();
   textContainer.append(countdownContainer);
   calculateNextCountdownTime(eventTime, countdownContainer);
   setInterval(function() {
@@ -172,14 +172,14 @@ function populateNextRaceEventContent(block) {
 
 // https://www.w3schools.com/howto/howto_js_countdown.asp
 function calculateNextCountdownTime(eventTime, countdownContainer) {
-  var nowTime = new Date().getTime();
-  var distance = eventTime - nowTime;
+  const nowTime = new Date().getTime();
+  const distance = eventTime - nowTime;
 
   // time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // if any of these numbers is invalid, don't so anything
   if (isNaN(days) || isNaN(hours) || isNaN(minutes) || isNaN(seconds)) {
@@ -195,7 +195,7 @@ function calculateNextCountdownTime(eventTime, countdownContainer) {
 }
 
 function buildCountdownContainerHtml() {
-  var countdownContainer = $("<h1>").attr("id", "race-countdown-clock");
+  const countdownContainer = $("<h1>").attr("id", "race-countdown-clock");
 
   ["days", "hours", "minutes", "seconds"].forEach(function(divId) {
     countdownContainer.append($("<div>").addClass("countdown-number-wrapper").attr("id", divId));
@@ -210,34 +210,29 @@ function buildCountdownContainerHtml() {
   return countdownContainer;
 }
 
-// event data format: "May 17-18"
-// return format: [ "05/17/<current-year>", "05/18/<current-year>" ]
+// returns a list of Date objects representing all the dates of a race event
 function extractRaceEventDates(raceEvent, year) {
   if (!raceEvent) {
     return [];
   }
 
-  var eventDateParts = raceEvent.date.split(" ");
-  var month = getMonthNumber(eventDateParts[0]);
-  var startAndEndDays = eventDateParts[1].split("-").map(dayString => parseInt(dayString));
+  // race schedule data now stores startDate and endDate with the format "MM/DD/YYYY"
+  const startDate = new Date(raceEvent.startDate);
+  const endDate = new Date(raceEvent.endDate);
 
-  // total days of event: start + end + all days between
-  // if the event is longer than 2 days, we need to add
-  // the days between
-  var startDate = startAndEndDays[0];
-  var endDate = startAndEndDays[1];
-  var eventDays = startAndEndDays;
-  
-  if (endDate - startDate > 1) {
-    // trick for building an " x-to-y range" array:
-    // build an array the length of the range
-    // populate with the index values offset by the range start
-    eventDays = [...Array(endDate - startDate + 1).keys()].map(index => index + startDate);
+  // fill any days between the start and end
+  let currentDate = startDate;
+  const eventDates = [];
+
+  while (currentDate <= endDate) {
+    eventDates.push(currentDate);
+
+    // lol this is how you increment the day by 1 in Javascript (╯°□°)╯︵ ┻━┻
+    const nextDate = new Date(currentDate)
+    currentDate = new Date(nextDate.setDate(nextDate.getDate() + 1));
   }
 
-  // Javascript months are NOT ZERO-INDEXED when you're trying to make a date (╯°□°)╯︵ ┻━┻
-  // also, if you don't put the slashes in the date, Safari cries about it
-  return eventDays.map(day => new Date(`${month + 1}/${day}/${year}`));
+  return eventDates;
 }
 
 // Returns true if year, month, and day of both of the
@@ -254,28 +249,6 @@ function areSameDate(date1, date2) {
 // so they don't constantly change the width of the timer
 function formatCountdownNumber(countdownNumber) {
   return countdownNumber.toString().padStart(2, '0');
-}
-
-// AnNa WhY nOt JuSt UsE a lIbRaRy?
-// it's overkill, that's why
-// also, months in Javascript are zero-indexed, so ¯\_(ツ)_/¯
-const MONTH_NAMES = [ 
-  "January", 
-  "February", 
-  "March", 
-  "April", 
-  "May", 
-  "June", 
-  "July", 
-  "August", 
-  "September", 
-  "October", 
-  "November", 
-  "December",
-];
-
-function getMonthNumber(name) {
-  return MONTH_NAMES.indexOf(name);
 }
 
 $(document).ready(function() {

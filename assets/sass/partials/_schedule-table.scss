@@ -16,7 +16,7 @@
 
   @include media-min($mobile-breakpoint) {
     display: grid;
-    grid-template-columns: 10rem 14rem 26rem 14rem 15rem;
+    grid-template-columns: 10rem 14rem 26rem 14rem minmax(0, auto);
 
     &:not(.footer) {
       &:nth-child(odd) {

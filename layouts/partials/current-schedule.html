@@ -1,5 +1,3 @@
-
-
 {{ $scheduleData := .Site.Data.schedule }}
 {{ $years := slice }}
 {{ range $year, $_data := $scheduleData }}
@@ -7,11 +5,6 @@
 {{ end }}
 
 
-
-{{/*
-   This whole thing gets populated via Javascript so we can 
-   automatically update it with the current year's schedule
-*/}}
 {{ with $scheduleData }}
   {{ range sort $years "value" "desc" | first 1 }}
     {{ $schedule := (index $scheduleData  .) }}

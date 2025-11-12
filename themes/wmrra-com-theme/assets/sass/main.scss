@@ -75,6 +75,7 @@ th, td {
 
   &.news-post {
     display: flex;
+    justify-content: center;
     align-items: center;
     min-height: calc(100vh - 14.8rem); // allow for header + footer
   }
