@@ -1,0 +1,28 @@
+.rulebook-content {
+  .page-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    h3 {
+      margin: 0;
+      text-align: center;
+    }
+  }
+
+  .rulebook-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+
+    @include media-max($mobile-breakpoint) {
+      flex-direction: column;
+    }
+
+    .site-button {
+      padding: 1rem 2rem;
+    }
+  }
+}
