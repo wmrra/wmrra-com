@@ -1,11 +1,12 @@
 # Race Registration
 
-## Registration Instructions:
+WMRRA uses [MotorsportReg](https://www.motorsportreg.com/orgs/wmrra)) for licensing and event registration.
+
+## Detailed Registration Instructions:
 Use your previous account if you have one. If you do not have a previous account, follow the instructions below.
 
 1. Go to www.motorsportreg.com and create a free account
-2. Click on Calendar
-3. Search for “WMRRA”
+2. Navigtate to the [WMRRA Organization](https://www.motorsportreg.com/orgs/wmrra)
 4. Select WMRRA Licensing Info
 5. Choose the correct licensing option and complete the registration process.
 6. Enter your information including your medical insurance. If not click on create free account, add your personal info, once that is complete click on calendar and type in WMRRA, click on it and register for your license.
