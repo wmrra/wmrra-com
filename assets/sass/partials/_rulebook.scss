@@ -14,8 +14,11 @@
 
   .rulebook-buttons {
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 1.4rem;
+    max-width: 70%;
 
     @include media-max($mobile-breakpoint) {
       flex-direction: column;

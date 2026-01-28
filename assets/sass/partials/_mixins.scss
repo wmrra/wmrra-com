@@ -276,6 +276,25 @@
   }
 }
 
+@mixin faq($max-content-height) {
+  @include sliding-drawers($max-content-height);
+
+  .faq-entry {
+    margin-bottom: 2rem;
+  }
+
+  .faq-entry-question {
+    font-size: 2rem;
+  }
+
+  .faq-entry-answer {
+    ul {
+      margin-top: 1rem;
+      line-height: 3rem;
+    }
+  }
+}
+
 @mixin hover-link-card($height) {
   @include link-overrides($default-text-color);
 

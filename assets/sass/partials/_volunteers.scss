@@ -122,20 +122,5 @@
 }
 
 .corner-worker-faq {
-  @include sliding-drawers(120rem);
-
-  .corner-worker-faq-entry {
-    margin-bottom: 2rem;
-  }
-
-  .faq-entry-question {
-    font-size: 2rem;
-  }
-
-  .faq-entry-answer {
-    ul {
-      margin-top: 1rem;
-      line-height: 3rem;
-    }
-  }
+  @include faq(120rem);
 }
