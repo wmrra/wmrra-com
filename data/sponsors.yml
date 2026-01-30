@@ -10,7 +10,7 @@
 
 sponsorData:
   # Uncomment to add VIP sponsors (those who pay more $$)
-  # Title, Formula Ultra, and Formula 600 are considered VIP
+  # Title and Purse Sponsors (Formula Ultra) are considered VIP
   # Follow the SPONSOR TEMPLATE to add logo image, social links
   - sponsorType: VIP
     sponsors:
@@ -19,14 +19,11 @@ sponsorData:
 
       - name: The Fix Motorsports
         image: /images/sponsors/TheFix.jpg
-        description: Formula Ultra
+        description: Formula Championship
         social:
           instagram: https://instagram.com/TheFixMotorsports
           facebook: https://facebook.com/TheFixMotorsports
           website: https://thefixmotorsports.com/
-
-    #   - name: <PLACEHOLDER>
-    #   description: Formula 600
 
 
   - sponsorType: Race Day
@@ -34,6 +31,10 @@ sponsorData:
       - name: B2Racing
         image: /images/sponsors/B2Racing.jpg
         description: Ninja 250 Cup
+        social:
+          facebook: https://www.facebook.com/profile.php?id=61582837843656
+          instagram: https://www.instagram.com/b2racingpnw/
+          youtube: https://www.youtube.com/@B2RacingPNW
 
       - name: 2Fast Track Days
         image: /images/sponsors/2FastTrackDays.jpg
@@ -64,6 +65,7 @@ sponsorData:
         description: Lightweight Superbike
         social:
           facebook: https://www.facebook.com/vcyclenut
+          instagram: https://www.instagram.com/vcyclenut
           website: https://www.vcyclenut.com/
 
       - name: Thrivent - Kyle Nowadnick
@@ -90,16 +92,9 @@ sponsorData:
 
       - name: Group W Racing
         image: /images/sponsors/GroupWRacing.png
-        description: Honda 160 Vintage
+        description: Vintage 160
         social:
           facebook: https://www.facebook.com/groups/740877882708880
-
-      - name: Abraham Balderas Construction LLC
-        image: /images/sponsors/ABConstruction.jpg
-        description: Morning Riders' Meeting
-        social:
-          facebook: https://www.facebook.com/hashtag/abconstructionllc
-          instagram: https://www.instagram.com/abebalderasgmailcom/
 
       - name: Track Time
         image: /images/sponsors/TrackTime.png
@@ -109,23 +104,13 @@ sponsorData:
           instagram: https://www.instagram.com/tracktime.bike/
           website: https://www.tracktime.bike/
 
-      - name: Kump Racing Service
-        image: /images/sponsors/KumpRacingService.jpg
-        description: Middleweight Supersport
-        social:
-          facebook: https://www.facebook.com/p/Kump-Racing-Service-100060041149299/
-          website: https://www.kumpracing.com/
-
-      - name: The Fix Motorsports
-        image: /images/sponsors/TheFix.jpg
-        description: 600 Superbike
-        social:
-          instagram: https://instagram.com/TheFixMotorsports
-          facebook: https://facebook.com/TheFixMotorsports
-          website: https://thefixmotorsports.com/
+      #- name: Superbike Underground
+        #image:
+        #description: 600 Superbike
+        #social:
 
       - name: Cascade Motorcycle Safety
-        image: /images/sponsors/CascadeMotorcycleSafety.png
+        image: /images/sponsors/CMS.png
         description: Formula Female
         social:
           instagram: https://www.instagram.com/cascademotosafety/
@@ -133,7 +118,7 @@ sponsorData:
           website: https://cascademotosafety.com/
 
       - name: Cascade Motorcycle Safety
-        image: /images/sponsors/CascadeMotorcycleSafety.png
+        image: /images/sponsors/CMS.png
         description: Female Lightweight
         social:
           instagram: https://www.instagram.com/cascademotosafety/
@@ -148,6 +133,14 @@ sponsorData:
           facebook: https://www.facebook.com/StevensonFoto
           website: https://stevensonfoto.com/
 
+      - name: StevensonFoto
+        image: /images/sponsors/StevensonFoto.jpg
+        description: 750 Superbike
+        social:
+          instagram: https://www.instagram.com/stevensonfoto/
+          facebook: https://www.facebook.com/StevensonFoto
+          website: https://stevensonfoto.com/
+
       - name: Ishii Motor Industries
         image: /images/sponsors/IshiiMotorIndustries.jpg
         description: 600 Supersport
@@ -155,6 +148,14 @@ sponsorData:
           instagram: https://www.instagram.com/ishiimotors/
           facebook: https://www.facebook.com/ishiiAutoRepairBellevue
           website: https://ishiiautorepairbellevue.com/
+
+      - name: Ferazza Racing
+        image: /images/sponsors/FerazzaRacing.jpg
+        description: Open Superbike
+      
+      - name: In Memory of No Lean Gene
+        image: /images/sponsors/NoLeanGeneBrown.jpg
+        description: Formula 40
 
 
   - sponsorType: Club
@@ -166,9 +167,6 @@ sponsorData:
           instagram: https://www.instagram.com/incentivesolutionscorp/
           website: https://www.incentivesolutionscorp.com/
 
-      - name: David Hirota
-        image: /images/sponsors/DavidHirota.jpg
-
       - name: Cascade Tire & Racing Services
         image: /images/sponsors/CTRPirelli.png
         social:
@@ -176,17 +174,28 @@ sponsorData:
           instagram: https://www.instagram.com/ctracingnw/
           website: https://ctracingservices.com/
 
-      - name: 6D Helmets
-        image: /images/sponsors/6DHelmets.png
-        social:
-          facebook: https://www.facebook.com/6dHelmets/
-          instagram: https://www.instagram.com/6dhelmets
-          website: https://www.6dhelmets.com/
-      
       - name: MotoVizion Labs
         image: /images/sponsors/MotoVizionLabs.jpg
         social:
           instagram: https://www.instagram.com/getlostgoggles/
           website: https://www.amazon.com/stores/GetLostHelmets/page/C5A39EF6-B8A8-4E02-8F36-D9DF3312DA07?lp_asin=B0BHD56MFJ&ref_=ast_bln
+      
+      - name: Law Tigers
+        image: /images/sponsors/LawTigers.jpg
+        social:
+          facebook: https://www.facebook.com/LawTigersWashington
+          instagram: https://www.instagram.com/lawtigerswashington/
+          website: https://lawtigers.com/locations/washington/
+
+      - name: Lynnwood Motoplex
+        image: /images/sponsors/Motoplex.png
+        social:
+          facebook: https://www.facebook.com/Motoplex.net/
+          instagram: https://www.instagram.com/lynnwoodmotoplex/
+          website: https://www.motoplex.net/
+
+      - name: Amanda Iverson
+        image: /images/sponsors/TTMassage.png
+
       
 

@@ -4,7 +4,7 @@
   {{ sponsorType: VIP | Race Day | Club }}
 {{*/}}
 
-{{ $socialStyle := dict "website" "fas fa-laptop" "facebook" "fab fa-facebook" "twitter" "fab fa-x-twitter" "instagram" "fab fa-instagram" }}
+{{ $socialStyle := dict "website" "fas fa-laptop" "facebook" "fab fa-facebook" "instagram" "fab fa-instagram" "youtube" "fab fa-youtube"}}
 {{ $sponsorClass := (lower (delimit (split .sponsorType " ") "-")) }}
 {{ $blockClass := (print "supporters-page-block " $sponsorClass) }}
 
