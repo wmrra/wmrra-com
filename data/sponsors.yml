@@ -100,14 +100,18 @@ sponsorData:
         image: /images/sponsors/TrackTime.png
         description: Taste of Racing
         social:
-          facebook: https://www.facebook.com/tracktime.bike/Th
+          facebook: https://www.facebook.com/tracktime.bike/
           instagram: https://www.instagram.com/tracktime.bike/
           website: https://www.tracktime.bike/
 
-      #- name: Superbike Underground
-        #image:
-        #description: 600 Superbike
-        #social:
+      - name: Superbike Underground
+        image: images/sponsors/SuperbikeUnderground.jpg
+        description: 600 Superbike
+        social:
+          facebook: https://www.facebook.com/superbikeunderground
+          instagram: https://www.instagram.com/superbikeunderground
+          website: https://superbikeunderground.com/
+
 
       - name: Cascade Motorcycle Safety
         image: /images/sponsors/CMS.png
