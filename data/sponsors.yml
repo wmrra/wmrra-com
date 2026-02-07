@@ -201,5 +201,11 @@ sponsorData:
       - name: Amanda Iverson
         image: /images/sponsors/TTMassage.png
 
+      - name: Kump Racing Service
+        image: /images/sponsors/KRS.jpg
+        social:
+          facebook: https://www.facebook.com/p/Kump-Racing-Service-100060041149299/
+          website: https://www.kumpracing.com/
+
       
 
