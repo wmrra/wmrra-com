@@ -4,7 +4,6 @@
   {{ $years = $years | append $year }}
 {{ end }}
 
-
 {{ with $scheduleData }}
   {{ range sort $years "value" "desc" | first 1 }}
     {{ $schedule := (index $scheduleData  .) }}

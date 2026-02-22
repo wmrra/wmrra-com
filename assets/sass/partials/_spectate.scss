@@ -2,7 +2,7 @@
 .spectator-schedule {
   .current-schedule-header {
     h1 {
-      margin: 0 0 2rem;
+      margin: 0 0 -2rem;
       font-size: 4rem;
     }
   }
@@ -11,7 +11,7 @@
 .spectator-circuit-blocks-container {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
 }
 
 .spectator-circuit-block {
