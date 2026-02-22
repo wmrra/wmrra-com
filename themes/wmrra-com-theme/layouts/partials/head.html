@@ -1,9 +1,13 @@
 <head>
-
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
   {{ with .Site.Params.author }} <meta name="author" content="{{ . }}">{{ end }}
   {{ hugo.Generator }}
+
+  <!-- Let crawlers know the image they should choose for a preview -->
+  <meta property="og:image" content="https://wmrra.com/images/WMRRA-logo.jpg" />
+  <meta property="og:image:width" content="518" />
+  <meta property="og:image:height" content="112" />
   
   <title>{{ .Title }}</title>
   
@@ -39,6 +43,5 @@
   {{ if templates.Exists "partials/custom-head-content.html" }}
     {{ partial "custom-head-content" .}}
   {{ end }}
-  
 </head>
   
