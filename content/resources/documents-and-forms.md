@@ -4,6 +4,8 @@
 
 [Novice Graduation Form](/downloads/2022/2022-Novice-Graduation-Form.pdf)
 
+[Tech Inspection Checklist](/downloads/WMRRA-Tech-Inspection-Checklist.pdf)
+
 [Race Refund Form](/downloads/refundform.pdf)
 
 For those needing a refund on entry fees for missed races, hold on to your tech slip receipt on raceday – it needs to be filed with this request.
