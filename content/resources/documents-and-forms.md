@@ -2,7 +2,7 @@
 
 [Medical Form](/downloads/WMRRA-OMRRA-Medical-Form.pdf)
 
-[Novice Graduation Form](/downloads/2022/2022-Novice-Graduation-Form.pdf)
+[Novice Graduation Form](/downloads/2026-WMRRA-Novice-Graduation-Form.pdf)
 
 [Tech Inspection Checklist](/downloads/WMRRA-Tech-Inspection-Checklist.pdf)
 
