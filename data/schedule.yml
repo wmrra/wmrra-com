@@ -7,6 +7,8 @@
     locationLink: https://www.ridgemotorsportspark.com/
     jointRound: false
     doublePoints: true
+    eventSchedule: /event-schedules/2026-Round1.pdf
+    eventProgram: /event-programs/2026-Round1-Program.pdf
  
   - startDate: 05/01/2026
     endDate: 05/03/2026
