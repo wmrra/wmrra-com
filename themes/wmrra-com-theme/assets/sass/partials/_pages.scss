@@ -21,7 +21,8 @@
   p {
     margin: 0;
 
-    + p {
+    + p,
+    + ul {
       margin-top: 1rem;
     }
   }

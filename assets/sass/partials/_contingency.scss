@@ -1,0 +1,54 @@
+.contingency-page {
+  .header-image {
+    img {
+      margin-top: 5.5rem;
+    }
+  }
+
+  .page-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      max-width: 100rem;
+      text-align: center;
+    }
+
+    ul {
+      margin-bottom: 0;
+    }
+  }
+
+  .local-contingency-section {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 3rem;
+
+    .local-contingency-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      .contingency-block-buttons {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 1rem;
+
+        @include media-max($mobile-breakpoint) {
+          flex-direction: column;
+        }
+      }
+
+
+      h3 {
+        margin: 0;
+      }
+    }
+  }
+}

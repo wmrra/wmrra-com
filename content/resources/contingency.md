@@ -1,57 +1,8 @@
-# Contingency
+---
+title   : "WMRRA - Contingency"
+date    : 2021-01-31T14:45:00-08:00
+draft   : false
+description: "WMRRA Contingency Programs"
+---
 
-
-## How?
-To submit contingency you should
-1) Fill out application form for each event and return to registration.
-1) Submit your form by:
-     - Giving directly to Mallory Dobbs BEFORE your race.
-     - Upload to a shared [Google Drive](https://drive.google.com/drive/folders/1_DCLxAiHmhm5KREo7THUcx_4piLDztcM)
-1) Reminder, you need to do this every race weekend.
-
-## Yamaha
-
-How to Register: https://www.yamahamotorsports.com/sport/campaign/contingencyform_roadrace
-
-Payout Information: https://www.yamahamotorsports.com/motocross/pages/2020-road-race-contingency-wmrra-sprint
-
-## Kawasaki
-
-How to Register: https://www.kawasaki.com/en-us/racing/team-green?cm_re=GLOBALNAV-_-RACING-_-ABOUTEAMGREEN#racerContingency
-
-Payout Information: https://www.kawasaki.com/Content/pdfs/Racing/RRpay21_42621.pdf
-
-## Honda
-
-How to Register: https://www.xtrm.com/contingency/honda/index.asp?yr=2021&o=Enroll
-
-Payout Information: https://www.xtrm.com/contingency/honda/index.asp?ev=1385&yr=2021&evt=7
-
-## BMW
-
-How to Register: https://www.xtrm.com/contingency/bmw/index.asp
-
-Payout Information: https://www.xtrm.com/contingency/bmw/index.asp?ev=77&yr=2021&evt=1
-
-## Kump Racing Services/Dunlop
-
-How to Register: Contact Kumpy Kump, Kumpracing@gmail.com. Tires must be purchased from Kump to qualify for contingency. Fill out application form for each event and return to registration, upload to google drive, or give directly to Mallory Dobbs BEFORE your race.
-
-[2021 KRS Dunlop Contingency Form](/contingency/2021%20KRS%20Dunlop%20Contingency%20Form.pdf)
-
-Payout Information: 
-[2021 WMRRA DUNLOP CONTINGENCY PROGRAM](/contingency/2021%20WMRRA%20DUNLOP%20CONTINGENCY%20PROGRAM.pdf)
-
-
-## Bridgestone
-
-How to Register: Fill out application form for each event and return to registration, upload to google drive, or give directly to Mallory Dobbs BEFORE your race.
-
-[2021-Bridgestone-Claim-Form](/contingency/2021-Bridgestone-Claim-Form.pdf)
-
-
-Payout Information: [2021 Bridgestone WMRRA Payout](contingency/2021-Bridgestone-WMRRA-Payout.pdf)
-
-
-## Questions?
-If you have any further questions, you can reach out to [Mallory Dobbs, Club Secretary](/contact/).
+{{< incpartial "contingency.html" >}}
