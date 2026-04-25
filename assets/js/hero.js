@@ -39,8 +39,6 @@ function displayHeroContent() {
     }
   }
 
-  console.log(blockToShow)
-
   if (!blockToShow){
     blockToShow = heroBlocks.filter(`#default`);
   }
