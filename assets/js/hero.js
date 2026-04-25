@@ -1,7 +1,7 @@
 // cache some stuff about upcoming race events 
 // so we don't have to continually look it up
-var nextRaceEvent = null;
-var nextRaceEventDays = null;
+let nextRaceEvent = null;
+let nextRaceEventDays = null;
 
 // precedence order for hero blocks (i.e. which should show first)
 // if you add a new hero block, ADD THE ID TO THIS LIST
@@ -38,6 +38,8 @@ function displayHeroContent() {
       break;
     }
   }
+
+  console.log(blockToShow)
 
   if (!blockToShow){
     blockToShow = heroBlocks.filter(`#default`);
@@ -112,7 +114,7 @@ function getNextRaceEvent(schedule, year) {
     }
     const currentMonth = now.getMonth();
     const currentDay = now.getDate();
-    const scheduleIndex = 0;
+    let scheduleIndex = 0;
     
     while (!nextRaceEvent && scheduleIndex < schedule.length) {
       const currentEvent = schedule[scheduleIndex];
