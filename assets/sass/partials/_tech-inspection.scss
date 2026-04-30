@@ -1,0 +1,19 @@
+.tech-inspection-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.tech-inspection-video-container {
+  width: 100%;
+  max-width: 60rem;
+  aspect-ratio: 16 / 9;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}

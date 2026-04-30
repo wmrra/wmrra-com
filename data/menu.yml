@@ -17,6 +17,8 @@ menu:
         link: /race/pricing 
       - name: New Racer Information
         link: /race/new-racer-information
+      - name: Tech Inspection
+        link: /resources/tech-inspection
       - name: Documents and Forms
         link: /resources/documents-and-forms
 
@@ -41,12 +43,12 @@ menu:
     children: 
       - name: WMRRA Contact Information
         link: /contact
-      - name: Schedule
-        link: /race/schedule
       - name: Season Standings
         link: /standings
       - name: Rulebook
         link: /race/rulebook
+      - name: Tech Inspection
+        link: /resources/tech-inspection
       - name: Race Circuits
         link: /resources/circuits
       - name: Taste of Racing (TOR)
@@ -59,14 +61,12 @@ menu:
         link: /resources/photographers
       - name: Airfence
         link: /resources/airfence
-      - name: Purchase an Airlift Membership
+      - name: Airlift Membership
         link: https://www.uwmedicine.org/airliftnw/membership
       - name: Board Minutes
         link: /board-minutes
       - name: Elections
         link: /resources/elections
-      # - name: Rules Proposals
-      #   link: /rules-proposals
       - name: Report a Website Issue
         link: https://github.com/wmrra/wmrra-com/issues/new/choose
 
