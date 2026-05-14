@@ -9,8 +9,9 @@
       {{ $sponsorType := .sponsorType }}
       {{ range .sponsors}}
         {{ if not (in $sponsorNames .name) }}
-          {{ $sponsorData := (dict "image" .image "name" .name "sponsorType" $sponsorType) }}
-          {{ $allSponsors =  $allSponsors | append $sponsorData }}
+          {{ $sponsorUrl := or .social.website .social.facebook .social.instagram }}
+          {{ $sponsorData := (dict "image" .image "name" .name "sponsorType" $sponsorType "url" $sponsorUrl) }}
+          {{ $allSponsors = $allSponsors | append $sponsorData }}
           {{ $sponsorNames = $sponsorNames | append .name }}
         {{ end }}
       {{ end }}
@@ -24,7 +25,13 @@
 
     <div class="homepage-supporters">
       {{ range sort $allSponsors "name" }}
-        {{ partial "shared/sponsor-image" (dict "image" .image "name" .name "sponsorType" .sponsorType) }}  
+        {{ if .url }}
+          <a class="image-link" href="{{ .url }}" rel="noreferrer" target="_blank">
+            {{ partial "shared/sponsor-image" (dict "image" .image "name" .name "sponsorType" .sponsorType) }}
+          </a>
+        {{ else }}
+          {{ partial "shared/sponsor-image" (dict "image" .image "name" .name "sponsorType" .sponsorType) }}
+        {{ end }}
       {{ end }}
     </div>
   </div>
