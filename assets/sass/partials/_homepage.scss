@@ -357,6 +357,11 @@
   max-width: 90rem;
 
   .image-link {
+    &:focus,
+    &:visited {
+      outline: none;
+    }
+
     .supporter-image-wrapper {
       &:hover {
         border: 0.2rem solid $wmmra-dark-red;
