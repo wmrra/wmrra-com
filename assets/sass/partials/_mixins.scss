@@ -66,6 +66,7 @@
   &:focus {
     color: $color;
     text-decoration: none;
+    outline: none;
   }
 
   &:hover {
