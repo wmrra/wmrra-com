@@ -20,6 +20,10 @@
 
 .header-logo {
   width: 15rem;
+
+  a {
+    @include link-overrides($default-text-color);
+  }
 }
 
 .header-menu-mobile-overlay {
