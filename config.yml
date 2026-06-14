@@ -14,3 +14,8 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+
+security:
+  allowContent:
+    text:
+      - '^text/html$'
