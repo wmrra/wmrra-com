@@ -28,6 +28,14 @@ sponsorData:
 
   - sponsorType: Race Day
     sponsors:
+      - name: Hot & Hazardous Performance
+        image: /images/sponsors/H&HPerformance.jpg
+        description: Middleweight Supersport
+        social:
+          website: https://hotandhazardousperformance.com
+          facebook: https://www.facebook.com/profile.php?id=100063575861249
+          instagram: https://www.instagram.com/hh__performance
+
       - name: B2Racing
         image: /images/sponsors/B2Racing.jpg
         description: Ninja 250 Cup
