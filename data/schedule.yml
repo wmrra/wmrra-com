@@ -44,6 +44,8 @@
     location: The Ridge Motorsports Park
     locationLink: https://www.ridgemotorsportspark.com/
     jointRound: false
+    eventSchedule: /event-schedules/2026-Round5.pdf
+    eventProgram: /event-programs/2026-Round5-Program.pdf
 
   - startDate: 07/31/2026
     endDate: 08/02/2026
