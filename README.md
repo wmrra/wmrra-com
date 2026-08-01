@@ -51,14 +51,12 @@ description: "A brief description of the post that shows on the front page."
 The schedule is defined at [data/schedule.yml](data/schedule.yml)
 
 ## Updating Racer Numbers
-While the page has been de-linked as it isn't up to date,
-[/race/racers](https://wmrra.com/race/racers) serves a tile grid of racer
-numbers and photos of their bikes.
+For a racer page to be maintained, we need the following each year:
+- Spreadsheet of current rider info + retired race numbers with the following columns: Last name | First name | Race number
+- Photo of each rider that is 346px x 300px with the rider as centered as possible
 
-The racer numbers are defined at [assets/csv/race-numbers.csv](assets/csv/race-numbers.csv)
-The racer photos are defined at [static/images/racers/](static/images/racers/)
-
-Images must be named the race number and must of type png. They are 346x300px in dimensions.
+If anyone is willing to provide this, we can add a page showcasing all of WMMRA's racers.
+Note we do not need photos of every racer to make this possible, but having > 50% photo coverage is ideal.
 
 ## Updating the Menu
 The menu is defined at [data/menu.yml](data/menu.yml)
