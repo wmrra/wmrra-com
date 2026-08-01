@@ -29,7 +29,7 @@ the change you would like to make before proceeding.
 Here are a few common updates you may want to make to the site.
 
 ## Adding an image
-Images should all be in *WebP** format to ensure fast page loads. Avoid overly large images (<= 2560px wide).
+Images should all be in **WebP** format to ensure fast page loads. Avoid overly large images (<= 2560px wide).
 
 You can use [squoosh](https://squoosh.app/) to resize and convert images to WebP.
 
