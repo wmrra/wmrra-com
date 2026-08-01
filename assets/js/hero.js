@@ -14,7 +14,7 @@ const HERO_IMAGES_TO_SHIFT = [0, 3, 4, 5, 8]
 function selectHeroImage() {
   const homeContent = $(".home-content-wrapper")
   const imageCount = homeContent.data("hero-image-count");
-  const imageIndex =  Math.floor(Math.random() * imageCount);
+  const imageIndex = Math.floor(Math.random() * imageCount);
 
   if (HERO_IMAGES_TO_SHIFT.includes(imageIndex)) {
     homeContent.children(".hero").addClass("shift-align");
@@ -44,7 +44,7 @@ function displayHeroContent() {
     }
   }
 
-  if (!blockToShow){
+  if (!blockToShow) {
     blockToShow = heroBlocks.filter(`#default`);
   }
 
@@ -108,25 +108,26 @@ function getNextRaceEvent(schedule, year) {
 
   if (!nextRaceEvent) {
     let now = new Date();
-    if (now.getFullYear() != year){
+    if (now.getFullYear() != year) {
       // If the next season is in the following year, figure out the first
       // event by using Jan 1, next-year, as 'now'
       // TODO: could change date math to account for year also, though this has
       // the same effect
-      now = new Date(year,1,1);
+      now = new Date(year, 1, 1);
     }
     const currentMonth = now.getMonth();
     const currentDay = now.getDate();
     let scheduleIndex = 0;
-    
+
     while (!nextRaceEvent && scheduleIndex < schedule.length) {
       const currentEvent = schedule[scheduleIndex];
-      const raceEventDays = extractRaceEventDates(currentEvent, year);     
-      const eventMonth = raceEventDays[0].getMonth();
+      const raceEventDays = extractRaceEventDates(currentEvent, year);
+      const eventMonths = [...new Set(raceEventDays.map((day) => day.getMonth()))]
 
       // event is in a month that's in the past OR
       // event is this month, but is on a day that's in the past
-      if (eventMonth < currentMonth || (eventMonth === currentMonth && raceEventDays.every(day => day.getDate() < currentDay))) {
+      // note that we occasionally have events that span 2 months
+      if (eventMonths.every((month) => month < currentMonth) || (eventMonths.some((month) => month === currentMonth) && raceEventDays.every((day) => day.getDate() < currentDay))) {
         scheduleIndex++;
         continue;
       }
@@ -144,11 +145,14 @@ function populateRaceDayContent(block) {
   const schedule = nextRaceEvent["eventSchedule"];
   const textContainer = $(block).children(".hero-announcement-text");
   const circuitInfoButton = $("<a>").addClass("hero-announcement-button").attr("href", nextRaceEvent.locationLink).attr("target", "_blank").attr("rel", "noreferrer").text("Circuit Info");
-  const scheduleUrl = schedule.startsWith("http") ? schedule : `${window.location.origin}${schedule}`;
-  const scheduleButton = $("<a>").addClass("hero-announcement-button").attr("href", scheduleUrl).attr("target", "_blank").text("Event Schedule");
+
+  if (schedule) {
+    const scheduleUrl = schedule?.startsWith("http") ? schedule : `${window.location.origin}${schedule}`;
+    const scheduleButton = $("<a>").addClass("hero-announcement-button").attr("href", scheduleUrl).attr("target", "_blank").text("Event Schedule");
+    textContainer.siblings(".race-day-button-wrapper").append(scheduleButton);
+  }
 
   textContainer.append($("<h2>").text(`Round ${nextRaceEvent.round} at ${nextRaceEvent.location}`))
-  textContainer.siblings(".race-day-button-wrapper").append(scheduleButton);
   textContainer.siblings(".race-day-button-wrapper").append(circuitInfoButton);
 }
 
@@ -170,7 +174,7 @@ function populateNextRaceEventContent(block) {
   const countdownContainer = buildCountdownContainerHtml();
   textContainer.append(countdownContainer);
   calculateNextCountdownTime(eventTime, countdownContainer);
-  setInterval(function() {
+  setInterval(function () {
     calculateNextCountdownTime(eventTime, countdownContainer);
   }, 1000);
 }
@@ -202,11 +206,11 @@ function calculateNextCountdownTime(eventTime, countdownContainer) {
 function buildCountdownContainerHtml() {
   const countdownContainer = $("<h1>").attr("id", "race-countdown-clock");
 
-  ["days", "hours", "minutes", "seconds"].forEach(function(divId) {
+  ["days", "hours", "minutes", "seconds"].forEach(function (divId) {
     countdownContainer.append($("<div>").addClass("countdown-number-wrapper").attr("id", divId));
   });
 
-  countdownContainer.children().each(function(_index, child) {
+  countdownContainer.children().each(function (_index, child) {
     const container = $(child);
     container.append($("<span>").addClass("countdown-number"));
     container.append($("<span>").addClass("countdown-label").text(container.attr("id")));
@@ -244,8 +248,8 @@ function extractRaceEventDates(raceEvent, year) {
 // passed dates are the same
 function areSameDate(date1, date2) {
   return (
-    date1.getYear() === date2.getYear() 
-    && date1.getMonth() === date2.getMonth() 
+    date1.getYear() === date2.getYear()
+    && date1.getMonth() === date2.getMonth()
     && date1.getDate() === date2.getDate()
   );
 }
@@ -256,7 +260,7 @@ function formatCountdownNumber(countdownNumber) {
   return countdownNumber.toString().padStart(2, '0');
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
   if ($(".home-content-wrapper").length > 0) {
     selectHeroImage();
     displayHeroContent();
