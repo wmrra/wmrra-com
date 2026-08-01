@@ -5,4 +5,4 @@ draft   : false
 description: "Announcing the WMRRA 2022 schedule."
 ---
 
-<img src="/images/2022_schedule.png" width="725">
+<img src="/images/news/2022_schedule.webp" width="725">

@@ -5,4 +5,4 @@ draft   : false
 description: "Announcing the WMRRA 2024 schedule."
 ---
 
-<img src="/images/2024_schedule.jpg" width="725">
+<img src="/images/news/2024_schedule.webp" width="725">

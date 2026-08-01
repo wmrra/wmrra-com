@@ -7,4 +7,4 @@ params:
   featureUntil: "2025-12-31"
 ---
 
-<img src="/images/2026_schedule.png" width="725">
+<img src="/images/news/2026_schedule.webp" width="725">

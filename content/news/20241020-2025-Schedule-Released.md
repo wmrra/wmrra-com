@@ -5,4 +5,4 @@ draft   : false
 description: "Announcing the WMRRA 2025 schedule."
 ---
 
-<img src="/images/2025_schedule.jpg" width="725">
+<img src="/images/news/2025_schedule.webp" width="725">

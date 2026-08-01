@@ -24,7 +24,7 @@ website maintainers, [Anna Piechowski](https://www.linkedin.com/in/annapiechowsk
 [volunteer portal](/volunteer) that advertises some of the 
 opportunities that exist to help contribute to our club.
 
-![](/images/news/wmrra-volunteers-page-2022.png)
+![](/images/news/wmrra-volunteers-page-2022.webp)
 
 If you think an opportunity was missed, or you have a way you can contribute to the club that isn't listed, reach out to either Cliff (president@wmrra.com), Colt (1stVP@wmrra.com), or Chris (2ndVP@wmrra.com). There is always room for another volunteer.
 

@@ -81,6 +81,13 @@ th, td {
   }
 }
 
+.flex-center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .sr-only {
   visibility: hidden;
 }
