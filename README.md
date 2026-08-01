@@ -53,7 +53,7 @@ The schedule is defined at [data/schedule.yml](data/schedule.yml)
 ## Updating Racer Numbers
 For a racer page to be maintained, we need the following each year:
 - Spreadsheet of current rider info + retired race numbers with the following columns: Last name | First name | Race number
-- Photo of each rider that is 346px x 300px with the rider as centered as possible
+- Photo of each rider that is 346px x 300px in WebP format with the rider as centered as possible
 
 If anyone is willing to provide this, we can add a page showcasing all of WMMRA's racers.
 Note we do not need photos of every racer to make this possible, but having > 50% photo coverage is ideal.
