@@ -7,20 +7,25 @@ let nextRaceEventDays = null;
 // if you add a new hero block, ADD THE ID TO THIS LIST
 const ORDERED_HERO_BLOCK_IDS = ["race-day", "latest-announcement", "next-race-event", "default"]
 
+// some of the hero images use a shifted alignment
+// this is hacky but I don't care
+const HERO_IMAGES_TO_SHIFT = [0, 3, 4, 5, 8]
+
 function selectHeroImage() {
   const homeContent = $(".home-content-wrapper")
-  const images = homeContent.data("images");
-  const imageIndex =  Math.floor(Math.random() * images.length);
-  const heroImageData = images[imageIndex];
+  const imageCount = homeContent.data("hero-image-count");
+  const imageIndex =  Math.floor(Math.random() * imageCount);
 
-  if (heroImageData.shift) {
+  if (HERO_IMAGES_TO_SHIFT.includes(imageIndex)) {
     homeContent.children(".hero").addClass("shift-align");
   }
 
-  const heroImageStyle = $("<style>").html(`.hero::after{ background-image: url(${window.location.origin}/images/hero/${heroImageData.filename}) };`);
+  // hero images are all named with the same convention - "hero<number>.webp"
+  // <number> is 0 indexed
+  const heroImageStyle = $("<style>").html(`.hero::after{ background-image: url(${window.location.origin}/images/home/heroes/hero${imageIndex}.webp) };`);
   $("head").append(heroImageStyle);
 
-  homeContent.removeAttr("data-images");
+  homeContent.removeAttr("data-hero-image-count");
 }
 
 function displayHeroContent() {

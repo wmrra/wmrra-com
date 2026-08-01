@@ -1,17 +1,29 @@
-<div class="home-content">
-  <div class="home-content-section we-are-wmrra">
-    {{ partial "home-content-section/we-are-wmrra" . }}
-  </div>
+{{ $heroImages := readDir "static/images/home/heroes" }}
+{{ $heroImageCount := len $heroImages }}
 
-  <div class="home-content-section supporters">
-    {{ partial "home-content-section/home-sponsors" . }}
+<div class="home-content-wrapper" data-hero-image-count="{{ $heroImageCount }}">
+  <div class="hero">
+    <div class="hero-content">
+      <div class="hero-announcement-box">
+        {{ partial "hero-announcement-content" . }}
+      </div>
+    </div>
   </div>
+  <div class="home-content">
+    <div class="home-content-section we-are-wmrra">
+      {{ partial "home-content-section/we-are-wmrra" . }}
+    </div>
 
-  <div class="home-content-section latest-news">
-    {{ partial "home-content-section/latest-news" . }}
-  </div>
+    <div class="home-content-section supporters">
+      {{ partial "home-content-section/home-sponsors" . }}
+    </div>
 
-  <div class="home-content-section current-schedule">
-    {{ partial "current-schedule" . }}
+    <div class="home-content-section latest-news">
+      {{ partial "home-content-section/latest-news" . }}
+    </div>
+
+    <div class="home-content-section current-schedule">
+      {{ partial "current-schedule" . }}
+    </div>
   </div>
 </div>
