@@ -121,13 +121,17 @@ function getNextRaceEvent(schedule, year) {
 
     while (!nextRaceEvent && scheduleIndex < schedule.length) {
       const currentEvent = schedule[scheduleIndex];
-      const raceEventDays = extractRaceEventDates(currentEvent, year);
-      const eventMonths = [...new Set(raceEventDays.map((day) => day.getMonth()))]
+      const raceEventDates = extractRaceEventDates(currentEvent, year);
 
       // event is in a month that's in the past OR
       // event is this month, but is on a day that's in the past
       // note that we occasionally have events that span 2 months
-      if (eventMonths.every((month) => month < currentMonth) || (eventMonths.some((month) => month === currentMonth) && raceEventDays.every((day) => day.getDate() < currentDay))) {
+      const eventIsInPast = raceEventDates.every(
+        (eventDate) => eventDate.getMonth() < currentMonth ||
+          (eventDate.getMonth() === currentMonth && eventDate.getDate() < currentDay)
+      )
+
+      if (eventIsInPast) {
         scheduleIndex++;
         continue;
       }
