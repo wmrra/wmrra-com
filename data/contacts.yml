@@ -2,12 +2,12 @@
 contacts:
   electedOfficials:
     - position: President ☑
-      name: Kumpy Kump
+      name: Seppi Hutter
       phone: 
       email: president@wmrra.com 
 
     - position: 1st VP - Race Director ☑
-      name: CJ Hobbs
+      name: Dion LaBlue
       phone: 
       email: 1stvp@wmrra.com
 
@@ -47,10 +47,10 @@ contacts:
       phone:
       email:
 
-    - position: Race Control
-      name: Russ Wieand
-      phone:
-      email:
+    # - position: Race Control
+    #   name: Russ Wieand
+    #   phone:
+    #   email:
 
     - position: Corner Captain
       name: Craig Johnson
@@ -108,10 +108,10 @@ contacts:
       phone:
       email:
 
-    - position: Starter
-      name:
-      phone:
-      email:
+    # - position: Starter
+    #   name:
+    #   phone:
+    #   email:
 
     # - position: Pit Steward
     #   name:
@@ -159,10 +159,10 @@ contacts:
       phone: 
       email: treasurer@wmrra.com
 
-    - position: Marketing Manager
-      name: Vacant Position
-      phone: 
-      email: promotions@wmrra.com
+    # - position: Marketing Manager
+    #   name: Vacant Position
+    #   phone: 
+    #   email: promotions@wmrra.com
 
     # - position: Marketing Specialist
     #   name:
