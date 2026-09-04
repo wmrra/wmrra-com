@@ -57,7 +57,7 @@ contactsData:
         name: Paul McComsey
         phone: 
         email: paul@turbinetraders.com
-        image: 
+        image: PaulM1
 
       - position: Position 2 (2023-2026)
         name: Mark DeGross
@@ -102,7 +102,7 @@ contactsData:
         name: Paul McComsey
         phone: 
         email: chieftech@wmrra.com
-        image: 
+        image: PaulM2
 
       - position: Head Scorer and Timing
         name: Cherie River
