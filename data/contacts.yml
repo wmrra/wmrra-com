@@ -1,212 +1,235 @@
+contactsData:
+  - section:
+    header: Elected Officials
+    people:
+      - position: President
+        name: Seppi Hutter
+        phone: 
+        email: president@wmrra.com 
+        image: SeppiH
 
-contacts:
-  electedOfficials:
-    - position: President ☑
-      name: Seppi Hutter
-      phone: 
-      email: president@wmrra.com 
+      - position: "1st VP: Race Director"
+        name: Dion LaBlue
+        phone: 
+        email: 1stvp@wmrra.com
+        image: DionLB
 
-    - position: 1st VP - Race Director ☑
-      name: Dion LaBlue
-      phone: 
-      email: 1stvp@wmrra.com
+      - position: "2nd VP: Marketing + Promotion"
+        name: Tico Sandoval
+        phone: 
+        email: 2ndvp@wmrra.com
+        image: 
 
-    - position: 2nd VP - Marketing, Promotion, Administration ☑
-      name: Tico Sandoval
-      phone: 
-      email: 2ndvp@wmrra.com
+      - position: "3rd VP: Registration"
+        name: Danielle Mulkins
+        phone: 253-592-8762
+        email: registration@wmrra.com
+        image: 
 
-    - position: 3rd VP - Registration/Admin ☑
-      name: Danielle Mulkins
-      phone: 253-592-8762
-      email: registration@wmrra.com
+      - position: Referee
+        name: Louis Stevenson
+        phone: 
+        email: referee@wmrra.com
+        image: LouisS
 
-    - position: Referee ☑
-      name: Louis Stevenson
-      phone: 
-      email: referee@wmrra.com
+      - position: Club Secretary
+        name: Jen Chancellor
+        phone: 
+        email: secretary@wmrra.com
+        image: JenC
 
-    - position: Club Secretary ☑
-      name: Jen Chancellor
-      phone: 
-      email: secretary@wmrra.com
+      - position: Novice Rep
+        name: Damon Poor 
+        phone: 206.518.1321
+        email: novicerep@wmrra.com
+        image: DamonP
 
-    - position: Novice Rep ☑
-      name: Damon Poor 
-      phone: 206.518.1321
-      email: novicerep@wmrra.com
-
-    - position: Rider's Rep ☑
-      name: Don Williams
-      phone: 
-      email: riderrep@wmrra.com
+      - position: Rider's Rep
+        name: Don Williams
+        phone: 
+        email: riderrep@wmrra.com
+        image: DonW
   
-  raceDay:
-    - position: Raceday Assistant
-      name: Joanne Maurin
-      phone:
-      email:
+  - section:
+    header: Board of Directors
+    people:
+      - position: Position 1 (2026-2029)
+        name: Paul McComsey
+        phone: 
+        email: paul@turbinetraders.com
+        image: PaulM1
 
-    # - position: Race Control
-    #   name: Russ Wieand
-    #   phone:
-    #   email:
+      - position: Position 2 (2023-2026)
+        name: Mark DeGross
+        phone: 
+        email: mdegross@gmail.com
+        image: MarkD
 
-    - position: Corner Captain
-      name: Craig Johnson
-      phone: 253.988.3508
-      email: corner.captain@wmrra.com
+      - position: Position 3 (2024-2027)
+        name: CJ Hobbs
+        phone:
+        email: 
+        image: CJH
 
-    - position: Course Marshal
-      name: Chris La Fayette
-      phone:
-      email:
+      - position: Position 4 (2025-2028)
+        name: Chris Wilcox 
+        phone: 
+        email: wmrra@crwilcox.com
+        image: ChrisW
 
-    - position: Crash Truck & First Responder
-      name: Ric Clements
-      phone: 206.235.5552
-      email: crash@wmrra.com
+  - section:
+    header: Race Day Staff
+    people:
+      - position: Corner Captain
+        name: Craig Johnson
+        phone: 253-988-3508
+        email: corner.captain@wmrra.com
+        image: CraigJ
 
-    - position: Chief Tech Inspector
-      name: Paul McComsey
-      phone: 
-      email: chieftech@wmrra.com
+      - position: Course Marshal
+        name: Chris La Fayette
+        phone:
+        email:
+        image: ChrisLF
 
-    - position: Contingency/Sponsor Manager
-      name: Mallory Dobbs
-      phone: 360.280.4664
-      email: contingency@wmrra.com
+      - position: Crash Truck & First Responder
+        name: Ric Clements
+        phone: 206-235-5552
+        email: crash@wmrra.com
+        image: RicC
 
-    # - position: Announcer
-    #   name:
-    #   phone:
-    #   email:
+      - position: Chief Tech Inspector
+        name: Paul McComsey
+        phone: 
+        email: chieftech@wmrra.com
+        image: PaulM2
 
-    - position: Head Scorer and Timing
-      name: Cherie River
-      phone: 
-      email: scoring@wmrra.com
+      - position: Head Scorer and Timing
+        name: Cherie River
+        phone: 
+        email: scoring@wmrra.com
+        image: CherieR
+      
+      - position: Primary Medical Liason
+        name: Taylor Winstel
+        phone:
+        email:
+        image: TaylorW
 
+      # - position: Air Fence Coordinator
+      #   name:
+      #   phone:
+      #   email:
+      #   image: 
+      
+      # - position: Race Control
+      #   name:
+      #   phone:
+      #   email:
+      #   image: 
 
-    # - position: Chaplain
-    #   name: 
-    #   phone: 
-    #   email: 
+      # - position: Announcer
+      #   name:
+      #   phone:
+      #   email:
+      #   image: 
 
-    # - position: Track Cashier
-    #   name:
-    #   phone:
-    #   email: Cashier@wmrra.com
+      # - position: Chaplain
+      #   name: 
+      #   phone: 
+      #   email: 
+      #   image: 
 
-    - position: Air Fence Coordinator
-      name: Chris La Fayette
-      phone:
-      email:
+      # - position: Track Cashier
+      #   name:
+      #   phone:
+      #   email: Cashier@wmrra.com
+      #   image: 
 
-    - position: Pit Gate
-      name: Katie Morris
-      phone:
-      email:
+      # - position: Starter
+      #   name:
+      #   phone:
+      #   email:
+      #   image: 
 
-    # - position: Starter
-    #   name:
-    #   phone:
-    #   email:
+      # - position: Pit Steward
+      #   name:
+      #   phone:
+      #   email:
+      #   image: 
 
-    # - position: Pit Steward
-    #   name:
-    #   phone:
-    #   email:
+      # - position: Radios
+      #   name:
+      #   phone:
+      #   email:
+      #   image: 
 
-    - position: Primary Medical Liason
-      name: Taylor Winstel
-      phone:
-      email:
-    
-    - position: Emergency Assist Team
-      name: Stacey Andrist
-      phone:
-      email:
+      # - position: Endurance Racing
+      #   name: 
+      #   phone: 
+      #   email: 
+      #   image: 
 
-    # - position: Radios
-    #   name:
-    #   phone:
-    #   email:
+      # - position: Supersport SME
+      #   name: 
+      #   phone:
+      #   email:
+      #   image: 
 
-    # - position: Endurance Racing
-    #   name: 
-    #   phone: 
-    #   email: 
+      # - position: Superbike SME
+      #   name: 
+      #   phone:
+      #   email:
+      #   image: 
 
-    - position: Supersport SME
-      name: Vacant Position
-      phone:
-      email:
+      # - position: Vintage SME
+      #   name:
+      #   phone:
+      #   email:
+      #   image: 
 
-    - position: Superbike SME
-      name: Vacant Position
-      phone:
-      email:
+  - section:
+    header: Administration
+    people:
+      - position: Treasurer
+        name: Neil Heineman
+        phone: 
+        email: treasurer@wmrra.com
+        image: 
 
-    - position: Vintage SME
-      name: Stephen Phillips
-      phone: 603.203.5344
-      email:
+      - position: Rulebook Editor
+        name: Jen Chancellor
+        phone: 
+        email: secretary@wmrra.com
+        image: JenC
 
-  administration:
-    - position: Treasurer
-      name: Neil Heineman
-      phone: 
-      email: treasurer@wmrra.com
+      - position: Website Administration
+        name: Anna Piechowski
+        phone: 
+        email: website@wmrra.com
+        image: AnnaP
 
-    # - position: Marketing Manager
-    #   name: Vacant Position
-    #   phone: 
-    #   email: promotions@wmrra.com
+      # - position: Marketing Manager
+      #   name:
+      #   phone: 
+      #   email: promotions@wmrra.com
+      #   image: 
 
-    # - position: Marketing Specialist
-    #   name:
-    #   phone:
-    #   email:
+      # - position: Marketing Specialist
+      #   name:
+      #   phone:
+      #   email:
+      #   image: 
 
-    # - position: Registrar
-    #   name: Emily River 
-    #   phone: 
-    #   email: 
+      # - position: Registrar
+      #   name:
+      #   phone: 
+      #   email:
+      #   image:  
 
-    - position: Rulebook Editor
-      name: Jen Chancellor
-      phone: 
-      email: secretary@wmrra.com
+      # - position: Charity Coordinator
+      #   name: 
+      #   phone: 
+      #   email:
+      #   image: 
 
-    # - position: Charity Coordinator
-    #   name: 
-    #   phone: 
-    #   email: 
-
-    - position: Website Administration
-      name: Anna Piechowski
-      phone: 
-      email: website@wmrra.com
-  
-  board:
-    - position: Position 1 (2026-2029) ☑
-      name: Paul McComsey
-      phone: 
-      email: paul@turbinetraders.com
-
-    - position: Position 2 (2023-2026) ☑
-      name: Mark DeGross
-      phone: 
-      email: mdegross@gmail.com
-
-    - position: Position 3 (2024-2027) ☑
-      name: CJ Hobbs
-      phone:
-      email: 
-
-    - position: Position 4 (2025-2028) ☑
-      name: Chris Wilcox 
-      phone: 
-      email: wmrra@crwilcox.com
-    

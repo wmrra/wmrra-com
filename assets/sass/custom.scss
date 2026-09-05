@@ -57,16 +57,7 @@ $xxxlarge-screen-breakpoint: 120em; // big
 @import "partials/race-registration";
 @import "partials/contingency";
 @import "partials/tech-inspection";
-
-// TODO: move to partials eventually
-// contacts
-.contact-table {
-  table {
-    display: table;
-    border-collapse: separate;
-    border-spacing: 2rem;
-  }
-}
+@import "partials/contacts";
 
 // TODO: yet another partial
 .new-racer-page {

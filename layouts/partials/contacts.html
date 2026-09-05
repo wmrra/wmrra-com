@@ -1,92 +1,41 @@
-{{ $data := index .Site.Data }}
+{{ $contactsData := index .Site.Data.contacts.contactsData }}
 
 
-<div class="row">
-    <div class="contact-table">
+<div class="page-content contacts-page">
+  <div class="contacts-nav-container">
+    {{ range $contactsData }}
+      <a href="#{{ .header | urlize }}" class="site-button">{{ .header }}</a>
+    {{ end }}  
+  </div>
 
-{{ with $data.contacts }}
-        <h4>Elected Officials</h4>
-        <table>
-        <thead>
-        <tr>
-        <th>Position/Name</th>
-        <th>Phone</th>
-        <th>Email</th>
-        </tr>
-        </thead>
-        <tbody>
-        {{ range .contacts.electedOfficials }}
-            <tr>
-                <td>{{ .position }}<br /><span>{{.name }}</span></td>
-                <td><a href="tel:{{.phone}}">{{.phone}}</a></td>
-                <td><a href="mailto:{{.email}}">{{.email}}</a></td>
-            </tr>
+  {{ range $contactsData }}
+    <div class="page-section" id="{{ .header | urlize }}">
+      <h2>{{ .header }}</h2>
+      <div class="contacts-container">
+        {{ range .people }}
+          <div class="contact-block">
+            {{ if .image }}
+              {{ $imgPath := (printf "images/contacts/%s.webp" .image) }}
+              <img src="{{ $imgPath | absURL }}" alt="Photo of {{ .name }}" />
+            {{ else }}
+              <img src="/images/contacts/ContactPlaceholder.webp" alt="Placeholder image for {{ .name }}" />
+            {{ end }}
+            <div class="position">{{ .position }}</div>
+            <div class="name">{{ .name }}</div>
+            {{ if .email }}
+              <a href="mailto:{{ .email }}" class="email">
+                {{ .email }}
+              </a>
+            {{ end }}  
+            {{ if .phone }}
+              <a href="tel:{{ .phone }}" class="phone">
+                <i aria-hidden="true" class="fa-solid fa-phone"></i>
+                {{ .phone }}
+              </a>
+            {{ end }}  
+          </div>
         {{ end }}
-        {{ "<!-- end contacts.electedOfficals  -->" | safeHTML }}
-        </tbody></table>
-
-        <h4>Race Day Staff</h4>
-        <table>
-        <thead>
-        <tr>
-        <th>Position/Name</th>
-        <th>Phone</th>
-        <th>Email</th>
-        </tr>
-        </thead>
-        <tbody>
-        {{ range .contacts.raceDay }}
-            <tr>
-                <td>{{ .position }}<br /><span>{{.name }}</span></td>
-                <td><a href="tel:{{.phone}}">{{.phone}}</a></td>
-                <td><a href="mailto:{{.email}}">{{.email}}</a></td>
-            </tr>
-        {{ end }}
-        {{ "<!-- end contacts.raceDay  -->" | safeHTML }}
-        </tbody></table>
-
-
-        <h4>Administration</h4>
-        <table>
-        <thead>
-        <tr>
-        <th>Position/Name</th>
-        <th>Phone</th>
-        <th>Email</th>
-        </tr>
-        </thead>
-        <tbody>
-        {{ range .contacts.administration }}
-            <tr>
-                <td>{{ .position }}<br /><span>{{.name }}</span></td>
-                <td><a href="tel:{{.phone}}">{{.phone}}</a></td>
-                <td><a href="mailto:{{.email}}">{{.email}}</a></td>
-            </tr>
-        {{ end }}
-        {{ "<!-- end contacts.administration  -->" | safeHTML }}
-        </tbody></table>
-
-        
-        <h4>WMRRA Board of Directors</h4>
-        <table>
-        <thead>
-        <tr>
-        <th>Position/Name</th>
-        <th>Phone</th>
-        <th>Email</th>
-        </tr>
-        </thead>
-        <tbody>
-        {{ range .contacts.board }}
-            <tr>
-                <td>{{ .position }}<br /><span>{{.name }}</span></td>
-                <td><a href="tel:{{.phone}}">{{.phone}}</a></td>
-                <td><a href="mailto:{{.email}}">{{.email}}</a></td>
-            </tr>
-        {{ end }}
-        {{ "<!-- end contacts.board  -->" | safeHTML }}
-        </tbody></table>
-{{ end }}
-
+      </div>
     </div>
-</div>
+  {{ end }}
+</div>  
