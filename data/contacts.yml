@@ -12,7 +12,7 @@ contactsData:
         name: Dion LaBlue
         phone: 
         email: 1stvp@wmrra.com
-        image: 
+        image: DionLB
 
       - position: "2nd VP: Marketing + Promotion"
         name: Tico Sandoval
@@ -36,19 +36,19 @@ contactsData:
         name: Jen Chancellor
         phone: 
         email: secretary@wmrra.com
-        image: 
+        image: JenC
 
       - position: Novice Rep
         name: Damon Poor 
         phone: 206.518.1321
         email: novicerep@wmrra.com
-        image: 
+        image: DamonP
 
       - position: Rider's Rep
         name: Don Williams
         phone: 
         email: riderrep@wmrra.com
-        image: 
+        image: DonW
   
   - section:
     header: Board of Directors
@@ -63,13 +63,13 @@ contactsData:
         name: Mark DeGross
         phone: 
         email: mdegross@gmail.com
-        image: 
+        image: MarkD
 
       - position: Position 3 (2024-2027)
         name: CJ Hobbs
         phone:
         email: 
-        image: 
+        image: CJH
 
       - position: Position 4 (2025-2028)
         name: Chris Wilcox 
@@ -84,19 +84,19 @@ contactsData:
         name: Craig Johnson
         phone: 253-988-3508
         email: corner.captain@wmrra.com
-        image: 
+        image: CraigJ
 
       - position: Course Marshal
         name: Chris La Fayette
         phone:
         email:
-        image: 
+        image: ChrisLF
 
       - position: Crash Truck & First Responder
         name: Ric Clements
         phone: 206-235-5552
         email: crash@wmrra.com
-        image: 
+        image: RicC
 
       - position: Chief Tech Inspector
         name: Paul McComsey
@@ -108,13 +108,13 @@ contactsData:
         name: Cherie River
         phone: 
         email: scoring@wmrra.com
-        image: 
+        image: CherieR
       
       - position: Primary Medical Liason
         name: Taylor Winstel
         phone:
         email:
-        image: 
+        image: TaylorW
 
       # - position: Air Fence Coordinator
       #   name:
@@ -201,7 +201,7 @@ contactsData:
         name: Jen Chancellor
         phone: 
         email: secretary@wmrra.com
-        image: 
+        image: JenC
 
       - position: Website Administration
         name: Anna Piechowski
