@@ -74,6 +74,8 @@
     locationLink: https://pacificraceways.com/
     jointRound: true
     doublePoints: true
+    eventSchedule: /event-schedules/2026-Round8.pdf
+    eventProgram: /event-programs/2026-Round8-Program.pdf
 
 "2025":
   - date: April 18-20
