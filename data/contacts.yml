@@ -24,7 +24,7 @@ contactsData:
         name: Danielle Mulkins
         phone: 253-592-8762
         email: registration@wmrra.com
-        image: 
+        image: DanielleM
 
       - position: Referee
         name: Louis Stevenson
@@ -40,7 +40,7 @@ contactsData:
 
       - position: Novice Rep
         name: Damon Poor 
-        phone: 206.518.1321
+        phone: 206-518-1321
         email: novicerep@wmrra.com
         image: DamonP
 
