@@ -90,5 +90,10 @@ $xxxlarge-screen-breakpoint: 120em; // big
 .news-hero-image {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
+
+  img {
+    width: 100%;
+    max-width: 600px;
+  }
 }
