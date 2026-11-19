@@ -26,8 +26,8 @@
   {{ "<!-- FontAwesome -->" | safeHTML }}
   <script src="https://kit.fontawesome.com/6b9daf9439.js" crossorigin="anonymous"></script>
   {{ "<!-- Main Stylesheet -->" | safeHTML }}
-  {{ $sass := resources.Get "sass/main.scss" }}
-  {{ $styles := $sass | css.Sass }}
+  {{ $sassOpts := dict "includePaths" (slice "themes/wmrra-com-theme/assets/sass" "assets/sass") }}
+  {{ $styles := resources.Get "sass/main.scss" | css.Sass $sassOpts }}
   <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->

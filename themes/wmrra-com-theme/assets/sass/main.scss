@@ -22,8 +22,12 @@ $xxlarge-screen-breakpoint: 100em; // 1600px
 $xxxlarge-screen-breakpoint: 120em; // big
 
 // VIP partials
-@import "themes/wmrra-com-theme/assets/sass/partials/media";
-@import "themes/wmrra-com-theme/assets/sass/partials/mixins";
+@import "partials/media";
+@import "partials/mixins";
+@import "partials/header";
+@import "partials/footer";
+@import "partials/pages";
+@import "partials/news";
 
 // base styles (body, content)
 // default font size to 10px so calculating rems is easier
@@ -52,7 +56,6 @@ p {
   margin: 0 0 1.5rem;
   line-height: 2.5rem;
 }
-
 
 table, th, td {
   border-style: ridge;
@@ -93,10 +96,18 @@ th, td {
 }
 
 .modal-overlay {
-  @include full-container-overlay;
-
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($black, 0.6);
+  overflow: hidden;
   top: 0;
   left: 0;
+
+  .hidden {
+    display: none;
+  }
 }
 
 .site-button {
@@ -113,11 +124,6 @@ th, td {
     filter: brightness(120%);
   }
 }
-
-@import "themes/wmrra-com-theme/assets/sass/partials/header";
-@import "themes/wmrra-com-theme/assets/sass/partials/footer";
-@import "themes/wmrra-com-theme/assets/sass/partials/pages";
-@import "themes/wmrra-com-theme/assets/sass/partials/news";
 
 // TODO: make a partial for this content
 .header-image-wrapper {

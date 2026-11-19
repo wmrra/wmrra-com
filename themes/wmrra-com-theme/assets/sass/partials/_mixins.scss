@@ -31,12 +31,15 @@
   }
 }
 
+// TODO: This mixin is broken and I don't know why
+// it needs to be fixed for the modal-overlay and header-menu-mobile-overlay
+// should update everything to new sass anyway (imports are dead)
 @mixin full-container-overlay {
   position: fixed;
   z-index: 99;
   width: 100%;
   height: 100%;
-  background-color: rgba($black, 0.6);
+  background-color: rgba($wmmra-dark-red, 0.6);
   overflow: hidden;
 
   .hidden {
