@@ -12,7 +12,7 @@ params:
 </div>
 
 
-**The 2027 WMRRA Rulebook and Schedule are Released!**
+**The 2027 WMRRA [Rulebook](/race/rulebook) and [Schedule](/race/schedule) are Released!**
 
 WMRRA is excited to announce we are ready to share the schedule and rulebook for 2027. Below you will find a letter from our race referee:
 

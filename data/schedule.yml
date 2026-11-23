@@ -1,3 +1,70 @@
+"2027":
+  - startDate: 06/04/2026
+    endDate: 06/06/2026
+    date: June 4-6
+    round: 1
+    location: Portland International Raceway
+    locationLink: https://www.portlandraceway.com/
+    jointRound: true
+    doublePoints: false
+    eventSchedule: 
+    eventProgram:
+
+  - startDate: 06/18/2026
+    endDate: 06/20/2026
+    date: June 18-20
+    round: 2
+    location: The Ridge Motorsports Park
+    locationLink: https://www.ridgemotorsportspark.com/
+    jointRound: true
+    doublePoints: false
+    eventSchedule: 
+    eventProgram:
+
+  - startDate: 07/16/2026
+    endDate: 07/18/2026
+    date: July 16-18
+    round: 3
+    location: The Ridge Motorsports Park
+    locationLink: https://www.ridgemotorsportspark.com/
+    jointRound: true
+    doublePoints: false
+    eventSchedule: 
+    eventProgram:
+
+  - startDate: 08/06/2026
+    endDate: 08/08/2026
+    date: August 6-8
+    round: 4
+    location: Portland International Raceway
+    locationLink: https://www.portlandraceway.com/
+    jointRound: true
+    doublePoints: false
+    eventSchedule: 
+    eventProgram:
+
+  - startDate: 08/27/2026
+    endDate: 08/29/2026
+    date: August 27-29
+    round: 5
+    location: The Ridge Motorsports Park
+    locationLink: https://www.ridgemotorsportspark.com/
+    jointRound: false
+    doublePoints: false
+    eventSchedule: 
+    eventProgram:
+
+  - startDate: 09/10/2026
+    endDate: 09/12/2026
+    date: September 10-12
+    round: 6
+    location: Pacific Raceways
+    locationLink: https://pacificraceways.com/
+    jointRound: true
+    doublePoints: true
+    eventSchedule: 
+    eventProgram:
+
 "2026":
   - startDate: 04/17/2026
     endDate: 04/19/2026
