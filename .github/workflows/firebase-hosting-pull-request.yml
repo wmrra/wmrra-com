@@ -16,6 +16,13 @@ jobs:
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+      - name: Install latest Dart Sass
+        run: |
+          LATEST_TAG=$(curl -sSL https://api.github.com/repos/sass/dart-sass/releases/latest | grep -oE '"tag_name": *"[^"]+"' | head -n1 | cut -d'"' -f4)
+          curl -sSL "https://github.com/sass/dart-sass/releases/download/${LATEST_TAG}/dart-sass-${LATEST_TAG}-linux-x64.tar.gz" -o dart-sass.tar.gz
+          tar -xzf dart-sass.tar.gz
+          sudo cp -r dart-sass/* /usr/local/bin/
+          rm -rf dart-sass dart-sass.tar.gz
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
