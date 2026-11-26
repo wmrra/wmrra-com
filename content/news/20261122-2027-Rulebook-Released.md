@@ -56,7 +56,12 @@ WMRRA is excited to announce we are ready to share the schedule and rulebook for
       </div>
       <div class="faq-entry-answer sliding-drawer-content">
         <div class="sliding-drawer-content-inner">
-          An early season round is nearly guaranteed to be a loss. As for racing there in the summer, WMRRA provides our own air fence at Pacific and the Ridge. Every time we switch between those two tracks, all of the air fence must be trucked in multiple shipping containers at significant expense to the club. Once the air fence has been transported, it makes the most sense logistically to leave it at one venue for as long as possible. Furthermore, a bad race weekend at the Ridge makes more money for the club than a good weekend at Pacific, so we would be sacrificing larger profits by racing at Pacific in the summer.
+          <p>
+          An early season round is nearly guaranteed to be a loss. As for racing there in the summer, WMRRA provides our own air fence at Pacific and the Ridge. Every time we switch between those two tracks, all of the air fence must be transported between tracks at significant expense to the club. Once the air fence has been transported, it makes the most sense logistically to leave it at one venue for as long as possible. We currently store the airfence at Pacific Raceways so it would add expense to have a Pacific Round in the middle of the calendar.
+           </p>
+          <p>
+          Furthermore, a bad race weekend at the Ridge makes more money for the club than a good weekend at Pacific, so we would be sacrificing larger profits by racing at Pacific in the summer.
+           </p>
         </div>
       </div>
     </div>
