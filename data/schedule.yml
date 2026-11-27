@@ -75,7 +75,7 @@
     jointRound: false
     doublePoints: true
     eventSchedule: /event-schedules/2026-Round1.pdf
-    eventProgram: /event-programs/2026-Round1-Program.pdf
+    eventProgram: https://raw.githubusercontent.com/wmrra/wmrra-com/main/static/event-programs/2026-Round1-Program.pdf
  
   - startDate: 05/01/2026
     endDate: 05/03/2026
@@ -102,7 +102,7 @@
     locationLink: https://www.ridgemotorsportspark.com/
     jointRound: true
     eventSchedule: /event-schedules/2026-Round4.pdf
-    eventProgram: /event-programs/2026-Round4-Program.pdf
+    eventProgram: https://raw.githubusercontent.com/wmrra/wmrra-com/main/static/event-programs/2026-Round4-Program.pdf
 
   - startDate: 07/17/2026
     endDate: 07/19/2026
@@ -112,7 +112,7 @@
     locationLink: https://www.ridgemotorsportspark.com/
     jointRound: false
     eventSchedule: /event-schedules/2026-Round5.pdf
-    eventProgram: /event-programs/2026-Round5-Program.pdf
+    eventProgram: https://raw.githubusercontent.com/wmrra/wmrra-com/main/static/event-programs/2026-Round5-Program.pdf
 
   - startDate: 07/31/2026
     endDate: 08/02/2026
@@ -131,7 +131,7 @@
     locationLink: https://www.ridgemotorsportspark.com/
     jointRound: true
     eventSchedule: /event-schedules/2026-Round7.pdf
-    eventProgram: /event-programs/2026-Round7-Program.pdf
+    eventProgram: https://raw.githubusercontent.com/wmrra/wmrra-com/main/static/event-programs/2026-Round7-Program.pdf
 
   - startDate: 09/11/2026
     endDate: 09/13/2026
@@ -142,7 +142,7 @@
     jointRound: true
     doublePoints: true
     eventSchedule: /event-schedules/2026-Round8.pdf
-    eventProgram: /event-programs/2026-Round8-Program.pdf
+    eventProgram: https://raw.githubusercontent.com/wmrra/wmrra-com/main/static/event-programs/2026-Round8-Program.pdf
 
 "2025":
   - date: April 18-20
@@ -152,7 +152,7 @@
     jointRound: false
     doublePoints: true
     eventSchedule: /event-schedules/2025-Round1.pdf
-    eventProgram: /event-programs/2025-Round1-Program.pdf
+    eventProgram: https://raw.githubusercontent.com/wmrra/wmrra-com/main/static/event-programs/2025-Round1-Program.pdf
  
   - date: May 2-4
     round: 2
@@ -173,7 +173,7 @@
     locationLink: https://www.ridgemotorsportspark.com/
     jointRound: true
     eventSchedule: /event-schedules/2025-Round4.pdf
-    eventProgram: /event-programs/2025-Round4-Program.pdf
+    eventProgram: https://raw.githubusercontent.com/wmrra/wmrra-com/main/static/event-programs/2025-Round4-Program.pdf
 
   - date: July 18-20
     round: 5
@@ -181,7 +181,7 @@
     locationLink: https://www.ridgemotorsportspark.com/
     jointRound: true
     eventSchedule: /event-schedules/2025-Round5.pdf
-    eventProgram: /event-programs/2025-Round5-Program.pdf
+    eventProgram: https://raw.githubusercontent.com/wmrra/wmrra-com/main/static/event-programs/2025-Round5-Program.pdf
 
   - date: August 1-3
     round: 6
@@ -196,7 +196,7 @@
     locationLink: https://pacificraceways.com/
     jointRound: false
     eventSchedule: /event-schedules/2025-Round7.pdf
-    eventProgram: /event-programs/2025-Round7-Program.pdf
+    eventProgram: https://raw.githubusercontent.com/wmrra/wmrra-com/main/static/event-programs/2025-Round7-Program.pdf
 
   - date: September 19-21
     round: 8
@@ -205,7 +205,7 @@
     jointRound: true
     doublePoints: true
     eventSchedule: /event-schedules/2025-Round8.pdf
-    eventProgram: /event-programs/2025-Round8-Program.pdf
+    eventProgram: https://raw.githubusercontent.com/wmrra/wmrra-com/main/static/event-programs/2025-Round8-Program.pdf
 
 "2024":
   - date: May 3-5
